@@ -1,0 +1,9 @@
+// NOTE: split each group of information by semicolon, so the first three entries can be filtered out of the
+// map data. Then, each individual data piece in a group is separated by comma and processed.
+
+
+/* Player position */ x, y, z;
+/* Player velocity */ x, y, z;
+/* World seed */ seed;
+
+/* All non-empty blocks */ x, y, z, ID; x, y, z, ID; x, y, z, ID;  etc.

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solitude</title>
+    <link rel="stylesheet" href="jqueryui/core.css" />
+    <link rel="stylesheet" href="jqueryui/draggable.css" />
+    <link rel="stylesheet" href="jqueryui/resizable.css" />
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            background: #040;
+        }
+        
+        .cards {
+            display: inline-block;
+            position: relative;
+            height: 100px;
+            width: 72px;
+            background: url(cards.gif) no-repeat bottom right;
+        }
+        
+        .c-accept {
+            box-shadow: inset 0 0 100px 0 rgba(195, 255, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards-mat"></div>
+    <script src="jquery.min.js"></script>
+    <script src="jqueryui/core.js"></script>
+    <script src="jqueryui/widget.js"></script>
+    <script src="jqueryui/mouse.js"></script>
+    <script src="jqueryui/draggable.js"></script>
+    <script src="jqueryui/droppable.js"></script>
+    <script src="jqueryui/resizable.js"></script>
+    <script>
+        //http://bost.ocks.org/mike/shuffle/
+        function shuffle(array) {
+            var m = array.length,
+                t, i;
+            while (m) {
+                i = Math.floor(Math.random() * m--);
+                t = array[m];
+                array[m] = array[i];
+                array[i] = t;
+            }
+            return array;
+        }
+
+        var cardStyl = '',
+            cardHtml = [];
+        for (var i = 0, l = 13; i < l; i++) {
+            cardStyl += '.c-hearts.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px 0;}';
+            cardStyl += '.c-diams.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px -100px;}';
+            cardStyl += '.c-clubs.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px -200px;}';
+            cardStyl += '.c-spades.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px -300px;}';
+
+            cardHtml.push('<div class="cards c-red c-hearts cn-' + (i + 1) + '" data-cid="' + (i + 1) + '"></div>');
+            cardHtml.push('<div class="cards c-red c-diams cn-' + (i + 1) + '" data-cid="' + (i + 1) + '"></div>');
+            cardHtml.push('<div class="cards c-black c-clubs cn-' + (i + 1) + '" data-cid="' + (i + 1) + '"></div>');
+            cardHtml.push('<div class="cards c-black c-spades cn-' + (i + 1) + '" data-cid="' + (i + 1) + '"></div>');
+        }
+        //cardHtml = shuffle(cardHtml);
+        $('head').append('<style>' + cardStyl + '</style>');
+        $('.cards-mat').append(shuffle(cardHtml).join(''));
+
+
+
+        $('.cards')
+            .draggable({
+                revert: "invalid",
+                zIndex: 100 /*stack: ".cards-mat, .cards>.cards"*/
+            })
+            .droppable({
+                accept: function(e) {
+                    if (!$(this).children().length &&
+                        (
+                            (e.hasClass('c-red') && $(this).hasClass('c-black')) ||
+                            (e.hasClass('c-black') &&
+                                $(this).hasClass('c-red'))
+                        )
+                    ) {
+                        return $(this).hasClass('cn-' + (e.data('cid') + 1));
+                    }
+                },
+                hoverClass: "c-accept",
+                drop: function(e, ui) {
+                    $(this).append(ui.draggable.css({
+                        'top': '20px',
+                        'left': 'auto',
+                        'z-index': '10'
+                    }));
+                }
+            });
+    </script>
+</body>
+
+</html>

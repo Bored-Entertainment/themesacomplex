@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Minesweeper</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/minesweeper.css" type="text/css" />
+    <link rel="stylesheet" href="css/smoothness/jquery-ui-1.9.2.custom.min.css" type="text/css" />
+    <!-- Source: https://github.com/michaelbutler/minesweeper -->
+
+    <!--Favicon Information-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png?v=2bAXkRLXOR">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png?v=2bAXkRLXOR">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-chrome-192x192.png?v=2bAXkRLXOR">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png?v=2bAXkRLXOR">
+    <link rel="manifest" href="../../favicon/site.webmanifest?v=2bAXkRLXOR">
+    <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg?v=2bAXkRLXOR" color="#bd8b40">
+    <link rel="shortcut icon" href="../../favicon/favicon.ico?v=2bAXkRLXOR">
+    <meta name="msapplication-TileColor" content="#da9835">
+    <meta name="msapplication-TileImage" content="../../favicon/mstile-144x144.png?v=2bAXkRLXOR">
+    <meta name="msapplication-config" content="../../favicon/browserconfig.xml?v=2bAXkRLXOR">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Schoolgrounds ">
+    <meta name="description" content="By Students For Students">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Schoolgrounds">
+    <meta property="og:description" content="By Students For Students">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Schoolgrounds">
+    <meta property="twitter:description" content="By Students For Students">
+</head>
+
+<body>
+
+    <h1 class="logo">
+        MineSweeper
+        <span class="invisible ajax-loading"><img src="load.gif" alt="Processing..."
+      /></span>
+    </h1>
+    <div id="minesweeper"></div>
+
+    <script src="js/MineSweeper.js" type="text/javascript"></script>
+    <script>
+        jQuery(function($) {
+            // set a global instance of Minesweeper
+            minesweeper = new MineSweeper();
+
+            // init the (first) game
+            minesweeper.init();
+        });
+    </script>
+</body>
+
+</html>

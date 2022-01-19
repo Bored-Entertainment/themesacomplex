@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solitude</title>
+    <!--Favicon Information-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png?v=2bAXkRLXOR">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png?v=2bAXkRLXOR">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-chrome-192x192.png?v=2bAXkRLXOR">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png?v=2bAXkRLXOR">
+    <link rel="manifest" href="../../favicon/site.webmanifest?v=2bAXkRLXOR">
+    <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg?v=2bAXkRLXOR" color="#bd8b40">
+    <link rel="shortcut icon" href="../../favicon/favicon.ico?v=2bAXkRLXOR">
+    <meta name="msapplication-TileColor" content="#da9835">
+    <meta name="msapplication-TileImage" content="../../favicon/mstile-144x144.png?v=2bAXkRLXOR">
+    <meta name="msapplication-config" content="../../favicon/browserconfig.xml?v=2bAXkRLXOR">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Schoolgrounds ">
+    <meta name="description" content="By Students For Students">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Schoolgrounds">
+    <meta property="og:description" content="By Students For Students">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Schoolgrounds">
+    <meta property="twitter:description" content="By Students For Students">
+
+    <link rel="stylesheet" href="jqueryui/core.css" />
+    <link rel="stylesheet" href="jqueryui/draggable.css" />
+    <link rel="stylesheet" href="jqueryui/resizable.css" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background: #0a8;
+        }
+        /*#cards-mat {pointer-events: none;}*/
+        
+         ::-moz-selection {
+            background: transparent !important;
+            color: transparent !important;
+            text-shadow: none !important;
+        }
+        
+         ::selection {
+            background: transparent !important;
+            color: transparent !important;
+            text-shadow: none !important;
+        }
+        
+        .foundation,
+        #tableau>div,
+        #stock,
+        .cards {
+            display: inline-block;
+            position: relative;
+            height: 100px;
+            width: 72px;
+            background: url(cards.gif) no-repeat bottom right;
+        }
+        
+        .foundation.c-accept .cards:not(.ui-draggable-dragging),
+        .c-accept {
+            box-shadow: inset 0 0 0 100px rgba(195, 255, 0, 0.5);
+        }
+        
+        .blank,
+        .foundation,
+        #tableau>div,
+        #stock,
+        #waste {
+            display: inline-block;
+            position: relative;
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 100px;
+            width: 72px;
+        }
+        
+        .foundation .cards,
+        #stock .cards,
+        #waste .cards {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        #stock {
+            background-position: -144px -400px;
+        }
+        
+        #stock .cards,
+        #tableau .cards.turned {
+            background-position: -72px -400px;
+        }
+        
+        .foundation,
+        #tableau>div {
+            background-position: -504px -400px;
+        }
+        
+        #tableau .cards>.cards {
+            top: 20px;
+            left: 0;
+        }
+        
+        .foundation .cn-1 {
+            z-index: 10 !important;
+        }
+        
+        .foundation .cn-2 {
+            z-index: 20 !important;
+        }
+        
+        .foundation .cn-3 {
+            z-index: 30 !important;
+        }
+        
+        .foundation .cn-4 {
+            z-index: 40 !important;
+        }
+        
+        .foundation .cn-5 {
+            z-index: 50 !important;
+        }
+        
+        .foundation .cn-6 {
+            z-index: 60 !important;
+        }
+        
+        .foundation .cn-7 {
+            z-index: 70 !important;
+        }
+        
+        .foundation .cn-8 {
+            z-index: 80 !important;
+        }
+        
+        .foundation .cn-9 {
+            z-index: 90 !important;
+        }
+        
+        .foundation .cn-10 {
+            z-index: 100 !important;
+        }
+        
+        .foundation .cn-11 {
+            z-index: 110 !important;
+        }
+        
+        .foundation .cn-12 {
+            z-index: 120 !important;
+        }
+        
+        .foundation .cn-13 {
+            z-index: 130 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cards-mat"></div>
+
+    <script src="jquery.min.js"></script>
+    <script src="jqueryui/jquery-ui.min.js"></script>
+    <script src="jqueryui/core.js"></script>
+    <script src="jqueryui/widget.js"></script>
+    <script src="jqueryui/mouse.js"></script>
+    <script src="jqueryui/draggable.js"></script>
+    <script src="jqueryui/droppable.js"></script>
+    <script src="jqueryui/resizable.js"></script>
+
+    <script>
+        /*
+                                                                              SOLITUDE - a jquery ui solitaire game, by @zombectro, with tricks from mrdoob
+                                                                              © 2014 WTFPL – Do What the Fuck You Want to Public License.
+                                                                            */
+
+        function newGame() {
+            shuffled = shuffle(cards);
+            klondike()
+        }
+
+        //http://bost.ocks.org/mike/shuffle/
+        function shuffle(array) {
+            var m = array.length,
+                t, i;
+            while (m) {
+                i = Math.floor(Math.random() * m--);
+                t = array[m];
+                array[m] = array[i];
+                array[i] = t;
+            }
+            return array;
+        }
+
+        var cardStyl = '',
+            cards = [];
+        for (var i = 0, l = 13; i < l; i++) {
+            cardStyl += '.c-hearts.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px 0;}';
+            cardStyl += '.c-diams.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px -100px;}';
+            cardStyl += '.c-clubs.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px -200px;}';
+            cardStyl += '.c-spades.cn-' + (i + 1) + ' {background-position: ' + -(i * 72) + 'px -300px;}';
+
+            cards.push('<div class="cards c-red c-hearts cn-' + (i + 1) + '" data-type="hearts" data-cid="' + (i + 1) + '"></div>');
+            cards.push('<div class="cards c-red c-diams cn-' + (i + 1) + '" data-type="diams" data-cid="' + (i + 1) + '"></div>');
+            cards.push('<div class="cards c-black c-clubs cn-' + (i + 1) + '" data-type="clubs" data-cid="' + (i + 1) + '"></div>');
+            cards.push('<div class="cards c-black c-spades cn-' + (i + 1) + '" data-type="spades" data-cid="' + (i + 1) + '"></div>');
+        }
+        var shuffled = shuffle(cards);
+        $('head').append('<style>' + cardStyl + '</style>');
+
+        function klondike() {
+
+            $('#win').remove();
+            clearTimeout(loop);
+            loop = null;
+            clearTimeout(anim);
+            anim = null;
+
+            var EL_CSS = {
+                'top': '0',
+                'left': '0',
+                'z-index': '10'
+            }
+
+            var stock = $('<div id="stock">');
+            var tableau = $('<div id="tableau">').html('<div></div><div></div><div></div><div></div><div></div><div></div><div></div>');
+            var waste = $('<div id="waste">');
+            var foundation = '<div class="blank"></div><div class="foundation cn-0"></div><div class="foundation cn-0"></div><div class="foundation cn-0"></div><div class="foundation cn-0"></div>';
+
+            var shuffledClone = shuffled.slice(0);
+            var tablCards = shuffledClone.splice(0, 28);
+            //var tablCardsTurned = shuffledClone.splice(0, 21);
+            //var tablCards = shuffledClone.splice(0, 7);
+            var cTD = 3; // card Thick Divisor
+
+            $.each(shuffledClone, function(i, el) {
+                $(el).css({
+                    top: ~~(i / cTD),
+                    left: ~~(i / cTD)
+                }).appendTo(stock);
+            });
+
+            $.each(tablCards, function(i, el) {
+
+                el = $(el).addClass('turned');
+
+                // @TODO : must find a nicer way to do that!
+                if (i === 0) {
+                    tableau.children('div:eq(0)').append(el)
+                } else if (i === 1) {
+                    tableau.children('div:eq(1)').append(el)
+                } else if (i === 2) {
+                    tableau.children('div:eq(1)').find(':empty').append(el)
+                } else if (i === 3) {
+                    tableau.children('div:eq(2)').append(el)
+                } else if (i <= 5) {
+                    tableau.children('div:eq(2)').find(':empty').append(el)
+                } else if (i === 6) {
+                    tableau.children('div:eq(3)').append(el)
+                } else if (i <= 9) {
+                    tableau.children('div:eq(3)').find(':empty').append(el)
+                } else if (i === 10) {
+                    tableau.children('div:eq(4)').append(el)
+                } else if (i <= 14) {
+                    tableau.children('div:eq(4)').find(':empty').append(el)
+                } else if (i === 15) {
+                    tableau.children('div:eq(5)').append(el)
+                } else if (i <= 20) {
+                    tableau.children('div:eq(5)').find(':empty').append(el)
+                } else if (i === 21) {
+                    tableau.children('div:eq(6)').append(el)
+                } else if (i <= 28) {
+                    tableau.children('div:eq(6)').find(':empty').append(el)
+                }
+            });
+
+            tableau.find(':empty').removeClass('turned');
+
+            function cardMoved() {
+                $('#tableau :empty').removeClass('turned');
+                if (
+                    $('.foundation:eq(0) .cn-13').length &&
+                    $('.foundation:eq(1) .cn-13').length &&
+                    $('.foundation:eq(2) .cn-13').length &&
+                    $('.foundation:eq(3) .cn-13').length
+                ) {
+                    win()
+                }
+            }
+
+            $('#cards-mat').html('').append(stock, waste, foundation, tableau);
+
+            var timeout;
+
+            $('#waste, #tableau').on('dblclick', '.cards', function(e) {
+                e.stopPropagation();
+                if (timeout) {
+                    clearTimeout(timeout);
+                    timeout = null;
+                }
+                var validFoundationEmplacement = '';
+                if ($(this).hasClass('cn-1')) {
+                    validFoundationEmplacement = '.foundation:empty:first';
+                } else {
+                    var e = $(this);
+                    $('.foundation .cards').each(function(i, el) {
+                        if ($(el).is('.cn-' + (e.data('cid') - 1) + '.c-' + e.data('type'))) {
+                            validFoundationEmplacement = $(el).parent();
+                        }
+                    });
+                }
+                if (validFoundationEmplacement) {
+                    $(this).css(EL_CSS).appendTo(validFoundationEmplacement).delay(300).queue(function() {
+                        $(this).css(EL_CSS).dequeue()
+                    });
+                    cardMoved()
+                }
+            });
+
+            $('#stock')
+                .on('click', '.cards:last', function(e) {
+                    e.stopPropagation();
+                    var self = this;
+                    timeout = setTimeout(function() {
+                        var i = $('#waste .cards').length;
+                        var css = {
+                            top: ~~(i / cTD),
+                            left: ~~(i / cTD),
+                            zIndex: 10
+                        };
+                        $(self).css(css).appendTo('#waste');
+                        timeout = null;
+                    }, 0)
+                })
+                .on('click', function(e) {
+                    e.stopPropagation();
+                    $($('#waste .cards').get().reverse()).each(function(i, el) {
+                        $(el).css({
+                            top: ~~(i / cTD),
+                            left: ~~(i / cTD)
+                        }).appendTo('#stock');
+                    });
+                });
+
+            $('.foundation').droppable({
+                tolerance: 'pointer',
+                hoverClass: 'c-accept',
+                accept: function(e) {
+                    if (
+                        (!$(this).children().length && $(this).hasClass('cn-' + (e.data('cid') - 1))) ||
+                        $(this).children('.cards:last-child').is('.cn-' + (e.data('cid') - 1) + '.c-' + e.data('type'))
+                    ) {
+                        return true
+                    }
+                },
+                drop: function(e, ui) {
+                    $(this).append(ui.draggable.css(EL_CSS));
+                    cardMoved()
+                }
+            });
+            $('#tableau > div').droppable({
+                tolerance: 'pointer',
+                accept: function(e) {
+                    if (!$(this).children().length && e.hasClass('cn-13')) {
+                        return true;
+                    }
+                },
+                hoverClass: 'c-accept',
+                drop: function(e, ui) {
+                    $(this).append(ui.draggable.css(EL_CSS));
+                    cardMoved()
+                }
+            });
+
+            $('#cards-mat .cards')
+                .draggable({
+                    revert: 'invalid',
+                    distance: 10,
+                    revertDuration: 300,
+                    zIndex: 100,
+                    start: function(e, ui) {
+                        if (ui.helper.parent('#stock').length || ui.helper.hasClass('turned')) {
+                            ui.helper.css('zIndex', 'auto');
+                            return false
+                        }
+                    }
+                })
+                .droppable({
+                    tolerance: 'touch',
+                    hoverClass: 'c-accept',
+                    accept: function(e) {
+                        if (!$(this).children().length &&
+                            !$(this).is('#stock .cards') &&
+                            !$(this).is('#waste .cards') &&
+                            !$(this).is('.foundation .cards') &&
+                            (
+                                (e.hasClass('c-red') && $(this).hasClass('c-black')) ||
+                                (e.hasClass('c-black') && $(this).hasClass('c-red'))
+                            )
+                        ) {
+                            return $(this).hasClass('cn-' + (e.data('cid') + 1));
+                        }
+                    },
+                    drop: function(e, ui) {
+                        e.stopPropagation();
+                        $(this).append(ui.draggable.css({
+                            'top': '20px',
+                            'left': 'auto',
+                            'z-index': '10'
+                        }));
+                        cardMoved()
+                    }
+                });
+
+
+        }
+
+        klondike()
+
+        var loop, anim;
+
+        function win(arg) {
+
+            $('<canvas id="win" style="position:absolute; z-index:200; top:0px; left:0px; pointer-events: none;"></canvas>').appendTo('body');
+            var canvas = document.getElementById('win');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            document.body.appendChild(canvas);
+
+            var context = canvas.getContext('2d');
+            var id = 13; //52;
+            var cwidth = 72,
+                cwidthhalf = cwidth / 2;
+            var cheight = 100,
+                cheighthalf = cheight / 2;
+            var particles = [];
+
+            var Particle = function(id, x, y, sx, sy) {
+                if (sx === 0) sx = 2;
+                var cx = (id % 13) * cwidth;
+                var cy = Math.floor(id / 13) * cheight;
+
+                this.update = function() {
+                    if (x < (-cwidth) || x > (canvas.width + cwidth)) {
+                        var index = particles.indexOf(this);
+                        particles.splice(index, 1);
+                        return false;
+                    }
+                    if (y > canvas.height - cheight) {
+                        y = canvas.height - cheight;
+                        sy = -sy * 0.85;
+                    }
+                    sy += 0.98;
+
+                    context.drawImage(image, cx, cy, cwidth, cheight, x, y, cwidth, cheight);
+
+                    x += sx;
+                    y += sy;
+
+                    return true;
+                }
+            }
+
+            var image = document.createElement('img');
+            image.src = "cards.gif";
+
+            var cidH = 13;
+            var cidD = 26;
+            var cidC = 39;
+            var cidS = 52;
+            var throwCard = function(x, y, type) {
+                var cid;
+                if (type === 'hearts') {
+                    cidH > 0 ? cidH-- : cidH = 12;
+                    cid = cidH;
+                } else if (type === 'diams') {
+                    cidD > 13 ? cidD-- : cidD = 25;
+                    cid = cidD;
+                } else if (type === 'clubs') {
+                    cidC > 26 ? cidC-- : cidC = 38;
+                    cid = cidC;
+                } else if (type === 'spades') {
+                    cidS > 39 ? cidS-- : cidS = 51;
+                    cid = cidS;
+                }
+                var particle = new Particle(cid, x, y, Math.floor(Math.random() * 6 - 3) * 2, -Math.random() * 16);
+                particles.push(particle);
+            }
+
+            var switchType = 4;
+            var types = [
+                'hearts',
+                'diams',
+                'clubs',
+                'spades'
+            ];
+            loop = setInterval(function() {
+                switchType > 0 ? switchType-- : switchType = 3;
+                var p1 = $('.foundation').eq(switchType).offset();
+                throwCard(p1.left, p1.top, types[switchType]);
+            }, 2000);
+
+            anim = setInterval(function() {
+                var i = 0,
+                    l = particles.length;
+                while (i < l) {
+                    particles[i].update() ? i++ : l--;
+                }
+            }, 1000 / 60);
+        }
+
+        //win()
+
+        // aww mr doob, you're so well inspired...
+        /////////////////////////////////////////////////////////////////////////////////
+        // http://mrdoob.com/lab/javascript/effects/solitaire/
+        function mrdoob() {
+            $('<canvas id="win" style="position:absolute; z-index:200; top:0px; left:0px; pointer-events: none;"></canvas>').appendTo('body');
+            var canvas = document.getElementById('win');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            document.body.appendChild(canvas);
+
+            var context = canvas.getContext('2d');
+
+            var id = 52;
+
+            var cwidth = 72,
+                cwidthhalf = cwidth / 2;
+            var cheight = 100,
+                cheighthalf = cheight / 2;
+
+            var particles = [];
+
+            var Particle = function(id, x, y, sx, sy) {
+
+                if (sx === 0) sx = 2;
+
+                var cx = (id % 13) * cwidth;
+                var cy = Math.floor(id / 13) * cheight;
+
+                this.update = function() {
+
+                    x += sx;
+                    y += sy;
+
+                    if (x < (-cwidthhalf) || x > (canvas.width + cwidthhalf)) {
+                        var index = particles.indexOf(this);
+                        particles.splice(index, 1);
+                        return false;
+                    }
+
+                    if (y > canvas.height - cheighthalf) {
+                        y = canvas.height - cheighthalf;
+                        sy = -sy * 0.85;
+                    }
+
+                    sy += 0.98;
+
+                    context.drawImage(image, cx, cy, cwidth, cheight, Math.floor(x - cwidthhalf), Math.floor(y - cheighthalf), cwidth, cheight);
+
+                    return true;
+
+                }
+
+            }
+
+            var image = document.createElement('img');
+            image.src = "cards.gif";
+
+            var throwCard = function(x, y) {
+                id > 0 ? id-- : id = 51;
+                var particle = new Particle(id, x, y, Math.floor(Math.random() * 6 - 3) * 2, -Math.random() * 16);
+                particles.push(particle);
+            }
+            document.addEventListener('mousedown', function(event) {
+                event.preventDefault();
+                document.addEventListener('mousemove', onMouseMove, false);
+            }, false);
+            document.addEventListener('mouseup', function(event) {
+                event.preventDefault();
+                throwCard(event.clientX, event.clientY);
+                document.removeEventListener('mousemove', onMouseMove, false);
+            }, false);
+
+            function onMouseMove(event) {
+                event.preventDefault();
+                throwCard(event.clientX, event.clientY);
+            }
+            document.addEventListener('touchstart', function(event) {
+                event.preventDefault();
+                for (var i = 0; i < event.changedTouches.length; i++) {
+                    throwCard(event.changedTouches[0].pageX, event.changedTouches[0].pageY);
+                }
+            }, false);
+            document.addEventListener('touchmove', function(event) {
+                event.preventDefault();
+                for (var i = 0; i < event.touches.length; i++) {
+                    throwCard(event.touches[i].pageX, event.touches[i].pageY);
+                }
+            }, false);
+
+            anim = setInterval(function() {
+                var i = 0,
+                    l = particles.length;
+                while (i < l) {
+                    particles[i].update() ? i++ : l--;
+                }
+            }, 1000 / 60);
+
+        }
+    </script>
+</body>
+
+</html>

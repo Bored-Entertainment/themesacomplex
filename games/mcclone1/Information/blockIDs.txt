@@ -1,0 +1,56 @@
+Block ID List:
+
+0: Air
+1: Stone
+2: Dirt
+3: Grass
+4: Water
+5: Sand
+6: Wood
+7: Leaves
+8: Cactus
+9: Lava
+10: Clay
+11: Cobblestone
+12: Snow
+13: Turquoise Water
+14: Cloud
+15: Campfire
+16: Soulfire
+17: Lightbulb
+18: Light fruit
+19: Copper Ore
+20: Iron Ore
+21: Cobalt Ore
+22: Gold Ore
+23: Orichalcum Ore
+24: Adamantium Ore
+
+
+Biome ID List:
+
+0: Dry Desert
+1: Plains
+2: Forest
+3: Mountains
+4: Hills
+5: Lush Desert
+6: Swamp
+7: Badlands
+8: Lava Pit
+9: Deep Ocean
+10: Jungle
+11: Green Mountains
+12: Islands
+
+
+
+Good Seeds:
+
+25815 - long river
+19399 - big lake, mountain strips
+17240
+52257 - canyon
+62910 - massive cliffs with caves at base
+54794 - massive steep mountain
+13545 - 3x horizontal amp, 2x vertical amp, massive mountain with huge caves, canyons

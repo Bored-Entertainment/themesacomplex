@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Bad Minecraft</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Schoolgrounds ">
+    <meta name="description" content="By Students For Students">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Schoolgrounds">
+    <meta property="og:description" content="By Students For Students">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Schoolgrounds">
+    <meta property="twitter:description" content="By Students For Students">
+
+    <script src="Scripts\perlin.js"></script>
+    <script src="Scripts\babylon.math.js"></script>
+    <script src="Scripts\UtilityFunctions.js"></script>
+
+    <script src="Scripts\SoftEngineV6.js"></script>
+    <script src="Scripts\main.js"></script>
+    <script src="Scripts\MeshLibrary.js"></script>
+    <script src="Scripts\CameraControlFP.js"></script>
+    <script src="Scripts\InputHandler.js"></script>
+    <script src="Scripts\FileSaveLoad.js"></script>
+    <script src="Scripts\PhysicsFunctions.js"></script>
+    <script src="Scripts\Structures.js"></script>
+    <script src="Scripts\Bad_Minecraft.js"></script>
+    <!-- Include reference to projectname.js and other scripts here-->
+
+</head>
+
+<body bgcolor="#303030">
+
+    <div>
+
+        <canvas id="frontBuffer" width="360" height="240" style="background-color: #85d8ed; float:left; width: 1080px; height: 720px;"></canvas>
+
+        <div>
+            <ul id="timerStat" style="color: white; list-style-type:none; display:table;">
+                Time:
+            </ul>
+
+            <ul id="fpsStat" style="color: white; list-style-type:none; display:table;">
+                FPS:
+            </ul>
+
+            <br>
+
+            <ul id="blockInHandStat" style="color: white; list-style-type:none; display:table;">
+                Block in Hand:
+            </ul>
+
+            <br>
+
+            <ul id="testStat" style="color: white; list-style-type:none; display:table;"> </ul>
+
+            <ul id="seedStat" style="color: white; list-style-type:none; display:table;"></ul>
+
+            <ul id="hierarchy" style="color: white; list-style-type:none; display:table;"></ul>
+        </div>
+
+    </div>
+
+
+    <div>
+        <table>
+            <tr>
+                <td>Text to Save:</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <textarea id="inputTextToSave" cols="80" rows="25"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Filename to Save As:</td>
+                <td><input id="inputFileNameToSaveAs"></input>
+                </td>
+                <td><button onclick="saveTextAsFile(convertWorldDataToString())">Save Text to File</button></td>
+            </tr>
+            <tr>
+                <td>Select a File to Load:</td>
+                <td><input type="file" id="fileToLoad"></td>
+                <td><button onclick="convertStringToWorldData(loadFileAsText())">Load Selected File</button>
+                    <td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+July 2019
+- Started development, created framework for blocks and very basic world generation
+- Used my preexisting system for movement and looking around
+
+August 2019
+- Added better world generation using simplex noise, water at and below sea level
+- Added trees and cacti
+- Implemented four biomes with a simplex noise mapping system (desert, forest, hills, mountains)'
+- Added the ability to place and destroy blocks
+- Water is rendered differently so that other water blocks are invisible when next to it, but all other block are visible.
+  Also applies a blue filter to screen when underwater 
+- Added cave generation
+- Added fog
+- Added view reticle
+
+September 2019
+- Made it so the bottom layer of the world is lava
+- New biome mapping algorithm; now uses Voronoi mapping to allocate polygonal biome areas which are randomly distributed
+- Tweaked biome definition to include subsurface blocks
+- Added ground cover/surface alteration to world generation
+- Added new biomes (swamp, badlands, lush desert, plains)
+- Added basic house generation, one per biome
+- Added a new "delta map" that records where caves affect the surface of the world (makes it so ground cover and 
+  houses are not floating and instead are placed where the caved-out ground is)
+  
+October 14, 2019
+- Fixed missing code in house generation script
+- Created this changelog
+
+November 2, 2019
+- Added cloud generation framework
+
+November 16, 2019
+- Added lava pit biome
+- Added deep ocean biome
+- Added Jungle Poison Biome
+- Added new Biome property: liquidBlock
+- Reintroduced fine scale noise to heightmap generation
+- Tweaked biome noise values and heights
+- Added underwater ground cover
+- Added poison block
+- Fixed transparent block behavior to allow for poison and lava to behave like water in terms of visibility
+- Mountains now have 'snow' (cloud blocks for now) at high elevations
+- When caves are generated, they no longer remove stone that is directly adjacent to liquid
+
+November 23, 2019
+- Added Pine and Ball-shaped trees
+- Added a tree generation property that removes a percentage of leaves
+- Added Green Mountains biome
+- Biome List can be used to only generate wanted biomes, with choosable percentages of each biome
+
+November 24, 2019
+- Revamped Jungle Poison biome to have a lot more trees, which are both taller and more interesting
+- Swamp biome trees are more interesting and swampy
+- Added Island biome
+
+November 27, 2019
+- Added an actually good cloud system: uses 3d simplex noise to make a layer of clouds about 5 blocks thick, high in the air
+
+December 7, 2019
+- Added gravity!
+- Added floor collision!
+- Created more camera control functions: move with vector and move to position
+
+December 8, 2019
+- Began work on wall collision: collisions are detected, but handling does not work yet
+
+December 14, 2019
+- Changed floor detection to ignore liquid blocks
+- Changed quarter-step algorithm to be n-step to allow more or less precise collision detection; gravity
+  now uses 8th-steps to be more precise, and gravity's deltatime is maxed at 0.15 seconds so you don't
+  clip through the floor at low frame rates
+- Fixed wall collision by just lowering the player's speed and capping deltatime. Current system is not super efficient
+  and also only works at low speeds, but for now it works.
+
+December 15, 2019
+- Block placement and removal no longer passes through other blocks, and also is more accurate
+
+May 15, 2020
+- Resumed work on Good Minecraft
+- Tweaked ground cover for Forest, Jungle and Swamp biomes
+- Added horizontal and vertical biome scaling option for world generation
+- Added ceiling collision
+- Changed 'poison' liquid to turquoise water
+
+May 19, 2020
+- Added sun angle feature, including a day/night cycle
+- Added a light on the player
+- Fixed lighting bug where light hitting the back side of polygons would subtract color instead of adding it
+- Added rudimentary placeable light source

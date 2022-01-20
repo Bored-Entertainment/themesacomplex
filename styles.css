@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 body {
-    background-color: #23272a;
+    background-color: #23272a !important;
 }
- .2048 {
-     color:black;
 
- }
 a {
     font-family: 'Ubuntu Mono', monospace;
     color: white;
@@ -85,6 +82,6 @@ h6 {
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.text-center {
-    text-align: center !important;
+*, ::after, ::before {
+    box-sizing: initial !important;
 }

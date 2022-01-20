@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: game
+title: "Geometry Dash"
+---
 
-<head>
-    <meta charset="UTF-8">
-    <title>Geometry Dash - The Mesa Complex</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
-    <link href="../../bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../styles.css" media="screen" />
-    <!--Favicon Information-->
-    <link href="../../favicon/favicon.ico">
-
-    <style media="screen">
+<style media="screen">
         html,
         body {
             height: 100%;
@@ -184,48 +176,20 @@
             }
     </style>
 
-
-</head>
-
-<body>
-    <div class="topnav">
-        <img src="../../images/smalllogo.png" width="25" height="25" alt="searchlogo" class="searchlogo">
-        <a href="../../">Home</a>
-        <a href="../../info/about">About</a>
-        <a href="../../info/contact">Contact</a>
-        <input type="text" placeholder="Search..">
+<div id="wrapper">
+    <canvas id="stage"></canvas>
+    <div id="monitors"></div>
+    <div id="asking-box">
+        <label id="question" for="answer">Question</label>
+        <input type="text" id="answer">
     </div>
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-
-                <a class="home" href="../../">
-                    <h1>The Mesa Complex</h1>
-                </a>
-                <h2>Geometry Dash</h2>
-                <div id="wrapper">
-
-                    <canvas id="stage"></canvas>
-                    <div id="monitors"></div>
-                    <div id="asking-box">
-                        <label id="question" for="answer">Question</label>
-                        <input type="text" id="answer">
-                    </div>
-                </div>
+<span id="loading-progress">...</span>
 
 
-                <span id="loading-progress">...</span>
-
-
-                <script type="text/javascript" src="./gdash.js"></script>
-                <a href="gdash.zip" download class="btn btn-outline-dark">Download</a>
-                <p>This is a scratch remake ported to javascript Made By: Griffpatch</p>
-                <br>
-                <br>
-                <iframe width="100%" height="400" src="../../more/footer"></iframe>
-
-            </div>
-</body>
-
-</html>
+<script type="text/javascript" src="gdash.js"></script>
+<a href="gdash.zip" download class="btn btn-secondary">Download</a>
+<p>This is a scratch remake ported to javascript Made By: Griffpatch</p>
+<br>
+<br>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="/images/smalllogo.png" />
+    <link rel="icon" type="image/png" href="/images/lambda.png" />
     <title>{{ page.title }} – {{ site.title }}</title>
     <script src="/bootstrap/bootstrap.bundle.min.js"></script>
     <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -12,12 +12,33 @@
 
 <body>
     <div class="topnav">
-        <img href="/" src="/images/smalllogo.png" width="25" height="25" alt="searchlogo" class="searchlogo">
+        <img href="/" src="/images/lambda.png" width="25" height="25" alt="searchlogo" class="searchlogo">
         <a href="/">Home</a>
         <a href="/info/about.html">About</a>
         <a href="/info/contact.html">Contact</a>
         <input type="text" placeholder="Search..">
     </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+
+            {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+            <li class="breadcrumb-item active" aria-current="page">{{ crumb | replace:'-',' ' | remove:'.html' |
+                capitalize }}</li>
+            {% else %}
+            <li class="breadcrumb-item"><a
+                    href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{
+                    crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+            {% endif %}
+            {% endfor %}
+
+
+
+        </ol>
+    </nav>
 
     <div class="container">
         <div class="row text-center">
@@ -35,7 +56,7 @@
 
     <br>
 
-    <script src="../../ruffle/ruffle.js"></script>
+    <script src="/ruffle/ruffle.js"></script>
 </body>
 
 </html>

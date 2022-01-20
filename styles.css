@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 body {
     background-color: #23272a !important;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 a {
@@ -77,11 +78,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     color: white;
     font-family: 'Ubuntu Mono', monospace;
 }
 
 *, ::after, ::before {
     box-sizing: initial !important;
+}
+
+.breadcrumb {
+    color: white;
+    padding: 8px;
 }

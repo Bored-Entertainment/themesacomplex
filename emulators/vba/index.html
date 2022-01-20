@@ -4,8 +4,10 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="../../images/smalllogo.png" />
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="/images/smalllogo.png" />
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
     <title>VBA</title>
 </head>
 
@@ -15,7 +17,7 @@
         a:visited {
             color: white;
         }
-        
+
         html,
         body {
             position: fixed;
@@ -26,7 +28,7 @@
             touch-action: none;
             cursor: inherit;
         }
-        
+
         body {
             background-color: rgb(35, 39, 42);
             color: #FFFFFF;
@@ -36,25 +38,25 @@
             height: 100vh;
             font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
-        
+
         hr {
             color: white;
         }
-        
+
         button {
             border: 2px solid white;
             background: transparent;
             color: white;
             padding: .5em;
         }
-        
+
         .vk-round {
             text-align: center;
             vertical-align: middle;
             border-radius: 50%;
             display: inline-block;
         }
-        
+
         .vk {
             color: white;
             background-color: rgba(35, 39, 42, 1);
@@ -64,15 +66,15 @@
             vertical-align: middle;
             display: inline-block;
         }
-        
+
         .vk-hide {
             background-color: transparent !important
         }
-        
+
         .vk-touched {
             background-color: white !important
         }
-        
+
         .menu {
             background: rgb(35, 39, 42);
             position: absolute;
@@ -84,13 +86,13 @@
             z-index: 999;
             margin: 8px;
         }
-        
+
         #gba-canvas {
             position: absolute;
             z-index: -1;
             image-rendering: pixelated;
         }
-        
+
         #vk-layer {
             position: absolute;
             left: 0;
@@ -100,7 +102,7 @@
             z-index: 3;
             touch-action: none;
         }
-        
+
         #msg-layer {
             position: absolute;
             left: 0;
@@ -124,12 +126,21 @@
     </div>
     <div id="welcome" class="menu">
         <div class="topnav">
-            <img href="../../" src="../../images/smalllogo.png" width="25" height="25" alt="searchlogo" class="searchlogo">
+            <img href="../../" src="../../images/smalllogo.png" width="25" height="25" alt="searchlogo"
+                class="searchlogo">
             <a href="../../">Home</a>
             <a href="../../info/about.html">About</a>
             <a href="../../info/contact.html">Contact</a>
             <input type="text" placeholder="Search..">
         </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/emulators/">Emulators</a></li>
+                <li class="breadcrumb-item active" aria-current="page">VBA</li>
+            </ol>
+        </nav>
 
         <h2>VBA</h2>
         <hr>
@@ -143,12 +154,15 @@
                 <option value="goodBoyAdv">goodBoyAdv</option>
             </select>
 
-            <p>or choose your own file:<br><input style="padding:.5em; border:2px solid white;" type="file" id="romFile" onchange="onFileSelected()" /></p>
+            <p>or choose your own file:<br><input style="padding:.5em; border:2px solid white;" type="file" id="romFile"
+                    onchange="onFileSelected()" /></p>
 
         </div>
-        <hr> Ver. 2021.01.14 | <a target="_blank" href="https://github.com/44670/vba-next-wasm">https://github.com/44670/vba-next-wasm</a>
+        <hr> Ver. 2021.01.14 | <a target="_blank"
+            href="https://github.com/44670/vba-next-wasm">https://github.com/44670/vba-next-wasm</a>
         <div id="ios-hint" hidden>
-            Due to limitations of iOS, please <b>add this page to the home screen</b> and launch it from the home screen icon to enable features including savegame and full screen.
+            Due to limitations of iOS, please <b>add this page to the home screen</b> and launch it from the home screen
+            icon to enable features including savegame and full screen.
             <p style="text-align: center;">👇</p>
         </div>
     </div>
@@ -180,7 +194,7 @@
             alert('Sorry, your browser does not support WebAssembly. :(')
         }
 
-        window.onerror = function(msg, url, line, col, error) {
+        window.onerror = function (msg, url, line, col, error) {
             var extra = !col ? '' : '\ncolumn: ' + col;
             extra += !error ? '' : '\nerror: ' + error;
             alert("Error: " + msg + "\nurl: " + url + "\nline: " + line + extra);
@@ -288,7 +302,7 @@
                 return;
             }
             try {
-                audioContext = new(window.AudioContext || window.webkitAudioContext)({
+                audioContext = new (window.AudioContext || window.webkitAudioContext)({
                     latencyHint: 0.0001,
                     sampleRate: 48000
                 });
@@ -299,7 +313,7 @@
                 audioContext.resume()
             } catch (e) {
                 console.log(e)
-                    //alert('Cannnot init sound ')
+                //alert('Cannnot init sound ')
             }
         }
 
@@ -347,7 +361,7 @@
 
         function loadSaveGame(index, cb) {
             console.log('load', gameID, index)
-            localforage.getItem(gameID + '-save-' + index, function(err, data) {
+            localforage.getItem(gameID + '-save-' + index, function (err, data) {
                 //console.log(err, data)
                 if (data) {
                     wasmSaveBuf.set(data)
@@ -363,7 +377,7 @@
         function saveSaveGame(index, cb) {
             console.log('save', gameID, index)
             tmpSaveBuf.set(wasmSaveBuf)
-            localforage.setItem(gameID + '-save-' + index, tmpSaveBuf, function(err, data) {
+            localforage.setItem(gameID + '-save-' + index, tmpSaveBuf, function (err, data) {
                 cb(true)
             })
         }
@@ -382,7 +396,7 @@
             var file = document.getElementById('sav-file').files[0]
             if (file) {
                 var fileReader = new FileReader()
-                fileReader.onload = function(event) {
+                fileReader.onload = function (event) {
                     var arrayBuffer = event.target.result
                     var u8 = new Uint8Array(arrayBuffer)
                     wasmSaveBuf.set(u8)
@@ -415,7 +429,7 @@
             Module.HEAPU8.set(u8, romBuffer)
             var ret = Module._loadRom(u8.length)
             document.getElementById('welcome').hidden = true
-            loadSaveGame(0, function() {
+            loadSaveGame(0, function () {
                 Module._resetCpu()
                 isRunning = true
             })
@@ -434,8 +448,8 @@
             }
             romFileName = fn
             document.getElementById('select-rom').innerText = 'Downloading...'
-            fetch('roms/' + fn + '.gba').then(function(resp) {
-                resp.arrayBuffer().then(function(ab) {
+            fetch('roms/' + fn + '.gba').then(function (resp) {
+                resp.arrayBuffer().then(function (ab) {
                     loadRomArrayBuffer(ab)
                 })
             });
@@ -452,7 +466,7 @@
                 romFileName = file.name
                 var arrayBuffer
                 var fileReader = new FileReader()
-                fileReader.onload = function(event) {
+                fileReader.onload = function (event) {
                     var arrayBuffer = event.target.result
                     loadRomArrayBuffer(arrayBuffer)
                 };
@@ -538,11 +552,11 @@
             vkh = baseSize
             vkw = baseSize
             offTop += baseSize * 3
-                /*
-                offLeft = isLandscape ? (baseSize * 1) : 0
-                if (baseSize * 6 > window.innerWidth) {
-                    offLeft = 0
-                }*/
+            /*
+            offLeft = isLandscape ? (baseSize * 1) : 0
+            if (baseSize * 6 > window.innerWidth) {
+                offLeft = 0
+            }*/
             offLeft = 0
 
             keyState['up'][0].style = makeVKStyle(offTop, offLeft + vkw, vkw, vkh, fontSize)
@@ -681,7 +695,7 @@
 
         function convertKeyCode(keyCode) {
             const keymap = [90, 88, 8, 13, 39, 37, 38, 40, 17, 16]
-                //8bitdo Zero2 in Keyboard Mode
+            //8bitdo Zero2 in Keyboard Mode
             const keymap2 = [71, 74, 78, 79, 70, 69, 67, 68, 77, 75]
             for (var i = 0; i < 10; i++) {
                 if (keyCode == keymap[i]) {
@@ -694,7 +708,7 @@
             return -1
         }
 
-        document.onkeydown = function(e) {
+        document.onkeydown = function (e) {
             tryInitSound()
             console.log(e.keyCode)
             if (!isRunning) {
@@ -708,7 +722,7 @@
             }
         }
 
-        document.onkeyup = function(e) {
+        document.onkeyup = function (e) {
             if (!isRunning) {
                 return
             }
@@ -727,10 +741,10 @@
                 return;
             }
             var state = Module._updateSaveBufState()
-                //console.log(state)
+            //console.log(state)
             if ((lastCheckedSaveState == 1) && (state == 0) && (isSaveSupported)) {
                 showMsg('Auto saving, please wait...')
-                saveSaveGame(0, function() {
+                saveSaveGame(0, function () {
                     console.log('save done')
                 })
             }
@@ -746,7 +760,7 @@
         function showMsg(msg) {
             document.getElementById('msg-text').innerText = msg
             document.getElementById('msg-layer').hidden = false
-            setTimeout(function() {
+            setTimeout(function () {
                 document.getElementById('msg-layer').hidden = true
             }, 1000)
         }
@@ -770,7 +784,7 @@
             document.getElementById('pause-menu').hidden = !t
         }
 
-        localforage.ready().then(function() {}).catch(function(err) {
+        localforage.ready().then(function () { }).catch(function (err) {
             alert('Save storage not supported: ' + err);
         })
 
@@ -796,7 +810,7 @@
             document.getElementById('cht-value').value = '0x' + val.toString(16)
         }
 
-        window.addEventListener("gamepadconnected", function(e) {
+        window.addEventListener("gamepadconnected", function (e) {
             console.log("Gamepad connected")
         });
     </script>

@@ -2,7 +2,10 @@
 body {
     background-color: #23272a;
 }
+ .2048 {
+     color:black;
 
+ }
 a {
     font-family: 'Ubuntu Mono', monospace;
     color: white;

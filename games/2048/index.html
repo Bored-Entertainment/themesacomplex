@@ -2,94 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>2048</title>
+    <meta charset="UTF-8">
+    <title>The Mesa Complex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="../../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../styles.css" media="screen" />
+    <!--Favicon Information-->
 
     <link href="style/main.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Schoolgrounds">
-    <meta name="description" content="By Students For Students">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Schoolgrounds">
-    <meta property="og:description" content="By Students For Students">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Schoolgrounds">
-    <meta property="twitter:description" content="By Students For Students">
-
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 
 <body>
+    <div class="topnav">
+        <img src="../../images/smalllogo.png" width="25" height="25" alt="searchlogo" class="searchlogo">
+        <a href="../../">Home</a>
+        <a href="../../info/about">About</a>
+        <a href="../../info/contact">Contact</a>
+        <input type="text" placeholder="Search..">
+    </div>
+
     <div class="container">
-        <div class="heading">
-            <h1 class="title">2048</h1>
-            <div class="scores-container">
-                <div class="score-container">0</div>
-                <div class="best-container">0</div>
-            </div>
-        </div>
-        <p class="game-intro"><span class="intro-container">Join the numbers and get to the</span><span class="intro-container"><strong>&nbsp;2048&nbsp;</strong></span><span class="intro-container"><strong>tile!</strong></span></p>
+        <div class="row">
+            <div class="col">
 
-        <div class="game-container">
-            <div class="game-message">
-                <p></p>
-                <div class="lower">
-                    <a class="keep-playing-button">Keep going</a>
-                    <a class="retry-button">Try again</a>
-                </div>
-            </div>
+                <a class="home" href="../../">
+                    <h1>The Mesa Complex</h1>
+                </a>
+                <div class="container">
+                    <div class="heading">
+                        <h1 class="title">2048</h1>
+                        <div class="scores-container">
+                            <div class="score-container">0</div>
+                            <div class="best-container">0</div>
+                        </div>
+                    </div>
+                    <p class="game-intro"><span class="intro-container">Join the numbers and get to the</span><span class="intro-container"><strong>&nbsp;2048&nbsp;</strong></span><span class="intro-container"><strong>tile!</strong></span></p>
 
-            <div class="grid-container">
-                <div class="grid-row">
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                </div>
-                <div class="grid-row">
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                </div>
-                <div class="grid-row">
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                </div>
-                <div class="grid-row">
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                    <div class="grid-cell"></div>
-                </div>
-            </div>
+                    <div class="game-container">
+                        <div class="game-message">
+                            <p></p>
+                            <div class="lower">
+                                <a class="keep-playing-button">Keep going</a>
+                                <a class="retry-button">Try again</a>
+                            </div>
+                        </div>
 
-            <div class="tile-container">
+                        <div class="grid-container">
+                            <div class="grid-row">
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                                <div class="grid-cell"></div>
+                            </div>
+                        </div>
 
-            </div>
-        </div>
+                        <div class="tile-container">
+
+                        </div>
+                    </div>
 
 
-        <script src="js/animframe_polyfill.js"></script>
-        <script src="js/keyboard_input_manager.js"></script>
-        <script src="js/html_actuator.js"></script>
-        <script src="js/grid.js"></script>
-        <script src="js/tile.js"></script>
-        <script src="js/local_score_manager.js"></script>
-        <script src="js/game_manager.js"></script>
-        <script src="js/application.js"></script>
+                    <script src="js/animframe_polyfill.js"></script>
+                    <script src="js/keyboard_input_manager.js"></script>
+                    <script src="js/html_actuator.js"></script>
+                    <script src="js/grid.js"></script>
+                    <script src="js/tile.js"></script>
+                    <script src="js/local_score_manager.js"></script>
+                    <script src="js/game_manager.js"></script>
+                    <script src="js/application.js"></script>
+                    <iframe width="100%" height="400" src="../../more/footer"></iframe>
+
 </body>
 
 </html>

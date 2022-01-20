@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="../../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../default.css" media="screen" />
+    <meta charset="UTF-8">
+    <title>Atari Game Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon Information-->
+    <link rel="apple-touch-icon" sizes="76x76" href="../../apple-touch-icon.png?v=xQ7jY9YYOG">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png?v=xQ7jY9YYOG">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png?v=xQ7jY9YYOG">
+    <link rel="manifest" href="../../site.webmanifest?v=xQ7jY9YYOG">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg?v=xQ7jY9YYOG" color="#0085ab">
+    <link rel="shortcut icon" href="../../favicon.ico?v=xQ7jY9YYOG">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Schoolgrounds ">
+    <meta name="description" content="By Students For Students">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Schoolgrounds">
+    <meta property="og:description" content="By Students For Students">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Schoolgrounds">
+    <meta property="twitter:description" content="By Students For Students">
+</head>
+
+<style>
+    img {
+        cursor: pointer;
+    }
+</style>
+
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../">Schoolgrounds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown">
+                            <li><a class="dropdown-item" href="../../games/">Games</a></li>
+                            <li><a class="dropdown-item" href="../../other/flashgames/">Flash Games</a></li>
+                            <li><a class="dropdown-item" href="../../other/retro/">Retro</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../other/gameofweek/">Game Of The Week</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../other/links/">Links</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../other/theportal/">The Portal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../videos/">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="pixel"><a href="../../">Schoolgrounds</a></h1>
+        </a>
+        <div style="margin: 30px auto 0; min-height: 594px;">
+            <div id="javatari-screen" style="margin: 0 auto; box-shadow: 2px 2px 10px rgb(60, 60, 60);"></div>
+            <div id="javatari-console-panel" style="margin: 0 auto; box-shadow: 2px 2px 10px rgb(60, 60, 60);"></div>
+        </div>
+
+        <script src="javatari/javatari.js"></script>
+
+        <br>
+
+        <img alt="Adventure" src="covers/c_Adventure_Picture_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Adventure (1980) (Atari) (PAL).a26');" />
+        <img alt="AirRaiders" src="covers/b_AirRaiders_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Air Raiders (1982) (M Network).bin');" />
+        <img alt="AirSeaBattle" src="covers/c_AirSeaBattle_Picture_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Air-Sea Battle (1977) (Atari) (PAL).a26');" />
+        <img alt="Asteroids" src="covers/c_Asteroids_Picture_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Asteroids (1981) (Atari) (PAL).a26');" />
+        <img alt="Astroblast" src="covers/b_Astroblast_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Astroblast (1989) (Telegames) (PAL).a26');" />
+        <img alt="Barnstorming" src="covers/c_Barnstorming_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Barnstorming (1982) (Activision) (PAL).a26');" />
+        <img alt="Basketball" src="covers/c_Basketball_Picture_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Basketball (1978) (Atari) (PAL).a26');" />
+        <img alt="Battlezone" src="covers/c_Battlezone_Silver_front.jpg" width=100 onClick="Javatari.loadROMFromURL('roms/Battlezone (1983) (Atari) (PAL).a26');" />
+        <img alt="Breakout" src="covers/sbreakout.jpeg" width=100 height=125 onClick="Javatari.loadROMFromURL('roms/Super Breakout (1978) (Atari) (PAL) [a1].a26');" />
+        <img alt="Pitfall" src="covers/pitfall.jpg" width=100 height=125 onClick="Javatari.loadROMFromURL('roms/Pitfall! (1982) (Activision) (PAL) [!].a26');" />
+        <img alt="ET" src="covers/et.jpeg" width=100 height=125 onClick="Javatari.loadROMFromURL('roms/E.T. The Extra-Terrestrial (1982) (Atari) (PAL) [a1][!].a26');" />
+        <img alt="Tetris" src="covers/tetris.jpg" width=100 height=125 onClick="Javatari.loadROMFromURL('roms/Tetris 2600 (Colin Hughes) [o1].a26');" />
+    </div>
+</body>
+
+</html>

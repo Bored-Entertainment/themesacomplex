@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
 body {
     background-color: #23272a;
 }
 
 a {
-  font-family: 'Ubuntu Mono', monospace;
-  color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
 }
 
 .bannerlogo {
@@ -16,14 +15,12 @@ a {
     width: 50%;
 }
 
-
 .topnav {
     overflow: hidden;
     background-color: #121415;
-  }
-  
- 
-  .topnav a {
+}
+
+.topnav a {
     float: left;
     display: block;
     color: white;
@@ -32,27 +29,25 @@ a {
     text-decoration: none;
     font-size: 17px;
     font-family: 'Ubuntu Mono', monospace;
-  }
+}
 
-  .topnav img {
+.topnav img {
     float: left;
     display: block;
     padding: 14px 16px;
-  }
-  
+}
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
+}
 
-  .topnav a.active {
+.topnav a.active {
     background-color: #fb7e14;
     color: white;
-  }
+}
 
-  .topnav input[type=text] {
+.topnav input[type=text] {
     float: right;
     padding: 6px;
     border: none;
@@ -60,19 +55,19 @@ a {
     margin-right: 16px;
     font-size: 17px;
     font-family: 'Ubuntu Mono', monospace;
-  }
-  
+}
 
-  @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
+@media screen and (max-width: 600px) {
+    .topnav a,
+    .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
     }
     .topnav input[type=text] {
-      border: 1px solid #ccc;
+        border: 1px solid #ccc;
     }
-  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="/images/smalllogo.png" />
+    <title>{{ page.title }} – {{ site.title }}</title>
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="topnav">
+        <img href="/" src="/images/smalllogo.png" width="25" height="25" alt="searchlogo" class="searchlogo">
+        <a href="/">Home</a>
+        <a href="/info/about.html">About</a>
+        <a href="/info/contact.html">Contact</a>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+
+                <h2>{{ page.title }}</h2>
+                <hr>
+
+                {{ content }}
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <script src="../../ruffle/ruffle.js"></script>
+</body>
+
+</html>

@@ -86,3 +86,8 @@ p {
 *, ::after, ::before {
     box-sizing: initial !important;
 }
+
+.breadcrumb {
+    color: white;
+    padding: 8px;
+}

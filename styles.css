@@ -74,4 +74,9 @@ a {
 
 h1 {
     color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.text-center {
+    text-align: center !important;
 }

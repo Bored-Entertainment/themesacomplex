@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The Mesa Complex"
+title: "Home"
 ---
 
 <img src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">

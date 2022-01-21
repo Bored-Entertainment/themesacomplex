@@ -4,13 +4,13 @@ title: "Home"
 ---
 <br>
 <img src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
-A pretty cool site filled to the brim with old flash games, dos games, emulators and tools to troll your friends!
+<p style="font-size: 20px;">A pretty cool site filled to the brim with old flash games, dos games, emulators and tools to troll your friends!</a>
 <br>
 <br>
-<h1 class="text-center">Games:</h1>
-<a class="text-center" href="games">Games</a>
-<a class="text-center" href="emulators">Emulators</a>
-<a class="text-center" href="bypass">Bypasses and Proxys</a>
+<h1 class="text-center">Categorys:</h1>
+<h2 href="games">Games</a>
+<h2 href="emulators">Emulators</a>
+<h2 href="bypass">Bypasses and Proxys</a>
 
 
 

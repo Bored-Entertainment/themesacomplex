@@ -6,7 +6,7 @@ title: "Home"
 <img src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <p style="font-size: 20px;">A pretty cool site filled to the brim with old flash games, dos games, emulators and tools to troll your friends!</p>
 <br>
-<br>
+
 <h1 class="text-center">Categorys:</h1>
 <a class="list" href="games">Games</a>
 <a class="list" href="emulators">Emulators</a>

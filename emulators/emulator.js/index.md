@@ -46,7 +46,7 @@ title: "Emulator.JS"
       }
     })
     </script>
-    Select Game Rom: <input type="file" id="file">
+    <input type="file" id="file"> Select Game Rom: </input>
 
 
 <h3>Systems:</h3>

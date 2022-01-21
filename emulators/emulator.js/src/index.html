@@ -21,8 +21,14 @@
 					var core = 'gba';
 				} else if (['gb'].includes(extension)) {
 					var core = 'gb';
-				} else {
-					var core = prompt('Input core (examples: nes, snes, n64, gb, gba, psx)');
+                } else if (['vb'].includes(extension)) {
+                    var core = 'vb';
+                } else if (['cue'].includes(extension)) {
+                    var core = 'psx';
+                } else if (['md'].includes(extension)) {
+                    var core = 'sega';
+                } else {
+					var core = prompt('Input core (examples: nes, snes, n64, gb, gba, psx, vb)');
 				};
 				var a = document.createElement('div');
 				a.style = "width:640px;height:480px;max-width:100%";

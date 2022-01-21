@@ -1,4 +1,4 @@
-  ---
+---
 layout: game
 title: "Newgrounds Rumble"
 ---

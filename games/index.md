@@ -13,7 +13,7 @@ title: Games
 <br>
 <h1 class="text-center">Games:</h1>
 <a class="text-center" href="2048">2048</a>
-<a class="text-center" href="achivement_unlocked">Achivement Unlocked</a>
+<a class="text-center" href="achievement_unlocked">Achivement Unlocked</a>
 <a class="text-center" href="adg">Action Driving Game</a>
 <a class="text-center" href="alienhominid">Alien Hominid</a>
 <a class="text-center" href="bbs">Bang, Boom, Splat!</a>

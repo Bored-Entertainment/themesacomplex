@@ -8,9 +8,9 @@ title: "Home"
 <br>
 <br>
 <h1 class="text-center">Categorys:</h1>
-<h2 href="games">Games</h2>
-<h2 href="emulators">Emulators</h2>
-<h2 href="bypass">Bypasses and Proxys</h2>
+<a class="list" href="games">Games</a>
+<a class="list" href="emulators">Emulators</a>
+<a class="list" href="bypass">Bypasses and Proxys</a>
 
 
 

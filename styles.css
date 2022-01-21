@@ -15,6 +15,12 @@ p {
     text-align: center;
 }
 
+h1 {
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
 .bannerlogo {
     display: block;
     margin-left: auto;

@@ -40,6 +40,26 @@ h2 {
     width: 50%;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #23272a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #393d3f;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4f5255;
+  }
+
 .topnav {
     overflow: hidden;
     background-color: #121415;

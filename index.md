@@ -8,15 +8,15 @@ title: "Home"
 <br>
 <br>
 <h1 class="text-center">Categorys:</h1>
-<h2 href="games">Games</a>
-<h2 href="emulators">Emulators</a>
-<h2 href="bypass">Bypasses and Proxys</a>
+<h2 href="games">Games</h2>
+<h2 href="emulators">Emulators</h2>
+<h2 href="bypass">Bypasses and Proxys</h2>
 
 
 
 
 
-<p>W.I.P</p>
+<a>W.I.P</a>
 
 <script>
     document.getElementById("homeNav").classList.add("active");

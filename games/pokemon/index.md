@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Pokemon Flash - The Mesa Complex</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
-    <link href="../../bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../styles.css" media="screen" />
-    <!--Favicon Information-->
-    <link href="../../favicon/favicon.ico">
-
 
     ---
     layout: game

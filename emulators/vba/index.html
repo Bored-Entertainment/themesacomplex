@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="/images/smalllogo.png" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="/styles.css">
     <script src="/bootstrap/bootstrap.bundle.min.js"></script>
     <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
             margin: 0;
             width: 100vw;
             height: 100vh;
-            font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: 'Ubuntu Mono', monospace;
         }
 
         hr {
@@ -126,7 +126,7 @@
     </div>
     <div id="welcome" class="menu">
         <div class="topnav">
-            <img href="../../" src="../../images/smalllogo.png" width="25" height="25" alt="searchlogo"
+            <img href="../../" src="../../images/lambda.png" width="25" height="25" alt="searchlogo"
                 class="searchlogo">
             <a href="../../">Home</a>
             <a href="../../info/about.html">About</a>
@@ -147,8 +147,8 @@
         <div id="wasm-loading">
             Loading WebAssembly, please wait...
         </div>
-        <div id="select-rom" hidden>
-            <p>Select a homebrew game to start with:</p>
+        <div id="select-rom" style="position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0;" hidden>
+            <p>Select a game to start with:</p>
             <select style="padding:.5em;" onchange="onHomebrewListSelected()" id="homebrew-list">
                 <option value=""></option>
                 <option value="goodBoyAdv">goodBoyAdv</option>

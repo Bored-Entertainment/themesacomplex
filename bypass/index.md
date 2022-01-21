@@ -13,7 +13,7 @@ title: Bypasses and Proxys
 <ul>
     <ul>
         <li><a href="https://mathworksheets.schoolgroundshtml.tk">Alloy "MathWorkSheets" Proxy</a></li>
-        <li><a href="https://womginx.arph.org/">WomGINX</a></li>
+        <li><a href="https://boredmathwork.herokuapp.com/">WomGINX (MathWorkSheets V2)</a></li>
         <li><a href="https://portablemc.ml/">PortableMC (play minecraft in class without admin perms)</a></li>
     </ul>
 </ul>

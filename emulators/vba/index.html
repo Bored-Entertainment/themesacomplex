@@ -125,13 +125,30 @@
         <button onclick="savRestoreBtn()">Restore</button>
     </div>
 
+    <div id="welcome" class="menu">
+        <div class="topnav">
+            <img href="../../" src="../../images/lambda.png" width="25" height="25" alt="searchlogo"
+                class="searchlogo">
+            <a href="../../">Home</a>
+            <a href="../../info/about.html">About</a>
+            <a href="../../info/contact.html">Contact</a>
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/emulators/">Emulators</a></li>
+                <li class="breadcrumb-item active" aria-current="page">VBA</li>
+            </ol>
+        </nav>
 
         <h2>VBA</h2>
         <hr>
         <div id="wasm-loading">
             Loading WebAssembly, please wait...
         </div>
-        <div id="select-rom" style="position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0;" hidden>
+        <div id="select-rom" hidden>
             <p>Select a game to start with:</p>
             <select style="padding:.5em;" onchange="onHomebrewListSelected()" id="homebrew-list">
                 <option value=""></option>

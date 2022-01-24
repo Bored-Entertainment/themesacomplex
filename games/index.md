@@ -54,7 +54,7 @@ title: Games
 <a class="text-center" href="tetris">Tetris: Flash Edition</a>
 <a class="text-center" href="thereisnogame">There is No Game</a>
 <a class="text-center" href="winmister">Windows Mister</a>
-<a class="text-center" href="WorldsHardestGame">The World's Hardest Game</a>
+<a class="text-center" href="WorldHardestGame">The World's Hardest Game</a>
 <a class="text-center" href="xtractpaperclip">X-Tract Paperclip</a>
 <a class="text-center" href="xx142-b2.exe">XX142-bB.EXE</a>
 

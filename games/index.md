@@ -48,6 +48,7 @@ title: Games
 <a class="text-center" href="portalflash">Portal: Flash Edition</a>
 <a class="text-center" href="RiddleSchool">Riddle School Games</a>
 <a class="text-center" href="sansfight">Sans Fight</a>
+<a class="text-center" href="slope">Slope</a>
 <a class="text-center" href="sm63">Super Mario 63</a>
 <a class="text-center" href="solitude">Solitude</a>
 <a class="text-center" href="super-smash-flash">Super Smash Flash</a>

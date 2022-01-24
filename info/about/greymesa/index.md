@@ -6,7 +6,8 @@ title: "greymesa"
 <h1 class="text-center">greymesa</h1>
 <br>
 <br>
-<a>greymesa is a student who really dislikes the blocks schools put in place, he has vowed to use his programming skills to make as many bypasses as he possibly can.</a>
+<a>greymesa is a guy on the internet who plays half-life in 2022, he also like programming i guess, portfolio with most important projects is linked below</a>
+<a href="https://greymesa.tech">greymesa's website pottfolio</a>
 <script>
 document.getElementById("aboutNav").classList.add("active");
 </script>

@@ -11,5 +11,5 @@ title: "Super Mario Bros. 2 the real one"
     EJS_gameUrl = 'smb2.fds'; // Url to Game rom
     EJS_core = 'nes';
     EJS_lightgun = false; // Lightgun
-    EJS_pathtodata = 'data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
+    EJS_pathtodata = '../../../../src/data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
 </script>

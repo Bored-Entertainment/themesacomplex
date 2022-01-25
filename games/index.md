@@ -16,7 +16,9 @@ title: Games
             <li><a href="bbs/">Bang, Boom, Splat!</a></li>
             <li><a href="bloxors/">Bloxors</a></li>
             <li><a href="bowman/">Bowman</a></li>
-            <li><a href="btd/">Bloons Tower Degense</a></li>
+            <li><a href="btd/">Bloons Tower Defense</a></li>
+            <li><a href="candybox/">Candybox</a></li>
+            <li><a href="candybox2/">Candybox 2</a></li>
             <li><a href="cookieclicker/">Cookie Clicker</a></li>
             <li><a href="ctr/">Cut The Rope</a></li>
             <li><a href="custom-tetris/">Custom Tetris</a></li>
@@ -66,6 +68,7 @@ title: Games
             <li><a href="super-smash-flash/">Super Smash Flash</a></li>
             <li><a href="tetris/">Tetris: Flash Edition</a></li>
             <li><a href="thereisnogame/">There is No Game</a></li>
+            <li><a href="universal-paperclip/">Universal Paperclips</a></li>
             <li><a href="winmister/">Windows Mister</a></li>
             <li><a href="WorldHardestGame/">The World&#39;s Hardest Game</a></li>
             <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>

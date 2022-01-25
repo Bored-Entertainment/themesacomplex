@@ -1,80 +1,77 @@
 ---
-layout: default
+layout: game
 title: Games
 ---
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item active">Games:</li>
-    </ol>
-</nav>
-
-<br>
-<h1 class="text-center">Games:</h1>
-<a class="text-center" href="3d.city">3D City</a>
-<a class="text-center" href="3Dchess">3D Chess</a>
-<a class="text-center" href="2048">2048</a>
-<a class="text-center" href="achievement_unlocked">Achivement Unlocked</a>
-<a class="text-center" href="adg">Action Driving Game</a>
-<a class="text-center" href="alienhominid">Alien Hominid</a>
-<a class="text-center" href="bbs">Bang, Boom, Splat!</a>
-<a class="text-center" href="bloxors">Bloxors</a>
-<a class="text-center" href="bowman">Bowman</a>
-<a class="text-center" href="btd">Bloons Tower Degense</a>
-<a class="text-center" href="cookieclicker">Cookie Clicker</a>
-<a class="text-center" href="ctr">Cut The Rope</a>
-<a class="text-center" href="custom-tetris">Custom Tetris</a>
-<a class="text-center" href="desktoptd">Desktop Tower Defense</a>
-<a class="text-center" href="dino">Chrome Dino Run</a>
-<a class="text-center" href="duckhunt">Duck Hunt</a>
-<a class="text-center" href="DuckLife">Duck Life</a>
-<a class="text-center" href="fbf">Factory Balls Forever</a>
-<a class="text-center" href="fnf">Friday Night Funkin''</a>
-<a class="text-center" href="FruitNinja">Fruit Ninja</a>
-<a class="text-center" href="fullscreenmario">FullScreen Mario</a>
-<a class="text-center" href="galaga">Galaga</a>
-<a class="text-center" href="gdash">Geometry Dash</a>
-<a class="text-center" href="gpacman">Google Pac-Man</a>
-<a class="text-center" href="henrystikmin">Henry Stikmin</a>
-<a class="text-center" href="HexGL">HexGL</a>
-<a class="text-center" href="hl">Half-Life</a>
-<a class="text-center" href="iq">Impossible Quiz</a>
-<a class="text-center" href="issac">The Binding of Issac</a>
-<a class="text-center" href="linerider">Line Rider</a>
-<a class="text-center" href="mari0">Mari0</a>
-<a class="text-center" href="marioclone">Mario Clone</a>
-<a class="text-center" href="mariocombat">Mario Combat</a>
-<a class="text-center" href="mcclone1">Minecraft Clone</a>
-<a class="text-center" href="meatboy">Super Meat Boy</a>
-<a class="text-center" href="minecraft">Minecraft: Flash Edition</a>
-<a class="text-center" href="minecraftjs">Minecraft: JS Edition</a>
-<a class="text-center" href="minesweeper">MineSweeper</a>
-<a class="text-center" href="mtd2">Minecraft Tower Defense 2</a>
-<a class="text-center" href="ngr">Newgrounds Rumble</a>
-<a class="text-center" href="pacman">Pac-Man: Flash</a>
-<a class="text-center" href="pokemon">Pokemon:Flash Edition</a>
-<a class="text-center" href="pong">V-Pong</a>
-<a class="text-center" href="portalflash">Portal: Flash Edition</a>
-<a class="text-center" href="radius-raid">Radius Raid</a>
-<a class="text-center" href="redball">RedBall</a>
-<a class="text-center" href="RiddleSchool">Riddle School Games</a>
-<a class="text-center" href="sansfight">Sans Fight</a>
-<a class="text-center" href="sleeping-beauty">Sleeping Beauty</a>
-<a class="text-center" href="slope">Slope</a>
-<a class="text-center" href="sm63">Super Mario 63</a>
-<a class="text-center" href="sm64">Super Mario 64</a>
-<a class="text-center" href="solitude">Solitude</a>
-<a class="text-center" href="sonic2">Sonic The Hedgehog 2</a>
-<a class="text-center" href="SpaceCompany">Space Company</a>
-<a class="text-center" href="streetfighter">Street Fighter Alpha</a>
-<a class="text-center" href="super-smash-flash">Super Smash Flash</a>
-<a class="text-center" href="tetris">Tetris: Flash Edition</a>
-<a class="text-center" href="thereisnogame">There is No Game</a>
-<a class="text-center" href="winmister">Windows Mister</a>
-<a class="text-center" href="WorldHardestGame">The World's Hardest Game</a>
-<a class="text-center" href="xtractpaperclip">X-Tract Paperclip</a>
-<a class="text-center" href="xx142-b2.exe">XX142-bB.EXE</a>
-<a class="text-center" href="zelda3d">The Legend of Zelda: But 3D</a>
-
-WIP
+<div class="row">
+    <div class="col"></div>
+    <div class="col text-start">
+        <ul>
+            <li><a href="3d.city/">3D City</a></li>
+            <li><a href="3Dchess/">3DChess</a></li>
+            <li><a href="2048/">2048</a></li>
+            <li><a href="achievement_unlocked/">Achivement Unlocked</a></li>
+            <li><a href="adg/">Action Driving Game</a></li>
+            <li><a href="alienhominid/">Alien Hominid</a></li>
+            <li><a href="bbs/">Bang, Boom, Splat!</a></li>
+            <li><a href="bloxors/">Bloxors</a></li>
+            <li><a href="bowman/">Bowman</a></li>
+            <li><a href="btd/">Bloons Tower Degense</a></li>
+            <li><a href="cookieclicker/">Cookie Clicker</a></li>
+            <li><a href="ctr/">Cut The Rope</a></li>
+            <li><a href="custom-tetris/">Custom Tetris</a></li>
+            <li><a href="desktoptd/">Desktop Tower Defense</a></li>
+            <li><a href="dino/">Chrome Dino Run</a></li>
+            <li><a href="duckhunt/">Duck Hunt</a></li>
+            <li><a href="DuckLife/">Duck Life</a></li>
+            <li><a href="fbf/">Factory Balls Forever</a></li>
+            <li><a href="fnf/">Friday Night Funkin&#39;&#39;</a></li>
+            <li><a href="FruitNinja/">Fruit Ninja</a></li>
+            <li><a href="fullscreenmario/">FullScreen Mario</a></li>
+            <li><a href="galaga/">Galaga</a></li>
+            <li><a href="gdash/">Geometry Dash</a></li>
+            <li><a href="gpacman/">Google Pac-Man</a></li>
+            <li><a href="henrystikmin/">Henry Stikmin</a></li>
+            <li><a href="HexGL/">HexGL</a></li>
+            <li><a href="hl/">Half-Life</a></li>
+            <li><a href="iq/">Impossible Quiz</a></li>
+            <li><a href="issac/">The Binding of Issac</a></li>
+            <li><a href="linerider/">Line Rider</a></li>
+            <li><a href="mari0/">Mari0</a></li>
+            <li><a href="marioclone/">Mario Clone</a></li>
+            <li><a href="mariocombat/">Mario Combat</a></li>
+            <li><a href="mcclone1/">Minecraft Clone</a></li>
+            <li><a href="meatboy/">Super Meat Boy</a></li>
+            <li><a href="minecraft/">Minecraft: Flash Edition</a></li>
+            <li><a href="minecraftjs/">Minecraft: JS Edition</a></li>
+            <li><a href="minesweeper/">MineSweeper</a></li>
+            <li><a href="mtd2/">Minecraft Tower Defense 2</a></li>
+            <li><a href="ngr/">Newgrounds Rumble</a></li>
+            <li><a href="pacman/">Pac-Man: Flash</a></li>
+            <li><a href="pokemon/">Pokemon:Flash Edition</a></li>
+            <li><a href="pong/">V-Pong</a></li>
+            <li><a href="portalflash/">Portal: Flash Edition</a></li>
+            <li><a href="radius-raid/">Radius Raid</a></li>
+            <li><a href="redball/">RedBall</a></li>
+            <li><a href="RiddleSchool/">Riddle School Games</a></li>
+            <li><a href="sansfight/">Sans Fight</a></li>
+            <li><a href="sleeping-beauty/">Sleeping Beauty</a></li>
+            <li><a href="slope/">Slope</a></li>
+            <li><a href="sm63/">Super Mario 63</a></li>
+            <li><a href="sm64/">Super Mario 64</a></li>
+            <li><a href="solitude/">Solitude</a></li>
+            <li><a href="sonic2/">Sonic The Hedgehog 2</a></li>
+            <li><a href="SpaceCompany/">Space Company</a></li>
+            <li><a href="streetfighter/">Street Fighter Alpha</a></li>
+            <li><a href="super-smash-flash/">Super Smash Flash</a></li>
+            <li><a href="tetris/">Tetris: Flash Edition</a></li>
+            <li><a href="thereisnogame/">There is No Game</a></li>
+            <li><a href="winmister/">Windows Mister</a></li>
+            <li><a href="WorldHardestGame/">The World&#39;s Hardest Game</a></li>
+            <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>
+            <li><a href="xx142-b2.exe/">XX142-bB.EXE</a></li>
+            <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
+        </ul>
+    </div>
+    <div class="col"></div>
+</div>

@@ -167,3 +167,10 @@ html {
 	  from{box-shadow: inset -3px 0px 0px #888;}
 	  to{box-shadow: inset -3px 0px 0px transparent;}
 }
+
+#lunrsearch{
+    width: 25%;
+    top: -1px;
+    position: absolute;
+    right: 5px;
+}

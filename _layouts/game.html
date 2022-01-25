@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-134HXE8JTB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-134HXE8JTB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-134HXE8JTB');
-</script>
+        gtag('config', 'G-134HXE8JTB');
+    </script>
     <!-- Primary Meta Tags -->
     <title>{{ page.title }} – {{ site.title }}</title>
     <meta name="title" content="The Mesa Complex - Unblocked Games, Proxys and Emulators.">
@@ -63,13 +63,14 @@
             {% if forloop.last %}
             <li class="breadcrumb-item active" aria-current="page">
                 {{
- crumb | replace:'-',' ' | remove:'.html' |
+                crumb | replace:'-',' ' | remove:'.html' |
                 capitalize
                 }}
             </li>
             {% else %}
             <li class="breadcrumb-item">
-                <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+                <a
+                    href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
                     {{
                     crumb | replace:'-',' ' | remove:'.html' | capitalize
                     }}
@@ -82,6 +83,10 @@
 
         </ol>
     </nav>
+
+    <div id="lunrsearchresults">
+        <ul></ul>
+    </div>
 
     <div class="container">
         <div class="row text-center">

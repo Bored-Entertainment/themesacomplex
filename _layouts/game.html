@@ -11,6 +11,17 @@
 
         gtag('config', 'G-134HXE8JTB');
     </script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WWNF2VN');</script>
+    <!-- End Google Tag Manager -->
     <!-- Primary Meta Tags -->
     <title>{{ page.title }} – {{ site.title }}</title>
     <meta name="title" content="The Mesa Complex - Unblocked Games, Proxys and Emulators.">
@@ -46,6 +57,12 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWNF2VN"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="topnav">
         <a href="/"><img src="/images/lambda.png" width="25" height="25" alt="searchlogo" class="searchlogo"></a>
         <a href="/">Home</a>
@@ -69,8 +86,7 @@
             </li>
             {% else %}
             <li class="breadcrumb-item">
-                <a
-                    href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+                <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
                     {{
                     crumb | replace:'-',' ' | remove:'.html' | capitalize
                     }}

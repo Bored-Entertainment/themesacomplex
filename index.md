@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 ---
 <br>
-<img src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
+<img src="images/spinny-mesa-text.gif" alt="bannerlogo" class="bannerlogo">
 <p style="font-size: 20px;">A pretty cool site filled to the brim with old flash games, dos games, emulators and tools to troll your friends!</p>
 <br>
 

@@ -15,6 +15,7 @@ title: "About"
 <a class="list" href="greymesa">greymesa</a>
 <a class="list" href="pisaucer">PiSaucer</a>
 <a class="list" href="duck">duck</a>
+<a class="list" href="cupofdirtfordinner">cupofdirtfordinner</a>
 <script>
 document.getElementById("aboutNav").classList.add("active");
 </script>

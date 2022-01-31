@@ -10,7 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WZ946DH');</script>
 <!-- End Google Tag Manager -->
 <br>
-<img src="images/spinny-mesa-text.gif" alt="bannerlogo" class="bannerlogo">
+<img src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <p style="font-size: 20px;">A pretty cool site filled to the brim with old flash games, dos games, emulators and tools to troll your friends!</p>
 <br>
 

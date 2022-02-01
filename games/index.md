@@ -78,3 +78,6 @@ title: Games
     </div>
     <div class="col"></div>
 </div>
+<br>
+<br>
+<a href="todo.md">games we will add soon</a>

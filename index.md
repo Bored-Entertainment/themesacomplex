@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <a>W.I.P.</a>
 <br>
-<img src="images/mesacomplexlogo.gif" width="100" height="100" alt="spinnylogo" class="spinnylogo">
+<img src="images/bannerlogo.png" width="100" height="100" alt="bannerlogo" class="bannerlogo">
 <script>
     document.getElementById("homeNav").classList.add("active");
 </script>

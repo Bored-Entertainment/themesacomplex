@@ -3,7 +3,7 @@ layout: default
 title: "About"
 ---
 
-<img src="/images/spinny-mesa-text.gif" alt="bannerlogo" class="bannerlogo">
+<img src="/images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 
 <h1 class="text-center">Badges:</h1>
 <a href="https://discord.com/invite/7qTNdXd"><img src="https://img.shields.io/badge/Discord-7qTNdXd?logo=discord&amp;logoColor=white&amp;color=5865F2"></a>

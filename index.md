@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<a>W.I.P.</a>
+<a>this website ISNT DONE; we intend to add far more games, and also fix the shit we (mainly dirt) broke</a>
 <br>
 <script>
     document.getElementById("homeNav").classList.add("active");

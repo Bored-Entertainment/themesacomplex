@@ -27,7 +27,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
     document.getElementById("homeNav").classList.add("active");
 </script>
-<img src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
+<a href="index.md">
+         <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

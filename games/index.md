@@ -2,7 +2,7 @@
 layout: game
 title: Games
 ---
-
+<p align="center">
 <div class="row">
             <button style="background-color:black; border-color=white"><a href="3d.city/">3D City</a></button>
             <button style="background-color:black; border-color=white"><a href="3Dchess/">3DChess</a></button>
@@ -72,6 +72,7 @@ title: Games
             <button style="background-color:black; border-color=white"><a href="xx142-b2.exe/">XX142-bB.EXE</a></button>
             <button style="background-color:black; border-color=white"><a href="zelda3d/">The Legend of Zelda: But 3D</a></button>
 </div>
+</p>
 <br>
 <br>
 <a href="todo.md">games we will add soon</a>

@@ -13,7 +13,6 @@ title: "About"
 <a href="https://github.com/Bored-Entertainment/badges/commits/main"><img src="https://badgen.net/github/commits/Bored-Entertainment/badges/main"></a>
 <h1 class="text-center">About:</h1>
 <a class="list" href="greymesa">greymesa</a>
-<a class="list" href="pisaucer">PiSaucer</a>
 <a class="list" href="duck">duck</a>
 <a class="list" href="cupofdirtfordinner">cupofdirtfordinner</a>
 <script>

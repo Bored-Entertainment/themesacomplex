@@ -9,7 +9,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WZ946DH');</script>
 <!-- End Google Tag Manager -->
-<img src="images/spinny-mesa-text.gif" alt="bannerlogo" class="bannerlogo">
+<a href="index.md">
+         <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <p style="font-size: 20px;">A pretty cool site filled to the brim with old flash games, dos games, emulators and tools to troll your friends!</p>
 <br>
 
@@ -27,8 +28,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
     document.getElementById("homeNav").classList.add("active");
 </script>
-<a href="index.md">
-         <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

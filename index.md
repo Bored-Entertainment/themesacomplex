@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <a href="/">
          <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
-<p style="font-size: 20px;">A pretty cool site filled to the brim with old flash games, dos games, emulators and tools to troll your friends!</p>
+<p style="font-size: 20px;">Simple yet effective.</p>
 <br>
 
 <h1 class="text-center">Categorys:</h1>
@@ -22,9 +22,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-
-<a>this website ISNT DONE; we intend to add far more games, and also fix the shit we (mainly dirt) broke</a>
-<br>
+<footer>
+<a>Website is still a W.I.P, We are still working at bugs, so please be patient.<a>
+</footer>
 <script>
     document.getElementById("homeNav").classList.add("active");
 </script>

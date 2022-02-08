@@ -70,7 +70,7 @@ class HardcorePlatformer_Quest extends Quest{
     }
     
     public update(): void{
-        if(this.getQuestEnded() == false){            
+        if(this.getQuestEnded() == false){
             // Test if the player won the quest, if so, end the quest and return
             if(this.thePlayerWon()){
                 this.endQuest(true);

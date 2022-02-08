@@ -689,7 +689,7 @@ var CreateAkumaAI = function(player)
     AkumaAI.prototype.onEnemyContinueAttack = function(frame, attacker, hitPoints)
     {
         //projectile pending will handle this.
-        if(!!attacker.CurrentAnimation.Animation.IsProjectile)
+        if(attacker.CurrentAnimation.Animation.IsProjectile)
             return;
 
         //if the player is currently blocking, then hold the block
@@ -818,7 +818,7 @@ var CreateAkumaAI = function(player)
 
             if(y > 300)
             {
-                if(!!isEnemyVulernerable)
+                if(isEnemyVulernerable)
                 {
                     if(dist.Dsq < 120000)
                     {
@@ -878,16 +878,16 @@ var CreateAkumaAI = function(player)
             var requiredState = 0;
             forceBusy = false;
             //mustHit is applied after the array element at which it was found
-            if(!!mustHit)
+            if(mustHit)
                 sequence[i].H = true;
             if(!!autoContinue && sequence[i].AC === undefined)
                 sequence[i].AC = true;
 
-            if(!!sequence[i].MH)
+            if(sequence[i].MH)
                 mustHit = true;
-            if(!!sequence[i].AC)
+            if(sequence[i].AC)
                 autoContinue = true;
-            if(!!sequence[i].SB)
+            if(sequence[i].SB)
                 forceBusy = true;
 
             requiredState = this.AI.getRequiredState(sequence[i].B);
@@ -909,7 +909,7 @@ var CreateAkumaAI = function(player)
             {
                 case "f" : { input = fwd_; break; }
                 case "b" : { input = bk_; break; }
-                case "get_close" : { this.AI.moveToEnemy(0,sequence[i].C); break; } case "jump_in" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; }; this.AI.jumpInToEnemy(0,sequence[i].C); continue; }
+                case "get_close" : { this.AI.moveToEnemy(0,sequence[i].C); break; } case "jump_in" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; } this.AI.jumpInToEnemy(0,sequence[i].C); continue; }
                 case "j" : { this.AI.jumpUp(undefined,undefined,sequence[i].A); continue; } case "fj" : { this.AI.jumpTowardEnemy(undefined,undefined,sequence[i].A); continue; } case "bj" : { this.AI.jumpAwayFromEnemy(undefined,undefined,sequence[i].A); continue; }
                 case "lp1" : { input = lowPunches_[0]; break; } case "lp2" : { input = lowPunches_[1]; break; } case "lp3" : { input = lowPunches_[2]; break; }
                 case "p1" : { input = punches_[0]; break; } case "p2" : { input = punches_[1]; break; } case "fp2" : { input = punches_[3]; break; } case "p3" : { input = punches_[2]; break; }
@@ -927,10 +927,10 @@ var CreateAkumaAI = function(player)
                 case "tfb" : { input = teleportFarBackInput_; break; }
                 case "tcf" : { input = teleportCloseFowardInput_; break; }
                 case "tcb" : { input = teleportCloseBackInput_; break; }
-                case "jdk" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; }; this.doJumpThrustKick(0,sequence[i].C); continue; }
-                case "jhdk" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; }; this.doJumpThrustHardKick(0,sequence[i].C); continue; }
+                case "jdk" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; } this.doJumpThrustKick(0,sequence[i].C); continue; }
+                case "jhdk" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; } this.doJumpThrustHardKick(0,sequence[i].C); continue; }
                 default: { this.AI.sendInput(FLAGS.CLEAR_INPUT,sequence[i].A || 0); break; }
-            };
+            }
             //this.AI.sendInput(FLAGS.CLEAR_INPUT,sequence[i].A || 0,input,sequence[i].H, undefined, sequence[i].AC, requiredState);
             this.AI.sendInputWithParams({
                 flags:FLAGS.CLEAR_INPUT
@@ -974,10 +974,10 @@ var CreateAkumaAI = function(player)
         {
             if(!this.AI.Player.isMobile())
                 return;
-            if(!!this.reactAirborne(frame, attacker, isEnemyVulernerable, x, y))
+            if(this.reactAirborne(frame, attacker, isEnemyVulernerable, x, y))
             {
             }
-            else if(!!this.reactNotAirborne(frame,attacker, isEnemyVulernerable, x, y))
+            else if(this.reactNotAirborne(frame,attacker, isEnemyVulernerable, x, y))
             {
             }
         }
@@ -988,7 +988,7 @@ var CreateAkumaAI = function(player)
         if(!this.AI.Player.isMobile() || this.AI.Player.isBlocking())
             return;
 
-        if(!!this.AI.isAttackReactBusy())
+        if(this.AI.isAttackReactBusy())
             return;
 
         var item = this.AI.getClosestEnemy();
@@ -1058,11 +1058,11 @@ var CreateAkumaAI = function(player)
         if(!this.AI.AllowOverrideBlock && !this.AI.Player.canBlock())
             this.AI.AllowOverrideBlock = true;
 
-        if(!!this.AI.AllowOverrideBlock)
+        if(this.AI.AllowOverrideBlock)
         {
             if(!this.AI.Player.isMobile())
             {
-                if(!!this.AI.JustAttacked)
+                if(this.AI.JustAttacked)
                     this.AI.JustBecameMobile = 3;
                 return;
             }

@@ -83,11 +83,11 @@ class Inventory extends Place{
                                        Database.getText(eqItem.getDatabaseDescriptionName()) + (Database.getTranslatedText(eqItem.getDatabaseDescriptionName()) != ""? "<br/><br/><i>" + Database.getTranslatedText(eqItem.getDatabaseDescriptionName()) + "</i>" : ""));
         
             // Add the link
-            this.renderArea.addLinkOnHoverShowTooltip("." + eqItem.getSavingName() + "OnHover", "." + eqItem.getSavingName() + "Tooltip"); 
+            this.renderArea.addLinkOnHoverShowTooltip("." + eqItem.getSavingName() + "OnHover", "." + eqItem.getSavingName() + "Tooltip");
         }
     }
     
-    private drawEquipment(): void{        
+    private drawEquipment(): void{
         // Add backgrounds and lists
         var arr: string[];
             // Weapon

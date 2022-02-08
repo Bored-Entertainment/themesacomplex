@@ -30,9 +30,9 @@ var CreateUtils = function()
                 return function()
                 {
                     var duration = Date.now() - startTime;
-                    if(!!onload)
+                    if(onload)
                     {
-                        if(!!thisValue)
+                        if(thisValue)
                             onload.call(thisValue);
                         else
                             onload();
@@ -54,7 +54,7 @@ var CreateUtils = function()
     {
         while(arr.length > 0)
         {
-            if(!!arr[0].release)
+            if(arr[0].release)
                 arr[0].release();
 
             delete arr[0];
@@ -64,23 +64,23 @@ var CreateUtils = function()
 
     Utils.prototype.clearElement = function(element)
     {
-        if(!!element.src)
+        if(element.src)
             element.src = "";
-        if(!!element.className)
+        if(element.className)
             element.className = "";
-        if(!!element.style)
+        if(element.style)
             element.style.backgroundImage = "";
     }
 
     Utils.prototype.removeFromDOM = function(element)
     {
-        if(!!element)
+        if(element)
         {
             while(element.children.length > 0)
                 utils_.removeChildrenFromDOM(element.children[0]);
 
             var parentNode = element.parentNode;
-            if(!!parentNode)
+            if(parentNode)
             {
                 this.clearElement(element);
                 parentNode.removeChild(element);
@@ -95,7 +95,7 @@ var CreateUtils = function()
 
     Utils.prototype.removeChildrenFromDOM = function(element,keepOrginalElement)
     {
-        if(!!element)
+        if(element)
         {
             if(!element.parentNode)
             {
@@ -139,7 +139,7 @@ var CreateStuffLoader = function()
 
     var Report_ = function()
     {
-        if(!!reportProgressCallback_)
+        if(reportProgressCallback_)
         {
             reportProgressCallback_.call(context_ || window, nbElements_);
         }
@@ -150,7 +150,7 @@ var CreateStuffLoader = function()
         /*every time something finishes loading, this function will be executed*/
         if(!--nbElements_)
         {
-            if(!!callback_)
+            if(callback_)
             {
                 callback_.call(context_ || window);
             }
@@ -158,7 +158,7 @@ var CreateStuffLoader = function()
 
             //callback_ = null;
         }
-        if(!!stuff_[index])
+        if(stuff_[index])
         {
             stuff_[index].State = LOADING_STATES.DONE;
         }
@@ -247,7 +247,7 @@ var CreateStuffLoader = function()
                     case RESOURCE_TYPES.BASE64AUDIO: { DownloadBase64Audio_(i); break; }
                     case RESOURCE_TYPES.BASE64IMAGE: { DownloadBase64Image_(i); break; }
                     case RESOURCE_TYPES.SCRIPT: { DownloadScript_(i); break; }
-                };
+                }
             }
         }
         stuff_ = {};

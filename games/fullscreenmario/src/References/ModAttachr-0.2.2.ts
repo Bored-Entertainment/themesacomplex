@@ -1,6 +1,6 @@
 /// <reference path="ItemsHoldr-0.2.1.ts" />
 
-declare module ModAttachr {
+declare namespace ModAttachr {
     /**
      * General schema for a mod, including its name, events with callbacks, 
      * scope, and whether it's enabled.
@@ -214,7 +214,7 @@ declare module ModAttachr {
 }
 
 
-module ModAttachr {
+namespace ModAttachr {
     "use strict";
 
     /**

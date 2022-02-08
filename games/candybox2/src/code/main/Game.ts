@@ -63,7 +63,7 @@ Saving.registerNumber("gameGiftMagic", 0);
 // The gamemode
 Saving.registerString("gameGameMode", "normal");
 
-class Game{    
+class Game{
     // Render locations
     private statusBarLocation: RenderLocation = new RenderLocation("#statusBar");
     private mainContentLocation: RenderLocation = new RenderLocation("#mainContent");

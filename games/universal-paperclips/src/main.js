@@ -2454,7 +2454,7 @@ function updateStats(){
     document.getElementById("operations").innerHTML = Math.floor(operations).toLocaleString();
     document.getElementById("trust").innerHTML = Math.floor(trust).toLocaleString();
     document.getElementById("nextTrust").innerHTML = Math.floor(nextTrust).toLocaleString();
-    if(creativityOn){document.getElementById("creativity").innerHTML = Math.round(creativity).toLocaleString()};
+    if(creativityOn){document.getElementById("creativity").innerHTML = Math.round(creativity).toLocaleString()}
     
     document.getElementById("factoryLevelDisplaySpace").innerHTML = numberCruncher(Math.floor(factoryLevel));
     document.getElementById("harvesterLevelSpace").innerHTML = numberCruncher(Math.floor(harvesterLevel));

@@ -85,7 +85,7 @@ function activeSolarTab(tab){
 		}
 		if(document.getElementById("kuiperBelt").className != "outer sideTab hidden"){
 			document.getElementById("kuiperBelt").className = "outer sideTab";
-		};
+		}
 	}
 	if(contains(explored, "kuiperBelt")){
 		if(document.getElementById("kuiperBelt").className != "outer sideTab hidden"){

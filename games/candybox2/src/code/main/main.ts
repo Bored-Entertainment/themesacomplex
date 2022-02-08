@@ -1,7 +1,7 @@
 ///<reference path="Game.ts"/>
 ///<reference path="./../../libs/jquery.d.ts"/>
 
-module Main{
+namespace Main{
     // The game
     var game: Game = null;
     

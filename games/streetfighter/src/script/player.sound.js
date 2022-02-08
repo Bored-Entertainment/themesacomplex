@@ -21,7 +21,7 @@ Player.prototype.queueSwingSound = function(value)
 
 Player.prototype.queueHitSound = function(value)
 {
-    if(!!value.length)
+    if(value.length)
     {
         for(var i = 0; i < value.length; ++i)
             this.queueHitSoundHelper(value[i]);

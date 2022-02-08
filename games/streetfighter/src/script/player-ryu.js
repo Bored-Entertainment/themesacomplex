@@ -699,7 +699,7 @@ var createRyu = function(user)
     jump.Vy = (jumpY);
 
     jump.addRepeatingFrame(player,0,"",folder + "/x-crouch-0.png",4);
-    jump.addRepeatingFrame(player,0,"",folder + "/x-jump-1.png",6,{ Pose: POSE_FLAGS.AIRBORNE }).clip({Bottom:80});;
+    jump.addRepeatingFrame(player,0,"",folder + "/x-jump-1.png",6,{ Pose: POSE_FLAGS.AIRBORNE }).clip({Bottom:80});
     jump.addRepeatingFrame(player,0,"",folder + "/x-jump-2.png",6).clip({Bottom:80});
     jump.addRepeatingFrame(player,0,"",folder + "/x-jump-3.png",6);
     jump.addRepeatingFrame(player,0,"",folder + "/x-jump-4.png",6);

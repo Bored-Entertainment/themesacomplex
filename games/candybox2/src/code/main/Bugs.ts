@@ -1,4 +1,4 @@
-module Bugs{
+namespace Bugs{
     // Variables
     var graphicalBugLevel: number = 0;
     var questBugLevel: number = 0;

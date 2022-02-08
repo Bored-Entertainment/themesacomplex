@@ -1,9 +1,9 @@
 import { Traffic } from '../Traffic.js';
-import { Segment } from '../geom/Segment.js'
+import { Segment } from '../geom/Segment.js';
 
 export class Lane {
 
-    constructor ( sourceSegment, targetSegment, road ) {
+    constructor( sourceSegment, targetSegment, road ) {
 
         this.sourceSegment = sourceSegment;
         this.targetSegment = targetSegment;
@@ -43,19 +43,19 @@ export class Lane {
 
     get leftBorder() {
 
-        return new Segment(this.sourceSegment.source, this.targetSegment.target);
+        return new Segment( this.sourceSegment.source, this.targetSegment.target );
 
     }
 
     get rightBorder() {
 
-        return new Segment(this.sourceSegment.target, this.targetSegment.source);
+        return new Segment( this.sourceSegment.target, this.targetSegment.source );
 
     }
 
     toJSON( lane ) {
 
-        var obj = Traffic.extend({}, this);
+        var obj = Traffic.extend( {}, this );
         delete obj.carsPositions;
         return obj;
 
@@ -71,7 +71,7 @@ export class Lane {
 
     getTurnDirection( other ) {
 
-        return this.road.getTurnDirection(other.road);
+        return this.road.getTurnDirection( other.road );
 
     }
 
@@ -89,35 +89,40 @@ export class Lane {
 
     addCarPosition( carPosition ) {
 
-        if (carPosition.id in this.carsPositions) throw Error('car is already here');
-        this.carsPositions[carPosition.id] = carPosition;
+        if ( carPosition.id in this.carsPositions ) throw Error( 'car is already here' );
+        this.carsPositions[ carPosition.id ] = carPosition;
 
     }
 
     removeCar( carPosition ) {
 
-        if (!(carPosition.id in this.carsPositions)) throw Error('removing unknown car');
-        delete this.carsPositions[carPosition.id];
+        if ( ! ( carPosition.id in this.carsPositions ) ) throw Error( 'removing unknown car' );
+        delete this.carsPositions[ carPosition.id ];
 
     }
 
     getNext( carPosition ) {
 
         let bestDistance, distance, id, next, o;
-        if (carPosition.lane !== this) throw Error('car is on other lane');
+        if ( carPosition.lane !== this ) throw Error( 'car is on other lane' );
         next = null;
         bestDistance = Infinity;
 
         for ( id in this.carsPositions ) {
-            o = this.carsPositions[id];
+
+            o = this.carsPositions[ id ];
             distance = o.position - carPosition.position;
-            if (!o.free && (0 < distance && distance < bestDistance)) {
+            if ( ! o.free && ( 0 < distance && distance < bestDistance ) ) {
+
                 bestDistance = distance;
                 next = o;
-            }
-        }
+
+}
+
+}
+
         return next;
-        
+
     }
 
 }

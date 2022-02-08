@@ -11,14 +11,14 @@ import { Micro } from '../Micro.js';
 
 export class InputStatus {
 
-    constructor ( map ) {
+    constructor( map ) {
 
-        this.gameTools = new Micro.GameTools(map);
-        this.canvas = document.getElementById(Micro.DEFAULT_ID);
+        this.gameTools = new Micro.GameTools( map );
+        this.canvas = document.getElementById( Micro.DEFAULT_ID );
 
         // Tool clicks
-        this.clickX = -1;
-        this.clickY = -1;
+        this.clickX = - 1;
+        this.clickY = - 1;
 
         // Keyboard Movement
         this.up = false;
@@ -27,8 +27,8 @@ export class InputStatus {
         this.right = false;
 
         // Mouse movement
-        this.mouseX = -1;
-        this.mouseY = -1;
+        this.mouseX = - 1;
+        this.mouseY = - 1;
 
         // Tool buttons
         this.toolName = null;
@@ -48,143 +48,259 @@ export class InputStatus {
         this.bindKeys();
 
         var _this = this;
-        this.canvas.addEventListener( 'mouseenter', function(e) { _this.mouseEnterHandler(e); }, false );
-        this.canvas.addEventListener( 'mouseleave', function(e) { _this.mouseLeaveHandler(e); }, false );
+        this.canvas.addEventListener( 'mouseenter', function ( e ) {
 
-        var bb = document.getElementsByClassName('toolButton');
-        for(var i=0; i<bb.length; i++){
-            bb[i].addEventListener( 'click', function(e) { _this.toolButtonHandler(e); }, false );
-            bb[i].addEventListener( 'mouseover', function(e) { _this.toolButtonOver(e); }, false );
-        }
+ _this.mouseEnterHandler( e );
 
-        document.getElementById('evalRequest').addEventListener( 'click', function(e) { _this.evalHandler(e); } , false );
-        document.getElementById('budgetRequest').addEventListener( 'click', function(e) { _this.budgetHandler(e); } , false );
-        document.getElementById('disasterRequest').addEventListener( 'click', function(e) { _this.disasterHandler(e); } , false );
-        document.getElementById('pauseRequest').addEventListener( 'click', function(e) { _this.speedChangeHandler(e); } , false );
-    }
+}, false );
+        this.canvas.addEventListener( 'mouseleave', function ( e ) {
 
-    bindKeys () {
+ _this.mouseLeaveHandler( e );
+
+}, false );
+
+        var bb = document.getElementsByClassName( 'toolButton' );
+        for ( var i = 0; i < bb.length; i ++ ) {
+
+            bb[ i ].addEventListener( 'click', function ( e ) {
+
+ _this.toolButtonHandler( e );
+
+}, false );
+            bb[ i ].addEventListener( 'mouseover', function ( e ) {
+
+ _this.toolButtonOver( e );
+
+}, false );
+
+}
+
+        document.getElementById( 'evalRequest' ).addEventListener( 'click', function ( e ) {
+
+ _this.evalHandler( e );
+
+} , false );
+        document.getElementById( 'budgetRequest' ).addEventListener( 'click', function ( e ) {
+
+ _this.budgetHandler( e );
+
+} , false );
+        document.getElementById( 'disasterRequest' ).addEventListener( 'click', function ( e ) {
+
+ _this.disasterHandler( e );
+
+} , false );
+        document.getElementById( 'pauseRequest' ).addEventListener( 'click', function ( e ) {
+
+ _this.speedChangeHandler( e );
+
+} , false );
+
+}
+
+    bindKeys() {
+
         var _this = this;
-        document.onkeydown = function(e) {
+        document.onkeydown = function ( e ) {
+
             e = e || window.event;
             var handled = false;
-            if (e.keyCode == 38) { _this.up = true; handled = true; }
-            else if (e.keyCode == 40) { _this.down = true; handled = true; } 
-            else if (e.keyCode == 39) { _this.right = true; handled = true; } 
-            else if (e.keyCode == 37) { _this.left = true; handled = true; }
-            if (handled) e.preventDefault();
-        };
-        document.onkeyup = function(e) {
+            if ( e.keyCode == 38 ) {
+
+ _this.up = true; handled = true;
+
+} else if ( e.keyCode == 40 ) {
+
+ _this.down = true; handled = true;
+
+} else if ( e.keyCode == 39 ) {
+
+ _this.right = true; handled = true;
+
+} else if ( e.keyCode == 37 ) {
+
+ _this.left = true; handled = true;
+
+}
+
+            if ( handled ) e.preventDefault();
+
+};
+
+        document.onkeyup = function ( e ) {
+
             e = e || window.event;
-            if (e.keyCode == 38) _this.up = false;
-            if (e.keyCode == 40) _this.down = false;
-            if (e.keyCode == 39) _this.right = false;
-            if (e.keyCode == 37) _this.left = false;
-        };
+            if ( e.keyCode == 38 ) _this.up = false;
+            if ( e.keyCode == 40 ) _this.down = false;
+            if ( e.keyCode == 39 ) _this.right = false;
+            if ( e.keyCode == 37 ) _this.left = false;
+
+};
         // self.focus()
-    }
 
-    clickHandled () {
-        this.clickX = -1;
-        this.clickY = -1;
+}
+
+    clickHandled() {
+
+        this.clickX = - 1;
+        this.clickY = - 1;
         this.currentTool.clear();
-    }
 
-    getRelativeCoordinates (e) {
+}
+
+    getRelativeCoordinates( e ) {
+
         var rect = this.canvas.getBoundingClientRect();
-        var dx = window.innerWidth-200;
+        var dx = window.innerWidth - 200;
         var x;
         var y;
-        if (e.x !== undefined && e.y !== undefined) {
-            x = e.x- rect.left;
-            y = e.y- rect.top;
-        } else {
-            x = e.clientX -  rect.left;//+ 0;
-            y = e.clientY - rect.top;
-        }
-        return {x: x, y: y};
-    }
+        if ( e.x !== undefined && e.y !== undefined ) {
 
-    speedChangeHandled () {
+            x = e.x - rect.left;
+            y = e.y - rect.top;
+
+} else {
+
+            x = e.clientX - rect.left;//+ 0;
+            y = e.clientY - rect.top;
+
+}
+
+        return { x: x, y: y };
+
+}
+
+    speedChangeHandled() {
+
         this.speedChangeRequested = false;
         this.requestedSpeed = null;
-    }
 
-    speedChangeHandler (e) {
+}
+
+    speedChangeHandler( e ) {
+
         this.speedChangeRequested = true;
-        var requestedSpeed = document.getElementById('pauseRequest').innerHTML;
+        var requestedSpeed = document.getElementById( 'pauseRequest' ).innerHTML;
         var newRequest = requestedSpeed === 'Pause' ? 'Play' : 'Pause';
-        document.getElementById('pauseRequest').innerHTML=newRequest;
-    }
+        document.getElementById( 'pauseRequest' ).innerHTML = newRequest;
 
-    mouseEnterHandler (e) {
+}
+
+    mouseEnterHandler( e ) {
+
         var _this = this;
-        this.canvas.addEventListener( 'mousemove', function(e) { _this.mouseMoveHandler(e); }, false );
-        this.canvas.addEventListener( 'click', function(e) { _this.canvasClickHandler(e); }, false );
-    }
+        this.canvas.addEventListener( 'mousemove', function ( e ) {
 
-    mouseLeaveHandler (e) {
+ _this.mouseMoveHandler( e );
+
+}, false );
+        this.canvas.addEventListener( 'click', function ( e ) {
+
+ _this.canvasClickHandler( e );
+
+}, false );
+
+}
+
+    mouseLeaveHandler( e ) {
+
         var _this = this;
-        this.canvas.removeEventListener( 'mousemove', function(e) { _this.mouseMoveHandler(e); }, false );
-        this.canvas.removeEventListener( 'click', function(e) { _this.canvasClickHandler(e); }, false );
-        this.mouseX = -1;
-        this.mouseY = -1;
-    }
+        this.canvas.removeEventListener( 'mousemove', function ( e ) {
 
-    mouseMoveHandler (e) {
-        var coords = this.getRelativeCoordinates(e);
+ _this.mouseMoveHandler( e );
+
+}, false );
+        this.canvas.removeEventListener( 'click', function ( e ) {
+
+ _this.canvasClickHandler( e );
+
+}, false );
+        this.mouseX = - 1;
+        this.mouseY = - 1;
+
+}
+
+    mouseMoveHandler( e ) {
+
+        var coords = this.getRelativeCoordinates( e );
         this.mouseX = coords.x;
         this.mouseY = coords.y;
-    }
 
-    canvasClickHandler (e) {
+}
+
+    canvasClickHandler( e ) {
+
         this.clickX = this.mouseX;
         this.clickY = this.mouseY;
         e.preventDefault();
-    }
 
-    toolButtonOver (e) {
-        var name = e.target.getAttribute("data-tool");
-        var price = e.target.getAttribute("data-price");
-        if(price == 0){ price = ""; name = "info"}
-        else price += "$";
-        document.getElementById('buttonsInfos').innerHTML = name +" "+ price;
-    }
+}
 
-    toolButtonHandler(e) {
-        var bb = document.getElementsByClassName('selected');
-        for(var i=0; i<bb.length; i++){
-            bb[i].className = bb[i].className.replace("selected", "unselected");
-        }
-        e.target.className = e.target.className.replace("unselected", "selected");
-        this.toolName = e.target.getAttribute("data-tool");
-        this.toolWidth = e.target.getAttribute("data-size");
-        this.currentTool = this.gameTools[this.toolName];
-        this.toolColour = e.target.getAttribute("data-colour");
+    toolButtonOver( e ) {
+
+        var name = e.target.getAttribute( "data-tool" );
+        var price = e.target.getAttribute( "data-price" );
+        if ( price == 0 ) {
+
+ price = ""; name = "info";
+
+} else price += "$";
+        document.getElementById( 'buttonsInfos' ).innerHTML = name + " " + price;
+
+}
+
+    toolButtonHandler( e ) {
+
+        var bb = document.getElementsByClassName( 'selected' );
+        for ( var i = 0; i < bb.length; i ++ ) {
+
+            bb[ i ].className = bb[ i ].className.replace( "selected", "unselected" );
+
+}
+
+        e.target.className = e.target.className.replace( "unselected", "selected" );
+        this.toolName = e.target.getAttribute( "data-tool" );
+        this.toolWidth = e.target.getAttribute( "data-size" );
+        this.currentTool = this.gameTools[ this.toolName ];
+        this.toolColour = e.target.getAttribute( "data-colour" );
         e.preventDefault();
-    }
 
-    disasterHandler (e) {
+}
+
+    disasterHandler( e ) {
+
         this.disasterRequested = true;
-    }
 
-    evalHandler (e) {
+}
+
+    evalHandler( e ) {
+
         this.evalRequested = true;
-    }
 
-    budgetHandler (e) {
+}
+
+    budgetHandler( e ) {
+
         this.budgetRequested = true;
-    }
 
-    evalHandled (e) {
+}
+
+    evalHandled( e ) {
+
         this.evalRequested = false;
-    }
 
-    disasterHandled (e) {
+}
+
+    disasterHandled( e ) {
+
         this.disasterRequested = false;
-    }
 
-    budgetHandled (e) {
+}
+
+    budgetHandled( e ) {
+
         this.budgetRequested = false;
-    }
+
+}
+
 }

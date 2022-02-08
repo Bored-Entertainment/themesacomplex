@@ -1,4 +1,4 @@
-declare module ObjectMakr {
+declare namespace ObjectMakr {
     /**
      * A tree representing class inheritances, where each key represents
      * a class, and its children inherit from that class.
@@ -134,7 +134,7 @@ declare module ObjectMakr {
 }
 
 
-module ObjectMakr {
+namespace ObjectMakr {
     "use strict";
 
     /**

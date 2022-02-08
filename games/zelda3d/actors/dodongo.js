@@ -95,7 +95,7 @@ ace.Dodongo.prototype.onTick = function(game) {
     if (actor != this && !actor.isHidden) {
       if (actor.name == 'Bomb' && this.isTouching(actor)) {
         actor.hide();
-        if (this.facing == 'up') { this.facing = 'down' };
+        if (this.facing == 'up') { this.facing = 'down' }
         this.countDown = 20;
       }
     }

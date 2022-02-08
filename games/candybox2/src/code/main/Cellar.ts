@@ -83,7 +83,7 @@ class Cellar extends Quest{
     }
     
     private addRat(pos: Pos): void{
-        var rat: Rat = new Rat(this, pos);   
+        var rat: Rat = new Rat(this, pos);
         rat.setHealthBar(new QuestEntityHealthBar(rat, new Pos(3, 1)));
         this.addEntity(rat);
     }

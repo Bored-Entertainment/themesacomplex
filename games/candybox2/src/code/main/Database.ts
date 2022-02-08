@@ -1,6 +1,6 @@
 ///<reference path="./../../libs/jquery.d.ts"/>
 
-module Database{
+namespace Database{
     // Variables
     var asciiMap: { [s: string]: string[]; } = {}; // A map which associates strings (the keys) to array of strings (the ascii arts)
     var asciiSizeMap: { [s: string]: Pos; } = {}; // A map which associates strings (the keys) to the sizes of ascii arts

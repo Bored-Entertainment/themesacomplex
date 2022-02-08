@@ -247,7 +247,7 @@ var ProjectileEditorWindow = function () {
 		}
 
 		// clear out what ever is there now
-		while(!!ddlProjectiles.children[0]) {
+		while(ddlProjectiles.children[0]) {
 			ddlProjectiles.removeChild(ddlProjectiles.children[0]);
 		}
 

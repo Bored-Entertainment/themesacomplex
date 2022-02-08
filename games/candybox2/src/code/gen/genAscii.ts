@@ -1,4 +1,4 @@
-Database.addAscii("arena/hardcorePlatformer/background", 240, 12, 
+Database.addAscii("arena/hardcorePlatformer/background", 240, 12,
 [
 "",
 "",
@@ -13,21 +13,21 @@ Database.addAscii("arena/hardcorePlatformer/background", 240, 12,
 " Good luck!                                                                     That wasn't so hard, was it?                                      Wow. Good job. But now it's going to be serious.                                       Yay!!",
 "________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
 ]);
-Database.addAscii("arena/hardcorePlatformer/logo", 18, 4, 
+Database.addAscii("arena/hardcorePlatformer/logo", 18, 4,
 [
 " HARDCORE",
 "     PLATFORMER",
 "",
 "_/\\/\\__\\o/____/\\/\\"
 ]);
-Database.addAscii("arena/peacefulForest/logo", 16, 4, 
+Database.addAscii("arena/peacefulForest/logo", 16, 4,
 [
 " ||| \\o/|||  |||",
 "",
 "   The peaceful",
 "      forest"
 ]);
-Database.addAscii("eqItems/bodyArmours/enchantedKnightBodyArmour", 13, 8, 
+Database.addAscii("eqItems/bodyArmours/enchantedKnightBodyArmour", 13, 8,
 [
 " \\\\       //",
 " |*'-._.-' |",
@@ -38,7 +38,7 @@ Database.addAscii("eqItems/bodyArmours/enchantedKnightBodyArmour", 13, 8,
 " '. *  *  .'",
 "   '-._.-'"
 ]);
-Database.addAscii("eqItems/bodyArmours/knightBodyArmour", 13, 8, 
+Database.addAscii("eqItems/bodyArmours/knightBodyArmour", 13, 8,
 [
 " \\\\       //",
 " | '-._.-' |",
@@ -49,7 +49,7 @@ Database.addAscii("eqItems/bodyArmours/knightBodyArmour", 13, 8,
 " '.       .'",
 "   '-._.-'"
 ]);
-Database.addAscii("eqItems/bodyArmours/lightweightBodyArmour", 11, 7, 
+Database.addAscii("eqItems/bodyArmours/lightweightBodyArmour", 11, 7,
 [
 " \\       /",
 " |'-._.-'|",
@@ -59,7 +59,7 @@ Database.addAscii("eqItems/bodyArmours/lightweightBodyArmour", 11, 7,
 " '.     .'",
 "   '-.-'"
 ]);
-Database.addAscii("eqItems/boots/bootsOfIntrospection", 29, 8, 
+Database.addAscii("eqItems/boots/bootsOfIntrospection", 29, 8,
 [
 "  ?                         ?",
 "        ____    ?",
@@ -70,7 +70,7 @@ Database.addAscii("eqItems/boots/bootsOfIntrospection", 29, 8,
 "  ?",
 "           ?        ?"
 ]);
-Database.addAscii("eqItems/boots/leatherBoots", 16, 5, 
+Database.addAscii("eqItems/boots/leatherBoots", 16, 5,
 [
 "  ____",
 "  \\   |   ____",
@@ -78,7 +78,7 @@ Database.addAscii("eqItems/boots/leatherBoots", 16, 5,
 "(_____)  |  (__",
 "         (_____)"
 ]);
-Database.addAscii("eqItems/boots/rocketBoots", 33, 8, 
+Database.addAscii("eqItems/boots/rocketBoots", 33, 8,
 [
 "                  _______",
 " _______         (____/ <|",
@@ -89,7 +89,7 @@ Database.addAscii("eqItems/boots/rocketBoots", 33, 8,
 "\\___ ______ ___/    /\"\\    /\"\\",
 "   /\"\\    /\"\\"
 ]);
-Database.addAscii("eqItems/gloves/leatherGloves", 11, 8, 
+Database.addAscii("eqItems/gloves/leatherGloves", 11, 8,
 [
 "  .~.~.~.",
 "  | | | |~.",
@@ -100,7 +100,7 @@ Database.addAscii("eqItems/gloves/leatherGloves", 11, 8,
 " \\        |",
 "  \\______/"
 ]);
-Database.addAscii("eqItems/gloves/pinkEnchantedGloves", 11, 8, 
+Database.addAscii("eqItems/gloves/pinkEnchantedGloves", 11, 8,
 [
 "  .~.~.~.",
 "  | | | |~.",
@@ -111,7 +111,7 @@ Database.addAscii("eqItems/gloves/pinkEnchantedGloves", 11, 8,
 " \\   \\/   |",
 "  \\______/"
 ]);
-Database.addAscii("eqItems/gloves/redEnchantedGloves", 11, 8, 
+Database.addAscii("eqItems/gloves/redEnchantedGloves", 11, 8,
 [
 "  .~.~.~.",
 "  | | | |~.",
@@ -122,31 +122,31 @@ Database.addAscii("eqItems/gloves/redEnchantedGloves", 11, 8,
 " \\  ##### |",
 "  \\______/"
 ]);
-Database.addAscii("eqItems/hats/merchantHat", 17, 3, 
+Database.addAscii("eqItems/hats/merchantHat", 17, 3,
 [
 "      .---.",
 "     |     |",
 "'-.__|_____|__.-'"
 ]);
-Database.addAscii("eqItems/hats/octopusKingCrown", 9, 3, 
+Database.addAscii("eqItems/hats/octopusKingCrown", 9, 3,
 [
 "|\\/\\_/\\/|",
 "| . : . |",
 "¯¯¯¯¯¯¯¯¯"
 ]);
-Database.addAscii("eqItems/hats/octopusKingCrownWithJaspers", 9, 3, 
+Database.addAscii("eqItems/hats/octopusKingCrownWithJaspers", 9, 3,
 [
 "|\\/\\_/\\/|",
 "| o O o |",
 "¯¯¯¯¯¯¯¯¯"
 ]);
-Database.addAscii("eqItems/hats/octopusKingCrownWithObsidian", 9, 3, 
+Database.addAscii("eqItems/hats/octopusKingCrownWithObsidian", 9, 3,
 [
 "|\\/\\_/\\/|",
 "| w W w |",
 "¯¯¯¯¯¯¯¯¯"
 ]);
-Database.addAscii("eqItems/hats/sorceressHat", 28, 7, 
+Database.addAscii("eqItems/hats/sorceressHat", 28, 7,
 [
 "                   _.-.",
 "                .-'  ~ '.",
@@ -156,7 +156,7 @@ Database.addAscii("eqItems/hats/sorceressHat", 28, 7,
 ".________/_________\\_______.",
 " ¨¨°¨°¨¨            ¨°¨¨¨°¨"
 ]);
-Database.addAscii("eqItems/weapons/enchantedMonkeyWizardStaff", 11, 21, 
+Database.addAscii("eqItems/weapons/enchantedMonkeyWizardStaff", 11, 21,
 [
 " .   *   .",
 "{*}\\/o\\/{*}",
@@ -180,7 +180,7 @@ Database.addAscii("eqItems/weapons/enchantedMonkeyWizardStaff", 11, 21,
 "    (*)",
 "    (*)"
 ]);
-Database.addAscii("eqItems/weapons/giantSpoon", 13, 31, 
+Database.addAscii("eqItems/weapons/giantSpoon", 13, 31,
 [
 "     .-.",
 "   .:   :.",
@@ -214,7 +214,7 @@ Database.addAscii("eqItems/weapons/giantSpoon", 13, 31,
 "    |   |",
 "    '-.-'"
 ]);
-Database.addAscii("eqItems/weapons/giantSpoonOfDoom", 13, 31, 
+Database.addAscii("eqItems/weapons/giantSpoonOfDoom", 13, 31,
 [
 "     .-.",
 "   .: # :.",
@@ -248,7 +248,7 @@ Database.addAscii("eqItems/weapons/giantSpoonOfDoom", 13, 31,
 "    |   |",
 "    '-.-'"
 ]);
-Database.addAscii("eqItems/weapons/ironAxe", 11, 12, 
+Database.addAscii("eqItems/weapons/ironAxe", 11, 12,
 [
 "   /\\  |\\",
 " __)(__) \\",
@@ -263,7 +263,7 @@ Database.addAscii("eqItems/weapons/ironAxe", 11, 12,
 "   /\\",
 "  '--'"
 ]);
-Database.addAscii("eqItems/weapons/monkeyWizardStaff", 9, 19, 
+Database.addAscii("eqItems/weapons/monkeyWizardStaff", 9, 19,
 [
 " .  .  .",
 "/ \\/ \\/ \\",
@@ -285,7 +285,7 @@ Database.addAscii("eqItems/weapons/monkeyWizardStaff", 9, 19,
 "  _/ \\_",
 " /_____\\"
 ]);
-Database.addAscii("eqItems/weapons/polishedSilverSword", 12, 21, 
+Database.addAscii("eqItems/weapons/polishedSilverSword", 12, 21,
 [
 "     ^",
 "    / \\",
@@ -309,7 +309,7 @@ Database.addAscii("eqItems/weapons/polishedSilverSword", 12, 21,
 "    [-]",
 "   (___)"
 ]);
-Database.addAscii("eqItems/weapons/scythe", 30, 32, 
+Database.addAscii("eqItems/weapons/scythe", 30, 32,
 [
 " /\\",
 " )(",
@@ -344,7 +344,7 @@ Database.addAscii("eqItems/weapons/scythe", 30, 32,
 " /\\",
 " \\/"
 ]);
-Database.addAscii("eqItems/weapons/summoningTribalSpear", 18, 29, 
+Database.addAscii("eqItems/weapons/summoningTribalSpear", 18, 29,
 [
 "        /\\",
 "       //\\\\",
@@ -376,7 +376,7 @@ Database.addAscii("eqItems/weapons/summoningTribalSpear", 18, 29,
 "        ||",
 "       ([])"
 ]);
-Database.addAscii("eqItems/weapons/tribalSpear", 14, 27, 
+Database.addAscii("eqItems/weapons/tribalSpear", 14, 27,
 [
 "    /\\",
 "   //\\\\",
@@ -406,7 +406,7 @@ Database.addAscii("eqItems/weapons/tribalSpear", 14, 27,
 "    ||",
 "   ([])"
 ]);
-Database.addAscii("eqItems/weapons/trollBludgeon", 12, 18, 
+Database.addAscii("eqItems/weapons/trollBludgeon", 12, 18,
 [
 "    _/\\_",
 "   /____\\",
@@ -427,7 +427,7 @@ Database.addAscii("eqItems/weapons/trollBludgeon", 12, 18,
 "    |  |",
 "   (____)"
 ]);
-Database.addAscii("eqItems/weapons/woodenSword", 9, 18, 
+Database.addAscii("eqItems/weapons/woodenSword", 9, 18,
 [
 "    ^",
 "   / \\",
@@ -448,7 +448,7 @@ Database.addAscii("eqItems/weapons/woodenSword", 9, 18,
 "   (x)",
 "   (x)"
 ]);
-Database.addAscii("general/box", 29, 25, 
+Database.addAscii("general/box", 29, 25,
 [
 "",
 "",
@@ -476,7 +476,7 @@ Database.addAscii("general/box", 29, 25,
 "|:.........................:|",
 "|___________________________|"
 ]);
-Database.addAscii("general/candyRoom", 50, 7, 
+Database.addAscii("general/candyRoom", 50, 7,
 [
 "                 ___                        ____",
 "               \\/   \\/                    \\/    \\/",
@@ -486,7 +486,7 @@ Database.addAscii("general/candyRoom", 50, 7,
 "     \\/     \\/    |    | \\/    \\/   | \\/   \\/ |",
 "     /\\_____/\\    |    | /\\____/\\   | /\\___/\\ |"
 ]);
-Database.addAscii("general/inventoryBodyArmour", 21, 12, 
+Database.addAscii("general/inventoryBodyArmour", 21, 12,
 [
 ".....................",
 ".    BODY ARMOUR    .",
@@ -501,7 +501,7 @@ Database.addAscii("general/inventoryBodyArmour", 21, 12,
 ".                   .",
 "....................."
 ]);
-Database.addAscii("general/inventoryBoots", 36, 12, 
+Database.addAscii("general/inventoryBoots", 36, 12,
 [
 "....................................",
 ".              BOOTS               .",
@@ -516,7 +516,7 @@ Database.addAscii("general/inventoryBoots", 36, 12,
 ".                                  .",
 "...................................."
 ]);
-Database.addAscii("general/inventoryBottom", 99, 75, 
+Database.addAscii("general/inventoryBottom", 99, 75,
 [
 " |   \\=======================================================================================/   |",
 " |   _________________________________________________________________________________________   |",
@@ -594,7 +594,7 @@ Database.addAscii("general/inventoryBottom", 99, 75,
 " |                                                                                               |",
 " (_______________________________________________________________________________________________()"
 ]);
-Database.addAscii("general/inventoryGloves", 13, 12, 
+Database.addAscii("general/inventoryGloves", 13, 12,
 [
 ".............",
 ".  GLOVES   .",
@@ -609,7 +609,7 @@ Database.addAscii("general/inventoryGloves", 13, 12,
 ".           .",
 "............."
 ]);
-Database.addAscii("general/inventoryHat", 36, 12, 
+Database.addAscii("general/inventoryHat", 36, 12,
 [
 "....................................",
 ".                HAT               .",
@@ -624,7 +624,7 @@ Database.addAscii("general/inventoryHat", 36, 12,
 ".                                  .",
 "...................................."
 ]);
-Database.addAscii("general/inventoryTop", 99, 55, 
+Database.addAscii("general/inventoryTop", 99, 55,
 [
 "               ______                                 __",
 "              /\\__  _\\                               /\\ \\__",
@@ -682,7 +682,7 @@ Database.addAscii("general/inventoryTop", 99, 55,
 " |   |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|   |",
 " |   |                                                                                       |   |"
 ]);
-Database.addAscii("general/openBox", 29, 25, 
+Database.addAscii("general/openBox", 29, 25,
 [
 "            _____",
 "       ____/|   |\\____",
@@ -710,11 +710,11 @@ Database.addAscii("general/openBox", 29, 25,
 "|:.........................:|",
 "|___________________________|"
 ]);
-Database.addAscii("general/specialAbilityBackground", 98, 1, 
+Database.addAscii("general/specialAbilityBackground", 98, 1,
 [
 " |   |                                                                                       |   |"
 ]);
-Database.addAscii("general/translaCAT", 19, 16, 
+Database.addAscii("general/translaCAT", 19, 16,
 [
 "   |\\___/|",
 "  /       \\",
@@ -733,43 +733,43 @@ Database.addAscii("general/translaCAT", 19, 16,
 "      | |_____/ /",
 "       \\_______/"
 ]);
-Database.addAscii("general/insideYourBox/0", 5, 2, 
+Database.addAscii("general/insideYourBox/0", 5, 2,
 [
 "\\.-./",
 "/'-'\\"
 ]);
-Database.addAscii("general/insideYourBox/1", 1, 3, 
+Database.addAscii("general/insideYourBox/1", 1, 3,
 [
 "o",
 "|",
 "|"
 ]);
-Database.addAscii("general/insideYourBox/10", 14, 3, 
+Database.addAscii("general/insideYourBox/10", 14, 3,
 [
 " ____________",
 "/__/__/__/__/|",
 "|__|__|__|__|/"
 ]);
-Database.addAscii("general/insideYourBox/2", 5, 1, 
+Database.addAscii("general/insideYourBox/2", 5, 1,
 [
 "----o"
 ]);
-Database.addAscii("general/insideYourBox/3", 5, 1, 
+Database.addAscii("general/insideYourBox/3", 5, 1,
 [
 "o----"
 ]);
-Database.addAscii("general/insideYourBox/4", 1, 3, 
+Database.addAscii("general/insideYourBox/4", 1, 3,
 [
 "o",
 "|",
 "|"
 ]);
-Database.addAscii("general/insideYourBox/5", 8, 2, 
+Database.addAscii("general/insideYourBox/5", 8, 2,
 [
 "/\\.--./\\",
 "\\/'--'\\/"
 ]);
-Database.addAscii("general/insideYourBox/6", 3, 5, 
+Database.addAscii("general/insideYourBox/6", 3, 5,
 [
 " _",
 "(_)",
@@ -777,7 +777,7 @@ Database.addAscii("general/insideYourBox/6", 3, 5,
 " |",
 " |"
 ]);
-Database.addAscii("general/insideYourBox/7", 3, 9, 
+Database.addAscii("general/insideYourBox/7", 3, 9,
 [
 " _",
 "| |",
@@ -789,7 +789,7 @@ Database.addAscii("general/insideYourBox/7", 3, 9,
 "|/|",
 "|_|"
 ]);
-Database.addAscii("general/insideYourBox/8", 3, 9, 
+Database.addAscii("general/insideYourBox/8", 3, 9,
 [
 " _",
 "| |",
@@ -801,13 +801,13 @@ Database.addAscii("general/insideYourBox/8", 3, 9,
 "|\\|",
 "|_|"
 ]);
-Database.addAscii("general/insideYourBox/9", 17, 3, 
+Database.addAscii("general/insideYourBox/9", 17, 3,
 [
 " _______________",
 "/__/__/__/__/__/|",
 "|__|__|__|__|__|/"
 ]);
-Database.addAscii("general/insideYourBox/text", 90, 12, 
+Database.addAscii("general/insideYourBox/text", 90, 12,
 [
 "                                __   __                          _",
 "                                \\%\\ /%/__ _  _  __ __ _____ _ _ |%|",
@@ -822,7 +822,7 @@ Database.addAscii("general/insideYourBox/text", 90, 12,
 "             (_-<%V%%V%/%-_)%-_)%%_(_-< |%|%'%\\  |%%_|%'%\\/%-_) \\%V%%V%/%_%\\%'_|%/%_`%|_|",
 "             /__/\\_/\\_/\\___\\___|\\__/__/ |_|_||_|  \\__|_||_\\___|  \\_/\\_/\\___/_| |_\\__,_(_)"
 ]);
-Database.addAscii("general/theComputer/computer", 62, 24, 
+Database.addAscii("general/theComputer/computer", 62, 24,
 [
 "                                            _________________",
 "                                           |                 |",
@@ -849,7 +849,7 @@ Database.addAscii("general/theComputer/computer", 62, 24,
 "                /      \\                   |                 |",
 "               /________\\                  |_________________|"
 ]);
-Database.addAscii("gridItems/a", 11, 6, 
+Database.addAscii("gridItems/a", 11, 6,
 [
 "   _____",
 "  /     \\",
@@ -858,7 +858,7 @@ Database.addAscii("gridItems/a", 11, 6,
 " \\       /",
 "  \\_____/"
 ]);
-Database.addAscii("gridItems/advancedGrimoire", 8, 11, 
+Database.addAscii("gridItems/advancedGrimoire", 8, 11,
 [
 "   .  .",
 "  /////|",
@@ -872,7 +872,7 @@ Database.addAscii("gridItems/advancedGrimoire", 8, 11,
 "|===|/",
 "'---'"
 ]);
-Database.addAscii("gridItems/beginnersGrimoire", 7, 11, 
+Database.addAscii("gridItems/beginnersGrimoire", 7, 11,
 [
 "   .  .",
 "  ////|",
@@ -886,7 +886,7 @@ Database.addAscii("gridItems/beginnersGrimoire", 7, 11,
 "|==|/",
 "'--'"
 ]);
-Database.addAscii("gridItems/blackMagicGrimoire", 9, 11, 
+Database.addAscii("gridItems/blackMagicGrimoire", 9, 11,
 [
 "   .   .",
 "  //////|",
@@ -900,7 +900,7 @@ Database.addAscii("gridItems/blackMagicGrimoire", 9, 11,
 "|====|/",
 "'----'"
 ]);
-Database.addAscii("gridItems/feather", 5, 6, 
+Database.addAscii("gridItems/feather", 5, 6,
 [
 " _",
 "| \\",
@@ -909,7 +909,7 @@ Database.addAscii("gridItems/feather", 5, 6,
 "  \\-|",
 "    \\"
 ]);
-Database.addAscii("gridItems/fortressKey", 8, 10, 
+Database.addAscii("gridItems/fortressKey", 8, 10,
 [
 "   _",
 "  |:|_|\\",
@@ -922,7 +922,7 @@ Database.addAscii("gridItems/fortressKey", 8, 10,
 "( -O- )",
 " \\/_\\/"
 ]);
-Database.addAscii("gridItems/greenSharkFin", 14, 5, 
+Database.addAscii("gridItems/greenSharkFin", 14, 5,
 [
 "   .´",
 "  /(",
@@ -930,7 +930,7 @@ Database.addAscii("gridItems/greenSharkFin", 14, 5,
 "/    `.",
 "¯¯¯¯¯¯¯"
 ]);
-Database.addAscii("gridItems/heartPendant", 12, 11, 
+Database.addAscii("gridItems/heartPendant", 12, 11,
 [
 "\\          /",
 " \\        /",
@@ -944,7 +944,7 @@ Database.addAscii("gridItems/heartPendant", 12, 11,
 "  `\\    /'",
 "    `\\/'"
 ]);
-Database.addAscii("gridItems/heartPlug", 17, 7, 
+Database.addAscii("gridItems/heartPlug", 17, 7,
 [
 "  /    /    /",
 " /____/____/",
@@ -954,7 +954,7 @@ Database.addAscii("gridItems/heartPlug", 17, 7,
 "  \\   ***   \\ \\/",
 "   \\_________\\/"
 ]);
-Database.addAscii("gridItems/l", 11, 6, 
+Database.addAscii("gridItems/l", 11, 6,
 [
 "   _____",
 "  /     \\",
@@ -963,7 +963,7 @@ Database.addAscii("gridItems/l", 11, 6,
 " \\       /",
 "  \\_____/"
 ]);
-Database.addAscii("gridItems/mainMap", 17, 10, 
+Database.addAscii("gridItems/mainMap", 17, 10,
 [
 " _______________",
 "/  8            \\",
@@ -976,7 +976,7 @@ Database.addAscii("gridItems/mainMap", 17, 10,
 "| -'            |",
 "\\_______________/"
 ]);
-Database.addAscii("gridItems/p", 11, 6, 
+Database.addAscii("gridItems/p", 11, 6,
 [
 "   _____",
 "  /     \\",
@@ -985,7 +985,7 @@ Database.addAscii("gridItems/p", 11, 6,
 " \\       /",
 "  \\_____/"
 ]);
-Database.addAscii("gridItems/pitchfork", 12, 8, 
+Database.addAscii("gridItems/pitchfork", 12, 8,
 [
 "      /    /",
 "     /    /",
@@ -996,7 +996,7 @@ Database.addAscii("gridItems/pitchfork", 12, 8,
 " ////",
 "////"
 ]);
-Database.addAscii("gridItems/pogoStick", 13, 11, 
+Database.addAscii("gridItems/pogoStick", 13, 11,
 [
 " ___________",
 "(_____ _____)",
@@ -1010,7 +1010,7 @@ Database.addAscii("gridItems/pogoStick", 13, 11,
 "     | |",
 "     |_|"
 ]);
-Database.addAscii("gridItems/purpleSharkFin", 15, 5, 
+Database.addAscii("gridItems/purpleSharkFin", 15, 5,
 [
 "   .´",
 "  /(",
@@ -1018,7 +1018,7 @@ Database.addAscii("gridItems/purpleSharkFin", 15, 5,
 "/    `.",
 "¯¯¯¯¯¯¯"
 ]);
-Database.addAscii("gridItems/redSharkFin", 12, 5, 
+Database.addAscii("gridItems/redSharkFin", 12, 5,
 [
 "   .´",
 "  /(",
@@ -1026,7 +1026,7 @@ Database.addAscii("gridItems/redSharkFin", 12, 5,
 "/    `.",
 "¯¯¯¯¯¯¯"
 ]);
-Database.addAscii("gridItems/shellPowder", 13, 5, 
+Database.addAscii("gridItems/shellPowder", 13, 5,
 [
 "   |z.-+);",
 "  -+|)='`%:",
@@ -1034,7 +1034,7 @@ Database.addAscii("gridItems/shellPowder", 13, 5,
 " -+{!%^;_\\'\".",
 "%;=)h;-+--(-]"
 ]);
-Database.addAscii("gridItems/sponge", 15, 7, 
+Database.addAscii("gridItems/sponge", 15, 7,
 [
 "      ___",
 "   .-'***'.",
@@ -1044,12 +1044,12 @@ Database.addAscii("gridItems/sponge", 15, 7,
 " '.*****~**__/",
 "  '-:::::-'"
 ]);
-Database.addAscii("gridItems/talkingCandy", 5, 2, 
+Database.addAscii("gridItems/talkingCandy", 5, 2,
 [
 "\\.-./",
 "/'-'\\"
 ]);
-Database.addAscii("gridItems/thirdHouseKey", 8, 10, 
+Database.addAscii("gridItems/thirdHouseKey", 8, 10,
 [
 "   _",
 "  | |_|\\",
@@ -1062,7 +1062,7 @@ Database.addAscii("gridItems/thirdHouseKey", 8, 10,
 "( -3- )",
 " \\/_\\/"
 ]);
-Database.addAscii("gridItems/timeRing", 11, 9, 
+Database.addAscii("gridItems/timeRing", 11, 9,
 [
 "    ___",
 "   / | \\",
@@ -1074,14 +1074,14 @@ Database.addAscii("gridItems/timeRing", 11, 9,
 " \\\\     //",
 "  '-._.-'"
 ]);
-Database.addAscii("gridItems/unicornHorn", 7, 4, 
+Database.addAscii("gridItems/unicornHorn", 7, 4,
 [
 "\\.",
 " \\'.",
 "  \\ '.",
 "   \\,-'"
 ]);
-Database.addAscii("gridItems/xinopherydonClaw", 12, 5, 
+Database.addAscii("gridItems/xinopherydonClaw", 12, 5,
 [
 "    _.---.",
 "  .'      '.",
@@ -1089,7 +1089,7 @@ Database.addAscii("gridItems/xinopherydonClaw", 12, 5,
 "/ .'     '-'",
 "|/"
 ]);
-Database.addAscii("gridItems/y", 11, 6, 
+Database.addAscii("gridItems/y", 11, 6,
 [
 "   _____",
 "  /     \\",
@@ -1098,7 +1098,7 @@ Database.addAscii("gridItems/y", 11, 6,
 " \\       /",
 "  \\_____/"
 ]);
-Database.addAscii("maps/map", 208, 88, 
+Database.addAscii("maps/map", 208, 88,
 [
 "                                                                                    ~                                                                                                           ~",
 "              ~                                                                                                                                       ~",
@@ -1189,7 +1189,7 @@ Database.addAscii("maps/map", 208, 88,
 "                                          ~",
 ""
 ]);
-Database.addAscii("places/dragonFoot", 161, 25, 
+Database.addAscii("places/dragonFoot", 161, 25,
 [
 "                                                                                                                         .'                          '.",
 "                                                                                                                         '                            '",
@@ -1217,7 +1217,7 @@ Database.addAscii("places/dragonFoot", 161, 25,
 "__________________|___                                         \\_..---'''     \\_..--''                   \\_.-'",
 ""
 ]);
-Database.addAscii("places/lonelyHouse", 97, 35, 
+Database.addAscii("places/lonelyHouse", 97, 35,
 [
 "  /        |                                                                         |        \\",
 " /         |                                                                         |         \\",
@@ -1255,7 +1255,7 @@ Database.addAscii("places/lonelyHouse", 97, 35,
 "| /                                                                                           \\ |",
 "|/_____________________________________________________________________________________________\\|"
 ]);
-Database.addAscii("places/mountains", 138, 19, 
+Database.addAscii("places/mountains", 138, 19,
 [
 "                                    /\\                                              /\\",
 "                                   // \\     _      /\\                              /  \\     _      /\\",
@@ -1277,7 +1277,7 @@ Database.addAscii("places/mountains", 138, 19,
 "______/___/¨¨¨¨¨       ¨¨¨¨¨¨¨¨¨                                                              ¨¨¨¨¨¨¨¨¨\\____    ____/¨¨¨        ¨¨¨¨¨¨¨¨¨¨",
 "¨¨¨¨¨¨¨¨¨¨                                                                                              ¨¨¨¨\\__/¨¨¨¨"
 ]);
-Database.addAscii("places/outsideTheHole", 100, 21, 
+Database.addAscii("places/outsideTheHole", 100, 21,
 [
 "                                           ¨                           ¨",
 "                  ¨               ¨                            ¨                     ¨         ¨",
@@ -1301,7 +1301,7 @@ Database.addAscii("places/outsideTheHole", 100, 21,
 "                     ¨                            ¨                                            ¨",
 "    ¨                          ¨                                            ¨"
 ]);
-Database.addAscii("places/pier", 75, 23, 
+Database.addAscii("places/pier", 75, 23,
 [
 "                   ___                             ~",
 "  ~               /   \\                                                   ~",
@@ -1327,7 +1327,7 @@ Database.addAscii("places/pier", 75, 23,
 "          ~     ~      ~    ~          /---------------/|/  ~",
 "______________________________________/---------------/_/__________________"
 ]);
-Database.addAscii("places/treasure", 43, 25, 
+Database.addAscii("places/treasure", 43, 25,
 [
 "                    888888        |",
 "    ¨               888888        |",
@@ -1355,7 +1355,7 @@ Database.addAscii("places/treasure", 43, 25,
 "                          |    |          |",
 ""
 ]);
-Database.addAscii("places/wishingWell", 37, 30, 
+Database.addAscii("places/wishingWell", 37, 30,
 [
 "       _______________________",
 "     /|                       |\\",
@@ -1388,7 +1388,7 @@ Database.addAscii("places/wishingWell", 37, 30,
 "      '. | | | | | | | | | | .'",
 "        '-._______________.-'"
 ]);
-Database.addAscii("places/aTree/background", 70, 52, 
+Database.addAscii("places/aTree/background", 70, 52,
 [
 "            |   |",
 "            |   |",
@@ -1443,7 +1443,7 @@ Database.addAscii("places/aTree/background", 70, 52,
 "            |   |",
 "                |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 ]);
-Database.addAscii("places/aTree/ticTacToeBoard", 22, 13, 
+Database.addAscii("places/aTree/ticTacToeBoard", 22, 13,
 [
 " _____________________",
 "|      |      |      |",
@@ -1459,18 +1459,18 @@ Database.addAscii("places/aTree/ticTacToeBoard", 22, 13,
 "|      |      |      |",
 "|______|______|______|"
 ]);
-Database.addAscii("places/aTree/ticTacToeO", 4, 3, 
+Database.addAscii("places/aTree/ticTacToeO", 4, 3,
 [
 " __",
 "|  |",
 "|__|"
 ]);
-Database.addAscii("places/aTree/ticTacToeX", 2, 2, 
+Database.addAscii("places/aTree/ticTacToeX", 2, 2,
 [
 "\\/",
 "/\\"
 ]);
-Database.addAscii("places/castle/map", 106, 34, 
+Database.addAscii("places/castle/map", 106, 34,
 [
 "                               |____|",
 "                               |____|",
@@ -1507,7 +1507,7 @@ Database.addAscii("places/castle/map", 106, 34,
 "                                       |___  ___|",
 "                                           ##"
 ]);
-Database.addAscii("places/castle/bigRoom/background", 160, 27, 
+Database.addAscii("places/castle/bigRoom/background", 160, 27,
 [
 "        |                                                                                                                                               |",
 "        |                                                                                                                                               |",
@@ -1537,7 +1537,7 @@ Database.addAscii("places/castle/bigRoom/background", 160, 27,
 " /                                                                                                                                                            \\",
 "/                                                                                                                                                              \\"
 ]);
-Database.addAscii("places/castle/room2/fire", 16, 6, 
+Database.addAscii("places/castle/room2/fire", 16, 6,
 [
 "     _ /\\ _",
 "  .-' // \\ '-.",
@@ -1546,7 +1546,7 @@ Database.addAscii("places/castle/room2/fire", 16, 6,
 "( `.__ _  ___,')",
 " `'(_ )_)(_)_)'"
 ]);
-Database.addAscii("places/castle/room2/pitchfork", 12, 8, 
+Database.addAscii("places/castle/room2/pitchfork", 12, 8,
 [
 "      /    /",
 "     /    /",
@@ -1557,7 +1557,7 @@ Database.addAscii("places/castle/room2/pitchfork", 12, 8,
 " ////",
 "////"
 ]);
-Database.addAscii("places/castle/tower/castleTower", 90, 95, 
+Database.addAscii("places/castle/tower/castleTower", 90, 95,
 [
 "       /                                                                          \\",
 "      /                ¨                         ¨           ¨        ¨            \\",
@@ -1655,12 +1655,12 @@ Database.addAscii("places/castle/tower/castleTower", 90, 95,
 "            '''---|...____    |              |             |    ____...|---'''",
 "                          '''''-----.....____|___.....-----'''''"
 ]);
-Database.addAscii("places/castle/tower/talkingCandy", 5, 2, 
+Database.addAscii("places/castle/tower/talkingCandy", 5, 2,
 [
 "\\.-./",
 "/'-'\\"
 ]);
-Database.addAscii("places/cauldron/book", 96, 30, 
+Database.addAscii("places/cauldron/book", 96, 30,
 [
 "      _________________________________________   ________________________________________",
 " _.-' |                                        \\ /                                       | '-._",
@@ -1693,7 +1693,7 @@ Database.addAscii("places/cauldron/book", 96, 30,
 "| | |'__________________________________________^________________________________________'.| | |",
 "|_|'___________________________________________/ \\_________________________________________'.|_|"
 ]);
-Database.addAscii("places/cauldron/bookPage0", 39, 22, 
+Database.addAscii("places/cauldron/bookPage0", 39, 22,
 [
 "0",
 "",
@@ -1718,7 +1718,7 @@ Database.addAscii("places/cauldron/bookPage0", 39, 22,
 " | | | | | | (_| | | | | |_| | (_| | |",
 " |_| |_| |_|\\__,_|_| |_|\\__,_|\\__,_|_|"
 ]);
-Database.addAscii("places/cauldron/bookPage1", 38, 18, 
+Database.addAscii("places/cauldron/bookPage1", 38, 18,
 [
 "                                     1",
 "",
@@ -1739,7 +1739,7 @@ Database.addAscii("places/cauldron/bookPage1", 38, 18,
 " Pages 10-11 : The X potion",
 ""
 ]);
-Database.addAscii("places/cauldron/bookPage10", 40, 26, 
+Database.addAscii("places/cauldron/bookPage10", 40, 26,
 [
 "10",
 "              The X potion",
@@ -1768,7 +1768,7 @@ Database.addAscii("places/cauldron/bookPage10", 40, 26,
 "potions, you can't brew multiple X",
 "potions at once."
 ]);
-Database.addAscii("places/cauldron/bookPage11", 39, 26, 
+Database.addAscii("places/cauldron/bookPage11", 39, 26,
 [
 "                                    11",
 "",
@@ -1797,7 +1797,7 @@ Database.addAscii("places/cauldron/bookPage11", 39, 26,
 "     but now the Sweet was happy,",
 "       and it was hot outside."
 ]);
-Database.addAscii("places/cauldron/bookPage2", 39, 22, 
+Database.addAscii("places/cauldron/bookPage2", 39, 22,
 [
 "2",
 "",
@@ -1822,7 +1822,7 @@ Database.addAscii("places/cauldron/bookPage2", 39, 22,
 "example, if you use 300 candies instead",
 "of 100, you will get 3 health potions."
 ]);
-Database.addAscii("places/cauldron/bookPage3", 39, 26, 
+Database.addAscii("places/cauldron/bookPage3", 39, 26,
 [
 "                                     3",
 "",
@@ -1851,7 +1851,7 @@ Database.addAscii("places/cauldron/bookPage3", 39, 26,
 "a turtle, do NOT turn over. You",
 "wouldn't be able to get up."
 ]);
-Database.addAscii("places/cauldron/bookPage4", 40, 25, 
+Database.addAscii("places/cauldron/bookPage4", 40, 25,
 [
 "4",
 "",
@@ -1879,7 +1879,7 @@ Database.addAscii("places/cauldron/bookPage4", 40, 25,
 "   - Heat up until the water is boiling",
 "   - Put into bottles"
 ]);
-Database.addAscii("places/cauldron/bookPage5", 39, 23, 
+Database.addAscii("places/cauldron/bookPage5", 39, 23,
 [
 "                                     5",
 "",
@@ -1905,7 +1905,7 @@ Database.addAscii("places/cauldron/bookPage5", 39, 23,
 "_______________            __\\o/_______",
 "              /            \\"
 ]);
-Database.addAscii("places/cauldron/bookPage6", 40, 23, 
+Database.addAscii("places/cauldron/bookPage6", 40, 23,
 [
 "6",
 "",
@@ -1931,7 +1931,7 @@ Database.addAscii("places/cauldron/bookPage6", 40, 23,
 "     hurting",
 "   - Put into bottles"
 ]);
-Database.addAscii("places/cauldron/bookPage7", 38, 20, 
+Database.addAscii("places/cauldron/bookPage7", 38, 20,
 [
 "                                     7",
 "",
@@ -1954,7 +1954,7 @@ Database.addAscii("places/cauldron/bookPage7", 38, 20,
 "",
 "  Results would be unexpected."
 ]);
-Database.addAscii("places/cauldron/bookPage8", 40, 26, 
+Database.addAscii("places/cauldron/bookPage8", 40, 26,
 [
 "8",
 "              The P potion",
@@ -1983,7 +1983,7 @@ Database.addAscii("places/cauldron/bookPage8", 40, 26,
 "   - Mix",
 "   - Put into bottles!"
 ]);
-Database.addAscii("places/cauldron/bookPage9", 40, 21, 
+Database.addAscii("places/cauldron/bookPage9", 40, 21,
 [
 "                                     9",
 "",
@@ -2007,7 +2007,7 @@ Database.addAscii("places/cauldron/bookPage9", 40, 21,
 "  - Animals drinking P potions seem to",
 "react in a very bad way."
 ]);
-Database.addAscii("places/cauldron/cauldron", 42, 18, 
+Database.addAscii("places/cauldron/cauldron", 42, 18,
 [
 "            _________________",
 "           (_________________)",
@@ -2028,7 +2028,7 @@ Database.addAscii("places/cauldron/cauldron", 42, 18,
 "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
 "¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨"
 ]);
-Database.addAscii("places/fortress/inside", 100, 32, 
+Database.addAscii("places/fortress/inside", 100, 32,
 [
 "                              |                                      |",
 "                              |                                      |",
@@ -2063,7 +2063,7 @@ Database.addAscii("places/fortress/inside", 100, 32,
 "_.-'                                                                                             '-.",
 ""
 ]);
-Database.addAscii("places/lighthouse/lighthouse", 100, 48, 
+Database.addAscii("places/lighthouse/lighthouse", 100, 48,
 [
 "",
 "",
@@ -2114,7 +2114,7 @@ Database.addAscii("places/lighthouse/lighthouse", 100, 48,
 "                                                                                   | _      _      _",
 "                                                                                   \\)`'-.,_)`'-.,_)`"
 ]);
-Database.addAscii("places/lighthouse/puzzle/blankPart", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/blankPart", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2122,7 +2122,7 @@ Database.addAscii("places/lighthouse/puzzle/blankPart", 7, 5,
 "\\     /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/livesPart", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/livesPart", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2130,7 +2130,7 @@ Database.addAscii("places/lighthouse/puzzle/livesPart", 7, 5,
 "\\  <3 /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/moveBelowLineToTheRight", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/moveBelowLineToTheRight", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2138,7 +2138,7 @@ Database.addAscii("places/lighthouse/puzzle/moveBelowLineToTheRight", 7, 5,
 "\\ --> /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/moveLeftLineAbove", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/moveLeftLineAbove", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2146,7 +2146,7 @@ Database.addAscii("places/lighthouse/puzzle/moveLeftLineAbove", 7, 5,
 "\\   | /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/nothingHerePart", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/nothingHerePart", 7, 5,
 [
 "_______",
 "\\ no  /",
@@ -2154,7 +2154,7 @@ Database.addAscii("places/lighthouse/puzzle/nothingHerePart", 7, 5,
 "\\here!/",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/showAbove", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/showAbove", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2162,7 +2162,7 @@ Database.addAscii("places/lighthouse/puzzle/showAbove", 7, 5,
 "\\     /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/showAroundPart", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/showAroundPart", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2170,7 +2170,7 @@ Database.addAscii("places/lighthouse/puzzle/showAroundPart", 7, 5,
 "\\ V < /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/showBelow", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/showBelow", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2178,7 +2178,7 @@ Database.addAscii("places/lighthouse/puzzle/showBelow", 7, 5,
 "\\     /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/showLeft", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/showLeft", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2186,7 +2186,7 @@ Database.addAscii("places/lighthouse/puzzle/showLeft", 7, 5,
 "\\     /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/showLeftRight", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/showLeftRight", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2194,7 +2194,7 @@ Database.addAscii("places/lighthouse/puzzle/showLeftRight", 7, 5,
 "\\  <  /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/showRight", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/showRight", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2202,7 +2202,7 @@ Database.addAscii("places/lighthouse/puzzle/showRight", 7, 5,
 "\\     /",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/stonePart", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/stonePart", 7, 5,
 [
 "_______",
 "\\ ___ /",
@@ -2210,7 +2210,7 @@ Database.addAscii("places/lighthouse/puzzle/stonePart", 7, 5,
 "\\\\___//",
 "/_____\\"
 ]);
-Database.addAscii("places/lighthouse/puzzle/whatPart", 7, 5, 
+Database.addAscii("places/lighthouse/puzzle/whatPart", 7, 5,
 [
 "_______",
 "\\     /",
@@ -2218,25 +2218,25 @@ Database.addAscii("places/lighthouse/puzzle/whatPart", 7, 5,
 "\\     /",
 "/_____\\"
 ]);
-Database.addAscii("places/lollipopFarm/lolligatorLeftFull", 12, 2, 
+Database.addAscii("places/lollipopFarm/lolligatorLeftFull", 12, 2,
 [
 "\\o^^^^.__.-.",
 "/ ¨¨¨¨¨  '-'"
 ]);
-Database.addAscii("places/lollipopFarm/lolligatorLeftTop", 12, 1, 
+Database.addAscii("places/lollipopFarm/lolligatorLeftTop", 12, 1,
 [
 "_o^^^^.__.-."
 ]);
-Database.addAscii("places/lollipopFarm/lolligatorRightFull", 13, 2, 
+Database.addAscii("places/lollipopFarm/lolligatorRightFull", 13, 2,
 [
 ".-.__.^^^^^o/",
 "'-'  ¨¨¨¨¨¨ \\"
 ]);
-Database.addAscii("places/lollipopFarm/lolligatorRightTop", 13, 1, 
+Database.addAscii("places/lollipopFarm/lolligatorRightTop", 13, 1,
 [
 ".-.__.^^^^^o_"
 ]);
-Database.addAscii("places/lollipopFarm/lollipopFarm", 102, 28, 
+Database.addAscii("places/lollipopFarm/lollipopFarm", 102, 28,
 [
 "                                     _______________________________________________",
 "                                    /-----------------------------------------------\\",
@@ -2267,7 +2267,7 @@ Database.addAscii("places/lollipopFarm/lollipopFarm", 102, 28,
 " /                                   /",
 ":---:---:---:---:---:---:---:---:---:"
 ]);
-Database.addAscii("places/lollipopFarm/mill", 19, 15, 
+Database.addAscii("places/lollipopFarm/mill", 19, 15,
 [
 "        __",
 " /'.   /**\\   .'\\",
@@ -2285,7 +2285,7 @@ Database.addAscii("places/lollipopFarm/mill", 19, 15,
 "",
 ""
 ]);
-Database.addAscii("places/lollipopFarm/pond", 52, 15, 
+Database.addAscii("places/lollipopFarm/pond", 52, 15,
 [
 "                    _____",
 "            _____.-'     \\____         |",
@@ -2303,7 +2303,7 @@ Database.addAscii("places/lollipopFarm/pond", 52, 15,
 "            '-.________           _________/",
 "                       '-._____.-'"
 ]);
-Database.addAscii("places/quests/bridge/bridge", 138, 15, 
+Database.addAscii("places/quests/bridge/bridge", 138, 15,
 [
 "__________________________________________________________________________________________________________________________________________",
 "¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨",
@@ -2321,7 +2321,7 @@ Database.addAscii("places/quests/bridge/bridge", 138, 15,
 "~~~~~~|~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~|~~~~~",
 "~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"
 ]);
-Database.addAscii("places/quests/bridge/troll", 15, 10, 
+Database.addAscii("places/quests/bridge/troll", 15, 10,
 [
 "           /\\",
 "    (_)   /< \\>",
@@ -2334,7 +2334,7 @@ Database.addAscii("places/quests/bridge/troll", 15, 10,
 "   || ||",
 "  /_|/_|"
 ]);
-Database.addAscii("places/quests/castle/room1/background", 100, 24, 
+Database.addAscii("places/quests/castle/room1/background", 100, 24,
 [
 "",
 "",
@@ -2361,7 +2361,7 @@ Database.addAscii("places/quests/castle/room1/background", 100, 24,
 "      |                                                                                        |",
 "      |________________________________________________________________________________________|"
 ]);
-Database.addAscii("places/quests/castle/room3/background", 100, 24, 
+Database.addAscii("places/quests/castle/room3/background", 100, 24,
 [
 "",
 "",
@@ -2388,18 +2388,18 @@ Database.addAscii("places/quests/castle/room3/background", 100, 24,
 "      |",
 "      |_____________________________________________________________________________________________"
 ]);
-Database.addAscii("places/quests/castle/room3/egg", 2, 1, 
+Database.addAscii("places/quests/castle/room3/egg", 2, 1,
 [
 "()"
 ]);
-Database.addAscii("places/quests/castle/room3/monster", 13, 4, 
+Database.addAscii("places/quests/castle/room3/monster", 13, 4,
 [
 "\\  _______  /",
 " \\/%%%%%%%\\/",
 "  \\%°%.%°%/",
 "   \\_____/"
 ]);
-Database.addAscii("places/quests/castleEntrance/background", 149, 31, 
+Database.addAscii("places/quests/castleEntrance/background", 149, 31,
 [
 "                                                                                                              |   |    |   |/                       /",
 "                                                                                                            _/__     ____  /                       /",
@@ -2433,7 +2433,7 @@ Database.addAscii("places/quests/castleEntrance/background", 149, 31,
 "                                                        ¨",
 ""
 ]);
-Database.addAscii("places/quests/castleEntrance/front", 18, 30, 
+Database.addAscii("places/quests/castleEntrance/front", 18, 30,
 [
 "",
 "",
@@ -2466,7 +2466,7 @@ Database.addAscii("places/quests/castleEntrance/front", 18, 30,
 "|__|___|___|__| /",
 "||___|___|___||/"
 ]);
-Database.addAscii("places/quests/castleEntrance/knight1", 15, 6, 
+Database.addAscii("places/quests/castleEntrance/knight1", 15, 6,
 [
 "       _",
 "  _:  {_)",
@@ -2475,7 +2475,7 @@ Database.addAscii("places/quests/castleEntrance/knight1", 15, 6,
 "   `..---..'",
 "    ||   ||"
 ]);
-Database.addAscii("places/quests/castleEntrance/knight2", 15, 6, 
+Database.addAscii("places/quests/castleEntrance/knight2", 15, 6,
 [
 "       _",
 "  _:  {_)",
@@ -2484,7 +2484,7 @@ Database.addAscii("places/quests/castleEntrance/knight2", 15, 6,
 "   `..---..'",
 "    /|   ||"
 ]);
-Database.addAscii("places/quests/castleEntrance/knight3", 15, 6, 
+Database.addAscii("places/quests/castleEntrance/knight3", 15, 6,
 [
 "       _",
 "  _:  {_)",
@@ -2493,7 +2493,7 @@ Database.addAscii("places/quests/castleEntrance/knight3", 15, 6,
 "   `..---..'",
 "    |\\   |\\"
 ]);
-Database.addAscii("places/quests/castleEntrance/knight4", 15, 6, 
+Database.addAscii("places/quests/castleEntrance/knight4", 15, 6,
 [
 "       _",
 "  _:  {_)",
@@ -2502,7 +2502,7 @@ Database.addAscii("places/quests/castleEntrance/knight4", 15, 6,
 "   `..---..'",
 "    \\\\   \\\\"
 ]);
-Database.addAscii("places/quests/castleEntrance/knight5", 15, 6, 
+Database.addAscii("places/quests/castleEntrance/knight5", 15, 6,
 [
 "       _",
 "  _:  {_)",
@@ -2511,26 +2511,26 @@ Database.addAscii("places/quests/castleEntrance/knight5", 15, 6,
 "   `..---..'",
 "    |\\   \\\\"
 ]);
-Database.addAscii("places/quests/cellar/rat", 3, 1, 
+Database.addAscii("places/quests/cellar/rat", 3, 1,
 [
 "rat"
 ]);
-Database.addAscii("places/quests/common/chestClosed", 3, 2, 
+Database.addAscii("places/quests/common/chestClosed", 3, 2,
 [
 " _",
 "|_|"
 ]);
-Database.addAscii("places/quests/common/chestOpenedLeft", 3, 2, 
+Database.addAscii("places/quests/common/chestOpenedLeft", 3, 2,
 [
 "  )",
 "|_|"
 ]);
-Database.addAscii("places/quests/common/chestOpenedRight", 3, 2, 
+Database.addAscii("places/quests/common/chestOpenedRight", 3, 2,
 [
 "(",
 "|_|"
 ]);
-Database.addAscii("places/quests/desert/background", 149, 9, 
+Database.addAscii("places/quests/desert/background", 149, 9,
 [
 "      //^\\\\                            //^\\\\                                                     //^\\\\",
 "       '#'                              '#'                                                       '#'                                //^\\\\",
@@ -2542,48 +2542,48 @@ Database.addAscii("places/quests/desert/background", 149, 9,
 "   ~                  '*-,.__.,-*'      ~     ~              '-,.__.,--*'                  ~       '*-,.__.,-*'       ~                   '-,.__.,-*'",
 "         ~       ~             ~                     ~                      ~                           ~                        ~"
 ]);
-Database.addAscii("places/quests/desert/birdLeftDown", 9, 4, 
+Database.addAscii("places/quests/desert/birdLeftDown", 9, 4,
 [
 "",
 "<>_____",
 "  \\_\\\\/-<",
 "     \\\\"
 ]);
-Database.addAscii("places/quests/desert/birdLeftUp", 9, 3, 
+Database.addAscii("places/quests/desert/birdLeftUp", 9, 3,
 [
 "     //",
 "<>__//_",
 "  \\___/-<"
 ]);
-Database.addAscii("places/quests/desert/birdRightDown", 9, 4, 
+Database.addAscii("places/quests/desert/birdRightDown", 9, 4,
 [
 "",
 "  _____<>",
 ">-\\//_/",
 "  //"
 ]);
-Database.addAscii("places/quests/desert/birdRightUp", 9, 3, 
+Database.addAscii("places/quests/desert/birdRightUp", 9, 3,
 [
 "  \\\\",
 "  _\\\\__<>",
 ">-\\___/"
 ]);
-Database.addAscii("places/quests/desert/camel", 7, 2, 
+Database.addAscii("places/quests/desert/camel", 7, 2,
 [
 "Q_/\\/\\",
 "  ||||`"
 ]);
-Database.addAscii("places/quests/desert/tripodCamel1", 7, 2, 
+Database.addAscii("places/quests/desert/tripodCamel1", 7, 2,
 [
 "Q_/\\/\\",
 "  || |`"
 ]);
-Database.addAscii("places/quests/desert/tripodCamel2", 7, 2, 
+Database.addAscii("places/quests/desert/tripodCamel2", 7, 2,
 [
 "Q_/\\/\\",
 "  | ||`"
 ]);
-Database.addAscii("places/quests/developer/hello", 38, 5, 
+Database.addAscii("places/quests/developer/hello", 38, 5,
 [
 "B    B   BBBBB   B       B       BBBBB",
 "B    B   B       B       B       B   B",
@@ -2591,7 +2591,7 @@ Database.addAscii("places/quests/developer/hello", 38, 5,
 "B    B   B       B       B       B   B",
 "B    B   BBBBB   BBBBB   BBBBB   BBBBB"
 ]);
-Database.addAscii("places/quests/developer/imgladyoumadeitsofar", 94, 12, 
+Database.addAscii("places/quests/developer/imgladyoumadeitsofar", 94, 12,
 [
 "YYYYY  Y  YY YY      YYYYY   Y       YYYYY   YYY        O   O   OOOOO   O   O",
 "  Y       Y Y Y      Y       Y       Y   Y   Y  YY       O O    O   O   O   O",
@@ -2606,7 +2606,7 @@ Database.addAscii("places/quests/developer/imgladyoumadeitsofar", 94, 12,
 "Y   Y   Y   Y   Y  YY   Y            Y       Y            Y   Y   Y      Y       Y   Y   Y  Y",
 "Y   Y   Y   Y   YYY     YYYYY      YYYYY     Y        YYYYY   YYYYY      Y       Y   Y   Y   Y"
 ]);
-Database.addAscii("places/quests/developer/love", 16, 5, 
+Database.addAscii("places/quests/developer/love", 16, 5,
 [
 "    Y      BBBBB",
 "  Y            B",
@@ -2614,7 +2614,7 @@ Database.addAscii("places/quests/developer/love", 16, 5,
 "  Y            B",
 "    Y      BBBBB"
 ]);
-Database.addAscii("places/quests/developer/me", 43, 34, 
+Database.addAscii("places/quests/developer/me", 43, 34,
 [
 "                    ######",
 "                ############",
@@ -2651,7 +2651,7 @@ Database.addAscii("places/quests/developer/me", 43, 34,
 " ################XXxxxxxx################",
 "######################X####################"
 ]);
-Database.addAscii("places/quests/forest/background", 98, 17, 
+Database.addAscii("places/quests/forest/background", 98, 17,
 [
 "  |   \\\\|.'    |  |    \\\\|.'   |  |     \\\\|.'  |  |   \\\\|.'    |  |    \\\\|.'   |  |     \\\\|.'  |",
 " ||   \\` /   _.| ||,!  \\` /   _| ||\\,!  \\` /   | ||   \\` /   _.| ||,!  \\` /   _| ||\\,!  \\` /   | |",
@@ -2671,7 +2671,7 @@ Database.addAscii("places/quests/forest/background", 98, 17,
 "  ¨                  ¨                       ¨                  ¨                   ¨       ¨",
 "      ¨                 ¨           ¨                     ¨              ¨               ¨      ¨"
 ]);
-Database.addAscii("places/quests/forest/treeSpirit", 5, 5, 
+Database.addAscii("places/quests/forest/treeSpirit", 5, 5,
 [
 "_____",
 "°|||°",
@@ -2679,31 +2679,31 @@ Database.addAscii("places/quests/forest/treeSpirit", 5, 5,
 " |||",
 " |||"
 ]);
-Database.addAscii("places/quests/forest/wolf/leftRunning", 7, 3, 
+Database.addAscii("places/quests/forest/wolf/leftRunning", 7, 3,
 [
 " _",
 "''(___",
 " \\\\ \\\\`"
 ]);
-Database.addAscii("places/quests/forest/wolf/leftStanding", 7, 3, 
+Database.addAscii("places/quests/forest/wolf/leftStanding", 7, 3,
 [
 " _",
 "''(___",
 " || ||`"
 ]);
-Database.addAscii("places/quests/forest/wolf/rightRunning", 7, 3, 
+Database.addAscii("places/quests/forest/wolf/rightRunning", 7, 3,
 [
 "     _",
 " ___)''",
 "`// //"
 ]);
-Database.addAscii("places/quests/forest/wolf/rightStanding", 7, 3, 
+Database.addAscii("places/quests/forest/wolf/rightStanding", 7, 3,
 [
 "     _",
 " ___)''",
 "`|| ||"
 ]);
-Database.addAscii("places/quests/fortress/room1", 208, 31, 
+Database.addAscii("places/quests/fortress/room1", 208, 31,
 [
 "        ~                ~                                 ~                               ~                                  ~                                                           ~                    ~",
 "________________________________________________________________________________________________________________________________________________________________________________________________________",
@@ -2737,7 +2737,7 @@ Database.addAscii("places/quests/fortress/room1", 208, 31,
 "            ~  |                  |   ~   |    |    |    |          ~           ~   |    |      ~              ~               ~                      ~         |            | ~   |    |          ~",
 "   ~           |__________________|_______|____|    |____|__________________________|____|______________________________________________________________________|____________|_____|____|_______________________"
 ]);
-Database.addAscii("places/quests/fortress/room2", 100, 17, 
+Database.addAscii("places/quests/fortress/room2", 100, 17,
 [
 "                           ~                         ~                        ~",
 "                ~                              ~                                             ~",
@@ -2757,7 +2757,7 @@ Database.addAscii("places/quests/fortress/room2", 100, 17,
 "                ~              ~     \\_____________________/           ~",
 "    ~                                           ~                                  ~            ~"
 ]);
-Database.addAscii("places/quests/fortress/room3", 100, 31, 
+Database.addAscii("places/quests/fortress/room3", 100, 31,
 [
 "                         ~                                 ~                               ~",
 "     ~          __________________________________________________________________________",
@@ -2791,7 +2791,7 @@ Database.addAscii("places/quests/fortress/room3", 100, 31,
 "                                                                                  |          ~",
 "__________________________________________________________________________________|  ~"
 ]);
-Database.addAscii("places/quests/fortress/teapot", 19, 6, 
+Database.addAscii("places/quests/fortress/teapot", 19, 6,
 [
 "",
 ". -   .-'¨¨'-.",
@@ -2800,7 +2800,7 @@ Database.addAscii("places/quests/fortress/teapot", 19, 6,
 "   \\;%%%%%%%%%%;%.\"",
 "     \\________/ \""
 ]);
-Database.addAscii("places/quests/fortress/xinopherydon", 17, 6, 
+Database.addAscii("places/quests/fortress/xinopherydon", 17, 6,
 [
 " ___",
 "/o  \\___     ___",
@@ -2809,28 +2809,28 @@ Database.addAscii("places/quests/fortress/xinopherydon", 17, 6,
 "    \\   / \\   /",
 "     \\_/   \\_/"
 ]);
-Database.addAscii("places/quests/giantNougatMonster/monster", 15, 4, 
+Database.addAscii("places/quests/giantNougatMonster/monster", 15, 4,
 [
 " .-'¨¨¨¨¨¨¨'.",
 "/-%%%%%%%%%%%'.",
 "\\%%%%%%%%%%%%.'",
 " '-._._._._-'"
 ]);
-Database.addAscii("places/quests/giantNougatMonster/monsterAngry", 15, 4, 
+Database.addAscii("places/quests/giantNougatMonster/monsterAngry", 15, 4,
 [
 " .-'¨¨¨¨¨¨¨'.",
 "/O%%%%%%%%%%%'.",
 "\\%%%%%%%%%%%%.'",
 " '-._._._._-'"
 ]);
-Database.addAscii("places/quests/giantNougatMonster/monsterAwake", 15, 4, 
+Database.addAscii("places/quests/giantNougatMonster/monsterAwake", 15, 4,
 [
 " .-'¨¨¨¨¨¨¨'.",
 "/o%%%%%%%%%%%'.",
 "\\%%%%%%%%%%%%.'",
 " '-._._._._-'"
 ]);
-Database.addAscii("places/quests/hell/background", 150, 10, 
+Database.addAscii("places/quests/hell/background", 150, 10,
 [
 "_______________________________________________________                _______________________            ____________________________________________",
 "                                                      /|              |\\                     /|          |\\",
@@ -2843,7 +2843,7 @@ Database.addAscii("places/quests/hell/background", 150, 10,
 "                                                   | /                  \\ |               | /              \\ |",
 "___________________________________________________|/                    \\|_______________|/                \\|________________________________________"
 ]);
-Database.addAscii("places/quests/hell/camazotz", 22, 8, 
+Database.addAscii("places/quests/hell/camazotz", 22, 8,
 [
 "         ____",
 "        /%%%%\\",
@@ -2854,62 +2854,62 @@ Database.addAscii("places/quests/hell/camazotz", 22, 8,
 "         '..'",
 "          WW"
 ]);
-Database.addAscii("places/quests/hell/demonBubbles0", 5, 3, 
+Database.addAscii("places/quests/hell/demonBubbles0", 5, 3,
 [
 "OooO",
 " ooOo",
 "oOo"
 ]);
-Database.addAscii("places/quests/hell/demonBubbles1", 5, 3, 
+Database.addAscii("places/quests/hell/demonBubbles1", 5, 3,
 [
 " oOo",
 "OooOo",
 " oOoO"
 ]);
-Database.addAscii("places/quests/hell/demonBubbles2", 5, 3, 
+Database.addAscii("places/quests/hell/demonBubbles2", 5, 3,
 [
 "oOoo",
 " OooO",
 "Ooo"
 ]);
-Database.addAscii("places/quests/hell/demonBubbles3", 5, 3, 
+Database.addAscii("places/quests/hell/demonBubbles3", 5, 3,
 [
 " oO",
 "OooO",
 "ooOoO"
 ]);
-Database.addAscii("places/quests/hell/demonBubbles4", 5, 3, 
+Database.addAscii("places/quests/hell/demonBubbles4", 5, 3,
 [
 "  Oo",
 " OooO",
 "ooOoO"
 ]);
-Database.addAscii("places/quests/hell/demonBubbles5", 5, 3, 
+Database.addAscii("places/quests/hell/demonBubbles5", 5, 3,
 [
 "oOoo",
 " Ooo",
 "OoOOo"
 ]);
-Database.addAscii("places/quests/hell/demonBubbles6", 5, 3, 
+Database.addAscii("places/quests/hell/demonBubbles6", 5, 3,
 [
 "oOoO",
 "  oOo",
 "OooOo"
 ]);
-Database.addAscii("places/quests/hell/demonCube", 5, 3, 
+Database.addAscii("places/quests/hell/demonCube", 5, 3,
 [
 ".-'-.",
 ";°%°;",
 "'-.-'"
 ]);
-Database.addAscii("places/quests/hell/demonEyes", 5, 4, 
+Database.addAscii("places/quests/hell/demonEyes", 5, 4,
 [
 "_____",
 "\\è%é/",
 " )%(",
 "/___\\"
 ]);
-Database.addAscii("places/quests/hell/devil", 8, 6, 
+Database.addAscii("places/quests/hell/devil", 8, 6,
 [
 "/(    )\\",
 "\\%\\__/%/",
@@ -2918,14 +2918,14 @@ Database.addAscii("places/quests/hell/devil", 8, 6,
 "  \\%%/",
 "   ¨¨"
 ]);
-Database.addAscii("places/quests/monkeyWizard/monkeyWizard", 4, 4, 
+Database.addAscii("places/quests/monkeyWizard/monkeyWizard", 4, 4,
 [
 "   W",
 " O_|",
 "/| |",
 "( )|"
 ]);
-Database.addAscii("places/quests/monkeyWizard/roof", 100, 5, 
+Database.addAscii("places/quests/monkeyWizard/roof", 100, 5,
 [
 "     .         .               .               .                    .         .               .",
 "       ___________ .               .                        .       ___              .",
@@ -2933,14 +2933,14 @@ Database.addAscii("places/quests/monkeyWizard/roof", 100, 5,
 " /                      \\___________________/                                      \\_______________",
 "/                                                                                                  \\"
 ]);
-Database.addAscii("places/quests/octopusKing/octopusKing", 6, 4, 
+Database.addAscii("places/quests/octopusKing/octopusKing", 6, 4,
 [
 "  WW",
 " /..\\",
 " \\  /",
 "///\\\\\\"
 ]);
-Database.addAscii("places/quests/octopusKing/roof", 100, 5, 
+Database.addAscii("places/quests/octopusKing/roof", 100, 5,
 [
 "       .               .            .            .                  .             .            .",
 "   .   ___________              .                        .          ___  .                  .",
@@ -2948,7 +2948,7 @@ Database.addAscii("places/quests/octopusKing/roof", 100, 5,
 " /                      \\___________________/                                      \\_______________",
 "/                                                                                                  \\"
 ]);
-Database.addAscii("places/quests/theHole/background", 100, 136, 
+Database.addAscii("places/quests/theHole/background", 100, 136,
 [
 "                                        |                  |",
 "                                        |                  |",
@@ -3087,14 +3087,14 @@ Database.addAscii("places/quests/theHole/background", 100, 136,
 "                -                             -                       |_______/           -",
 ""
 ]);
-Database.addAscii("places/quests/theHole/lostTribeWarrior", 4, 4, 
+Database.addAscii("places/quests/theHole/lostTribeWarrior", 4, 4,
 [
 "▲",
 "|_O/",
 "| |",
 "|/ \\"
 ]);
-Database.addAscii("places/quests/theSea/bigShark", 47, 10, 
+Database.addAscii("places/quests/theSea/bigShark", 47, 10,
 [
 "              .´",
 "             /(",
@@ -3107,7 +3107,7 @@ Database.addAscii("places/quests/theSea/bigShark", 47, 10,
 "               \\%/",
 "                V"
 ]);
-Database.addAscii("places/quests/theSea/jellyFish", 6, 5, 
+Database.addAscii("places/quests/theSea/jellyFish", 6, 5,
 [
 " ____",
 "(o%%o)",
@@ -3115,14 +3115,14 @@ Database.addAscii("places/quests/theSea/jellyFish", 6, 5,
 "((((",
 " ))))"
 ]);
-Database.addAscii("places/quests/theSea/mediumFish", 8, 4, 
+Database.addAscii("places/quests/theSea/mediumFish", 8, 4,
 [
 "  __",
 " /.%\\ /|",
 "(%%%%X%|",
 " \\_V/ \\|"
 ]);
-Database.addAscii("places/quests/theSea/miniShark", 19, 5, 
+Database.addAscii("places/quests/theSea/miniShark", 19, 5,
 [
 "         ,        .",
 "        /(.._,,_./|",
@@ -3130,28 +3130,28 @@ Database.addAscii("places/quests/theSea/miniShark", 19, 5,
 " .´¤%}}}%%%%.-'-'\\|",
 "´v-----\\|--'      '"
 ]);
-Database.addAscii("places/quests/theSea/plant0", 4, 4, 
+Database.addAscii("places/quests/theSea/plant0", 4, 4,
 [
 "\\##/",
 " )%)",
 "(%(",
 " )_)"
 ]);
-Database.addAscii("places/quests/theSea/plant1", 3, 4, 
+Database.addAscii("places/quests/theSea/plant1", 3, 4,
 [
 " )-",
 "(",
 "-)-",
 "("
 ]);
-Database.addAscii("places/quests/theSea/plant10", 4, 4, 
+Database.addAscii("places/quests/theSea/plant10", 4, 4,
 [
 "\\@@/",
 "(%(",
 " )%)",
 "(_("
 ]);
-Database.addAscii("places/quests/theSea/plant2", 3, 6, 
+Database.addAscii("places/quests/theSea/plant2", 3, 6,
 [
 "  )",
 "-(-",
@@ -3160,14 +3160,14 @@ Database.addAscii("places/quests/theSea/plant2", 3, 6,
 "  )",
 " ("
 ]);
-Database.addAscii("places/quests/theSea/plant3", 4, 4, 
+Database.addAscii("places/quests/theSea/plant3", 4, 4,
 [
 "  )",
 " (",
 "  )-",
 "-("
 ]);
-Database.addAscii("places/quests/theSea/plant4", 4, 6, 
+Database.addAscii("places/quests/theSea/plant4", 4, 6,
 [
 "  )",
 "-(",
@@ -3176,14 +3176,14 @@ Database.addAscii("places/quests/theSea/plant4", 4, 6,
 "  )-",
 " ("
 ]);
-Database.addAscii("places/quests/theSea/plant5", 4, 4, 
+Database.addAscii("places/quests/theSea/plant5", 4, 4,
 [
 "  )",
 "-(",
 "  )-",
 " ("
 ]);
-Database.addAscii("places/quests/theSea/plant6", 4, 9, 
+Database.addAscii("places/quests/theSea/plant6", 4, 9,
 [
 "  )-",
 " (",
@@ -3195,51 +3195,51 @@ Database.addAscii("places/quests/theSea/plant6", 4, 9,
 "-(",
 "  )"
 ]);
-Database.addAscii("places/quests/theSea/plant7", 4, 4, 
+Database.addAscii("places/quests/theSea/plant7", 4, 4,
 [
 "  )-",
 "-(",
 "  )",
 " ("
 ]);
-Database.addAscii("places/quests/theSea/plant8", 4, 4, 
+Database.addAscii("places/quests/theSea/plant8", 4, 4,
 [
 "\\MM/",
 " )%)",
 "(%(",
 " )_)"
 ]);
-Database.addAscii("places/quests/theSea/plant9", 4, 4, 
+Database.addAscii("places/quests/theSea/plant9", 4, 4,
 [
 "\\##/",
 "(%(",
 " )%)",
 "(_("
 ]);
-Database.addAscii("places/quests/theSea/seahorse", 4, 4, 
+Database.addAscii("places/quests/theSea/seahorse", 4, 4,
 [
 ":=@",
 " {|<",
 "  |",
 "  J"
 ]);
-Database.addAscii("places/quests/theSea/shellPowder", 6, 3, 
+Database.addAscii("places/quests/theSea/shellPowder", 6, 3,
 [
 " z.-);",
 "})]`s",
 ";h;-+-"
 ]);
-Database.addAscii("places/quests/theSea/smallestFish", 3, 1, 
+Database.addAscii("places/quests/theSea/smallestFish", 3, 1,
 [
 "()("
 ]);
-Database.addAscii("places/quests/theSea/sponge", 6, 3, 
+Database.addAscii("places/quests/theSea/sponge", 6, 3,
 [
 " *~**",
 "****-*",
 " *****"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/1", 78, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/1", 78, 11,
 [
 "",
 "    ___//",
@@ -3253,7 +3253,7 @@ Database.addAscii("places/quests/theSea/seaSnake/1", 78, 11,
 "                        '-(_( ( ( ( ( ( ( ( (_(-'                   '-(_('-_",
 "                            '--(.(_( ( ( -'                            ' - ('>"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/10", 103, 10, 
+Database.addAscii("places/quests/theSea/seaSnake/10", 103, 10,
 [
 "",
 "",
@@ -3266,7 +3266,7 @@ Database.addAscii("places/quests/theSea/seaSnake/10", 103, 10,
 "               '-.( ( ( ( ( ( ( ( ( -'                                     \\('",
 "                    ' -(.(_(_( - '                                          \\|"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/11", 111, 10, 
+Database.addAscii("places/quests/theSea/seaSnake/11", 111, 10,
 [
 "",
 "",
@@ -3279,7 +3279,7 @@ Database.addAscii("places/quests/theSea/seaSnake/11", 111, 10,
 "                     '-.( ( ( ( ( ( ( ( ( -'                              '.(\\",
 "                          ' -(.(_(_( - '                                    '-"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/12", 101, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/12", 101, 11,
 [
 "",
 "",
@@ -3293,7 +3293,7 @@ Database.addAscii("places/quests/theSea/seaSnake/12", 101, 11,
 "                          ' -(.(_(_( - '                                  '.(\\",
 "                                                                            '-"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/2", 79, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/2", 79, 11,
 [
 "",
 "",
@@ -3307,7 +3307,7 @@ Database.addAscii("places/quests/theSea/seaSnake/2", 79, 11,
 "                              '-(_( ( ( ( ( ( ( ( (_(-'                   '(.\\",
 "                                  '--(.(_( ( ( -'"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/3", 78, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/3", 78, 11,
 [
 "",
 "",
@@ -3321,7 +3321,7 @@ Database.addAscii("places/quests/theSea/seaSnake/3", 78, 11,
 "                                    '-(_( ( ( ( ( ( ( ( (_('",
 "                                         '--(.(_( ( ( -'"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/4", 78, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/4", 78, 11,
 [
 "",
 "",
@@ -3335,7 +3335,7 @@ Database.addAscii("places/quests/theSea/seaSnake/4", 78, 11,
 "                                           '-(_( ( ( ( ( ( ( ( (_(-'",
 "                                                '--(.(_( ( ( -'"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/5", 78, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/5", 78, 11,
 [
 "",
 "                          _ _",
@@ -3349,7 +3349,7 @@ Database.addAscii("places/quests/theSea/seaSnake/5", 78, 11,
 "                                                   ' ( ( ( ( ( ( (_(_( '",
 "                                                       '- ( (_(.(-'"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/6", 84, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/6", 84, 11,
 [
 "",
 "                              _ _ . _",
@@ -3363,7 +3363,7 @@ Database.addAscii("places/quests/theSea/seaSnake/6", 84, 11,
 "  /.'                                                 ' ( ( ( ( ( ( ( (_-'",
 "                                                           ' - ( ( ( '"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/7", 89, 11, 
+Database.addAscii("places/quests/theSea/seaSnake/7", 89, 11,
 [
 "",
 "                                    _ _ . _",
@@ -3377,7 +3377,7 @@ Database.addAscii("places/quests/theSea/seaSnake/7", 89, 11,
 "/__  _ /__( (-'                                             ' ( ( ( ( ( ( (.'",
 "  /.'                                                            ' ( ( (-'"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/8", 96, 10, 
+Database.addAscii("places/quests/theSea/seaSnake/8", 96, 10,
 [
 "",
 "",
@@ -3390,7 +3390,7 @@ Database.addAscii("places/quests/theSea/seaSnake/8", 96, 10,
 "/__  _ /( ( ( ( ( ( ( ( -'                                      '(.( ('- . __",
 "  /.'     ' -(_(_( - '                                              '-( ( ( .'"
 ]);
-Database.addAscii("places/quests/theSea/seaSnake/9", 101, 10, 
+Database.addAscii("places/quests/theSea/seaSnake/9", 101, 10,
 [
 "",
 "",
@@ -3403,7 +3403,7 @@ Database.addAscii("places/quests/theSea/seaSnake/9", 101, 10,
 "  /.'    '-.( ( ( ( ( ( ( ( ( -'                                         ( (\\",
 "              ' -(.(_(_( - '                                                '|"
 ]);
-Database.addAscii("places/sorceressHut/background", 286, 45, 
+Database.addAscii("places/sorceressHut/background", 286, 45,
 [
 "             |                                                                                                                    |",
 "             |                                                                                                                    |",
@@ -3451,7 +3451,7 @@ Database.addAscii("places/sorceressHut/background", 286, 45,
 "  .'          |_.-'                 '-._|                                                                                                   '.",
 ".'                                                                                                                                            '.                                                                                                                                            '."
 ]);
-Database.addAscii("places/sorceressHut/broom", 9, 27, 
+Database.addAscii("places/sorceressHut/broom", 9, 27,
 [
 "    v",
 "    v",
@@ -3481,7 +3481,7 @@ Database.addAscii("places/sorceressHut/broom", 9, 27,
 " \\|||||/",
 "  ^^^^^"
 ]);
-Database.addAscii("places/sorceressHut/cauldron", 42, 18, 
+Database.addAscii("places/sorceressHut/cauldron", 42, 18,
 [
 "            _________________",
 "           (_________________)",
@@ -3502,14 +3502,14 @@ Database.addAscii("places/sorceressHut/cauldron", 42, 18,
 "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
 "¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨"
 ]);
-Database.addAscii("places/sorceressHut/grimoire", 2, 4, 
+Database.addAscii("places/sorceressHut/grimoire", 2, 4,
 [
 "__",
 "ar",
 "fb",
 "tp"
 ]);
-Database.addAscii("places/sorceressHut/grimoire2", 4, 5, 
+Database.addAscii("places/sorceressHut/grimoire2", 4, 5,
 [
 " ___",
 "|",
@@ -3517,7 +3517,7 @@ Database.addAscii("places/sorceressHut/grimoire2", 4, 5,
 "|tho",
 "|shi"
 ]);
-Database.addAscii("places/sorceressHut/hat", 28, 7, 
+Database.addAscii("places/sorceressHut/hat", 28, 7,
 [
 "                   _.-.",
 "                .-'%%~%'.",
@@ -3527,11 +3527,11 @@ Database.addAscii("places/sorceressHut/hat", 28, 7,
 ".________/_________\\_______.",
 " ¨¨°¨°¨¨            ¨°¨¨¨°¨"
 ]);
-Database.addAscii("places/sorceressHut/lollipop", 5, 1, 
+Database.addAscii("places/sorceressHut/lollipop", 5, 1,
 [
 "o----"
 ]);
-Database.addAscii("places/sorceressHut/shelves", 56, 18, 
+Database.addAscii("places/sorceressHut/shelves", 56, 18,
 [
 "                      _____",
 "        __          _|=====|       ___ _",
@@ -3552,13 +3552,13 @@ Database.addAscii("places/sorceressHut/shelves", 56, 18,
 "_/_\\__'.___.'__(____)___\\\\__//_________\\___/_____'.__.'_",
 "¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨"
 ]);
-Database.addAscii("places/theCave/chocolateBar", 17, 3, 
+Database.addAscii("places/theCave/chocolateBar", 17, 3,
 [
 " _______________",
 "/__/__/__/__/__/|",
 "|__|__|__|__|__|/"
 ]);
-Database.addAscii("places/theCave/exit", 58, 31, 
+Database.addAscii("places/theCave/exit", 58, 31,
 [
 "",
 "",
@@ -3592,12 +3592,12 @@ Database.addAscii("places/theCave/exit", 58, 31,
 " /                                                      \\",
 "/                                                        \\"
 ]);
-Database.addAscii("places/theCave/heartPlug", 7, 2, 
+Database.addAscii("places/theCave/heartPlug", 7, 2,
 [
 "|__|__|",
 "|_____|"
 ]);
-Database.addAscii("places/theCave/monkeyWizard", 38, 20, 
+Database.addAscii("places/theCave/monkeyWizard", 38, 20,
 [
 "                              .  .  .",
 "              v              /%\\/%\\/%\\",
@@ -3620,7 +3620,7 @@ Database.addAscii("places/theCave/monkeyWizard", 38, 20,
 "     (oOo.)       (.oOo)      /_____\\",
 ""
 ]);
-Database.addAscii("places/theCave/octopusKing", 37, 19, 
+Database.addAscii("places/theCave/octopusKing", 37, 19,
 [
 "                                /\\",
 "             |\\/\\_/\\/|         :%%:",
@@ -3642,7 +3642,7 @@ Database.addAscii("places/theCave/octopusKing", 37, 19,
 " ||     (%(%(%(     )%)%)%)",
 " ||     (o(o(o(     )o)o)o)"
 ]);
-Database.addAscii("places/theCave/treasureMap", 20, 8, 
+Database.addAscii("places/theCave/treasureMap", 20, 8,
 [
 "        ooo    o",
 "       ooooo   o",
@@ -3653,7 +3653,7 @@ Database.addAscii("places/theCave/treasureMap", 20, 8,
 "  o o              o",
 "  o o"
 ]);
-Database.addAscii("places/theCave/ways", 58, 32, 
+Database.addAscii("places/theCave/ways", 58, 32,
 [
 "                        \\        /",
 "",
@@ -3688,7 +3688,7 @@ Database.addAscii("places/theCave/ways", 58, 32,
 "/                                                        \\",
 ""
 ]);
-Database.addAscii("places/village/fifthHouse", 97, 35, 
+Database.addAscii("places/village/fifthHouse", 97, 35,
 [
 "  /        |      _______________________                                            |        \\",
 " /         |     (______________________ )                                           |         \\",
@@ -3726,7 +3726,7 @@ Database.addAscii("places/village/fifthHouse", 97, 35,
 "| /                                                                                           \\ |",
 "|/_____________________________________________________________________________________________\\|"
 ]);
-Database.addAscii("places/village/forge", 97, 35, 
+Database.addAscii("places/village/forge", 97, 35,
 [
 "  /        |          |         | |       ||_|_________|____                         |        \\",
 " /         |          |         | |      /||_|_________|___ \\                        |         \\",
@@ -3764,7 +3764,7 @@ Database.addAscii("places/village/forge", 97, 35,
 "| /                                                                                           \\ |",
 "|/_____________________________________________________________________________________________\\|"
 ]);
-Database.addAscii("places/village/fourthHouse", 97, 35, 
+Database.addAscii("places/village/fourthHouse", 97, 35,
 [
 "  /        |       |--_--_||                                                         |        \\",
 " /         |       |_--_--||                              _______________________    |         \\",
@@ -3802,7 +3802,7 @@ Database.addAscii("places/village/fourthHouse", 97, 35,
 "| /                                                                                           \\ |",
 "|/_____________________________________________________________________________________________\\|"
 ]);
-Database.addAscii("places/village/fourthHouseCupboardOpenedWithLollipop", 19, 15, 
+Database.addAscii("places/village/fourthHouseCupboardOpenedWithLollipop", 19, 15,
 [
 " / | |  |      |  |",
 "/  | |__|      |  |",
@@ -3820,7 +3820,7 @@ Database.addAscii("places/village/fourthHouseCupboardOpenedWithLollipop", 19, 15
 "| /||_________||",
 "|/ ||         ||"
 ]);
-Database.addAscii("places/village/fourthHouseCupboardOpenedWithoutLollipop", 19, 15, 
+Database.addAscii("places/village/fourthHouseCupboardOpenedWithoutLollipop", 19, 15,
 [
 " / | |  |      |  |",
 "/  | |__|      |  |",
@@ -3838,17 +3838,17 @@ Database.addAscii("places/village/fourthHouseCupboardOpenedWithoutLollipop", 19,
 "| /||_________||",
 "|/ ||         ||"
 ]);
-Database.addAscii("places/village/fourthHouseLollipopUnderCarpet", 4, 1, 
+Database.addAscii("places/village/fourthHouseLollipopUnderCarpet", 4, 1,
 [
 "---o"
 ]);
-Database.addAscii("places/village/fourthHouseNoLollipopOnCupboard", 17, 3, 
+Database.addAscii("places/village/fourthHouseNoLollipopOnCupboard", 17, 3,
 [
 "  ______________",
 " /             /|",
 "/____________ / |"
 ]);
-Database.addAscii("places/village/secondHouse", 97, 35, 
+Database.addAscii("places/village/secondHouse", 97, 35,
 [
 "  /        |                                                                         |        \\",
 " /         |                                                                         |         \\",
@@ -3886,7 +3886,7 @@ Database.addAscii("places/village/secondHouse", 97, 35,
 "||               | /                |                                                          ||",
 "||_______________|/_________________|__________________________________________________________||"
 ]);
-Database.addAscii("places/village/thirdHouse", 91, 35, 
+Database.addAscii("places/village/thirdHouse", 91, 35,
 [
 "  /        |                                                                   |        \\",
 " /         |                                                                   |         \\",
@@ -3924,7 +3924,7 @@ Database.addAscii("places/village/thirdHouse", 91, 35,
 "| /                                                                                     \\ |",
 "|/_______________________________________________________________________________________\\|"
 ]);
-Database.addAscii("places/village/village", 102, 47, 
+Database.addAscii("places/village/village", 102, 47,
 [
 "                                                 /\\",
 "                                                /\"\"\\",
@@ -3974,7 +3974,7 @@ Database.addAscii("places/village/village", 102, 47,
 "   |___________|    |_________|   |______|     |    |   |___________|   |_________|     |_______|",
 "                                               |    |"
 ]);
-Database.addAscii("places/village/candyMerchantItems/boots", 14, 5, 
+Database.addAscii("places/village/candyMerchantItems/boots", 14, 5,
 [
 "   ___",
 "  \\   | ____",
@@ -3982,43 +3982,43 @@ Database.addAscii("places/village/candyMerchantItems/boots", 14, 5,
 "(_____)|  (__",
 "       (_____)"
 ]);
-Database.addAscii("places/village/candyMerchantItems/chocolateBar", 17, 3, 
+Database.addAscii("places/village/candyMerchantItems/chocolateBar", 17, 3,
 [
 " _______________",
 "/__/__/__/__/__/|",
 "|__|__|__|__|__|/"
 ]);
-Database.addAscii("places/village/candyMerchantItems/hat", 17, 3, 
+Database.addAscii("places/village/candyMerchantItems/hat", 17, 3,
 [
 "      .---.",
 "     |%%%%%|",
 "'-.__|_____|__.-'"
 ]);
-Database.addAscii("places/village/candyMerchantItems/leatherGloves", 5, 4, 
+Database.addAscii("places/village/candyMerchantItems/leatherGloves", 5, 4,
 [
 " ...",
 " ||||",
 "\\||||",
 " \\__/"
 ]);
-Database.addAscii("places/village/candyMerchantItems/lollipopLeft", 5, 1, 
+Database.addAscii("places/village/candyMerchantItems/lollipopLeft", 5, 1,
 [
 "o----"
 ]);
-Database.addAscii("places/village/candyMerchantItems/lollipopRight", 5, 1, 
+Database.addAscii("places/village/candyMerchantItems/lollipopRight", 5, 1,
 [
 "----o"
 ]);
-Database.addAscii("places/village/candyMerchantItems/timeRing", 1, 1, 
+Database.addAscii("places/village/candyMerchantItems/timeRing", 1, 1,
 [
 "O"
 ]);
-Database.addAscii("places/village/thirdHouseGames/GalacticWars/ship", 11, 2, 
+Database.addAscii("places/village/thirdHouseGames/GalacticWars/ship", 11, 2,
 [
 "/\\_.-'\"'-._",
 "\\_______.-'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/GalacticWars/splashScreen", 87, 5, 
+Database.addAscii("places/village/thirdHouseGames/GalacticWars/splashScreen", 87, 5,
 [
 "_________      ______            __________           ___       __",
 "__  ____/_____ ___  /_____ ________  /___(_)______    __ |     / /_____ _______________",
@@ -4026,7 +4026,7 @@ Database.addAscii("places/village/thirdHouseGames/GalacticWars/splashScreen", 87
 "/ /_/ / / /_/ /_  / / /_/ // /__ / /_ _  / / /__      __ |/ |/ / / /_/ /_  /   _(__  )",
 "\\____/  \\__,_/ /_/  \\__,_/ \\___/ \\__/ /_/  \\___/      ____/|__/  \\__,_/ /_/    /____/"
 ]);
-Database.addAscii("places/village/thirdHouseGames/GalacticWars/youLose", 37, 5, 
+Database.addAscii("places/village/thirdHouseGames/GalacticWars/youLose", 37, 5,
 [
 "__  __               __",
 "\\ \\/ /___  __  __   / /___  ________",
@@ -4034,7 +4034,7 @@ Database.addAscii("places/village/thirdHouseGames/GalacticWars/youLose", 37, 5,
 " / / /_/ / /_/ /  / / /_/ (__  )  __/",
 "/_/\\____/\\__,_/  /_/\\____/____/\\___/"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/babyVampire", 24, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/babyVampire", 24, 8,
 [
 "  /\\_____/\\",
 " /         \\   I want to",
@@ -4045,7 +4045,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/babyVampire", 24, 8,
 "'           '",
 "'           '"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/billGatesSkeleton", 11, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/billGatesSkeleton", 11, 8,
 [
 "  _.---._",
 ".'       '.",
@@ -4056,7 +4056,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/billGatesSkeleton", 1
 "  \\\"\"\"\"\"/",
 "   '._.'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/blob", 19, 7, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/blob", 19, 7,
 [
 "      .-'-'-.",
 "     '       '",
@@ -4066,7 +4066,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/blob", 19, 7,
 "'                 '",
 " '-._.-'`'`'-._.-'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/bomb", 14, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/bomb", 14, 9,
 [
 "        ,--.!,",
 "       /   -*-",
@@ -4078,7 +4078,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/bomb", 14, 9,
 " \\        /",
 "  `'-..-'`"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/chest", 14, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/chest", 14, 8,
 [
 "  __________",
 " /\\____;;___\\",
@@ -4089,7 +4089,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/chest", 14, 8,
 " \\ |         |",
 "  \\|_________|"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/circle", 17, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/circle", 17, 9,
 [
 "      *   *",
 "  *           *",
@@ -4101,7 +4101,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/circle", 17, 9,
 "  *           *",
 "      *   *"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/corpse1", 16, 6, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/corpse1", 16, 6,
 [
 "A charred corpse",
 " is lying here",
@@ -4110,7 +4110,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/corpse1", 16, 6,
 "     /\\",
 "    /\\"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/corpse2", 16, 5, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/corpse2", 16, 5,
 [
 "Another one here",
 "",
@@ -4118,7 +4118,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/corpse2", 16, 5,
 "   /\\_/",
 "     \\_"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/cross", 17, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/cross", 17, 8,
 [
 "        |",
 "   \\         /",
@@ -4129,7 +4129,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/cross", 17, 8,
 "       | |",
 "       |_|"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/dna", 8, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/dna", 8, 9,
 [
 "  \\/ /",
 "  / /\\",
@@ -4141,7 +4141,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/dna", 8, 9,
 " / /\\ \\",
 "( (  ) )"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/dragon", 20, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/dragon", 20, 9,
 [
 "      __\\\\\\__",
 "    <' _     \\",
@@ -4153,7 +4153,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/dragon", 20, 9,
 "               (\\\\\\)",
 "                (\\\\)"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousBlob", 19, 7, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousBlob", 19, 7,
 [
 "      .-'-'-.",
 "     '       '",
@@ -4163,7 +4163,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousBlob", 19, 7
 "'                 '",
 " '-._.-'`'`'-._.-'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousGoblin", 16, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousGoblin", 16, 8,
 [
 " ,     ..     ,",
 "(`._.\"`  `\"._.')",
@@ -4174,7 +4174,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousGoblin", 16,
 "    '.    .'",
 "      '--'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousSkeleton", 13, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousSkeleton", 13, 8,
 [
 "  _.-----._",
 ".'         '.",
@@ -4185,7 +4185,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/ferociousSkeleton", 1
 "  \\ \"\"\"\"\" /",
 "   '.___.'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/goblin", 16, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/goblin", 16, 8,
 [
 " ,     ..     ,",
 "(`._.\"`  `\"._.')",
@@ -4196,7 +4196,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/goblin", 16, 8,
 "    '.    .'",
 "      '--'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/hive", 26, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/hive", 26, 9,
 [
 "/  \\__/  \\__/  \\__/  \\__/",
 "\\__/  \\__/  \\__/  \\__/  \\_",
@@ -4208,7 +4208,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/hive", 26, 9,
 "\\__/  \\__/  \\__/  \\__/  \\_",
 "/  \\__/  \\__/  \\__/  \\__/"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/mainMenu", 24, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/mainMenu", 24, 9,
 [
 " _____     _",
 "|     |___|_|___",
@@ -4220,7 +4220,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/mainMenu", 24, 9,
 "     |_|_|_|___|_|_|___|",
 ""
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/mobius", 15, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/mobius", 15, 9,
 [
 "    _______",
 "   /    \\  \\",
@@ -4232,7 +4232,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/mobius", 15, 9,
 "  \\  \\  \\/  /",
 "   \\__\\____/"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/randomShape", 12, 6, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/randomShape", 12, 6,
 [
 "    _______",
 " __/  _____)",
@@ -4241,7 +4241,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/randomShape", 12, 6,
 "    /   \\",
 "    \\___/"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/shop", 23, 10, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/shop", 23, 10,
 [
 "         __",
 "        /..\\   Please",
@@ -4254,7 +4254,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/shop", 23, 10,
 "  |                   |",
 "  |___________________|"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/skeleton", 11, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/skeleton", 11, 8,
 [
 "  _.---._",
 ".'       '.",
@@ -4265,7 +4265,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/skeleton", 11, 8,
 "  \\\"\"\"\"\"/",
 "   '._.'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/spider", 22, 6, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/spider", 22, 6,
 [
 "  /\\              /\\",
 " /  \\   .-\"\"-.   /  \\",
@@ -4274,7 +4274,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/spider", 22, 6,
 "/     \\        /     \\",
 "       `'-..-'`"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/spiders", 21, 8, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/spiders", 21, 8,
 [
 " /\\.--./\\",
 "/\\( °° )/\\",
@@ -4285,7 +4285,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/spiders", 21, 8,
 "    /\\( °° )/\\",
 "       '--'"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/splashScreen", 64, 6, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/splashScreen", 64, 6,
 [
 "________                               _________________________",
 "__  ___/___  ______________________    ___  __ \\__  __ \\_  ____/",
@@ -4294,14 +4294,14 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/splashScreen", 64, 6,
 "/____/ \\__,_/ _  .___/\\___//_/         /_/ |_| /_/     \\____/",
 "              /_/"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/star", 9, 4, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/star", 9, 4,
 [
 " __.'.__",
 "'-.   .-'",
 "  /.-.\\",
 "  '   '"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/thing", 20, 9, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/thing", 20, 9,
 [
 "      _.-''-._",
 "     /        \\",
@@ -4313,7 +4313,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/thing", 20, 9,
 " _)   \\      /   (_",
 "(,(,(,/      \\,),),)"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/triforce", 12, 6, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/triforce", 12, 6,
 [
 "     /\\",
 "    /  \\",
@@ -4322,7 +4322,7 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/triforce", 12, 6,
 " /  \\  /  \\",
 "/____\\/____\\"
 ]);
-Database.addAscii("places/village/thirdHouseGames/SuperRPG/youLose", 37, 5, 
+Database.addAscii("places/village/thirdHouseGames/SuperRPG/youLose", 37, 5,
 [
 "__  __               __",
 "\\ \\/ /___  __  __   / /___  ________",
@@ -4330,59 +4330,59 @@ Database.addAscii("places/village/thirdHouseGames/SuperRPG/youLose", 37, 5,
 " / / /_/ / /_/ /  / / /_/ (__  )  __/",
 "/_/\\____/\\__,_/  /_/\\____/____/\\___/"
 ]);
-Database.addAscii("players/medium", 11, 4, 
+Database.addAscii("players/medium", 11, 4,
 [
 "\\         /",
 " \\  .-.  /",
 "  \\(%%%)/",
 "    '-'"
 ]);
-Database.addAscii("players/mediumBerserk", 11, 4, 
+Database.addAscii("players/mediumBerserk", 11, 4,
 [
 "\\         /",
 " \\  .-.  /",
 "  \\(O%O)/",
 "    '-'"
 ]);
-Database.addAscii("players/mediumSqueezed", 6, 3, 
+Database.addAscii("players/mediumSqueezed", 6, 3,
 [
 "  ..",
 "\\(%%)/",
 "  \"\""
 ]);
-Database.addAscii("players/mediumSqueezedBerserk", 6, 3, 
+Database.addAscii("players/mediumSqueezedBerserk", 6, 3,
 [
 "  ..",
 "\\(OO)/",
 "  \"\""
 ]);
-Database.addAscii("players/mediumSqueezedTurtle", 6, 3, 
+Database.addAscii("players/mediumSqueezedTurtle", 6, 3,
 [
 " ..",
 "/  \\/)",
 "uuuu'"
 ]);
-Database.addAscii("players/mediumSqueezedTurtleBerserk", 6, 3, 
+Database.addAscii("players/mediumSqueezedTurtleBerserk", 6, 3,
 [
 " ..",
 "/  \\/O",
 "uuuu'"
 ]);
-Database.addAscii("players/mediumTurtle", 11, 4, 
+Database.addAscii("players/mediumTurtle", 11, 4,
 [
 "",
 "  .---.  _",
 " /     \\/_)",
 "'uu---uu'"
 ]);
-Database.addAscii("players/mediumTurtleBerserk", 11, 4, 
+Database.addAscii("players/mediumTurtleBerserk", 11, 4,
 [
 "",
 "  .---.  _",
 " /     \\/O)",
 "'uu---uu'¨"
 ]);
-Database.addAscii("text/About", 32, 5, 
+Database.addAscii("text/About", 32, 5,
 [
 "     _    _                 _",
 "    / \\  | |__   ___  _   _| |_",
@@ -4390,7 +4390,7 @@ Database.addAscii("text/About", 32, 5,
 "  / ___ \\| |_) | (_) | |_| | |_",
 " /_/   \\_\\_.__/ \\___/ \\__,_|\\__|"
 ]);
-Database.addAscii("text/Configuration", 65, 6, 
+Database.addAscii("text/Configuration", 65, 6,
 [
 "   ____             __ _                       _   _",
 "  / ___|___  _ __  / _(_) __ _ _   _ _ __ __ _| |_(_) ___  _ __",
@@ -4399,7 +4399,7 @@ Database.addAscii("text/Configuration", 65, 6,
 "  \\____\\___/|_| |_|_| |_|\\__, |\\__,_|_|  \\__,_|\\__|_|\\___/|_| |_|",
 "                         |___/"
 ]);
-Database.addAscii("text/Loading", 39, 6, 
+Database.addAscii("text/Loading", 39, 6,
 [
 "  _                    _ _",
 " | |    ___   __ _  __| (_)_ __   __ _",
@@ -4408,7 +4408,7 @@ Database.addAscii("text/Loading", 39, 6,
 " |_____\\___/ \\__,_|\\__,_|_|_| |_|\\__, |",
 "                                 |___/"
 ]);
-Database.addAscii("text/Saving", 34, 6, 
+Database.addAscii("text/Saving", 34, 6,
 [
 "  ____              _",
 " / ___|  __ ___   _(_)_ __   __ _",

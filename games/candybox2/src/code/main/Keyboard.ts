@@ -1,4 +1,4 @@
-module Keyboard{
+namespace Keyboard{
     // The game
     var game: Game;
     

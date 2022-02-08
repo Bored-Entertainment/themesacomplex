@@ -410,7 +410,7 @@ var CreateRyuAI = function(player)
     //fired every frame an enemy projectile is active
     RyuAI.prototype.onEnemyProjectileMoved = function(frame,id,x,y,projectile,isSuperMove)
     {
-        if(!!this.AI.IgnoreProjectileGone)
+        if(this.AI.IgnoreProjectileGone)
             return;
         if(!this.AI.Player.isAirborne()
             && this.AI.Actions.length == 0 
@@ -513,7 +513,7 @@ var CreateRyuAI = function(player)
         var rnd = getRand();
         if(item.X < 100)
         {
-            if(!!attacker)
+            if(attacker)
             {
                 this.AI.reset();
                 if(rnd > 90)
@@ -591,14 +591,14 @@ var CreateRyuAI = function(player)
         {
             var requiredState = 0;
             //mustHit is applied after the array element at which it was found
-            if(!!mustHit)
+            if(mustHit)
                 sequence[i].H = true;
             if(!!autoContinue && sequence[i].AC === undefined)
                 sequence[i].AC = true;
 
-            if(!!sequence[i].MH)
+            if(sequence[i].MH)
                 mustHit = true;
-            if(!!sequence[i].AC)
+            if(sequence[i].AC)
                 autoContinue = true;
 
             if(sequence[i].B == "lp1" || sequence[i].B == "lp2" || sequence[i].B == "lp3" || sequence[i].B == "lk1" || sequence[i].B == "lk2" || sequence[i].B == "lk3") { requiredState = POSE_FLAGS.CROUCHING|POSE_FLAGS.STANDING|POSE_FLAGS.ALLOW_INTERUPT_1; }
@@ -615,7 +615,7 @@ var CreateRyuAI = function(player)
             {
                 case "f" : { input = fwd_; break; }
                 case "b" : { input = bk_; break; }
-                case "get_close" : { this.AI.moveToEnemy(0,sequence[i].C); break; } case "jump_in" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; }; this.AI.jumpInToEnemy(0,sequence[i].C); break; }
+                case "get_close" : { this.AI.moveToEnemy(0,sequence[i].C); break; } case "jump_in" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; } this.AI.jumpInToEnemy(0,sequence[i].C); break; }
                 case "j" : { this.AI.jumpUp(); break; } case "fj" : { this.AI.jumpTowardEnemy(); break; } case "bj" : { this.AI.jumpAwayFromEnemy(); break; }
                 case "lp1" : { input = lowPunches_[0]; break; } case "lp2" : { input = lowPunches_[1]; break; } case "lp3" : { input = lowPunches_[2]; break; }
                 case "p1" : { input = punches_[0]; break; } case "p2" : { input = punches_[1]; break; } case "fp2" : { input = punches_[3]; break; } case "p3" : { input = punches_[2]; break; }
@@ -627,7 +627,7 @@ var CreateRyuAI = function(player)
                 case "u1" : { input = lightUppercutInput_; break; } case "u2" : { input = mediumUppercutInput_; break; } case "u3" : { input = hardUppercutInput_; break; }
                 case "t1" : { this.executeThrow(0,true); break; } case "t2" : { this.executeThrow(1,true); break; }
                 default: { this.AI.sendInput(FLAGS.CLEAR_INPUT,sequence[i].A || 0); break; }
-            };
+            }
             this.AI.sendInput(FLAGS.CLEAR_INPUT,sequence[i].A || 0,input,sequence[i].H, undefined, sequence[i].AC, requiredState);
         }
         this.AI.sendInput(FLAGS.CLEAR_INPUT,2);
@@ -656,7 +656,7 @@ var CreateRyuAI = function(player)
         if(!this.AI.Player.isMobile())
             return;
 
-        if(!!this.reactAirborne(frame,null))
+        if(this.reactAirborne(frame,null))
             return;
 
         var item = this.AI.getClosestEnemy();
@@ -691,7 +691,7 @@ var CreateRyuAI = function(player)
                 this.AI.setBusy();
             }
         }
-        else if(!!this.AI.isBusy())
+        else if(this.AI.isBusy())
         {
             return;
         }
@@ -743,11 +743,11 @@ var CreateRyuAI = function(player)
         if(!this.AI.AllowOverrideBlock && !this.AI.Player.canBlock())
             this.AI.AllowOverrideBlock = true;
 
-        if(!!this.AI.AllowOverrideBlock)
+        if(this.AI.AllowOverrideBlock)
         {
             if(!this.AI.Player.isMobile())
             {
-                if(!!this.AI.JustAttacked)
+                if(this.AI.JustAttacked)
                     this.AI.JustBecameMobile = 3;
                 return;
             }

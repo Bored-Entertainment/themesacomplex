@@ -1,6 +1,6 @@
 /// <reference path="InputWritr-0.2.0.ts" />
 
-declare module DeviceLayr {
+declare namespace DeviceLayr {
     /**
      * A representation of a gamepad, directly taken from navigator.getGamepads.
      */
@@ -246,7 +246,7 @@ declare module DeviceLayr {
 }
 
 
-module DeviceLayr {
+namespace DeviceLayr {
     "use strict";
 
     /**

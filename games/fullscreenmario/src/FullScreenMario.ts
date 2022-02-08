@@ -7,7 +7,7 @@
 
 // @include ../Source/FullScreenMario.d.ts
 
-module FullScreenMario {
+namespace FullScreenMario {
     "use strict";
 
     /**

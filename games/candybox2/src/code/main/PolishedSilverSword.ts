@@ -11,7 +11,7 @@ class PolishedSilverSword extends EqItem{
     
     // Public getters
     public getQuestEntityWeapon(quest: Quest, player: Player): QuestEntityWeapon{
-        var qew: QuestEntityWeapon = 
+        var qew: QuestEntityWeapon =
                  new QuestEntityWeapon(quest,
                                        player,
                                        new Naming("A polished silver sword", "a polished silver sword"),

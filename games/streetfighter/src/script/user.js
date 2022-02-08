@@ -18,7 +18,7 @@
     };
 
     StoryModeHandler.prototype.getDefeatedOpponentsImgSrc = function (level) {
-        if (!!levelsPassed_[level]) {
+        if (levelsPassed_[level]) {
             switch (level) {
                 case 0: {
                     return ["images/misc/misc/char-ken-r.png"];
@@ -177,7 +177,7 @@ User.prototype.enableStoryMode = function () {
 
 User.prototype.advanceStoryMode = function () {
     if (!this.IsAI) {
-        if (!!this.IsInStoryMode)
+        if (this.IsInStoryMode)
             this.StoryMode.incLevel();
         else
             this.IsInStoryMode = true;
@@ -252,7 +252,7 @@ User.prototype.reset = function (clearChar) {
     this.ForceAkumaTeamMate = false;
     this.TeamMates = [CHARACTERS.RYU];
 
-    if (!!clearChar) {
+    if (clearChar) {
         this.Selected = null;
     }
 };
@@ -365,13 +365,13 @@ User.prototype.setChar = function (ch, isAlternate, isAI) {
                     return this.setChar(CHARACTERS.AKUMA, isAlternate, isAI);
                 }
             }
-            ;
+            
         }
     }
     this.IsAlternate = isAlternate;
     this.Selected = ch;
     this.CurrentStance = name + "_selected";
-    this.Folder = name + (!!isAlternate ? "2" : "");
+    this.Folder = name + (isAlternate ? "2" : "");
     this.IsAI = (isAI === undefined) ? this.IsAI : isAI;
     this.IsCharSelected = true;
 
@@ -383,7 +383,7 @@ User.prototype.setChar = function (ch, isAlternate, isAI) {
 };
 
 User.prototype.charSelectElementsVisible = function (isVisible) {
-    if (!!this.SelectIcon.Element) {
+    if (this.SelectIcon.Element) {
         var state = isVisible ? "" : "none";
         this.SelectIcon.Element.style.display = state;
         this.ShowSelectIcon = isVisible;
@@ -432,7 +432,7 @@ User.prototype.init = function (isUser1) {
     //this.IsRequestingCharSelect = false;
 
 
-    if (!!isUser1) {
+    if (isUser1) {
         if (this.Selected === null)
             this.Selected = CHARACTERS.RYU;
 
@@ -465,7 +465,7 @@ User.prototype.init = function (isUser1) {
 
 /*input handler*/
 User.prototype.onKeyStateChanged = function (isDown, keyCode, frame) {
-    if (!!isDown) {
+    if (isDown) {
         if (keyCode == this.Coin) {
             this.addCredit();
             soundManager_.queueSound("audio/misc/credit.zzz");
@@ -478,7 +478,7 @@ User.prototype.onKeyStateChanged = function (isDown, keyCode, frame) {
                 user2_.reset(true);
             }
 
-            if (!!this.hasCredits()) {
+            if (this.hasCredits()) {
                 this.IsRequestingCharSelect = true;
                 if (game_.gameLoopState() == GAME_STATES.MATCH) {
 
@@ -499,7 +499,7 @@ User.prototype.onKeyStateChanged = function (isDown, keyCode, frame) {
         return;
     }
 
-    if (!!isDown) {
+    if (isDown) {
         if (!this.IsCharSelected) {
             var direction = null;
             if (keyCode == this.Down) direction = CONSTANTS.DOWN;
@@ -539,7 +539,7 @@ User.prototype.onKeyStateChanged = function (isDown, keyCode, frame) {
                     this.setChar(this.Selected, this.IsAlternate);
                 }
             }
-            if (!!direction) {
+            if (direction) {
                 var sel = this.changeCharacterFn(direction);
 
                 if (!(sel.Row == CONSTANTS.ROW3 && (sel.Col == CONSTANTS.COL1 || sel.Col == CONSTANTS.COL4))) {
@@ -570,7 +570,7 @@ User.prototype.determineIsAternate = function () {
 };
 
 User.prototype.onSelectChar = function (direction) {
-    if (!!this.IsCharSelected) {
+    if (this.IsCharSelected) {
         switch (this.CurrentStance) {
             case "ken_selected":
                 this.Selected = CHARACTERS.KEN;
@@ -588,7 +588,7 @@ User.prototype.onSelectChar = function (direction) {
                 this.Selected = CHARACTERS.MBISON;
                 break;
         }
-        ;
+        
 
         this.Animations[this.CurrentStance].InternalFrame = 0;
     }
@@ -649,7 +649,7 @@ User.prototype.setPositions = function () {
             break;
         }
     }
-    ;
+    
 };
 
 User.prototype.showCharacter = function () {
@@ -716,7 +716,7 @@ User.prototype.showCharacter = function () {
             break;
         }
     }
-    ;
+    
 
     this.setPositions();
 
@@ -791,7 +791,7 @@ User.prototype.setPositionValues = function (shadowX, shadowY, nameX, nameY, sta
 
 //this is just used to hide elements for players that arent implemented
 User.prototype.setDisplay = function (show) {
-    this.Element.Element.style.display = !!show ? "" : "none";
+    this.Element.Element.style.display = show ? "" : "none";
 };
 
 User.prototype.hide = function() {
@@ -831,7 +831,7 @@ User.prototype.render = function (frame) {
         this.ShowSelectIcon = false;
     }
 
-    if (!!this.Animations[this.CurrentStance]) {
+    if (this.Animations[this.CurrentStance]) {
         this.setPositions();
         this.Animations[this.CurrentStance].tryRender(frame, this.SelectedCharStance, this.Direction);
     }

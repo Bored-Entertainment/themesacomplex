@@ -2,7 +2,7 @@
 /// <reference path="MapScreenr-0.2.1.ts" />
 /// <reference path="ObjectMakr-0.2.2.ts" />
 
-declare module AreaSpawnr {
+declare namespace AreaSpawnr {
     /**
      * A Function to add a map command, such as an after or stretch.
      * 
@@ -201,7 +201,7 @@ declare module AreaSpawnr {
 }
 
 
-module AreaSpawnr {
+namespace AreaSpawnr {
     "use strict";
 
     /**

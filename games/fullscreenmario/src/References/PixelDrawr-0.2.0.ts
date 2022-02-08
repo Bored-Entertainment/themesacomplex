@@ -4,7 +4,7 @@
 /// <reference path="QuadsKeepr-0.2.1.ts" />
 /// <reference path="StringFilr-0.2.1.ts" />
 
-declare module PixelDrawr {
+declare namespace PixelDrawr {
     /**
      * Boundaries of a drawing area, commonly fulfilled by an IMapScreenr.
      */
@@ -407,7 +407,7 @@ declare module PixelDrawr {
 }
 
 
-module PixelDrawr {
+namespace PixelDrawr {
     "use strict";
 
     /**

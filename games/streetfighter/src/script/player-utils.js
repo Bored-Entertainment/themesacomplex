@@ -15,7 +15,7 @@ Key.prototype.handleKey = function(keyCode)
 {
     this.IsPressed = (this.KeyCode === keyCode);
 
-    return !!this.IsPressed ? this.Bit : 0;
+    return this.IsPressed ? this.Bit : 0;
 }
 /************************************************************************/
 /************************************************************************/
@@ -114,7 +114,7 @@ Key.prototype.handleKey = function(keyCode)
     {
         for(var i = 0; i < this.BaseAnimation.Frames.length; ++i)
         {
-            if(!!hasFlag(this.BaseAnimation.Frames[i].FlagsToSet.Combat,COMBAT_FLAGS.ATTACK))
+            if(hasFlag(this.BaseAnimation.Frames[i].FlagsToSet.Combat,COMBAT_FLAGS.ATTACK))
                 break;
             this.BaseAnimation.Frames[i].FlagsToSet.AI |= AI_FLAGS.ATTACK_PENDING;
         }
@@ -164,11 +164,11 @@ Key.prototype.handleKey = function(keyCode)
     Animation.prototype.setDefaultsForLastFrames = function(nbFrames)
     {
         var i = nbFrames || 1;
-        while(!!i)
+        while(i)
         {
-            if(!!this.DefaultLocalHitStop)
+            if(this.DefaultLocalHitStop)
                 this.BaseAnimation.Frames[this.BaseAnimation.Frames.length - i].HitStop = this.DefaultLocalHitStop;
-            if(!!this.DefaultEnemyHitStop)
+            if(this.DefaultEnemyHitStop)
                 this.BaseAnimation.Frames[this.BaseAnimation.Frames.length - i].EnemyHitStop = this.DefaultEnemyHitStop;
             --i;
         }
@@ -271,7 +271,7 @@ Key.prototype.handleKey = function(keyCode)
     Animation.prototype.release = function()
     {
         utils_.releaseArray(this.Animations);
-        if(!!this.Trail)
+        if(this.Trail)
             this.Trail.release();
         this.BaseAnimation.release();
     }
@@ -328,7 +328,7 @@ Key.prototype.handleKey = function(keyCode)
     GenericAnimation.prototype.addUserDataToFrame = function(index,data)
     {
         var frame = this.BaseAnimation.Frames[index];
-        if(!!frame)
+        if(frame)
             frame.UserData[frame.UserData.length] = data;
     }
     GenericAnimation.prototype.clearAllFrameUserData = function()
@@ -362,7 +362,7 @@ Key.prototype.handleKey = function(keyCode)
         var x = 0;
         var y = 0;
         var delta = 0;
-        if(!!this.IsLooping)
+        if(this.IsLooping)
         {
             if(this.InternalFrame > this.BaseAnimation.NbFrames)
                 this.InternalFrame = 0;
@@ -416,7 +416,7 @@ Key.prototype.handleKey = function(keyCode)
         var offsetX = 0;
         var offsetY = 0;
         var delta = 0;
-        if(!!this.IsLooping)
+        if(this.IsLooping)
         {
             if(this.InternalFrame > this.BaseAnimation.NbFrames)
                 this.InternalFrame = 0;
@@ -440,9 +440,9 @@ Key.prototype.handleKey = function(keyCode)
             offsetX = newFrame.X;
             offsetY = newFrame.Y;
 
-            if(!!this.CenteredOffset)
+            if(this.CenteredOffset)
                 offsetX = playerWidth * this.CenteredOffset;
-            if(!!this.TopOffset)
+            if(this.TopOffset)
                 offsetY = this.TopOffset;
 
             var data = spriteLookup_.get(newFrame.RightSrc)
@@ -515,7 +515,7 @@ Key.prototype.handleKey = function(keyCode)
         this.InternalFrame = 0;
         this.Direction  = direction || 0;
         this.InitialStageY = 0;
-        if(!!bgImg)
+        if(bgImg)
             this.createElement(bgImg);
     }
 
@@ -532,7 +532,7 @@ Key.prototype.handleKey = function(keyCode)
 
     BasicAnimation.prototype.release = function()
     {
-        if(!!this.Element)
+        if(this.Element)
             utils_.removeFromDOM(this.Element);
     }
 
@@ -555,7 +555,7 @@ Key.prototype.handleKey = function(keyCode)
 
     BasicAnimation.prototype.hide = function()
     {
-        if(!!this.Element)
+        if(this.Element)
             this.Element.style.display = "none";
     }
 
@@ -568,10 +568,10 @@ Key.prototype.handleKey = function(keyCode)
 
         var offsetX = object.X || 0;
         var offsetY = object.Y || 0;
-        if(!!object.ZIndex)
+        if(object.ZIndex)
             element.style.zIndex = object.ZIndex;
         var delta = 0;
-        if(!!this.IsLooping)
+        if(this.IsLooping)
         {
             if(this.InternalFrame > this.BaseAnimation.NbFrames)
                 this.InternalFrame = 0;
@@ -674,7 +674,7 @@ var CreateFrameImageLookup = function()
             {
                 return function()
                 {
-                    if(!!--thisValue.NbImagesLoading)
+                    if(--thisValue.NbImagesLoading)
                     {
                         thisValue.getElement().innerHTML = (100*(thisValue.getNbImages()-thisValue.getNbImagesLoading())/thisValue.getNbImages()).toFixed(1);
                     }
@@ -698,7 +698,7 @@ var CreateFrameImageLookup = function()
     }
     FrameImageLookup.prototype.getB64 = function(src,isBg)
     {
-        if(!!isBg)
+        if(isBg)
             return "url('" + this.Data[src] + "')";
         else
             return this.Data[src];
@@ -742,9 +742,9 @@ var CreateSpriteLookup = function()
     SpriteLookup.prototype.set = function(element,key,setBackgroundImage,displayNone,isBase64)
     {
         var data = this.get(key);
-        if(!!data)
+        if(data)
         {
-            if(!!setBackgroundImage)
+            if(setBackgroundImage)
             {
                 if(!isBase64)
                 {
@@ -787,11 +787,11 @@ var spriteLookup_ = CreateSpriteLookup();
         this.HitStop = hitStop || 0;
         //attacked player waits
         this.EnemyHitStop = undefined;
-        this.ShadowImageSrc = !!shadowImage ? "images/misc/misc/shadow-" + shadowImage + ".png" : null;
-        this.ShadowOffset = !shadowOffset ? {X:0,Y:0} : !!+shadowOffset ? {X:shadowOffset,Y:0} : shadowOffset;
+        this.ShadowImageSrc = shadowImage ? "images/misc/misc/shadow-" + shadowImage + ".png" : null;
+        this.ShadowOffset = !shadowOffset ? {X:0,Y:0} : +shadowOffset ? {X:shadowOffset,Y:0} : shadowOffset;
         this.IsFlipped = image.indexOf("#") > -1;
-        this.RightSrc = !!image ? image.replace("#-","r-").replace("x-","r-") : "";
-        this.LeftSrc =  !!image ? image.replace("#-","l-").replace("x-","l-") : "";
+        this.RightSrc = image ? image.replace("#-","r-").replace("x-","r-") : "";
+        this.LeftSrc =  image ? image.replace("#-","l-").replace("x-","l-") : "";
         this.AttackFlags = attackFlags || 0;
         this.HitPoints = hitPoints || [];
         //if there are no hit points and this is an attack frame, then this.AllowBlock will be set to [true]
@@ -804,34 +804,34 @@ var spriteLookup_ = CreateSpriteLookup();
         this.FrameOffset = frameOffset || 0;
 
         this.FlagsToSet = new FrameFlags();
-        this.FlagsToSet.Clip = !!flagsToSet ? (flagsToSet.Clip || null) : null;
-        this.FlagsToSet.Juggle = !!flagsToSet ? (flagsToSet.Juggle || 0) : 0;
-        this.FlagsToSet.Player = !!flagsToSet ? (flagsToSet.Player || 0) : 0;
-        this.FlagsToSet.Pose = !!flagsToSet ? (flagsToSet.Pose || 0) : 0;
-        this.FlagsToSet.Combat = !!flagsToSet ? (flagsToSet.Combat || 0) : 0;
-        this.FlagsToSet.RCombat = !!flagsToSet ? (flagsToSet.RCombat || 0) : 0;
-        this.FlagsToSet.Combo = !!flagsToSet ? (flagsToSet.Combo || 0) : 0;
-        this.FlagsToSet.Spawn = !!flagsToSet ? (flagsToSet.Spawn || 0) : 0;
-        this.FlagsToSet.AI = !!flagsToSet ? (flagsToSet.AI || 0) : 0;
-        this.FlagsToSet.MotionSound = !!flagsToSet ? (flagsToSet.MotionSound || 0) : 0;
-        this.FlagsToSet.SwingSound = !!flagsToSet ? (flagsToSet.SwingSound || 0) : 0;
-        this.FlagsToSet.HitSound = !!flagsToSet ? (flagsToSet.HitSound || 0) : 0;
-        this.FlagsToSet.BlockSound = !!flagsToSet ? (flagsToSet.BlockSound || 0) : 0;
-        this.FlagsToSet.HitReact = !!flagsToSet ? (flagsToSet.HitReact || 0) : 0;
+        this.FlagsToSet.Clip = flagsToSet ? (flagsToSet.Clip || null) : null;
+        this.FlagsToSet.Juggle = flagsToSet ? (flagsToSet.Juggle || 0) : 0;
+        this.FlagsToSet.Player = flagsToSet ? (flagsToSet.Player || 0) : 0;
+        this.FlagsToSet.Pose = flagsToSet ? (flagsToSet.Pose || 0) : 0;
+        this.FlagsToSet.Combat = flagsToSet ? (flagsToSet.Combat || 0) : 0;
+        this.FlagsToSet.RCombat = flagsToSet ? (flagsToSet.RCombat || 0) : 0;
+        this.FlagsToSet.Combo = flagsToSet ? (flagsToSet.Combo || 0) : 0;
+        this.FlagsToSet.Spawn = flagsToSet ? (flagsToSet.Spawn || 0) : 0;
+        this.FlagsToSet.AI = flagsToSet ? (flagsToSet.AI || 0) : 0;
+        this.FlagsToSet.MotionSound = flagsToSet ? (flagsToSet.MotionSound || 0) : 0;
+        this.FlagsToSet.SwingSound = flagsToSet ? (flagsToSet.SwingSound || 0) : 0;
+        this.FlagsToSet.HitSound = flagsToSet ? (flagsToSet.HitSound || 0) : 0;
+        this.FlagsToSet.BlockSound = flagsToSet ? (flagsToSet.BlockSound || 0) : 0;
+        this.FlagsToSet.HitReact = flagsToSet ? (flagsToSet.HitReact || 0) : 0;
 
         this.FlagsToClear = new FrameFlags();
-        this.FlagsToClear.Juggle = !!flagsToClear ? (flagsToClear.Juggle || 0) : 0;
-        this.FlagsToClear.Player = !!flagsToClear ? (flagsToClear.Player || 0) : 0;
-        this.FlagsToClear.Pose = !!flagsToClear ? (flagsToClear.Pose || 0) : 0;
-        this.FlagsToClear.Combat = !!flagsToClear ? (flagsToClear.Combat || 0) : 0;
-        this.FlagsToClear.RCombat = !!flagsToClear ? (flagsToClear.RCombat || 0) : 0;
-        this.FlagsToClear.Combo = !!flagsToClear ? (flagsToClear.Combo || 0) : 0;
-        this.FlagsToClear.Spawn = !!flagsToClear ? (flagsToClear.Spawn || 0) : 0;
-        this.FlagsToClear.AI = !!flagsToClear ? (flagsToClear.AI || 0) : 0;
-        this.FlagsToClear.SwingSound = !!flagsToClear ? (flagsToClear.SwingSound || 0) : 0;
-        this.FlagsToClear.HitSound = !!flagsToClear ? (flagsToClear.HitSound || 0) : 0;
-        this.FlagsToClear.BlockSound = !!flagsToClear ? (flagsToClear.BlockSound || 0) : 0;
-        this.FlagsToClear.HitReact = !!flagsToClear ? (flagsToClear.HitReact || 0) : 0;
+        this.FlagsToClear.Juggle = flagsToClear ? (flagsToClear.Juggle || 0) : 0;
+        this.FlagsToClear.Player = flagsToClear ? (flagsToClear.Player || 0) : 0;
+        this.FlagsToClear.Pose = flagsToClear ? (flagsToClear.Pose || 0) : 0;
+        this.FlagsToClear.Combat = flagsToClear ? (flagsToClear.Combat || 0) : 0;
+        this.FlagsToClear.RCombat = flagsToClear ? (flagsToClear.RCombat || 0) : 0;
+        this.FlagsToClear.Combo = flagsToClear ? (flagsToClear.Combo || 0) : 0;
+        this.FlagsToClear.Spawn = flagsToClear ? (flagsToClear.Spawn || 0) : 0;
+        this.FlagsToClear.AI = flagsToClear ? (flagsToClear.AI || 0) : 0;
+        this.FlagsToClear.SwingSound = flagsToClear ? (flagsToClear.SwingSound || 0) : 0;
+        this.FlagsToClear.HitSound = flagsToClear ? (flagsToClear.HitSound || 0) : 0;
+        this.FlagsToClear.BlockSound = flagsToClear ? (flagsToClear.BlockSound || 0) : 0;
+        this.FlagsToClear.HitReact = flagsToClear ? (flagsToClear.HitReact || 0) : 0;
 
         this.FlagsToSend = flagsToSend || MISC_FLAGS.NONE;
     
@@ -1072,7 +1072,7 @@ var CreateFrameAdapter = function(frameArray,nbFrames)
     /*Fires the projectile*/
     Projectile.prototype.execute = function(frame,stageX,stageY)
     {
-        if(!!this.IsDisintegrating)
+        if(this.IsDisintegrating)
             this.cancel();
         this.SpeedRate = 1;
         this.StartFrame = frame;
@@ -1235,7 +1235,7 @@ var CreateFrameAdapter = function(frameArray,nbFrames)
                 this.X += dx;
                 this.Y += dy;
         }
-        if(!!this.IsDisintegrating)
+        if(this.IsDisintegrating)
         {
             this.X += this.Direction > 0 ? (this.StageX - stageX) : (stageX - this.StageX);
             this.Y += stageY - this.StageY;
@@ -1290,7 +1290,7 @@ var CreateFrameAdapter = function(frameArray,nbFrames)
     /*sets and moves the image - for browsers that load preloaded images instantly when the src property is set*/
     Projectile.prototype.setSprite = function(newFrame,offsetX,offsetY,stageX,stageY)
     {
-        if(!!newFrame)
+        if(newFrame)
         {
             offsetX = newFrame.X;
             offsetY = newFrame.Y;

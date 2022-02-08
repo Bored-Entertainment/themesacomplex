@@ -35,7 +35,7 @@ var CreateCharSelect = function(users)
         {
             teamA_.push(0);
             users[0].ShowSelectIcon = true;
-            if(!!users[0].IsRequestingCharSelect)
+            if(users[0].IsRequestingCharSelect)
             {
                 for(var i = 2; i < users.length; ++i)
                     if((users[i].Team == 1))
@@ -55,7 +55,7 @@ var CreateCharSelect = function(users)
 
         for(var i = 2; i < users.length; ++i)
         {
-            if(!!users[i].IsAI)
+            if(users[i].IsAI)
                 users[i].reset();
             if((users[i].Team == 1) && !users[i].IsAI && !users[0].isRequestingCharSelect())
                 teamA_.push(i);
@@ -339,10 +339,10 @@ var CreateCharSelect = function(users)
         utils_.removeChildrenFromDOM(nextFoeElement_.Element);
         isFirstFoe_ = false;
 
-        if(!!u1_)
+        if(u1_)
             u1_.release();
 
-        if(!!u2_)
+        if(u2_)
             u2_.release();
 
         initialized_ = false;
@@ -455,13 +455,13 @@ var CreateCharSelect = function(users)
         else if(hasP1)
         {
             u1_.enableStoryMode();
-            if(!!u2_)
+            if(u2_)
                 u2_.disableStoryMode();
         }
         else if(hasP2)
         {
             u2_.enableStoryMode();
-            if(!!u1_)
+            if(u1_)
                 u1_.disableStoryMode();
         }
     }
@@ -508,7 +508,7 @@ var CreateCharSelect = function(users)
             user.useCredit();
 
         var changeCharacterFn = function(thisValue) { return function(direction) { return thisValue.tryChangeCharacter(this,direction); } };
-        var getOtherCharacterFn = function(thisValue) { return function(direction) { return !!thisValue ? (thisValue.IsCharSelected ? thisValue.getName() : "") : ""; } };
+        var getOtherCharacterFn = function(thisValue) { return function(direction) { return thisValue ? (thisValue.IsCharSelected ? thisValue.getName() : "") : ""; } };
         var isCharOnOtherTeamFn = function(thisValue,otherTeam)
         {
             return function(direction)
@@ -535,7 +535,7 @@ var CreateCharSelect = function(users)
         };
 
         //Init user
-        if(!!user)
+        if(user)
         {
             user.PlayerNdx = slot == 1 ? 1 : 2;
             user.Direction = slot == 1 ? -1 : 1;
@@ -589,9 +589,9 @@ var CreateCharSelect = function(users)
         }
         else
         {
-            this.LastPicked = !!this.LastPicked 
+            this.LastPicked = this.LastPicked 
                 ? this.LastPicked
-                : !!users[teamA_[0]] 
+                : users[teamA_[0]] 
                     ? users[teamA_[0]].getName()
                     : users[teamB_[0]].getName();
         }
@@ -714,9 +714,9 @@ var CreateCharSelect = function(users)
     CharSelect.prototype.showNextFoe = function(who,boxIndex)
     {
         boxIndex = boxIndex || 0;
-        if(!!this.getUser1())
+        if(this.getUser1())
             u1_.charSelectElementsVisible(false);
-        if(!!this.getUser2())
+        if(this.getUser2())
             u2_.charSelectElementsVisible(false);
         showNextFoe_ = true;
         this.CharSelectElement.style.display = "none";
@@ -792,9 +792,9 @@ var CreateCharSelect = function(users)
             
         }
 
-        if(!!this.getUser1())
+        if(this.getUser1())
             u1_.frameMove(frame);
-        if(!!this.getUser2())
+        if(this.getUser2())
             u2_.frameMove(frame);
     }
 
@@ -806,9 +806,9 @@ var CreateCharSelect = function(users)
             animations_["show_next_foe"].tryRender(frame, nextFoeElement_);
         }
 
-        if(!!this.getUser1())
+        if(this.getUser1())
             u1_.render(frame);
-        if(!!this.getUser2())
+        if(this.getUser2())
             u2_.render(frame);
     }
 

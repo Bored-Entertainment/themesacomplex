@@ -352,7 +352,7 @@ class ATree extends Place{
         this.ticTacToeBoard[xIndex][yIndex] = ATreeTicTacToeSign.X;
         
         // Test end game conditions (we only make the squirrel play if nothing happens)
-        if(this.playTicTacToe_testEndGameConditions() == false){      
+        if(this.playTicTacToe_testEndGameConditions() == false){
             // IA
             var bestPosition: Pos = this.playTicTacToe_minimax(this.ticTacToeBoard, ATreeTicTacToeSign.O).bestPosition;
             this.ticTacToeBoard[bestPosition.x][bestPosition.y] = ATreeTicTacToeSign.O;

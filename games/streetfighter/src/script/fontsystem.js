@@ -96,12 +96,12 @@ ManagedText.prototype.change = function(newText,x,hideFrame,showFrame,fadeIn,ind
     this.Width = 0;
     for(var i = 0,length = this.Text.length; i < length;++i)
     {
-        this.Width += (!!+this.Text.charAt(i) ? 2*this.CharWidth : this.CharWidth) + this.FontSpacing;
+        this.Width += (+this.Text.charAt(i) ? 2*this.CharWidth : this.CharWidth) + this.FontSpacing;
         this.Element.children[i].style.marginRight = this.FontSpacing + "px";
         this.Element.children[i].src = this.getSrc(this.Text.charAt(i));
     }
 
-    if(!!hideFrame)
+    if(hideFrame)
     {
         if(!fadeIn)
         {
@@ -138,7 +138,7 @@ ManagedText.prototype.setVisible = function(value)
     if(this.IsVisible != value)
     {
         this.IsVisible = value;
-        this.Element.style.display = !!value ? "" : "none";
+        this.Element.style.display = value ? "" : "none";
     }
 }
 ManagedText.prototype.hideNow = function() { this.setVisible(false);}
@@ -149,8 +149,8 @@ ManagedText.prototype.hideFadeNow = function()
 }
 
 ManagedText.prototype.clearTarget = function() { this.dX = 0;this.dY = 0;this.HideFrame = -1; }
-ManagedText.prototype.showNow = function(x,hideFrame) { this.X = (x != 0 ? x : null) || 0; this.MustUpdate = true; if(!!hideFrame) {this.HideFrame = hideFrame;}}
-ManagedText.prototype.show = function(hideFrame) { this.setTarget(this.Indent,this.Y); if(!!hideFrame) {this.HideFrame = hideFrame;}}
+ManagedText.prototype.showNow = function(x,hideFrame) { this.X = (x != 0 ? x : null) || 0; this.MustUpdate = true; if(hideFrame) {this.HideFrame = hideFrame;}}
+ManagedText.prototype.show = function(hideFrame) { this.setTarget(this.Indent,this.Y); if(hideFrame) {this.HideFrame = hideFrame;}}
 
 /*toggles between using the left and right css properties for horizontal positioning*/
 ManagedText.prototype.changeDirection = function()
@@ -182,13 +182,13 @@ ManagedText.prototype.frameMove = function(frame)
     */
     if(frame > this.ShowFrame)
     {
-        if(!!this.dX)
+        if(this.dX)
         {
             this.moveX(this.dX);
             if(this.X >= this.TargetX)
                 this.dX = 0;
         }
-        if(!!this.dY)
+        if(this.dY)
         {
             this.moveY(this.dY);
             if(this.Y >= this.TargetY)

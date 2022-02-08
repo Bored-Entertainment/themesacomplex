@@ -11,10 +11,10 @@ import { SpriteUtils } from './SpriteUtils.js';
 
 export class BaseSprite {
 
-    constructor (  ) {
+    constructor( ) {
     }
 
-    init ( type, map, spriteManager, x, y ) {
+    init( type, map, spriteManager, x, y ) {
 
         this.type = type;
         this.map = map;
@@ -34,18 +34,21 @@ export class BaseSprite {
         this.turn = 0;
         this.accel = 0;
         this.speed = 100;
-    }
 
-    getFileName () {
-        return ['obj', this.type, '-', this.frame - 1].join('');
-    }
+}
 
-    spriteNotInBounds () {
+    getFileName() {
 
-        let x = SpriteUtils.pixToWorld(this.x);
-        let y = SpriteUtils.pixToWorld(this.y);
+        return [ 'obj', this.type, '-', this.frame - 1 ].join( '' );
+
+}
+
+    spriteNotInBounds() {
+
+        let x = SpriteUtils.pixToWorld( this.x );
+        let y = SpriteUtils.pixToWorld( this.y );
         return x < 0 || y < 0 || x >= this.map.width || y >= this.map.height;
-        
+
     }
 
 }

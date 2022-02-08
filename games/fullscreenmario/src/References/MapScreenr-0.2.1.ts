@@ -1,4 +1,4 @@
-declare module MapScreenr {
+declare namespace MapScreenr {
     /**
      * Functions to compute new variable values, keyed by their variable's names.
      */
@@ -150,7 +150,7 @@ declare module MapScreenr {
 }
 
 
-module MapScreenr {
+namespace MapScreenr {
     "use strict";
 
     /**

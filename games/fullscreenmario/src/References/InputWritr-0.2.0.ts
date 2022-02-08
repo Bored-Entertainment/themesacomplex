@@ -1,4 +1,4 @@
-declare module InputWritr {
+declare namespace InputWritr {
     /**
      * A callback for when a piped event is triggered.
      * 
@@ -331,7 +331,7 @@ declare module InputWritr {
 }
 
 
-module InputWritr {
+namespace InputWritr {
     "use strict";
 
     /**

@@ -13,7 +13,7 @@ import { TileHistory } from './TileHistory.js';
 
 export class AnimationManager {
 
-    constructor ( map, animationPeriod, blinkPeriod ) {
+    constructor( map, animationPeriod, blinkPeriod ) {
 
         animationPeriod = animationPeriod || 5;
         blinkPeriod = blinkPeriod || 30;
@@ -36,145 +36,170 @@ export class AnimationManager {
 
     }
 
-    initArray () {
+    initArray() {
+
         // Map all tiles to their own value in case we ever
         // look up a tile that is not animated
-        for (let i = 0; i < Tile.TILE_COUNT; i++) this._data[i] = i;
-    }
+        for ( let i = 0; i < Tile.TILE_COUNT; i ++ ) this._data[ i ] = i;
 
-    inSequence(tileValue, lastValue) {
+}
+
+    inSequence( tileValue, lastValue ) {
+
         // It is important that we use the base value as the starting point
         // rather than the last painted value: base values often don't recur
         // in their sequences
-        let seen = [tileValue];
-        let current = this._data[tileValue];
+        let seen = [ tileValue ];
+        let current = this._data[ tileValue ];
 
-        while (seen.indexOf(current) === -1) {
-            if (current === lastValue) return true;
+        while ( seen.indexOf( current ) === - 1 ) {
 
-            seen.push(current);
-            current = this._data[current];
-        }
+            if ( current === lastValue ) return true;
+
+            seen.push( current );
+            current = this._data[ current ];
+
+}
+
         return false;
-    }
+
+}
 
     getTiles( startX, startY, boundX, boundY, isPaused = false ) {
 
         let shouldChangeAnimation = false;
 
-        if (!isPaused) this.count += 1;
+        if ( ! isPaused ) this.count += 1;
 
-        if ((this.count % this.blinkPeriod) === 0) this.shouldBlink = !this.shouldBlink;
+        if ( ( this.count % this.blinkPeriod ) === 0 ) this.shouldBlink = ! this.shouldBlink;
 
-        if ((this.count % this.animationPeriod) === 0 && !isPaused) shouldChangeAnimation = true;
+        if ( ( this.count % this.animationPeriod ) === 0 && ! isPaused ) shouldChangeAnimation = true;
 
         let newPainted = new TileHistory();
         let tilesToPaint = [];
 
-        for (let x = startX; x < boundX; x++) {
-            for (let y = startY; y < boundY; y++) {
-                if (x < 0 || x >= this._map.width || y < 0 || y >= this._map.height) continue;
+        for ( let x = startX; x < boundX; x ++ ) {
 
-                let tile = this._map.getTile(x, y);
+            for ( let y = startY; y < boundY; y ++ ) {
+
+                if ( x < 0 || x >= this._map.width || y < 0 || y >= this._map.height ) continue;
+
+                let tile = this._map.getTile( x, y );
                 /*if (tile.isZone() && !tile.isPowered() && this.shouldBlink) {
                     tilesToPaint.push({x: x, y: y, tileValue: Tile.LIGHTNINGBOLT});
                     continue;
                 }*/
 
-                if (!tile.isAnimated()) continue;
+                if ( ! tile.isAnimated() ) continue;
 
                 let tileValue = tile.getValue();
                 let newTile = Tile.TILE_INVALID;
                 let last;
 
-                if (this._lastPainted) last = this._lastPainted.getTile(x, y);
+                if ( this._lastPainted ) last = this._lastPainted.getTile( x, y );
 
-                if (shouldChangeAnimation) {
+                if ( shouldChangeAnimation ) {
+
                     // Have we painted any of this sequence before? If so, paint the next tile
-                    if (last && this.inSequence(tileValue, last)) { 
+                    if ( last && this.inSequence( tileValue, last ) ) {
 
 
-                        newTile = this._data[last];
+                        newTile = this._data[ last ];
 
-                        if (last === Tile.LASTTINYEXP) {
+                        if ( last === Tile.LASTTINYEXP ) {
+
                             this._map.setTo( x, y, ZoneUtils.randomRubble() );
-                            newTile = this._map.getTileValue(x, y);
-                        } else {
-                            newTile = this._data[last];
-                        }
+                            newTile = this._map.getTileValue( x, y );
+
+} else {
+
+                            newTile = this._data[ last ];
+
+}
 
 
                     } else {
+
                         // Either we haven't painted anything here before, or the last tile painted
                         // there belongs to a different tile's animation sequence
-                        newTile = this._data[tileValue];
-                    }
-                } else {
+                        newTile = this._data[ tileValue ];
+
+}
+
+} else {
+
                     // Have we painted any of this sequence before? If so, paint the same tile
-                    if (last && this.inSequence(tileValue, last)) newTile = last;
-                }
+                    if ( last && this.inSequence( tileValue, last ) ) newTile = last;
 
-                if (newTile === Tile.TILE_INVALID) continue;
+}
 
-                tilesToPaint.push({x: x, y: y, tileValue: newTile});
-                newPainted.setTile(x, y, newTile);
+                if ( newTile === Tile.TILE_INVALID ) continue;
 
-                this._map.setPaintValue(x, y, newTile); /// DIRECT SET TEXTURES
-            }
-        }
+                tilesToPaint.push( { x: x, y: y, tileValue: newTile } );
+                newPainted.setTile( x, y, newTile );
+
+                this._map.setPaintValue( x, y, newTile ); /// DIRECT SET TEXTURES
+
+}
+
+}
+
         this._lastPainted = newPainted;
         return tilesToPaint;
-    }
 
-    registerSingleAnimation (arr) {
-        for (let i = 1; i < arr.length; i++) this._data[arr[i - 1]] = arr[i];
-    }
+}
 
-    registerAnimations () {
+    registerSingleAnimation( arr ) {
 
-        this.registerSingleAnimation([56, 57, 58, 59, 60, 61, 62, 63, 56]);// fire
-        this.registerSingleAnimation([860, 861, 862, 863, 864, 865, 866, 867]);// explosion
+        for ( let i = 1; i < arr.length; i ++ ) this._data[ arr[ i - 1 ] ] = arr[ i ];
 
-        
+}
+
+    registerAnimations() {
+
+        this.registerSingleAnimation( [ 56, 57, 58, 59, 60, 61, 62, 63, 56 ] );// fire
+        this.registerSingleAnimation( [ 860, 861, 862, 863, 864, 865, 866, 867 ] );// explosion
+
+
 
         // traffic
 
-        this.registerSingleAnimation([80, 128, 112, 96, 80]);
-        this.registerSingleAnimation([81, 129, 113, 97, 81]);
-        this.registerSingleAnimation([82, 130, 114, 98, 82]);
-        this.registerSingleAnimation([83, 131, 115, 99, 83]);
-        this.registerSingleAnimation([84, 132, 116, 100, 84]);
-        this.registerSingleAnimation([85, 133, 117, 101, 85]);
-        this.registerSingleAnimation([86, 134, 118, 102, 86]);
-        this.registerSingleAnimation([87, 135, 119, 103, 87]);
-        this.registerSingleAnimation([88, 136, 120, 104, 88]);
-        this.registerSingleAnimation([89, 137, 121, 105, 89]);
-        this.registerSingleAnimation([90, 138, 122, 106, 90]);
-        this.registerSingleAnimation([91, 139, 123, 107, 91]);
-        this.registerSingleAnimation([92, 140, 124, 108, 92]);
-        this.registerSingleAnimation([93, 141, 125, 109, 93]);
-        this.registerSingleAnimation([94, 142, 126, 110, 94]);
-        this.registerSingleAnimation([95, 143, 127, 111, 95]);
+        this.registerSingleAnimation( [ 80, 128, 112, 96, 80 ] );
+        this.registerSingleAnimation( [ 81, 129, 113, 97, 81 ] );
+        this.registerSingleAnimation( [ 82, 130, 114, 98, 82 ] );
+        this.registerSingleAnimation( [ 83, 131, 115, 99, 83 ] );
+        this.registerSingleAnimation( [ 84, 132, 116, 100, 84 ] );
+        this.registerSingleAnimation( [ 85, 133, 117, 101, 85 ] );
+        this.registerSingleAnimation( [ 86, 134, 118, 102, 86 ] );
+        this.registerSingleAnimation( [ 87, 135, 119, 103, 87 ] );
+        this.registerSingleAnimation( [ 88, 136, 120, 104, 88 ] );
+        this.registerSingleAnimation( [ 89, 137, 121, 105, 89 ] );
+        this.registerSingleAnimation( [ 90, 138, 122, 106, 90 ] );
+        this.registerSingleAnimation( [ 91, 139, 123, 107, 91 ] );
+        this.registerSingleAnimation( [ 92, 140, 124, 108, 92 ] );
+        this.registerSingleAnimation( [ 93, 141, 125, 109, 93 ] );
+        this.registerSingleAnimation( [ 94, 142, 126, 110, 94 ] );
+        this.registerSingleAnimation( [ 95, 143, 127, 111, 95 ] );
 
-        this.registerSingleAnimation([144, 192, 176, 160, 144]);
-        this.registerSingleAnimation([145, 193, 177, 161, 145]);
-        this.registerSingleAnimation([146, 194, 178, 162, 146]);
-        this.registerSingleAnimation([147, 195, 179, 163, 147]);
-        this.registerSingleAnimation([148, 196, 180, 164, 148]);
-        this.registerSingleAnimation([149, 197, 181, 165, 149]);
-        this.registerSingleAnimation([150, 198, 182, 166, 150]);
-        this.registerSingleAnimation([151, 199, 183, 167, 151]);
-        this.registerSingleAnimation([152, 200, 184, 168, 152]);
-        this.registerSingleAnimation([153, 201, 185, 169, 153]);
-        this.registerSingleAnimation([154, 202, 186, 170, 154]);
-        this.registerSingleAnimation([155, 203, 187, 171, 155]);
-        this.registerSingleAnimation([156, 204, 188, 172, 156]);
-        this.registerSingleAnimation([157, 205, 189, 173, 157]);
-        this.registerSingleAnimation([158, 206, 190, 174, 158]);
-        this.registerSingleAnimation([159, 207, 191, 175, 159]);
+        this.registerSingleAnimation( [ 144, 192, 176, 160, 144 ] );
+        this.registerSingleAnimation( [ 145, 193, 177, 161, 145 ] );
+        this.registerSingleAnimation( [ 146, 194, 178, 162, 146 ] );
+        this.registerSingleAnimation( [ 147, 195, 179, 163, 147 ] );
+        this.registerSingleAnimation( [ 148, 196, 180, 164, 148 ] );
+        this.registerSingleAnimation( [ 149, 197, 181, 165, 149 ] );
+        this.registerSingleAnimation( [ 150, 198, 182, 166, 150 ] );
+        this.registerSingleAnimation( [ 151, 199, 183, 167, 151 ] );
+        this.registerSingleAnimation( [ 152, 200, 184, 168, 152 ] );
+        this.registerSingleAnimation( [ 153, 201, 185, 169, 153 ] );
+        this.registerSingleAnimation( [ 154, 202, 186, 170, 154 ] );
+        this.registerSingleAnimation( [ 155, 203, 187, 171, 155 ] );
+        this.registerSingleAnimation( [ 156, 204, 188, 172, 156 ] );
+        this.registerSingleAnimation( [ 157, 205, 189, 173, 157 ] );
+        this.registerSingleAnimation( [ 158, 206, 190, 174, 158 ] );
+        this.registerSingleAnimation( [ 159, 207, 191, 175, 159 ] );
 /*
-        // NOT NEED  
-        this.registerSingleAnimation([621, 852, 853, 854, 855, 856, 857, 858, 859, 852]);// industrial polution 
+        // NOT NEED
+        this.registerSingleAnimation([621, 852, 853, 854, 855, 856, 857, 858, 859, 852]);// industrial polution
         this.registerSingleAnimation([641, 884, 885, 886, 887, 884]);
         this.registerSingleAnimation([644, 888, 889, 890, 891, 888]);
         this.registerSingleAnimation([649, 892, 893, 894, 895, 892]);
@@ -194,6 +219,7 @@ export class AnimationManager {
         this.registerSingleAnimation([932, 933, 934, 935, 936, 937, 938, 939, 932]);// football
         this.registerSingleAnimation([940, 941, 942, 943, 944, 945, 946, 947, 940]);// football
         */
-    }
+
+}
 
 }

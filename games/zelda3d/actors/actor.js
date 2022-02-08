@@ -151,7 +151,7 @@ ace.Actor = function(game, room, settings) {
   this.actorCountNumber = 0;
   if (game.actors) {
     this.actorCountNumber = game.actors.length;
-  };
+  }
 
 };
 
@@ -245,11 +245,11 @@ ace.Actor.prototype.canWalk = function(dx, dy) {
 		// The avatar can walk through doors. Nobody else can.
 		if (this.name == 'Avatar') {
 			if (tileY == 5) {
-				if (tileX < 2) { return game.canExit(room, 'left') };
-				if (tileX > 13) { return game.canExit(room, 'right') };
+				if (tileX < 2) { return game.canExit(room, 'left') }
+				if (tileX > 13) { return game.canExit(room, 'right') }
 			} else if (localX > 120 && localX < 136) {
-				if (tileY < 2) { return game.canExit(room, 'down') };
-				if (tileY > 8) { return game.canExit(room, 'up') };
+				if (tileY < 2) { return game.canExit(room, 'down') }
+				if (tileY > 8) { return game.canExit(room, 'up') }
 			}
 	  }
     return (tileX > 1 && tileX < 14 && tileY > 1 && tileY < 9);

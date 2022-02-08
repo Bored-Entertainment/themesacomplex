@@ -1,4 +1,4 @@
-declare module StringFilr {
+declare namespace StringFilr {
     /**
      * The core stored library in a StringFilr, as a tree of data.
      */
@@ -82,7 +82,7 @@ declare module StringFilr {
 }
 
 
-module StringFilr {
+namespace StringFilr {
     "use strict";
 
     /**

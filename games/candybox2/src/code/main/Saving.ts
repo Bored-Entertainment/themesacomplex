@@ -1,4 +1,4 @@
-module Saving{
+namespace Saving{
     // Saving maps
     var bools: { [s: string]: boolean; } = {};
     var numbers: { [s: string]: number; } = {};

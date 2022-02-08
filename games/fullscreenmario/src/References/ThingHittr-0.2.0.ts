@@ -1,6 +1,6 @@
 /// <reference path="QuadsKeepr-0.2.1.ts" />
 
-declare module ThingHittr {
+declare namespace ThingHittr {
     /**
      * For group names, the names of other groups they are allowed to hit.
      */
@@ -156,7 +156,7 @@ declare module ThingHittr {
 }
 
 
-module ThingHittr {
+namespace ThingHittr {
     "use strict";
 
     /**

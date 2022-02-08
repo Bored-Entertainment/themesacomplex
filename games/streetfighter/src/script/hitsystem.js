@@ -143,28 +143,28 @@ HitSystem.prototype.canHit = function(key,index)
             return true;
 
         //after all attack frames in a move are finished - IgnoreOverrides will be set to true
-        if(!!victimA.Player.IgnoreOverrides)
+        if(victimA.Player.IgnoreOverrides)
             return true;
 
         //ken and ryu's uppercut can not be overriden
         if(!!imDoingUppercut && !youreDoingUppercut)
             return false;
-        else if(!!youreDoingUppercut)
+        else if(youreDoingUppercut)
             return true;
 
-        if(!!canYourHProjectileHit)
+        if(canYourHProjectileHit)
             return true;
         
         //special overrides
-        if(!!canYouOverrideMe)
+        if(canYouOverrideMe)
             return true;
-        else if(!!canIOverrideYou)
+        else if(canIOverrideYou)
             return false;
 
         //the first attack on a jump in should hit
-        if(!!iDidFirstJumpInAttack)
+        if(iDidFirstJumpInAttack)
             return false;
-        else if(!!youDidFirstJumpInAttack)
+        else if(youDidFirstJumpInAttack)
             return true;
     }
     return retVal;
@@ -195,7 +195,7 @@ HitSystem.prototype.frameMove = function(frame)
     {
         var item = this.Actions[i];
 
-        if(!!this.HoldFrame)
+        if(this.HoldFrame)
         {
             if(!!item && !!item.ActionFrame)
                 ++item.ActionFrame;
@@ -213,7 +213,7 @@ HitSystem.prototype.frameMove = function(frame)
                 //player 1 registers action
                 item[0].Player.registerHit(frame,item[0].RegisteredHit);
             }
-            else if(!!item[0])
+            else if(item[0])
             {
                 item[0].Player.didntHit(frame,item[0].OtherPlayer.Id);
             }
@@ -223,7 +223,7 @@ HitSystem.prototype.frameMove = function(frame)
                 //player 2 registers action
                 item[1].Player.registerHit(frame,item[1].RegisteredHit);
             }
-            else if(!!item[1])
+            else if(item[1])
             {
                 item[1].Player.didntHit(frame,item[1].OtherPlayer.Id);
             }
@@ -239,13 +239,13 @@ HitSystem.prototype.register = function(details)
     if(details.IsProjectile)
         details.Key += "_" + details.Frame.toString();
     if(!this.Actions[details.Key])
-        this.Actions[details.Key] = {ActionFrame:details.Frame + (!!details.NoFrameDelay ? 0 : this.ActionFrameDelay)}
+        this.Actions[details.Key] = {ActionFrame:details.Frame + (details.NoFrameDelay ? 0 : this.ActionFrameDelay)}
     if(!this.Actions[details.Key][0] || (this.Actions[details.Key][0].PlayerID == details.PlayerID))
         this.Actions[details.Key][0] = details;
     else
         this.Actions[details.Key][1] = details;
 
-    if(!!details.NoFrameDelay)
+    if(details.NoFrameDelay)
     {
         this.frameMove(details.Frame);
     }

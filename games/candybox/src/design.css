@@ -6,7 +6,7 @@ body {
 #tabs {
 	text-align: center;
 	margin: auto;
-	padding: 0px;
+	padding: 0;
 	margin-top: 5px;
     margin-bottom:6px;
 }
@@ -18,7 +18,7 @@ body {
 
 #tabs li button {
     color:#282e32;
-	padding:8px 14px 8px 14px;
+	padding:8px 14px;
 	text-decoration:none;
 	font-size:9px;
 	font-family:Verdana, Arial, Helvetica, sans-serif;

@@ -8,6 +8,6 @@ class EqItem extends Item{
     
     // Public getters
     public getQuestEntityWeapon(quest: Quest, player: Player): QuestEntityWeapon{
-        return new QuestEntityWeapon(quest, player, new Naming("???", "???")); 
+        return new QuestEntityWeapon(quest, player, new Naming("???", "???"));
     }
 }

@@ -538,14 +538,14 @@ var CONSTANTS =
     */
 
 
-    ,SHOW_FACEOFF_DELAY:!!__debugMode ? 0 : 6
-    ,SHOW_FACEOFF_PICS_DELAY:!!__debugMode ? 0 : 20
-    ,SHOW_FACEOFF_NAMES_DELAY:!!__debugMode ? 0 : 100
-    ,REMOVE_FACEOFF_PICS_DELAY:!!__debugMode ? 0 : 150
-    ,SHOW_TEAMS_DELAY:!!__debugMode ? 0 : 200
-    ,START_THEME_DELAY:!!__debugMode ? 0 : 210
-    ,ANNOUNCE_FIRST_ROUND_DELAY:!!__debugMode ? 0 : 230
-    ,START_FIRST_ROUND_DELAY:!!__debugMode ? 0 : 340
+    ,SHOW_FACEOFF_DELAY:__debugMode ? 0 : 6
+    ,SHOW_FACEOFF_PICS_DELAY:__debugMode ? 0 : 20
+    ,SHOW_FACEOFF_NAMES_DELAY:__debugMode ? 0 : 100
+    ,REMOVE_FACEOFF_PICS_DELAY:__debugMode ? 0 : 150
+    ,SHOW_TEAMS_DELAY:__debugMode ? 0 : 200
+    ,START_THEME_DELAY:__debugMode ? 0 : 210
+    ,ANNOUNCE_FIRST_ROUND_DELAY:__debugMode ? 0 : 230
+    ,START_FIRST_ROUND_DELAY:__debugMode ? 0 : 340
     //height at which you will take damage from a fall
     ,FALL_DAMAGE_HEIGHT:400
 

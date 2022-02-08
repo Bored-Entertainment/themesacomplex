@@ -61,7 +61,7 @@ class Chest extends QuestEntity{
                     this.callbackCollection.fire();
                     // We re-draw
                     this.drawChestAscii();
-                }   
+                }
             }
         }
     }

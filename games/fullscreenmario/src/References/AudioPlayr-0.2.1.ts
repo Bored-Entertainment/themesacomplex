@@ -1,6 +1,6 @@
 /// <reference path="ItemsHoldr-0.2.1.ts" />
 
-declare module AudioPlayr {
+declare namespace AudioPlayr {
     /**
      * Lookup for directories to the sounds contained within.
      */
@@ -279,7 +279,7 @@ declare module AudioPlayr {
 }
 
 
-module AudioPlayr {
+namespace AudioPlayr {
     "use strict";
 
     /**

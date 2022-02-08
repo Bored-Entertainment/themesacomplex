@@ -75,7 +75,7 @@ class Cfg extends Place{
         this.renderArea.drawString("Feel free to contact me at aniwey@gmail.com if you have any comments or questions :)", x + 4, y + 24);
     }
     
-    private drawCfgInvertColors(x: number, y: number): void{        
+    private drawCfgInvertColors(x: number, y: number): void{
         // Text
         this.renderArea.drawString(Database.getText("cfgInvertColors"), x, y);
         this.renderArea.drawString(Database.getTranslatedText("cfgInvertColors"), x, y + 1, true);

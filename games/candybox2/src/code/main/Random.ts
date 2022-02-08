@@ -1,4 +1,4 @@
-module Random{
+namespace Random{
     export function between(a: number, b: number): number{
         // BUGS
         if(Bugs.getUltimateBugLevel() >= 2)

@@ -175,7 +175,7 @@
                     this.Angle = this.rotateUpFn(frame, this.Angle);
                     this.rotateScale();
                 }
-                else if(!!areNamesHidden_)
+                else if(areNamesHidden_)
                 {
                     this.TeamANameElement.style.display = "";
                     this.TeamBNameElement.style.display = "";

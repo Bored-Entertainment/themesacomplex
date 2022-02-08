@@ -32,13 +32,13 @@ export class Rect {
 
     toJSON() {
 
-        return Traffic.extend({}, this);
+        return Traffic.extend( {}, this );
 
     }
 
-    key(){
+    key() {
 
-        return [this.x, this.y].join(',');
+        return [ this.x, this.y ].join( ',' );
 
     }
 
@@ -50,42 +50,42 @@ export class Rect {
 
     left( left ) {
 
-        if( left != null ) this.x = left;
+        if ( left != null ) this.x = left;
         return this.x;
 
     }
 
     right( right ) {
 
-        if( right != null ) this.x = right - this.width();
+        if ( right != null ) this.x = right - this.width();
         return this.x + this.width();
 
     }
 
     width( width ) {
 
-        if( width != null ) this._width = width;
+        if ( width != null ) this._width = width;
         return this._width;
 
     }
 
     top( top ) {
 
-        if (top != null) this.y = top;
+        if ( top != null ) this.y = top;
         return this.y;
 
     }
 
     bottom( bottom ) {
 
-        if( bottom != null ) this.y = bottom - this.height();
+        if ( bottom != null ) this.y = bottom - this.height();
         return this.y + this.height();
 
     }
 
     height( height ) {
 
-        if (height != null)  this._height = height;
+        if ( height != null ) this._height = height;
         return this._height;
 
     }
@@ -93,22 +93,25 @@ export class Rect {
     pos() {
 
         return new Point( this.x, this.y );
-        
+
     }
 
     center( center ) {
 
-        if (center != null) {
+        if ( center != null ) {
+
             this.x = center.x - this.width() * 0.5;
             this.y = center.y - this.height() * 0.5;
-        }
+
+}
+
         return new Point( this.x + this.width() * 0.5, this.y + this.height() * 0.5 );
 
     }
 
     containsPoint( point ) {
 
-        return  (this.left() <= point.x && point.x <= this.right()) && (this.top() <= point.y && point.y <= this.bottom())
+        return ( this.left() <= point.x && point.x <= this.right() ) && ( this.top() <= point.y && point.y <= this.bottom() );
 
     }
 
@@ -121,10 +124,10 @@ export class Rect {
     getVertices() {
 
         return [
-            new Point(this.left(), this.top()), 
-            new Point(this.right(), this.top()), 
-            new Point(this.right(), this.bottom()), 
-            new Point(this.left(), this.bottom())
+            new Point( this.left(), this.top() ),
+            new Point( this.right(), this.top() ),
+            new Point( this.right(), this.bottom() ),
+            new Point( this.left(), this.bottom() )
         ];
 
     }
@@ -132,29 +135,29 @@ export class Rect {
     getSide( i ) {
 
         let vertices = this.getVertices();
-        return new Segment(vertices[i], vertices[(i + 1) % 4]);
+        return new Segment( vertices[ i ], vertices[ ( i + 1 ) % 4 ] );
 
     }
 
     getSectorId( point ) {
 
         let offset = point.subtract( this.center() );
-        if (offset.y <= 0 && Traffic.abs(offset.x) <= Traffic.abs(offset.y)) return 0;
-        if (offset.x >= 0 && Traffic.abs(offset.x) >= Traffic.abs(offset.y)) return 1;
-        if (offset.y >= 0 && Traffic.abs(offset.x) <= Traffic.abs(offset.y)) return 2;
-        if (offset.x <= 0 && Traffic.abs(offset.x) >= Traffic.abs(offset.y)) return 3;
+        if ( offset.y <= 0 && Traffic.abs( offset.x ) <= Traffic.abs( offset.y ) ) return 0;
+        if ( offset.x >= 0 && Traffic.abs( offset.x ) >= Traffic.abs( offset.y ) ) return 1;
+        if ( offset.y >= 0 && Traffic.abs( offset.x ) <= Traffic.abs( offset.y ) ) return 2;
+        if ( offset.x <= 0 && Traffic.abs( offset.x ) >= Traffic.abs( offset.y ) ) return 3;
 
        /* if (offset.y <= 0 && (offset.x) <= (offset.y)) return 0;
         if (offset.x >= 0 && (offset.x) >= (offset.y)) return 1;
         if (offset.y >= 0 && (offset.x) <= (offset.y)) return 2;
         if (offset.x <= 0 && (offset.x) >= (offset.y)) return 3;*/
-        throw Error('algorithm error');
+        throw Error( 'algorithm error' );
 
     }
 
     getSector( point ) {
 
-        return this.getSide(this.getSectorId(point));
+        return this.getSide( this.getSectorId( point ) );
 
     }
 

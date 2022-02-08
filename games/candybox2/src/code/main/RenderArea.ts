@@ -573,7 +573,7 @@ class RenderArea{
     
     public getTags(): RenderTag[][]{
         return this.tags;
-    }        
+    }
     
     public getWidth(): number{
         return this.width;

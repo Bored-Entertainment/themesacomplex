@@ -1,4 +1,4 @@
-declare module ScenePlayr {
+declare namespace ScenePlayr {
     /**
      * Cutscenes that may be played, keyed by name.
      */
@@ -177,7 +177,7 @@ declare module ScenePlayr {
 }
 
 
-module ScenePlayr {
+namespace ScenePlayr {
     "use strict";
 
     /**

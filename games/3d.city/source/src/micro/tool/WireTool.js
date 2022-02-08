@@ -11,76 +11,106 @@ import { Tile, ZoneUtils } from '../Tile.js';
 
 export class WireTool extends BaseToolConnector {
 
-    constructor ( map ) {
+    constructor( map ) {
 
-        super()
+        super();
         this.init( 5, map, true, true );
-        
+
     }
 
-    layWire ( x, y ) {
+    layWire( x, y ) {
 
         this.doAutoBulldoze( x, y );
         let cost = 5;
         let tile = this._worldEffects.getTileValue( x, y );
         tile = ZoneUtils.normalizeRoad( tile );
 
-        switch (tile) {
-            case Tile.DIRT: this._worldEffects.setTile(x, y, Tile.LHPOWER, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT); break;
+        switch ( tile ) {
+
+            case Tile.DIRT: this._worldEffects.setTile( x, y, Tile.LHPOWER, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT ); break;
             case Tile.RIVER: case Tile.REDGE: case Tile.CHANNEL:
                 cost = 25;
-                if (x < this._map.width - 1) {
-                    tile = this._worldEffects.getTile(x + 1, y);
-                    if (tile.isConductive()) {
+                if ( x < this._map.width - 1 ) {
+
+                    tile = this._worldEffects.getTile( x + 1, y );
+                    if ( tile.isConductive() ) {
+
                         tile = tile.getValue();
-                        tile = ZoneUtils.normalizeRoad(tile);
-                        if (tile != Tile.HROADPOWER && tile != Tile.RAILHPOWERV && tile != Tile.HPOWER) {
-                            this._worldEffects.setTile(x, y, Tile.VPOWER, Tile.CONDBIT | Tile.BULLBIT);
+                        tile = ZoneUtils.normalizeRoad( tile );
+                        if ( tile != Tile.HROADPOWER && tile != Tile.RAILHPOWERV && tile != Tile.HPOWER ) {
+
+                            this._worldEffects.setTile( x, y, Tile.VPOWER, Tile.CONDBIT | Tile.BULLBIT );
                             break;
-                        }
-                    }
-                }
-                if (x > 0) {
-                    tile = this._worldEffects.getTile(x - 1, y);
-                    if (tile.isConductive()) {
+
+}
+
+}
+
+}
+
+                if ( x > 0 ) {
+
+                    tile = this._worldEffects.getTile( x - 1, y );
+                    if ( tile.isConductive() ) {
+
                         tile = tile.getValue();
-                        tile = ZoneUtils.normalizeRoad(tile);
-                        if (tile != Tile.HROADPOWER && tile != Tile.RAILHPOWERV && tile != Tile.HPOWER) {
-                            this._worldEffects.setTile(x, y, Tile.VPOWER, Tile.CONDBIT | Tile.BULLBIT);
+                        tile = ZoneUtils.normalizeRoad( tile );
+                        if ( tile != Tile.HROADPOWER && tile != Tile.RAILHPOWERV && tile != Tile.HPOWER ) {
+
+                            this._worldEffects.setTile( x, y, Tile.VPOWER, Tile.CONDBIT | Tile.BULLBIT );
                             break;
-                        }
-                    }
-                }
-                if (y < this._map.height - 1) {
-                    tile = this._worldEffects.getTile(x, y + 1);
-                    if (tile.isConductive()) {
+
+}
+
+}
+
+}
+
+                if ( y < this._map.height - 1 ) {
+
+                    tile = this._worldEffects.getTile( x, y + 1 );
+                    if ( tile.isConductive() ) {
+
                         tile = tile.getValue();
-                        tile = ZoneUtils.normalizeRoad(tile);
-                        if (tile != Tile.VROADPOWER && tile != Tile.RAILVPOWERH && tile != Tile.VPOWER) {
-                            this._worldEffects.setTile(x, y, Tile.HPOWER, Tile.CONDBIT | Tile.BULLBIT);
+                        tile = ZoneUtils.normalizeRoad( tile );
+                        if ( tile != Tile.VROADPOWER && tile != Tile.RAILVPOWERH && tile != Tile.VPOWER ) {
+
+                            this._worldEffects.setTile( x, y, Tile.HPOWER, Tile.CONDBIT | Tile.BULLBIT );
                             break;
-                        }
-                    }
-                }
-                if (y > 0) {
-                    tile = this._worldEffects.getTile(x, y - 1);
-                    if (tile.isConductive()) {
+
+}
+
+}
+
+}
+
+                if ( y > 0 ) {
+
+                    tile = this._worldEffects.getTile( x, y - 1 );
+                    if ( tile.isConductive() ) {
+
                         tile = tile.getValue();
-                        tile = ZoneUtils.normalizeRoad(tile);
-                        if (tile != Tile.VROADPOWER && tile != Tile.RAILVPOWERH && tile != Tile.VPOWER) {
-                            this._worldEffects.setTile(x, y, Tile.HPOWER, Tile.CONDBIT | Tile.BULLBIT);
+                        tile = ZoneUtils.normalizeRoad( tile );
+                        if ( tile != Tile.VROADPOWER && tile != Tile.RAILVPOWERH && tile != Tile.VPOWER ) {
+
+                            this._worldEffects.setTile( x, y, Tile.HPOWER, Tile.CONDBIT | Tile.BULLBIT );
                             break;
-                        }
-                    }
-                }
+
+}
+
+}
+
+}
+
                 return this.TOOLRESULT_FAILED;
 
-            case Tile.ROADS: this._worldEffects.setTile(x, y, Tile.HROADPOWER, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT); break;
-            case Tile.ROADS2: this._worldEffects.setTile(x, y, Tile.VROADPOWER, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT); break;
-            case Tile.LHRAIL: this._worldEffects.setTile(x, y, Tile.RAILHPOWERV, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT); break;
-            case Tile.LVRAIL: this._worldEffects.setTile(x, y, Tile.RAILVPOWERH, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT); break;
+            case Tile.ROADS: this._worldEffects.setTile( x, y, Tile.HROADPOWER, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT ); break;
+            case Tile.ROADS2: this._worldEffects.setTile( x, y, Tile.VROADPOWER, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT ); break;
+            case Tile.LHRAIL: this._worldEffects.setTile( x, y, Tile.RAILHPOWERV, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT ); break;
+            case Tile.LVRAIL: this._worldEffects.setTile( x, y, Tile.RAILVPOWERH, Tile.CONDBIT | Tile.BURNBIT | Tile.BULLBIT ); break;
             default: return this.TOOLRESULT_FAILED;
-        }
+
+}
 
         this.addCost( cost );
         this.checkZoneConnections( x, y );
@@ -88,9 +118,10 @@ export class WireTool extends BaseToolConnector {
 
     }
 
-    doTool ( x, y, blockMaps ) {
+    doTool( x, y, blockMaps ) {
 
-        this.result = this.layWire( x, y ); 
+        this.result = this.layWire( x, y );
 
     }
+
 }

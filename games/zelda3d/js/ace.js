@@ -229,7 +229,7 @@ ace.loadImage = function(url) {
  */
 ace.getPixel = function(img, x, y) {
   var imgData = img.imgData;
-  if (!imgData) { return false };
+  if (!imgData) { return false }
   var index = (y * imgData.width + x) * 4;
   var r = imgData.data[index];
   var g = imgData.data[index + 1];

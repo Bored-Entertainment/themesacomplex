@@ -12,7 +12,7 @@
 /// <reference path="StringFilr-0.2.1.ts" />
 /// <reference path="TimeHandlr-0.2.0.ts" />
 
-declare module LevelEditr {
+declare namespace LevelEditr {
     export interface IGameStartr {
         settings: any;
         GroupHolder: GroupHoldr.IGroupHoldr;
@@ -193,7 +193,7 @@ declare module LevelEditr {
 }
 
 
-module LevelEditr {
+namespace LevelEditr {
     "use strict";
 
     /**

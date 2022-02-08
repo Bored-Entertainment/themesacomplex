@@ -45,7 +45,7 @@ var CreateSoundManager = function()
         if(!!__debugMode || !isEnabled_) return;
 
         //send all audio to WebAudio by default
-        if(!!sfxManager_)
+        if(sfxManager_)
         {
             return sfxManager_.loadBase64(path, nbChannels, defaultVolume, base64Data, loop);
         }
@@ -118,7 +118,7 @@ var CreateSoundManager = function()
     /**/
     SoundManager.prototype.unload = function(path)
     {
-        if(!!items_[path])
+        if(items_[path])
         {
             for(var i = 0; i < items_[path].Channels; ++i)
             {
@@ -134,7 +134,7 @@ var CreateSoundManager = function()
     SoundManager.prototype.setVolume = function(path, value)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             for(var i = 0; i < items_[path].Channels; ++i)
                 GetElement_(items_[path].Elements[i]).volume = value;
@@ -145,7 +145,7 @@ var CreateSoundManager = function()
     SoundManager.prototype.getVolume = function(path)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             return GetCurrentElement_(path).volume;
         }
@@ -156,7 +156,7 @@ var CreateSoundManager = function()
     SoundManager.prototype.isPlaying = function(path)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             return !GetCurrentElement_(path).paused;
         }
@@ -168,14 +168,14 @@ var CreateSoundManager = function()
     SoundManager.prototype.restart = function(path,loops)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             var el = GetCurrentElement_(path);
-            if(!!el.duration)
+            if(el.duration)
                 el.currentTime = 0;
             el.volume = items_[path].DefaultVolume;
         }
-        else if(!!sfxManager_)
+        else if(sfxManager_)
         {
             sfxManager_.stop(path);
             sfxManager_.play(path);
@@ -186,7 +186,7 @@ var CreateSoundManager = function()
     SoundManager.prototype.play = function(path,loops)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             /*go to the next channel*/
             if(++items_[path].CurrentChannel >= items_[path].Channels)
@@ -194,13 +194,13 @@ var CreateSoundManager = function()
 
             /*start playing from the time = 0*/
             var el = GetCurrentElement_(path);
-            if(!!el.duration) el.currentTime = 0;
-            if(!!loops) el.loop = true;
+            if(el.duration) el.currentTime = 0;
+            if(loops) el.loop = true;
 
             el.volume = items_[path].DefaultVolume;
             el.play();
 
-            if(!!el.error)
+            if(el.error)
             {
                 Alert(path);
                 Alert(el.error);
@@ -208,7 +208,7 @@ var CreateSoundManager = function()
                 return;
             }
         }
-        else if(!!sfxManager_)
+        else if(sfxManager_)
         {
             sfxManager_.play(path);
         }
@@ -220,14 +220,14 @@ var CreateSoundManager = function()
     {
         if(!isEnabled_) return;
         var path = obj.Value;
-        if(!!items_[path])
+        if(items_[path])
         {
             /*go to the next channel*/
             if(++items_[path].CurrentChannel >= items_[path].Channels)
                 items_[path].CurrentChannel = 0;
             /*start playing from time 0*/
             var el = GetCurrentElement_(path);
-            if(!!el.currentTime)
+            if(el.currentTime)
                 el.currentTime = 0;
 
             //el.loop = !!loops;
@@ -235,7 +235,7 @@ var CreateSoundManager = function()
 
             el.play();
 
-            if(!!el.error)
+            if(el.error)
             {
                 Alert(path);
                 Alert(el.error.code);
@@ -243,7 +243,7 @@ var CreateSoundManager = function()
                 return;
             }
         }
-        else if(!!sfxManager_)
+        else if(sfxManager_)
         {
             sfxManager_.play(obj.Value);
         }
@@ -254,7 +254,7 @@ var CreateSoundManager = function()
     SoundManager.prototype.replay = function(path)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             var el = GetCurrentElement_(path);
             el.pause();
@@ -269,12 +269,12 @@ var CreateSoundManager = function()
     SoundManager.prototype.pause = function(path)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             var el = GetCurrentElement_(path);
             el.pause();
         }
-        else if(!!sfxManager_)
+        else if(sfxManager_)
         {
             sfxManager_.pause(path);
         }
@@ -285,12 +285,12 @@ var CreateSoundManager = function()
     SoundManager.prototype.stop = function(path)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             var el = GetCurrentElement_(path);
             el.pause();
         }
-        if(!!sfxManager_)
+        if(sfxManager_)
         {
             sfxManager_.stop(path);
         }
@@ -310,13 +310,13 @@ var CreateSoundManager = function()
     SoundManager.prototype.resume = function(path)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             var el = GetCurrentElement_(path);
-            if(!!el.paused)
+            if(el.paused)
                 el.play();
         }
-        else if(!!sfxManager_)
+        else if(sfxManager_)
         {
             sfxManager_.play(path);
         }
@@ -326,10 +326,10 @@ var CreateSoundManager = function()
     SoundManager.prototype.playOrResume = function(path,loops)
     {
         if(!isEnabled_) return;
-        if(!!items_[path])
+        if(items_[path])
         {
             var el = GetCurrentElement_(path);
-            if(!!el.paused)
+            if(el.paused)
             {
                 el.loop = !!loops;
                 el.play();
@@ -337,7 +337,7 @@ var CreateSoundManager = function()
             else
                 this.play(path,loops);
         }
-        else if(!!sfxManager_)
+        else if(sfxManager_)
         {
             sfxManager_.play(path);
         }
@@ -380,7 +380,7 @@ var CreateSoundManager = function()
             delete sounds_[i];
         }
 
-        if(!!sfxManager_)
+        if(sfxManager_)
         {
             sfxManager_.stopAll();
         }

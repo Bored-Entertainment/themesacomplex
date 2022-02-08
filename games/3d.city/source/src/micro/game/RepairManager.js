@@ -6,63 +6,67 @@
  * http://micropolisjs.graememcc.co.uk/COPYING
  *
  */
- 
+
 import { MiscUtils } from '../Micro.js';
 import { Tiles, Tile } from '../Tile.js';
 
 export class RepairManager {
 
-    constructor ( map ) {
+    constructor( map ) {
 
         this._map = map;
         this._actions = [];
 
     }
 
-    addAction ( criterion, period, zoneSize ) {
+    addAction( criterion, period, zoneSize ) {
 
-        this._actions.push({ criterion: criterion, period: period, zoneSize: zoneSize });
+        this._actions.push( { criterion: criterion, period: period, zoneSize: zoneSize } );
 
     }
 
-    repairZone ( x, y, zoneSize ) {
+    repairZone( x, y, zoneSize ) {
 
         let xx, yy, current, currentValue;
-        let centre = this._map.getTileValue(x, y);
+        let centre = this._map.getTileValue( x, y );
         let tileValue = centre - zoneSize - 2;
 
-        for ( yy = -1; yy < zoneSize - 1; yy++) {
-            for ( xx = -1; xx < zoneSize - 1; xx++) {
-                tileValue++;
+        for ( yy = - 1; yy < zoneSize - 1; yy ++ ) {
 
-                current = this._map.getTile(x + xx, y + yy);
-                if (current.isZone() || current.isAnimated()) continue;
+            for ( xx = - 1; xx < zoneSize - 1; xx ++ ) {
+
+                tileValue ++;
+
+                current = this._map.getTile( x + xx, y + yy );
+                if ( current.isZone() || current.isAnimated() ) continue;
 
                 currentValue = current.getValue();
-                if (currentValue < Tile.RUBBLE || currentValue >= Tile.ROADBASE)
-                    this._map.setTile(x + xx, y + yy, tileValue, Tile.CONDBIT | Tile.BURNBIT);
-            }
-        }
+                if ( currentValue < Tile.RUBBLE || currentValue >= Tile.ROADBASE )
+                    this._map.setTile( x + xx, y + yy, tileValue, Tile.CONDBIT | Tile.BURNBIT );
+
+}
+
+}
 
     }
 
-    checkTile ( x, y, cityTime ) {
+    checkTile( x, y, cityTime ) {
 
         let i = this._actions.length, current, period, tile, tileValue, callable;
 
-        while( i-- ){
+        while ( i -- ) {
 
-            current = this._actions[i];
+            current = this._actions[ i ];
             period = current.period;
-          
-            if ((cityTime & period) !== 0) continue;
 
-            tile = this._map.getTile(x, y);
+            if ( ( cityTime & period ) !== 0 ) continue;
+
+            tile = this._map.getTile( x, y );
             tileValue = tile.getValue();
 
             callable = MiscUtils.isCallable( current.criterion );
-            if (callable && current.criterion.call(null, tile)) this.repairZone( x, y, current.zoneSize );
-            else if (!callable && current.criterion === tileValue) this.repairZone( x, y, current.zoneSize );
+            if ( callable && current.criterion.call( null, tile ) ) this.repairZone( x, y, current.zoneSize );
+            else if ( ! callable && current.criterion === tileValue ) this.repairZone( x, y, current.zoneSize );
 
         }
 

@@ -1,4 +1,4 @@
-declare module NumberMakr {
+declare namespace NumberMakr {
     export interface INumberMakrSettings {
         /**
          * A starting seed used to initialize. This can be a Number or Array; the
@@ -249,7 +249,7 @@ declare module NumberMakr {
     http://www.math.sci.hiroshima-u.ac.jp/~statePeriod-mat/stateVector/emt.html
     email: statePeriod-mat @ math.sci.hiroshima-u.ac.jp (remove space)
 */
-module NumberMakr {
+namespace NumberMakr {
     "use strict";
 
     /**

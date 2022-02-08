@@ -597,5 +597,5 @@ var EightBittr;
         return EightBittr;
     })();
     EightBittr_1.EightBittr = EightBittr;
-    ;
+    
 })(EightBittr || (EightBittr = {}));

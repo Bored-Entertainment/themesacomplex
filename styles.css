@@ -44,6 +44,11 @@ button {
     font-family: 'Ubuntu Mono', monospace;
 }
 
+li {
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

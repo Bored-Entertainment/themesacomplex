@@ -2,7 +2,6 @@
 layout: default
 title: "Home"
 ---
-<script>const splashtext = ("lines.json");</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -11,7 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WZ946DH');</script>
 <!-- End Google Tag Manager -->
 <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
-<script style="font-size: 15px; font-family: 'Ubuntu Mono', monospace;">document.write(splashtext[random]);</script>
+<script class="splash">document.write = randomLine;</script>
 <br>
 
 <h1 class="text-center">Categorys:</h1>
@@ -24,10 +23,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <a>Website is still a W.I.P, We are still working at bugs, so please be patient.<a>
-
+<script type="text/javascript" src="js/splashtext.js"></script>
 <script>
     document.getElementById("homeNav").classList.add("active");
 </script>
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

@@ -50,6 +50,11 @@ li {
     font-family: 'Ubuntu Mono', monospace;
 }
 
+.splash {
+    font-size: 15px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

@@ -39,6 +39,10 @@ h2 {
     margin-right: auto;
     width: 50%;
 }
+button {
+    background-color:#23272a;
+    font-family: 'Ubuntu Mono', monospace;
+}
 
 /* width */
 ::-webkit-scrollbar {

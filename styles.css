@@ -42,6 +42,7 @@ h2 {
 button {
     background-color:#23272a;
     font-family: 'Ubuntu Mono', monospace;
+    border-color:#23272a;
 }
 
 li {

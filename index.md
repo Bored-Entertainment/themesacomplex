@@ -22,9 +22,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<footer>
+
 <a>Website is still a W.I.P, We are still working at bugs, so please be patient.<a>
-</footer>
+
 <script>
     document.getElementById("homeNav").classList.add("active");
 </script>

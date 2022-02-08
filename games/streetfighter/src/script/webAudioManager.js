@@ -7,7 +7,7 @@ var CreateWebAudioManager = function()
 
     var getWebAudioContext = function() 
     {
-        if(!!window.AudioContext)
+        if(window.AudioContext)
             return new AudioContext();
         else
             return new webkitAudioContext();
@@ -33,7 +33,7 @@ var CreateWebAudioManager = function()
 
     WebAudioManager.prototype.init = function()
     {
-        if(!!context_)
+        if(context_)
             return;
 
         var createWebAudioContext = (function(context)
@@ -44,7 +44,7 @@ var CreateWebAudioManager = function()
             }
         })(context_);
 
-        if(!!window.attachEvent)
+        if(window.attachEvent)
         {
             window.attachEvent('onload', createWebAudioContext, true);
         }
@@ -145,7 +145,7 @@ var CreateWebAudioManager = function()
         if(!isEnabled_)
             return;
 
-        if(!!items_[path])
+        if(items_[path])
         {
             var buffer = items_[path].Elements[0];
             if(!!buffer && !items_[path].IsPlaying)
@@ -170,13 +170,13 @@ var CreateWebAudioManager = function()
     //
     WebAudioManager.prototype.pause = function(path)
     {
-        if(!!items_[path])
+        if(items_[path])
         {
             var buffer = items_[path].Elements[0];
-            if(!!buffer)
+            if(buffer)
             {
                 var source = items_[path].Source;
-                if(!!source)
+                if(source)
                 {
                     items_[path].StartOffset += context_.currentTime - items_[path].StartedAt;
                     source.disconnect();
@@ -192,7 +192,7 @@ var CreateWebAudioManager = function()
     //
     WebAudioManager.prototype.stop = function(path)
     {
-        if(!!items_[path])
+        if(items_[path])
         {
             this.pause(path);
             items_[path].StartOffset = 0;

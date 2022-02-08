@@ -118,7 +118,7 @@ body:not(.animated) *:not(#panes) { transition: all 0s linear; }
                                         transform-origin: 0 0; }
 #app[data-frame="on"] #frame:after    { transform: rotateX(90deg) rotateY(90deg) translateX(9.5em) translateY(-0.02em);
                                         transform-origin: 100% 0; }
-#app[data-frame="on"] #frame:before   { transform: rotateX(90deg) rotateY(0deg) translateX(0em) translateY(-0.02em);
+#app[data-frame="on"] #frame:before   { transform: rotateX(90deg) rotateY(0deg) translateX(0) translateY(-0.02em);
                                         transform-origin: 100% 0; }
 
 #app[data-frame="off"] th             { display: none; }
@@ -127,7 +127,7 @@ body:not(.animated) *:not(#panes) { transition: all 0s linear; }
                                         transform-origin: 0 0; }
 #app[data-frame="off"] #frame:after   { transform: rotateX(90deg) rotateY(90deg) translateX(8em) translateY(-0.02em);
                                         transform-origin: 100% 0; }
-#app[data-frame="off"] #frame:before  { transform: rotateX(90deg) rotateY(0deg) translateX(0em) translateY(-0.02em);
+#app[data-frame="off"] #frame:before  { transform: rotateX(90deg) rotateY(0deg) translateX(0) translateY(-0.02em);
                                         transform-origin: 100% 0; }
 
 th, td {
@@ -457,7 +457,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
 .knight .poly-group.top { transform: translateZ( 3em ) rotateZ( 180deg ); }
 
 .knight .poly.a { margin: 0; }
-.knight .poly.b { margin: 3em 0 0 0; }
+.knight .poly.b { margin: 3em 0 0; }
 .knight .poly.c { margin: 3em 0 0 3em; }
 
 .knight .tp {
@@ -468,7 +468,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
 .knight .bm {
   width: 8em;
   height: 8em;
-  transform: translateZ( 0em );
+  transform: translateZ( 0 );
 }
 .knight .ft  {
   width: 3em;
@@ -518,7 +518,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
 .bishop .rectangle.a .rt {
   width: 6em;
   height: 6.6em;
-  transform: rotateY(90deg) translateX(-6em) translateZ(0em);
+  transform: rotateY(90deg) translateX(-6em) translateZ(0);
 }
 
 .bishop .rectangle.a .lt {
@@ -678,11 +678,11 @@ h2 {
 #app[data-state="menu"] #menu {
   opacity: 1;
   transition-delay: 1.5s;
-  transform: translateY(0em) translateZ(99999px);
+  transform: translateY(0) translateZ(99999px);
 }
 
 #logoimg {
-  margin: 3em 0 1em 0;
+  margin: 3em 0 1em;
 }
 
 #logo {
@@ -733,7 +733,7 @@ h2 {
 }
 
 @keyframes fall {
-  0%   { transform: rotateX(0deg) translateY(0em); opacity: 1; }
+  0%   { transform: rotateX(0deg) translateY(0); opacity: 1; }
   100% { transform: rotateX(120deg) translateY(60em); opacity: 0; }
 }
 
@@ -828,11 +828,11 @@ h2 {
 }
 
 .pane:nth-child(1) { transform: translateX(-80em); }
-.pane:nth-child(2) { transform: translateX(0em); }
+.pane:nth-child(2) { transform: translateX(0); }
 .pane:nth-child(3) { transform: translateX(80em); }
 
 #app[data-menu="themes"] #panes { transform: translateX(80em); }
-#app[data-menu="main"] #panes   { transform: translateX(0em); }
+#app[data-menu="main"] #panes   { transform: translateX(0); }
 #app[data-menu="about"] #panes { transform: translateX(-80em); }
 
 #app[data-menu="main"] #main,
@@ -888,7 +888,7 @@ h2 {
 
 #menu .btn { 
   width: 6em; 
-  margin: 1em 0em; 
+  margin: 1em 0; 
 }
 
 #top-bar .btn {
@@ -1205,8 +1205,8 @@ tfoot th:last-child   { background-position: right bottom; background-size: 332%
 .set-theme[data-theme="flat"] .cube:before,
 .set-theme[data-theme="flat"] .cube:after           { background-color: #00A2FF; }
 #app[data-theme="flat"] .black .poly > div          { background-color: #FF432F; }
-#app[data-theme="flat"] .white .poly .sphere        { background: -webkit-radial-gradient(center, ellipse cover, rgba(0,162,255,1) 30%,rgba(0,89,141,1) 100%) 0em -1em; }
-#app[data-theme="flat"] .black .poly .sphere        { background: -webkit-radial-gradient(center, ellipse cover, rgba(255,67,47,1) 30%,rgba(141,36,25,1) 100%) 0em -1em; }
+#app[data-theme="flat"] .white .poly .sphere        { background: -webkit-radial-gradient(center, ellipse cover, rgba(0,162,255,1) 30%,rgba(0,89,141,1) 100%) 0 -1em; }
+#app[data-theme="flat"] .black .poly .sphere        { background: -webkit-radial-gradient(center, ellipse cover, rgba(255,67,47,1) 30%,rgba(141,36,25,1) 100%) 0 -1em; }
 #app[data-theme="flat"] .white.bishop .rectangle.a .tp:before, 
 #app[data-theme="flat"] .white.bishop .rectangle.b .tp:before         { border-bottom: 1.1em solid #00A2FF; }
 #app[data-theme="flat"] .white.bishop .rectangle.a .tp:after, 
@@ -1231,7 +1231,7 @@ tfoot th:last-child   { background-position: right bottom; background-size: 332%
                                                      box-shadow: inset 0 0 4em -1em #35C2D3; opacity: .5; }
 .set-theme[data-theme="wireframe"] .cube,
 .set-theme[data-theme="wireframe"] .cube:before,
-.set-theme[data-theme="wireframe"] .cube:after      { background-color: #022A36; border: 0px solid #35C2D3;
+.set-theme[data-theme="wireframe"] .cube:after      { background-color: #022A36; border: 0 solid #35C2D3;
                                                       box-shadow: inset 0 0 .5em .2em #35C2D3; opacity: .8; }
 #app[data-theme="wireframe"] .black .poly > div     { background-color: #022A36; border: 1px solid #FFDD1D;
                                                       box-shadow: inset 0 0 4em -1em #FFDD1D; opacity: .5; }
@@ -1283,7 +1283,7 @@ tfoot th:last-child   { background-position: right bottom; background-size: 332%
   #app[data-frame="off"] { font-size: 35px; }
 }
 @media screen and (max-height: 36em) { 
-  #logoimg { margin: 1em 0 1em 0; }
+  #logoimg { margin: 1em 0; }
 }
 @media screen and (max-height: 32em) { 
   #app[data-state="menu"] #overlay {
@@ -1297,7 +1297,7 @@ tfoot th:last-child   { background-position: right bottom; background-size: 332%
 @media screen and (max-width: 24em), screen and (max-height : 24em) { 
   h1 { font-size: 1.5em; }
   h2 { font-size: 1em; }
-  #logoimg { margin: 2em 0 1em 0; }
+  #logoimg { margin: 2em 0 1em; }
   #logo { font-size: 12px }
   .loading #overlay { background-position: 50% 80%; }
 }

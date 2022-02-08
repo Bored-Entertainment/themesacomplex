@@ -124,7 +124,7 @@ Player.prototype.executeAnimation = function(name, forced, ignoreImmobile)
 
         for(var i = 0; i < this.Moves.length; ++i)
         {
-            if(!!animation)
+            if(animation)
                 break;
 
             if(this.Moves[i].BaseAnimation.Name == name)
@@ -182,13 +182,13 @@ Player.prototype.executeAnimation = function(name, forced, ignoreImmobile)
                 if(!!this.allowInterupt() && !pstateInterupts)
                     return false;
 
-                if(!!this.isProjectileInUse(move))
+                if(this.isProjectileInUse(move))
                     return false;
 
             }
         }
 
-        if(!!animation)
+        if(animation)
         {
             if(!this.setInteruptAnimation(animation))
             {
@@ -213,7 +213,7 @@ Player.prototype.findThrow = function(input,frame)
     for(var i = 0; i < this.Throws.length; ++i)
     {
         retVal = this.testAnimation(frame,currentEnergy,input,this.Throws[i])
-        if(!!retVal)
+        if(retVal)
             break;
     }
     return retVal;
@@ -256,7 +256,7 @@ Player.prototype.findAnimation = function(input,frame)
     for(var i = 0; i < this.Moves.length; ++i)
     {
         retVal = this.testAnimation(frame,currentEnergy,input,this.Moves[i])
-        if(!!retVal)
+        if(retVal)
             break;
     }
     return retVal;
@@ -266,7 +266,7 @@ Player.prototype.findAnimation = function(input,frame)
 Player.prototype.testAnimation = function(frame,currentEnergy,input,move)
 {
     var isAirborne = this.isAirborne();
-    if(!!move.IsImplicit)
+    if(move.IsImplicit)
         return null;
 
     if(!!move.EnergyToSubtract && currentEnergy < move.EnergyToSubtract)
@@ -317,7 +317,7 @@ Player.prototype.testAnimation = function(frame,currentEnergy,input,move)
         if(!!this.allowInterupt() && !pstateInterupts)
             return null;
 
-        if(!!this.isProjectileInUse(move))
+        if(this.isProjectileInUse(move))
             return null;
 
         var isMatch = this.compareButtonSequence(frame,move,input);
@@ -325,11 +325,11 @@ Player.prototype.testAnimation = function(frame,currentEnergy,input,move)
         //    isMatch = this.compareAlternateButtonSequences(move,tmpKeys);
 
 
-        if(!!isMatch)
+        if(isMatch)
         {
-            if(!!move.GrappleDistance)
+            if(move.GrappleDistance)
             {
-                if(!!this.RegisteredHit.HitID)
+                if(this.RegisteredHit.HitID)
                     return null;
                 if(!this.tryStartGrapple(move,frame))
                     return null;
@@ -341,7 +341,7 @@ Player.prototype.testAnimation = function(frame,currentEnergy,input,move)
         }
         else
         {
-            if(!!move.GrappleDistance)
+            if(move.GrappleDistance)
                 return null;
         }
     }
@@ -491,7 +491,7 @@ Player.prototype.spawnSmallDirt = function(frame,offsetX)
         var instance = this.OtherAnimations.Dirt[index];
         instance.StartFrame = frame;
         instance.Animation.Direction = this.Direction;
-        if(!!offsetX)
+        if(offsetX)
             this.setLastHit(instance.Animation,CONSTANTS.USE_PLAYER_XY,offsetX,CONSTANTS.SMALLDIRT_OFFSETY);
         else
             this.setLastHit(instance.Animation,CONSTANTS.USE_PLAYER_BOTTOM);
@@ -521,13 +521,13 @@ Player.prototype.spawnBigDirt = function(frame,offsetX)
 Player.prototype.spawnHitReportAnimations = function(frame, flags, hitState, attackDirection)
 {
     var frontKey = "";
-         if(!!(this.Flags.Player.has(PLAYER_FLAGS.BLOCKING))) {frontKey = _c3("_",ATTACK_FLAGS.FRONT|ATTACK_FLAGS.BLOCK,"_0");}
+         if(this.Flags.Player.has(PLAYER_FLAGS.BLOCKING)) {frontKey = _c3("_",ATTACK_FLAGS.FRONT|ATTACK_FLAGS.BLOCK,"_0");}
     else if(hasFlag(flags,ATTACK_FLAGS.LIGHT))    {frontKey = _c4("_",ATTACK_FLAGS.FRONT|ATTACK_FLAGS.LIGHT,"_",this.Team);}
     else if(hasFlag(flags,ATTACK_FLAGS.MEDIUM))   {frontKey = _c4("_",ATTACK_FLAGS.FRONT|ATTACK_FLAGS.MEDIUM,"_",this.Team);}
     else if(hasFlag(flags,ATTACK_FLAGS.HARD))     {frontKey = _c4("_",ATTACK_FLAGS.FRONT|ATTACK_FLAGS.HARD,"_",this.Team);}
 
     var animation = this.OtherAnimations[frontKey];
-    if(!!animation)
+    if(animation)
     {
         this.setLastHit(animation);
         animation.Direction = attackDirection;
@@ -557,7 +557,7 @@ Player.prototype.spawnHitReportAnimations = function(frame, flags, hitState, att
 
 
         var rearAnimation = this.OtherAnimations[rearKey];
-        if(!!rearAnimation)
+        if(rearAnimation)
         {
             this.setLastHit(rearAnimation,CONSTANTS.USE_PLAYER_TOP);
             this.RearHitReport[this.RearHitReport.length] = {Animation:rearAnimation,StartFrame:frame,Direction:attackDirection,Element:this.getNextRearHitReportImage()};
@@ -720,7 +720,7 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
     this.clearUnclearedFlags();
     if(!!this.CurrentAnimation && this.CurrentAnimation.Animation)
     {
-        if(!!this.IsSpriteReversed)
+        if(this.IsSpriteReversed)
         {
             this.unreverseSprite();
             this.changeDirection(true);
@@ -738,17 +738,17 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
                 newAnimation.Vy = (this.CurrentAnimation.Animation.ChainAnimation.chainVyFn(this.CurrentAnimation.Vy));
         }
 
-        if(!!this.CurrentAnimation.Animation.Trail)
+        if(this.CurrentAnimation.Animation.Trail)
             this.CurrentAnimation.Animation.Trail.disable();
 
         //it is possible that the player was attacked before clearing the block state
-        if(!!this.MustClearAllowBlock)
+        if(this.MustClearAllowBlock)
         {
             this.MustClearAllowBlock = false;
             //notify AI
             this.onEndAttackFn(this.CurrentAnimation.ID);
         }
-        if(!!this.MustClearAllowAirBlock)
+        if(this.MustClearAllowAirBlock)
         {
             this.MustClearAllowAirBlock = false;
             //notify AI
@@ -756,7 +756,7 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
         }
 
         this.CurrentAnimation.Animation.ControllerAnimation = null;
-        if(!!(this.CurrentAnimation.Animation.IgnoresCollisions))
+        if(this.CurrentAnimation.Animation.IgnoresCollisions)
         {
             if(!newAnimation.Animation || !(newAnimation.Animation.IgnoresCollisions))
                 this.Flags.Player.remove(PLAYER_FLAGS.IGNORE_COLLISIONS);
@@ -764,7 +764,7 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
         }
         this.Flags.Pose.remove(this.CurrentAnimation.Animation.Flags.Pose);
 
-        if(!!this.CurrentAnimation.Animation.BaseAnimation.IsAttack)
+        if(this.CurrentAnimation.Animation.BaseAnimation.IsAttack)
         {
             if(!this.SentHitAttackStateChange)
                 this.onAttackStateChanged(null,ATTACK_STATE.DONE);
@@ -773,7 +773,7 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
     }
 
 
-    this.setGotUpOnFrame(!!newAnimation ? newAnimation.Animation : null);
+    this.setGotUpOnFrame(newAnimation ? newAnimation.Animation : null);
 
     if(!!this.CurrentAnimation && !!this.CurrentAnimation.Animation)
         this.onEndAnimation(this.CurrentAnimation.Animation.BaseAnimation.Name);
@@ -792,13 +792,13 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
 
         this.Flags.Juggle.add(this.CurrentAnimation.Animation.Flags.Juggle);
 
-        if(!!this.CurrentAnimation.Animation.IsProjectile)
+        if(this.CurrentAnimation.Animation.IsProjectile)
             this.CurrentAnimation.Animation.IsProjectilePending = true;
 
         this.onStartAnimation(this.CurrentAnimation.Animation.BaseAnimation.Name);
         //this.doAnimationAlerts();
         this.MaintainYPosition = newAnimation.Animation.MaintainYPosition;
-        if(!!this.CurrentAnimation.Animation.Flags.Player)
+        if(this.CurrentAnimation.Animation.Flags.Player)
         {
             //used for moves like MBison's head stomp - where you need to jump to the enemy's position
             if(hasFlag(this.CurrentAnimation.Animation.Flags.Player,PLAYER_FLAGS.MOVE_TO_ENEMY))
@@ -806,14 +806,14 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
             //turn around if required
             if(hasFlag(this.CurrentAnimation.Animation.Flags.Player,PLAYER_FLAGS.FACE_ENEMY))
             {
-                if(!!this.MustChangeDirection)
+                if(this.MustChangeDirection)
                     this.changeDirection(true);
             }
             //clear fire if required
             ignoreClearFire = !hasFlag(this.CurrentAnimation.Animation.Flags.Combat,COMBAT_FLAGS.IGNORE_CLEAR_FIRE);
         }
 
-        if(!!ignoreClearFire)
+        if(ignoreClearFire)
             this.clearFire();
 
         this.IsInAttackFrame = false;
@@ -828,7 +828,7 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
             this.getMatch().onSuperMoveCompleted(this);
             this.setExecutingSuperMove(false);
         }
-        if(!!newAnimation.Animation.IsSuperMove)
+        if(newAnimation.Animation.IsSuperMove)
         {
             this.setZOrder(20);
             this.getMatch().onSuperMoveStarted(this);
@@ -853,7 +853,7 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
             this.clearVxFn();
             this.clearVyFn();
         }
-        if(!!this.CurrentAnimation.Animation.UseNewAirborneFunctions)
+        if(this.CurrentAnimation.Animation.UseNewAirborneFunctions)
         {
             this.setVxFn(this.CurrentAnimation.Animation.getAirXModifier());
             this.setVyFn(this.CurrentAnimation.Animation.getAirYModifier());
@@ -874,13 +874,13 @@ Player.prototype.setCurrentAnimation = function(newAnimation,isChaining)
 
         if(!__debugMode)
         {
-            if(!!newAnimation.Animation.EnergyToSubtract)
+            if(newAnimation.Animation.EnergyToSubtract)
                 this.changeEnergy(-newAnimation.Animation.EnergyToSubtract);
-            else if(!!newAnimation.Animation.EnergyToAdd)
+            else if(newAnimation.Animation.EnergyToAdd)
                 this.changeEnergy(newAnimation.Animation.EnergyToAdd);
         }
 
-        if(!!newAnimation.Animation.Trail)
+        if(newAnimation.Animation.Trail)
             this.CurrentAnimation.Animation.Trail.enable(newAnimation.StartFrame,this.Element,this.Direction);
 
         if(!isChaining)
@@ -921,7 +921,7 @@ Player.prototype.doAnimationAlerts = function()
 
 Player.prototype.showFirstAnimationFrame = function()
 {
-    if(!!this.CurrentAnimation.Animation)
+    if(this.CurrentAnimation.Animation)
     {
         var firstFrame = this.CurrentAnimation.Animation.getFrame(0);
         this.setCurrentFrame(firstFrame,game_.getCurrentFrame(),0,0,true);
@@ -965,7 +965,7 @@ Player.prototype.ResetClip = function()
 // Sets the current frame
 Player.prototype.setCurrentFrame = function(newFrame,frame,stageX,stageY,ignoreTranslation)
 {
-    if(!!this.CurrentFrame)
+    if(this.CurrentFrame)
     {
         if(!!newFrame && (newFrame.ID == this.CurrentFrame.ID))
             return;
@@ -996,7 +996,7 @@ Player.prototype.setCurrentFrame = function(newFrame,frame,stageX,stageY,ignoreT
 
     this.IsNewFrame = false;
     
-    if(!!this.IsFirstFrame)
+    if(this.IsFirstFrame)
         this.IsNewFrame = true;
     else if(!!newFrame && !this.CurrentFrame)
         this.IsNewFrame = true;
@@ -1013,7 +1013,7 @@ Player.prototype.setCurrentFrame = function(newFrame,frame,stageX,stageY,ignoreT
                 || !!newFrame.FlagsToSet.SwingSound);
 
     this.CurrentFrame = newFrame;
-    if(!!newFrame)
+    if(newFrame)
     {
         this.IsFirstFrame = false;
         if(this.CurrentAnimation.Animation.IsSuperMove)
@@ -1027,13 +1027,13 @@ Player.prototype.setCurrentFrame = function(newFrame,frame,stageX,stageY,ignoreT
         this.IgnoreOverrides = this.CurrentFrame.Vulernable;
 
         //used to force the other player to change frames during a throw
-        if(!!this.IsNewFrame)
+        if(this.IsNewFrame)
         {
             if(!!__debugMode && this.Id == "t1p0")
                 debug_.readFrameData(this.CurrentFrame);
 
             ++this.CurrentAnimation.FrameIndex;
-            if(!!this.CurrentFrame.SlideForce)
+            if(this.CurrentFrame.SlideForce)
                 this.startSlide(frame,this.CurrentFrame.SlideForce,this.Direction,this.CurrentFrame.SlideFactor,this.CurrentFrame.HideSlideDirt,true);
         }
 
@@ -1134,16 +1134,16 @@ Player.prototype.setCurrentFrame = function(newFrame,frame,stageX,stageY,ignoreT
 
         if(!ignoreTranslation)
         {
-            if(!!newFrame.X)
+            if(newFrame.X)
                 this.moveX(newFrame.X);
-            if(!!newFrame.Y)
+            if(newFrame.Y)
                 this.moveY(newFrame.Y);
         }
 
         if((!!newFrame.SoundFilename || !!newFrame.FlagsToSet.SwingSound) && !!isNewSound)
         {
             this.queueSwingSound(newFrame.FlagsToSet.SwingSound);
-            if(!!newFrame.SoundFilename)
+            if(newFrame.SoundFilename)
                 this.queueSound(newFrame.SoundFilename,newFrame.SoundVolume);
         }
     }
@@ -1184,15 +1184,15 @@ Player.prototype.setBgBase64 = function()
 Player.prototype.setBgBase64Helper = function(arr,attrib,key)
 {
     for(var i = 0, length = arr.length; i < length; ++i)
-        imageLookup_.getBgB64((!!attrib ? arr[i][attrib] : arr[i]),key);
+        imageLookup_.getBgB64((attrib ? arr[i][attrib] : arr[i]),key);
 }
 
 Player.prototype.setSprite = function(frame)
 {
-    if(!!this.IsNewFrame)
+    if(this.IsNewFrame)
     {
         data = spriteLookup_.get(this.CurrentFrame.RightSrc);
-        if(!!data)
+        if(data)
         {
             this.SpriteElement.style.backgroundPosition = data.Left + " " + data.Bottom;
             this.SpriteElement.style.width = data.Width;
@@ -1214,7 +1214,7 @@ Player.prototype.setSprite = function(frame)
     }
     if(!this.IsSpriteReversed)
     {
-        if(!!this.CurrentFrame.IsFlipped)
+        if(this.CurrentFrame.IsFlipped)
         {
             if(this.Direction == -1 && !!this.IsFlipped)
                 this.flip(false);
@@ -1244,7 +1244,7 @@ Player.prototype.render = function(frame,stageDiffX,stageDiffY)
     this.setAirborneY();
     if(!this.IsPaused)
     {
-        if(!!this.CurrentFrame)
+        if(this.CurrentFrame)
         {
             this.setSprite(frame);
             if(!!this.CurrentFrame.ShadowImageSrc && (this.Shadow._relSrc != this.CurrentFrame.ShadowImageSrc))
@@ -1265,7 +1265,7 @@ Player.prototype.render = function(frame,stageDiffX,stageDiffY)
         this.renderShadow();
         this.renderTrail(frame,stageDiffX,stageDiffY);
 
-        if(!!__debugMode)
+        if(__debugMode)
             this.renderDebugInfo();
     }
     this.IsNewFrame = false;
@@ -1283,7 +1283,7 @@ Player.prototype.renderShadow = function()
 
     if(this.Direction > 0)
     {
-        this.ShadowX = this.X + ((!!this.CurrentFrame ? this.CurrentFrame.ShadowOffset.X : 0) || this.DefaultShadowOffset) + "px";
+        this.ShadowX = this.X + ((this.CurrentFrame ? this.CurrentFrame.ShadowOffset.X : 0) || this.DefaultShadowOffset) + "px";
         if((this.ShadowX != this.LastShadowX) || !!this.MustForceRenderShadow)
         {
             this.LastShadowX = this.ShadowX;
@@ -1299,7 +1299,7 @@ Player.prototype.renderShadow = function()
     }
     else
     {
-        this.ShadowX = this.X + ((!!this.CurrentFrame ? this.CurrentFrame.ShadowOffset.X : 0) || this.DefaultShadowOffset) + "px";
+        this.ShadowX = this.X + ((this.CurrentFrame ? this.CurrentFrame.ShadowOffset.X : 0) || this.DefaultShadowOffset) + "px";
         if((this.ShadowX != this.LastShadowX) || !!this.MustForceRenderShadow)
         {
             this.LastShadowX = this.ShadowX;
@@ -1315,7 +1315,7 @@ Player.prototype.renderShadow = function()
     }
 
 
-    this.ShadowY = game_.getMatch().getStage().getOffsetY(true) + ((!!this.CurrentFrame ? this.CurrentFrame.ShadowOffset.Y : 0)) + "px";
+    this.ShadowY = game_.getMatch().getStage().getOffsetY(true) + ((this.CurrentFrame ? this.CurrentFrame.ShadowOffset.Y : 0)) + "px";
     if((this.ShadowY != this.LastShadowY) || !!this.MustForceRenderShadow)
     {
         this.LastShadowY = this.ShadowY;

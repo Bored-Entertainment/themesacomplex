@@ -1,6 +1,6 @@
 /// <reference path="FPSAnalyzr-0.2.1.ts" />
 
-declare module GamesRunnr {
+declare namespace GamesRunnr {
     /**
      * A callback for when the game changes playing state (pause or play).
      */
@@ -208,7 +208,7 @@ declare module GamesRunnr {
 }
 
 
-module GamesRunnr {
+namespace GamesRunnr {
     "use strict";
 
     /**

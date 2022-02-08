@@ -9,7 +9,7 @@
 
 export const Direction = {
 
-    INVALID: -1,
+    INVALID: - 1,
     NORTH: 0,
     NORTHEAST: 1,
     EAST: 2,
@@ -20,41 +20,51 @@ export const Direction = {
     NORTHWEST: 7,
     BEGIN: 0,
     END: 8,
-    
+
     // Move direction clockwise by 45 degrees. No bounds checking
     // i.e. result could be >= END. Has no effect on INVALID. Undefined
     // when dir >= END
-    increment45: function (dir, count) {
-        if (arguments.length < 1) throw new TypeError();
-        if (dir == Direction.INVALID) return dir;
-        if (!count && count !== 0) count = 1;
+    increment45: function ( dir, count ) {
+
+        if ( arguments.length < 1 ) throw new TypeError();
+        if ( dir == Direction.INVALID ) return dir;
+        if ( ! count && count !== 0 ) count = 1;
         return dir + count;
-    },
+
+},
     // Move direction clockwise by 90 degrees. No bounds checking
     // i.e. result could be >= END. Has no effect on INVALID. Undefined
     // when dir >= END
-    increment90: function (dir) {
-        if (arguments.length < 1) throw new TypeError();
-        return Direction.increment45(dir, 2);
-    },
+    increment90: function ( dir ) {
+
+        if ( arguments.length < 1 ) throw new TypeError();
+        return Direction.increment45( dir, 2 );
+
+},
     // Move direction clockwise by 45 degrees, taking the direction modulo 8
     // if necessary to force it into valid bounds. Has no effect on INVALID.
-    rotate45: function (dir, count) {
-        if (arguments.length < 1) throw new TypeError();
-        if (dir == Direction.INVALID) return dir;
-        if (!count && count !== 0) count = 1;
-        return ((dir - Direction.NORTH + count) & 7) + Direction.NORTH;
-    },
+    rotate45: function ( dir, count ) {
+
+        if ( arguments.length < 1 ) throw new TypeError();
+        if ( dir == Direction.INVALID ) return dir;
+        if ( ! count && count !== 0 ) count = 1;
+        return ( ( dir - Direction.NORTH + count ) & 7 ) + Direction.NORTH;
+
+},
     // Move direction clockwise by 90 degrees, taking the direction modulo 8
     // if necessary to force it into valid bounds. Has no effect on INVALID.
-    rotate90: function (dir) {
-        if (arguments.length < 1) throw new TypeError();
-        return Direction.rotate45(dir, 2);
-    },
+    rotate90: function ( dir ) {
+
+        if ( arguments.length < 1 ) throw new TypeError();
+        return Direction.rotate45( dir, 2 );
+
+},
     // Move direction clockwise by 180 degrees, taking the direction modulo 8
     // if necessary to force it into valid bounds. Has no effect on INVALID.
-    rotate180: function (dir) {
-        if (arguments.length < 1) throw new TypeError();
-        return Direction.rotate45(dir, 4);
-    },
-}
+    rotate180: function ( dir ) {
+
+        if ( arguments.length < 1 ) throw new TypeError();
+        return Direction.rotate45( dir, 4 );
+
+},
+};

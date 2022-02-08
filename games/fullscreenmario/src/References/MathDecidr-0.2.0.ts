@@ -1,4 +1,4 @@
-declare module MathDecidr {
+declare namespace MathDecidr {
     /**
      * Useful constants a MathDecidr may use in equations.
      */
@@ -105,7 +105,7 @@ declare module MathDecidr {
 }
 
 
-module MathDecidr {
+namespace MathDecidr {
     "use strict";
 
     /**

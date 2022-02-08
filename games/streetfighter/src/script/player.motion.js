@@ -59,8 +59,8 @@ Player.prototype.getXDir = function() { return (this.X - this.LastX) / Math.abs(
 //0 would mean stationary on the Y
 Player.prototype.getYDir = function() { return (this.Y - this.LastY) / Math.abs(this.Y - this.LastY) || 0; }
 
-Player.prototype.getLeftX = function(useImageWidth) { if(this.Direction > 0){return STAGE.MAX_STAGEX - (this.getX() + (!!useImageWidth ? this.getBoxWidth() : this.getConstWidth()));}else{return this.getX();}}
-Player.prototype.getRightX = function(useImageWidth)  { if(this.Direction > 0){return STAGE.MAX_STAGEX - this.getX();}else{return this.getX() + (!!useImageWidth ? this.getBoxWidth() : this.getConstWidth());}}
+Player.prototype.getLeftX = function(useImageWidth) { if(this.Direction > 0){return STAGE.MAX_STAGEX - (this.getX() + (useImageWidth ? this.getBoxWidth() : this.getConstWidth()));}else{return this.getX();}}
+Player.prototype.getRightX = function(useImageWidth)  { if(this.Direction > 0){return STAGE.MAX_STAGEX - this.getX();}else{return this.getX() + (useImageWidth ? this.getBoxWidth() : this.getConstWidth());}}
 Player.prototype.getImgFrontX = function(useImageWidth) { if(this.Direction > 0){ return this.getLeftX(useImageWidth); } else { return this.getRightX(useImageWidth); } }
 Player.prototype.getAbsBackX = function(useImageWidth)  { if(this.Direction > 0){ return this.getRightX(useImageWidth); } else { return this.getLeftX(useImageWidth); } }
 
@@ -93,8 +93,8 @@ Player.prototype.getImgRect = function(useImageWidth)
 //records the image coordinates so that they can be used intead of going to the DOM every time.
 Player.prototype.setImgRect = function()
 {
-    var imageOffsetY = (!!this.CurrentFrame ? this.CurrentFrame.ImageOffsetY : 0);
-    var imageOffsetX = (!!this.CurrentFrame ? this.CurrentFrame.ImageOffsetX : 0);
+    var imageOffsetY = (this.CurrentFrame ? this.CurrentFrame.ImageOffsetY : 0);
+    var imageOffsetX = (this.CurrentFrame ? this.CurrentFrame.ImageOffsetX : 0);
 
     var bottom = (parseInt(this.Element.style.bottom) || 0) + imageOffsetY;
 
@@ -143,7 +143,7 @@ Player.prototype.isFacingProjectile = function(projectile)
 }
 Player.prototype.isFacingPlayer = function(otherPlayer, ignoreOtherDirection)
 {
-    if(!!ignoreOtherDirection)
+    if(ignoreOtherDirection)
     {
         if(this.Direction ==  1  && otherPlayer.Direction == -1 && this.RightOffset  > otherPlayer.LeftOffset) return true;
         if(this.Direction ==  1  && otherPlayer.Direction == 1 && this.RightOffset > otherPlayer.RightOffset) return true;
@@ -207,11 +207,11 @@ Player.prototype.setX = function(value)
     this.X = value;
     this.moveCircle();
 }
-Player.prototype.show = function() { this.setDisplay(true); if(!!this.IsAI) {this.enableAI();} }
+Player.prototype.show = function() { this.setDisplay(true); if(this.IsAI) {this.enableAI();} }
 Player.prototype.hide = function() { this.setDisplay(false); }
 Player.prototype.setDisplay = function(isVisible)
 {
-    if(!!isVisible)
+    if(isVisible)
     {
         this.Element.style.display = "";
         this.ShadowContainer.style.display = "";
@@ -237,7 +237,7 @@ Player.prototype.hasAirborneComboFlag = function() { return this.Flags.Pose.has(
 Player.prototype.isAirborne = function() { return this.hasAirborneComboFlag() || this.hasAirborneFlag() || this.Y > game_.getMatch().getStage().getGroundY(); }
 Player.prototype.setGroundY = function(groundY)
 {
-    if(!!this.isBeingGrappled())
+    if(this.isBeingGrappled())
         return;
     
     if(!this.hasAirborneFlag() && !this.hasAirborneComboFlag())
@@ -247,7 +247,7 @@ Player.prototype.setGroundY = function(groundY)
 
     var offsetY = this.getStage().DeltaOffsetY;
     var isAirborne = this.hasAirborneFlag() || this.hasAirborneComboFlag();
-    if(!!this.MaintainYPosition)
+    if(this.MaintainYPosition)
     {
         this.setY(this.Y + offsetY);
     }
@@ -272,7 +272,7 @@ Player.prototype.turnAround = function()
 {
     this.MustChangeDirection = 1;
 
-    if(!!this.IsBeingThrown)
+    if(this.IsBeingThrown)
         this.MustChangeDirectionQuick = true;
 }
 
@@ -288,7 +288,7 @@ Player.prototype.checkMustChangeDirection = function()
 Player.prototype.unreverseSprite = function()
 {
     //are we already reversed?
-    if(!!this.IsSpriteReversed)
+    if(this.IsSpriteReversed)
     {
         ApplyFlip(this.SpriteElement);
         this.IsSpriteReversed = false;
@@ -447,7 +447,7 @@ Player.prototype.moveCircle = function()
         x = this.getX();
     else
         x = STAGE.MAX_STAGEX - this.getX();
-    if(!!this.CurrentFrame)
+    if(this.CurrentFrame)
     {
         var r = this.getRect();
         this.Circle.R = (r.Right - r.Left) / 2;
@@ -514,7 +514,7 @@ Player.prototype.setTeleportTarget = function(flag,nbFrames)
 //Advances the players teleportation. If this is the last movement, the player is warper to his final position
 Player.prototype.advanceTeleportation = function()
 {
-    if(!!this.TeleportFramesLeft)
+    if(this.TeleportFramesLeft)
     {
         var foe = this.getTarget();
         --this.TeleportFramesLeft;
@@ -613,7 +613,7 @@ Player.prototype.faceTarget = function(force)
 }
 Player.prototype.targetLastAttacker = function()
 {
-    if(!!this.RegisteredHit.OtherPlayer)
+    if(this.RegisteredHit.OtherPlayer)
     {
         if(this.Target != this.RegisteredHit.OtherPlayer.getIndex())
         {
@@ -656,7 +656,7 @@ Player.prototype.moveX = function(amount)
 //warps the player to a new location - no collision detection is done
 Player.prototype.warpX = function(amount,autoDir)
 {
-    if(!!autoDir)
+    if(autoDir)
     {
         if(amount > 0)
         {
@@ -760,7 +760,7 @@ Player.prototype.startSlide = function(frame,amount,direction,fx,hideSlideDirt,f
 //Handles the player sliding
 Player.prototype.slide = function(frame)
 {
-    if(!!this.FrameFreeze)
+    if(this.FrameFreeze)
         return;
     if(this.T >= CONSTANTS.HALF_PI || !this.IsSliding || !!this.isBeingGrappled())
     {
@@ -772,7 +772,7 @@ Player.prototype.slide = function(frame)
     this.Fx =  Math.sin(this.T) * this.SlideFactor;
     ++this.SlideCount;
 
-    if(!!this.ShowSlideDirt)
+    if(this.ShowSlideDirt)
     {
         if(this.SlideCount % CONSTANTS.DIRT_FREQUENCY == 0)
         {
@@ -827,9 +827,9 @@ Player.prototype.advanceJump = function(ignoreYCheck)
     var dx = this.JumpVelocityX * CONSTANTS.X_DAMPING * this.JumpSpeed;
     var dy = y - this.OldY;
 
-    if(!!this.vxFn)
+    if(this.vxFn)
         dx = this.vxFn(dx,this.JumpT);
-    if(!!this.vyFn)
+    if(this.vyFn)
         dy = this.vyFn(dy,this.JumpT);
 
     this.OldY = y;
@@ -882,7 +882,7 @@ Player.prototype.performJump = function(vx,vy,vxFn,vyFn,jumpT,deltaY,useJumpSpee
         vx *= 0.75;
         vy *= 0.75;
     }
-    this.JumpSpeed = !!useJumpSpeed ? this.DefaultJumpSpeed : 1;
+    this.JumpSpeed = useJumpSpeed ? this.DefaultJumpSpeed : 1;
 
     //store the X and Y modifier functions
     this.setVxFn(vxFn);
@@ -900,7 +900,7 @@ Player.prototype.performJump = function(vx,vy,vxFn,vyFn,jumpT,deltaY,useJumpSpee
     this.JumpT = this.JumpT || 0;
     if(!this.hasAirborneComboFlag())
     {
-        if(!!vx)
+        if(vx)
         {
             this.Flags.Pose.add(POSE_FLAGS.AIRBORNE_FB);
         }

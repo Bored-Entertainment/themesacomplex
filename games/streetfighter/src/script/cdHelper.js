@@ -128,9 +128,9 @@
                     }
                     break;
                 }
-            };
+            }
 
-            if(!!distance) temp[temp.length] = {Distance:Math.abs(distance), Player:players[i]};
+            if(distance) temp[temp.length] = {Distance:Math.abs(distance), Player:players[i]};
         }
 
 
@@ -201,7 +201,7 @@
         else if(p2.Flags.Player.has(PLAYER_FLAGS.SUPER_INVULNERABLE) && !hasFlag(behaviorFlags,BEHAVIOR_FLAGS.THROW))
             return;
         /*frame can not hit more than once*/
-        if(!!p2.isHitFrameOk(p1.Id,p1.getHitFrameID(hitID)))
+        if(p2.isHitFrameOk(p1.Id,p1.getHitFrameID(hitID)))
             return;
         /*if the attack is a throw, it can not grab more than one player*/
         if(isP1Grappling && !isP1GrapplingP2)
@@ -245,8 +245,8 @@
         {
             for(var i = 0; i < points.length; ++i)
             {
-                fx = !!isNaN(+points[i].Fx) ? fx : +points[i].Fx;
-                fy = !!isNaN(+points[i].Fy) ? fy : +points[i].Fy;
+                fx = isNaN(+points[i].Fx) ? fx : +points[i].Fx;
+                fy = isNaN(+points[i].Fy) ? fy : +points[i].Fy;
 
                 var x = p1Left + points[i].x;
                 var y = p1Bottom + points[i].y;
@@ -466,7 +466,7 @@
 
     CDHelper.prototype.fixX = function(amount,player,dontOverrideSign,canFixStageX)
     {
-        if(!!amount)
+        if(amount)
         {
             var originalAmount = amount;
             if(!dontOverrideSign)
@@ -504,7 +504,7 @@
 
                     var impededAmount = myRect.Right - otherRect.Left;
 
-                    if(!!impededAmount)
+                    if(impededAmount)
                     {
                         if(myRect.Right <= otherRect.Right)
                         {
@@ -535,7 +535,7 @@
 
                     var impededAmount = myRect.Left - otherRect.Right;
 
-                    if(!!impededAmount)
+                    if(impededAmount)
                     {
                         if(myRect.Left >= otherRect.Left)
                         {
@@ -559,7 +559,7 @@
 
     CDHelper.prototype.moveX = function(amount,player,dontOverrideSign,canFixStageX,doubleImpededAmount,ignoredPlayer)
     {
-        if(!!amount)
+        if(amount)
         {
             var originalAmount = amount;
             if(!dontOverrideSign)
@@ -604,7 +604,7 @@
 
                     var amountPushed = 0;
 
-                    if(!!impededAmount)
+                    if(impededAmount)
                     {
                         if(collisions[i].isRightCornered())
                             impededAmount = getStage().moveX(impededAmount/2);
@@ -612,7 +612,7 @@
                         /*if both players are on the ground, or both players in air, then they can push each other*/
                         if((player.isOnGround() && collisions[i].isOnGround()) || (!player.isOnGround() && !collisions[i].isOnGround()) || (collisions[i].isRightCornered()))
                         {
-                            amountPushed = this.moveX(!!doubleImpededAmount ? impededAmount : impededAmount/2,collisions[i],true,false,true);
+                            amountPushed = this.moveX(doubleImpededAmount ? impededAmount : impededAmount/2,collisions[i],true,false,true);
                         }
                         /*if a player is on the ground, then they can not push each other - unless room needs to be made for the airborne player to land*/
                         else if(player.Y != collisions[i].Y)
@@ -638,7 +638,7 @@
                         var impededAmount = myRect.Left - otherRect.Right;
 
                         var amountPushed = 0;
-                        if(!!impededAmount)
+                        if(impededAmount)
                         {
                             if(collisions[i].isLeftCornered())
                                 impededAmount = getStage().moveX(impededAmount/2);
@@ -672,14 +672,14 @@
                     var unimpededAmount =  otherRect.Right - myRect.OldLeft;
 
                     var amountPushed = 0;
-                    if(!!impededAmount)
+                    if(impededAmount)
                     {
                         if(collisions[i].isLeftCornered())
                             impededAmount = getStage().moveX(impededAmount/2);
                         /*if both players are on the ground, or both players in air, then they can push each other*/
                         if((player.isOnGround() && collisions[i].isOnGround()) || (!player.isOnGround() && !collisions[i].isOnGround()) || (collisions[i].isRightCornered()))
                         {
-                            amountPushed = this.moveX(!!doubleImpededAmount ? impededAmount : impededAmount/2,collisions[i],true,false,true);
+                            amountPushed = this.moveX(doubleImpededAmount ? impededAmount : impededAmount/2,collisions[i],true,false,true);
                         }
                         /*if a player is on the ground, then they can not push each other - unless room needs to be made for the airborne player to land*/
                         else if(player.Y != collisions[i].Y)
@@ -705,7 +705,7 @@
 
                         var impededAmount = myRect.Right - otherRect.Left;
 
-                        if(!!impededAmount)
+                        if(impededAmount)
                         {
                             if(collisions[i].isRightCornered())
                                 impededAmount = getStage().moveX(impededAmount/2);
@@ -730,7 +730,7 @@
     /* Returns the amount that can actually be used */
     CDHelper.prototype.moveY = function(amount,player)
     {
-        if(!!amount)
+        if(amount)
         {
             var myRect = player.getRect();
             var myMidX = player.getMidX();
@@ -752,7 +752,7 @@
                     var amountRejected = player.Flags.Pose.has(POSE_FLAGS.ALLOW_OVERLAP) ? 0 : player.Circle.rejectX(otherPlayer.Circle);
                 
                 
-                    if(!!amountRejected)
+                    if(amountRejected)
                     {
                         if(myMidX > otherMidX) /*on right side of the other player*/
                         {
@@ -794,7 +794,7 @@
                     var otherMidX = otherPlayer.getMidX();
                     var amountRejected = player.Flags.Pose.has(POSE_FLAGS.ALLOW_OVERLAP) ? 0 : player.Circle.rejectX(otherPlayer.Circle);
                 
-                    if(!!amountRejected)
+                    if(amountRejected)
                     {
                         if(myMidX > otherMidX) /*on right side of the other player*/
                         {
@@ -837,7 +837,7 @@
         }
         //getStage().scrollY();
 
-        if(!!amount)
+        if(amount)
             getStage().requestScrollY(amount > 0, player.Y);
         return amount;
     }
@@ -1008,8 +1008,8 @@
     /*returns the initial velocity need to make up the distance between the 2 players*/
     CDHelper.prototype.getInitialCloseGapVelocityX = function(p1,p2,vy)
     {
-        var x1 = !!p1 ? p1.getMidX() : 0;
-        var x2 = !!p2 ? p2.getMidX() : 0;
+        var x1 = p1 ? p1.getMidX() : 0;
+        var x2 = p2 ? p2.getMidX() : 0;
         return this.getVx(x1,x2,vy);
     }
 

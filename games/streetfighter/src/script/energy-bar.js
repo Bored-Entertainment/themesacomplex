@@ -226,9 +226,9 @@ var CreateEnergyBar = function(pnlID,team)
             delta = frame - this.getStartFrame();
             currentFrame = this.getAnimation(this.getKey()).getFrame(delta);
         }
-        if(!!currentFrame)
+        if(currentFrame)
         {
-            if(!!currentFrame.LeftSrc)
+            if(currentFrame.LeftSrc)
             {
                 this.setCurrentSrc(currentFrame.LeftSrc);
             }
@@ -240,7 +240,7 @@ var CreateEnergyBar = function(pnlID,team)
         if(this.getLastSrc() != this.getCurrentSrc())
         {
             var data = spriteLookup_.get(this.getCurrentSrc());
-            if(!!data)
+            if(data)
             {
                 barElement_.style.backgroundPosition = data.Left + " " + data.Bottom;
                 barElement_.style.height = data.Height;

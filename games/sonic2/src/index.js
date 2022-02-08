@@ -91,11 +91,11 @@ var Module = typeof Module !== 'undefined' ? Module : {};
           }
         };
         xhr.send(null);
-      };
+      }
 
       function handleError(error) {
         console.error('package error:', error);
-      };
+      }
     
         var fetchedCallback = null;
         var fetched = Module['getPreloadedPackage'] ? Module['getPreloadedPackage'](REMOTE_PACKAGE_NAME, REMOTE_PACKAGE_SIZE) : null;
@@ -164,7 +164,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
             }
                 Module['removeRunDependency']('datafile_wasm/index.data');
 
-      };
+      }
       Module['addRunDependency']('datafile_wasm/index.data');
     
       if (!Module.preloadResults) Module.preloadResults = {};
@@ -2911,7 +2911,7 @@ var ASM_CONSTS = {
           if (++completed >= mounts.length) {
             doCallback(null);
           }
-        };
+        }
   
         // sync all mounts
         mounts.forEach(function (mount) {
@@ -3824,7 +3824,7 @@ var ASM_CONSTS = {
           ret.isRoot = lookup.path === '/';
         } catch (e) {
           ret.error = e.errno;
-        };
+        }
         return ret;
       },createPath:function(parent, path, canRead, canWrite) {
         parent = typeof parent === 'string' ? parent : FS.getPath(parent);
@@ -4224,7 +4224,7 @@ var ASM_CONSTS = {
         }
         if (path.length == 0) {
           if (!allowEmpty) {
-            throw new FS.ErrnoError(44);;
+            throw new FS.ErrnoError(44);
           }
           return dir;
         }
@@ -5073,7 +5073,7 @@ var ASM_CONSTS = {
   } else _emscripten_get_now = function() { return performance.now(); }
   ;
   
-  var _emscripten_get_now_is_monotonic=true;;
+  var _emscripten_get_now_is_monotonic=true;
   function _clock_gettime(clk_id, tp) {
       // int clock_gettime(clockid_t clk_id, struct timespec *tp);
       var now;
@@ -9280,11 +9280,11 @@ var FSNode = /** @constructor */ function(parent, name, mode, rdev) {
    }
   });
   FS.FSNode = FSNode;
-  FS.staticInit();Module["FS_createPath"] = FS.createPath;Module["FS_createDataFile"] = FS.createDataFile;Module["FS_createPreloadedFile"] = FS.createPreloadedFile;Module["FS_createLazyFile"] = FS.createLazyFile;Module["FS_createDevice"] = FS.createDevice;Module["FS_unlink"] = FS.unlink;;
+  FS.staticInit();Module["FS_createPath"] = FS.createPath;Module["FS_createDataFile"] = FS.createDataFile;Module["FS_createPreloadedFile"] = FS.createPreloadedFile;Module["FS_createLazyFile"] = FS.createLazyFile;Module["FS_createDevice"] = FS.createDevice;Module["FS_unlink"] = FS.unlink;
 embind_init_charCodes();
-BindingError = Module['BindingError'] = extendError(Error, 'BindingError');;
-InternalError = Module['InternalError'] = extendError(Error, 'InternalError');;
-init_emval();;
+BindingError = Module['BindingError'] = extendError(Error, 'BindingError');
+InternalError = Module['InternalError'] = extendError(Error, 'InternalError');
+init_emval();
 Module["requestFullscreen"] = function Module_requestFullscreen(lockPointer, resizeCanvas) { Browser.requestFullscreen(lockPointer, resizeCanvas) };
   Module["requestFullScreen"] = function Module_requestFullScreen() { Browser.requestFullScreen() };
   Module["requestAnimationFrame"] = function Module_requestAnimationFrame(func) { Browser.requestAnimationFrame(func) };
@@ -9293,18 +9293,18 @@ Module["requestFullscreen"] = function Module_requestFullscreen(lockPointer, res
   Module["resumeMainLoop"] = function Module_resumeMainLoop() { Browser.mainLoop.resume() };
   Module["getUserMedia"] = function Module_getUserMedia() { Browser.getUserMedia() }
   Module["createContext"] = function Module_createContext(canvas, useWebGL, setInModule, webGLContextAttributes) { return Browser.createContext(canvas, useWebGL, setInModule, webGLContextAttributes) };
-var GLctx;;
-for (var i = 0; i < 32; ++i) tempFixedLengthArray.push(new Array(i));;
+var GLctx;
+for (var i = 0; i < 32; ++i) tempFixedLengthArray.push(new Array(i));
 var miniTempWebGLFloatBuffersStorage = new Float32Array(288);
   for (/**@suppress{duplicate}*/var i = 0; i < 288; ++i) {
   miniTempWebGLFloatBuffers[i] = miniTempWebGLFloatBuffersStorage.subarray(0, i+1);
   }
-  ;
+  
 var __miniTempWebGLIntBuffersStorage = new Int32Array(288);
   for (/**@suppress{duplicate}*/var i = 0; i < 288; ++i) {
   __miniTempWebGLIntBuffers[i] = __miniTempWebGLIntBuffersStorage.subarray(0, i+1);
   }
-  ;
+  
 var ASSERTIONS = true;
 
 

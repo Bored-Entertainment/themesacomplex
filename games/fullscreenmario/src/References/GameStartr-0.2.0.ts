@@ -28,7 +28,7 @@
 /// <reference path="WorldSeedr-0.2.0.ts" />
 /// <reference path="js_beautify.ts" />
 
-declare module GameStartr {
+declare namespace GameStartr {
     /**
      * Extra CSS styles that may be added to a page.
      */
@@ -258,7 +258,7 @@ declare module GameStartr {
     /**
      * Settings regarding device input detection, particularly for an IDeviceLayr.
      */
-    export interface IDeviceLayrCustoms extends IGameStartrSettingsObject { }
+    export type IDeviceLayrCustoms = IGameStartrSettingsObject
 
     /**
      * Settings regarding upkeep Functions, particularly for an IGroupHoldr.
@@ -593,7 +593,7 @@ declare module GameStartr {
     /**
      * Settings regarded preset in-game scenes, particularly for an IScenePlayr.
      */
-    export interface IScenePlayrCustoms extends IGameStartrSettingsObject { }
+    export type IScenePlayrCustoms = IGameStartrSettingsObject
 
     /**
      * Settings regarding collision detection, particularily for an IThingHittr.
@@ -657,7 +657,7 @@ declare module GameStartr {
     /**
      * Settings regarding the visible interface, particularly for an IUserWrappr.
      */
-    export interface IUserWrapprCustoms extends IGameStartrSettingsObject { }
+    export type IUserWrapprCustoms = IGameStartrSettingsObject
 
     /**
      * Settings regarding map generation, particularly for an IWorldSeedr.
@@ -1716,7 +1716,7 @@ declare module GameStartr {
 }
 
 
-module GameStartr {
+namespace GameStartr {
     "use strict";
 
     /**

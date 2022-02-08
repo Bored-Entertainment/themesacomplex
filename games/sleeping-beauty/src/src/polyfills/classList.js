@@ -72,7 +72,7 @@ if (!("classList" in document.documentElement) && window.Element) {
 	})();
 }
 
-;(function() {
+(function() {
 	if (!window.SVGElement) { return; }
 	var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 	if (!("classList" in svg)) {
@@ -81,7 +81,7 @@ if (!("classList" in document.documentElement) && window.Element) {
 	}
 })();
 
-;(function() {
+(function() {
 	var testElement = document.createElement("_");
 
 	testElement.classList.add("c1", "c2");

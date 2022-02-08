@@ -17,7 +17,7 @@ var Team = function(num)
     var draws_ = 0;
     var isAI_ = true;
 
-    if(!!Team) return new Team();
+    if(Team) return new Team();
 
     var Team = function(num)
     {
@@ -41,7 +41,7 @@ var Team = function(num)
     }
     Team.prototype.addPlayer = function(player, doSetup, isAi)
     {
-        if(!!isAi)
+        if(isAi)
         {
             player.enableAI();
             isAI_ = true;
@@ -52,7 +52,7 @@ var Team = function(num)
         players_.push(player);
         this.setPlayerIndexes();
 
-        if(!!doSetup)
+        if(doSetup)
             game_.getMatch().setupPlayer(player, teamNum_);
     }
     Team.prototype.setPlayerIndexes = function()
@@ -231,12 +231,12 @@ var Team = function(num)
     {
         portriatImg_.style.display = "none";
         nameImg_.style.display = "none";
-        if(!!comboText_)
+        if(comboText_)
         {
             comboText_.hideNow();
             comboText_ = null;
         }
-        if(!!nbHitsText_)
+        if(nbHitsText_)
         {
             nbHitsText_.hideNow();
             nbHitsText_ = null;
@@ -290,7 +290,7 @@ var Team = function(num)
 
         for(var i = 0; i < players_.length; ++i)
         {
-            if(!!allowInput)
+            if(allowInput)
             {
                 players_[i].handleAI(frame);
                 players_[i].handleInput(frame);
@@ -315,7 +315,7 @@ var Team = function(num)
         {
             this.setLastCursor(cursor_);
             var player = this.getPlayer(cursor_);
-            if(!!player)
+            if(player)
             {
                 spriteLookup_.set(nameImg_, player.getNameImageSrc());
                 spriteLookup_.set(portriatImg_, player.getPortriatImageSrc());

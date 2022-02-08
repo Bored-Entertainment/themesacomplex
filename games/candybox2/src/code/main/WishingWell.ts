@@ -140,7 +140,7 @@ class WishingWell extends Place{
                 this.renderArea.drawString(Database.getText("wishingWellChooseEnchantment"), x, y);
                 this.renderArea.drawString(Database.getTranslatedText("wishingWellChooseEnchantment"), x, y+1, true);
                 // The list
-                this.renderArea.addList(x, x+30, y+3, "wishingWellEnchantmentList", new CallbackCollection(this.enchantmentSelected.bind(this)), this.possibleEnchantmentsArrayForTheList);    
+                this.renderArea.addList(x, x+30, y+3, "wishingWellEnchantmentList", new CallbackCollection(this.enchantmentSelected.bind(this)), this.possibleEnchantmentsArrayForTheList);
                 // Enchant button
                 this.renderArea.addAsciiRealButton(Database.getText("wishingWellEnchantButton"), x, y+6, "wishingWellEnchantButton", Database.getTranslatedText("wishingWellEnchantButton"));
                 this.renderArea.addLinkCall(".wishingWellEnchantButton", new CallbackCollection(this.enchant.bind(this)));
@@ -184,7 +184,7 @@ class WishingWell extends Place{
             this.renderArea.drawString(Database.getText("wishingWellChooseGift"), x, y);
             this.renderArea.drawString(Database.getTranslatedText("wishingWellChooseGift"), x, y+1, true);
             // The list
-            this.renderArea.addList(x, x+30, y+3, "wishingWellGiftList", new CallbackCollection(this.giftSelected.bind(this)), this.getGiftsArray());    
+            this.renderArea.addList(x, x+30, y+3, "wishingWellGiftList", new CallbackCollection(this.giftSelected.bind(this)), this.getGiftsArray());
             // Choose gift button
             this.renderArea.addAsciiRealButton(Database.getText("wishingWellChooseGiftButton"), x, y+6, "wishingWellChooseGiftButton", Database.getTranslatedText("wishingWellChooseGiftButton"));
             this.renderArea.addLinkCall(".wishingWellChooseGiftButton", new CallbackCollection(this.chooseGift.bind(this)));

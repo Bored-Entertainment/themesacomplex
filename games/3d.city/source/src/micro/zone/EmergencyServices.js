@@ -11,37 +11,40 @@ import { Tile } from '../Tile.js';
 import { Position } from '../math/Position.js';
 
 
-const handleService = function( censusStat, budgetEffect, blockMap ) {
+const handleService = function ( censusStat, budgetEffect, blockMap ) {
 
-    return function( map, x, y, simData ) {
+    return function ( map, x, y, simData ) {
 
-        if(!simData) simData = Micro.simData
+        if ( ! simData ) simData = Micro.simData;
 
-        simData.census[censusStat] += 1;
-        var effect = simData.budget[budgetEffect];
-        var isPowered = map.getTile(x, y).isPowered();
+        simData.census[ censusStat ] += 1;
+        var effect = simData.budget[ budgetEffect ];
+        var isPowered = map.getTile( x, y ).isPowered();
         // Unpowered buildings are half as effective
-        if (!isPowered) effect = Math.floor(effect / 2);
+        if ( ! isPowered ) effect = Math.floor( effect / 2 );
 
-        var pos = new Position(x, y);
+        var pos = new Position( x, y );
         var connectedToRoads = simData.traffic.findPerimeterRoad( pos );
-        if (!connectedToRoads) effect = Math.floor(effect / 2);
+        if ( ! connectedToRoads ) effect = Math.floor( effect / 2 );
 
-        var currentEffect = simData.blockMaps[blockMap].worldGet(x, y);
+        var currentEffect = simData.blockMaps[ blockMap ].worldGet( x, y );
         currentEffect += effect;
-        simData.blockMaps[blockMap].worldSet(x, y, currentEffect);
-    }
+        simData.blockMaps[ blockMap ].worldSet( x, y, currentEffect );
 
-}
+};
+
+};
 
 export const EmergencyServices = {
 
-    registerHandlers: function(mapScanner, repairManager) {
-        mapScanner.addAction(Tile.POLICESTATION, EmergencyServices.policeStationFound);
-        mapScanner.addAction(Tile.FIRESTATION, EmergencyServices.fireStationFound);
-    },
+    registerHandlers: function ( mapScanner, repairManager ) {
 
-    policeStationFound: handleService('policeStationPop', 'policeEffect', 'policeStationMap'),
-    fireStationFound: handleService('fireStationPop', 'fireEffect', 'fireStationMap')
+        mapScanner.addAction( Tile.POLICESTATION, EmergencyServices.policeStationFound );
+        mapScanner.addAction( Tile.FIRESTATION, EmergencyServices.fireStationFound );
 
-}
+},
+
+    policeStationFound: handleService( 'policeStationPop', 'policeEffect', 'policeStationMap' ),
+    fireStationFound: handleService( 'fireStationPop', 'fireEffect', 'fireStationMap' )
+
+};

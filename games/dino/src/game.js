@@ -1229,7 +1229,7 @@ function GameOverPanel(canvas, textImgPos, restartImgPos, dimensions) {
     this.textImgPos = textImgPos;
     this.restartImgPos = restartImgPos;
     this.draw();
-};
+}
 
 
 /**
@@ -1370,7 +1370,7 @@ function checkForCollision(obstacle, tRex, opt_canvasCtx) {
         }
     }
     return false;
-};
+}
 
 
 /**
@@ -1385,7 +1385,7 @@ function createAdjustedCollisionBox(box, adjustment) {
         box.y + adjustment.y,
         box.width,
         box.height);
-};
+}
 
 
 /**
@@ -1400,7 +1400,7 @@ function drawCollisionBoxes(canvasCtx, tRexBox, obstacleBox) {
     canvasCtx.strokeRect(obstacleBox.x, obstacleBox.y,
         obstacleBox.width, obstacleBox.height);
     canvasCtx.restore();
-};
+}
 
 
 /**
@@ -1426,7 +1426,7 @@ function boxCompare(tRexBox, obstacleBox) {
     }
 
     return crashed;
-};
+}
 
 
 //******************************************************************************
@@ -1443,7 +1443,7 @@ function CollisionBox(x, y, w, h) {
     this.y = y;
     this.width = w;
     this.height = h;
-};
+}
 
 
 //******************************************************************************
@@ -1480,7 +1480,7 @@ function Obstacle(canvasCtx, type, spriteImgPos, dimensions,
     this.timer = 0;
 
     this.init(speed);
-};
+}
 
 /**
  * Coefficient for calculating the maximum gap.
@@ -1734,7 +1734,7 @@ function Trex(canvas, spritePos) {
     this.jumpspotX = 0;
 
     this.init();
-};
+}
 
 
 /**
@@ -2097,7 +2097,7 @@ function DistanceMeter(canvas, spritePos, canvasWidth) {
     this.config = DistanceMeter.config;
     this.maxScoreUnits = this.config.MAX_DISTANCE_UNITS;
     this.init(canvasWidth);
-};
+}
 
 
 /**
@@ -2347,7 +2347,7 @@ function Cloud(canvas, spritePos, containerWidth) {
         Cloud.config.MAX_CLOUD_GAP);
 
     this.init();
-};
+}
 
 
 /**
@@ -2439,7 +2439,7 @@ function NightMode(canvas, spritePos, containerWidth) {
     this.stars = [];
     this.drawStars = false;
     this.placeStars();
-};
+}
 
 /**
  * @enum {number}
@@ -2602,7 +2602,7 @@ function HorizonLine(canvas, spritePos) {
 
     this.setSourceDimensions();
     this.draw();
-};
+}
 
 
 /**
@@ -2738,7 +2738,7 @@ function Horizon(canvas, spritePos, dimensions, gapCoefficient) {
     // Horizon
     this.horizonLine = null;
     this.init();
-};
+}
 
 
 /**

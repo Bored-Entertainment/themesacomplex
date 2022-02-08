@@ -56,7 +56,7 @@ function checkForBattles(){
     if (drifterCount>warTrigger && probeCount > 0 && battles.length < maxBattles){
         var r = (Math.random()*100); 
         if (r>=50){
-            if (battleFlag == 0){battleFlag = 1};
+            if (battleFlag == 0){battleFlag = 1}
             createBattle();
         }
     }
@@ -741,14 +741,14 @@ function createBattle(){
         unitSize = drifterCount/100;
     }
     
-    if (unitSize<1) {unitSize=1};
+    if (unitSize<1) {unitSize=1}
     document.getElementById('battleScale').innerHTML = numberCruncher(unitSize,0);
     
         
     var rr = Math.random()*drifterCount;
-    if (rr<1){rr=1};
+    if (rr<1){rr=1}
     var ss = Math.random()*probeCount;
-    if (ss<1){ss=1};
+    if (ss<1){ss=1}
     var tt = Math.random()*availableMatter;
     
         battleID++;

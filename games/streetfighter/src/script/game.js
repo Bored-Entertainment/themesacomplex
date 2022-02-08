@@ -98,7 +98,7 @@ var CreateGame = function() {
     };
 
     Game.prototype.getGlobalDamageMultiplier = function () {
-        if (!!enableTeamMode_)
+        if (enableTeamMode_)
             return CONSTANTS.TEAMMODE_DAMAGE_MULTIPLIER;
         return 1;
     };
@@ -118,7 +118,7 @@ var CreateGame = function() {
         user3_.setChar(p1, false, true);
         user4_.setChar(p2, p1 === p2, true);
 
-        if (!!enableTeamMode_) {
+        if (enableTeamMode_) {
             var p3 = chars.splice(getRand(chars.length), 1)[0];
             var p4 = chars.splice(getRand(chars.length), 1)[0];
 
@@ -198,7 +198,7 @@ var CreateGame = function() {
             value = value || CONSTANTS.SLOW_SPEED;
 
             speed_ = value;
-            if (!!nbFrames) {
+            if (nbFrames) {
                 resetSpeedAtFrame_ = frame_ + nbFrames;
             }
         }
@@ -218,7 +218,7 @@ var CreateGame = function() {
     };
 
     Game.prototype.getCurrentTime = function () {
-        if (!!Date.now)
+        if (Date.now)
             return Date.now();
         else
             return (new Date() - new Date(0));
@@ -241,7 +241,7 @@ var CreateGame = function() {
     };
 
     Game.prototype.onStageImagesLoaded = function () {
-        if (!!match_)
+        if (match_)
             match_.getStage().init();
     };
 
@@ -252,7 +252,7 @@ var CreateGame = function() {
 
     Game.prototype.resetKeys = function () {
         keyboardState_ = {};
-        if (!!managed_)
+        if (managed_)
             managed_.resetKeys();
     };
 
@@ -274,7 +274,7 @@ var CreateGame = function() {
                 }
             }
 
-            if (!!window.document.attachEvent) {
+            if (window.document.attachEvent) {
                 window.document.attachEvent("onkeydown", getKeyPressHandler(this, true), true);
                 window.document.attachEvent("onkeyup", getKeyPressHandler(this, false), true);
                 window.attachEvent("onblur", resetKeys(this), true);
@@ -291,7 +291,7 @@ var CreateGame = function() {
     };
 
     Game.prototype.preloadTextImages = function () {
-        if (!!isInitialized_)
+        if (isInitialized_)
             return;
         fontSystem_.preload();
     };
@@ -348,7 +348,7 @@ var CreateGame = function() {
         var a = null;
         var b = null;
 
-        if (!!charSelect_) {
+        if (charSelect_) {
             a = charSelect_.getPlayers(teamA);
             b = charSelect_.getPlayers(teamB);
             stage = stage || charSelect_.getStage();
@@ -409,7 +409,7 @@ var CreateGame = function() {
     };
 
     Game.prototype.showLoading = function (show) {
-        if (!!show) {
+        if (show) {
             pnlLoadingProgress_.style.display = "";
             pnlLoading_.className = "loading";
         } else {
@@ -431,11 +431,11 @@ var CreateGame = function() {
     };
 
     Game.prototype.onDoneLoading = function (runLoopFn, callback) {
-        if (!!runLoopFn) {
+        if (runLoopFn) {
             managed_.start();
             runLoopFn.call(this);
         }
-        if (!!callback)
+        if (callback)
             callback();
     };
 
@@ -461,11 +461,11 @@ var CreateGame = function() {
         this.releaseText();
         announcer_.release();
         this.resetSpeed();
-        if (!!charSelect_)
+        if (charSelect_)
             charSelect_.release();
-        if (!!match_)
+        if (match_)
             match_.release();
-        if (!!insertCoinScreen_)
+        if (insertCoinScreen_)
             insertCoinScreen_.release();
     };
 
@@ -498,7 +498,7 @@ var CreateGame = function() {
     Game.prototype.quickPause = function () {
         this.addState(GAME_STATES.PAUSED);
         this.addState(GAME_STATES.STEP_FRAME);
-        if (!!this.hasState(GAME_STATES.AUDIO_LOADING)) {
+        if (this.hasState(GAME_STATES.AUDIO_LOADING)) {
             window.document.getElementById("spnState").innerHTML = "State: <span class=\"audio-loading\">Loading...</span>";
             pnlStage_.style.opacity = 0;
         } else {
@@ -512,7 +512,7 @@ var CreateGame = function() {
 
     Game.prototype.pause = function () {
         this.quickPause();
-        if (!!managed_)
+        if (managed_)
             managed_.pause();
         soundManager_.pauseAll();
     };
@@ -524,7 +524,7 @@ var CreateGame = function() {
         window.document.getElementById("spnState").className = "state running";
         window.document.getElementById("spnStepFrame").className = "";
         window.document.getElementById("spnResume").className = "";
-        if (!!managed_)
+        if (managed_)
             managed_.resume();
         soundManager_.resumeAll();
     };
@@ -536,18 +536,18 @@ var CreateGame = function() {
     Game.prototype.handleGamePadHelper = function (pad, key) {
         var button = pad[key];
         if (!!button && (button.pressed !== !!keyboardState_["_" + key])) {
-            if (!!managed_) {
+            if (managed_) {
                 this.handleKeyPress({which: key}, button.pressed);
             }
         }
     };
 
     Game.prototype.handleGamePadButtonPresses = function () {
-        if (!!this.UsingGamepads) {
+        if (this.UsingGamepads) {
             for (var i = 0, length = users_.length; i < length; ++i) {
                 if (users_[i].GamepadIndex !== undefined) {
                     var pad = Gamepad.getState([users_[i].GamepadIndex]);
-                    if (!!pad) {
+                    if (pad) {
                         this.handleGamePadHelper(pad, GAMEPAD.DOWN);
                         this.handleGamePadHelper(pad, GAMEPAD.LEFT);
                         this.handleGamePadHelper(pad, GAMEPAD.RIGHT);
@@ -605,7 +605,7 @@ var CreateGame = function() {
             buttonState_["_" + keyCode] = BUTTON_STATE.JUST_RELEASED;
         }
 
-        if (!!this.hasState(GAME_STATES.AUDIO_LOADING))
+        if (this.hasState(GAME_STATES.AUDIO_LOADING))
             return;
 
         if (!!managed_ && !!managed_.onKeyStateChanged) {
@@ -626,7 +626,7 @@ var CreateGame = function() {
     Game.prototype.end = function () {
         this.releaseText();
         this.resetKeys();
-        if (!!managed_) {
+        if (managed_) {
             managed_.kill()
         }
         managed_ = null;
@@ -791,7 +791,7 @@ var CreateGame = function() {
     };
 
     Game.prototype.runCharSelectLoop = function () {
-        if (!!charSelect_) {
+        if (charSelect_) {
             this.handleInput();
             if (!this.hasState(GAME_STATES.PAUSED) || this.hasState(GAME_STATES.STEP_FRAME)) {
                 this.removeState(GAME_STATES.STEP_FRAME);

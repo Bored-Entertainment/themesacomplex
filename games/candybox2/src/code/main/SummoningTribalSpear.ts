@@ -14,7 +14,7 @@ class SummoningTribalSpear extends EqItem{
     
     // Public getters
     public getQuestEntityWeapon(quest: Quest, player: Player): QuestEntityWeapon{
-        var qew: QuestEntityWeapon = 
+        var qew: QuestEntityWeapon =
                  new QuestEntityWeapon(quest,
                                        player,
                                        new Naming("A summoning tribal spear", "a summoning tribal spear"),
@@ -48,7 +48,7 @@ class SummoningTribalSpear extends EqItem{
         warrior.setHealthBar(new QuestEntityHealthBar(warrior, new Pos(4, 1)));
         
         // Add it to the quest
-        quest.addEntity(warrior)  
+        quest.addEntity(warrior)
         
         // Reset the summon time
         this.timeSinceSummon = 0;

@@ -22,7 +22,7 @@ class Castle extends Place{
     // Private methods   
     private drawBigRoom(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleBigRoomButton", 
+        this.renderArea.addMultipleAsciiButtons("castleBigRoomButton",
                                      x, x+1, y,
                                      x, x+1, y+1);
         
@@ -36,7 +36,7 @@ class Castle extends Place{
     
     private drawCastleEntrance(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiNinjaButtons("castleCastleEntranceButton", 
+        this.renderArea.addMultipleAsciiNinjaButtons("castleCastleEntranceButton",
                                      x, x+2, y);
         
         // Comment
@@ -48,7 +48,7 @@ class Castle extends Place{
     
     private drawNougatMonster(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleNougatMonsterButton", 
+        this.renderArea.addMultipleAsciiButtons("castleNougatMonsterButton",
                                      x+1, x+8, y,
                                      x, x+10, y+1,
                                      x, x+10, y+2,
@@ -64,7 +64,7 @@ class Castle extends Place{
     
     private drawRoom1(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleRoom1Button", 
+        this.renderArea.addMultipleAsciiButtons("castleRoom1Button",
                                      x, x+1, y,
                                      x, x+1, y+1);
         
@@ -78,7 +78,7 @@ class Castle extends Place{
     
     private drawRoom2(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleRoom2Button", 
+        this.renderArea.addMultipleAsciiButtons("castleRoom2Button",
                                      x, x+1, y,
                                      x, x+1, y+1);
         
@@ -92,7 +92,7 @@ class Castle extends Place{
     
     private drawRoom3(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleRoom3Button", 
+        this.renderArea.addMultipleAsciiButtons("castleRoom3Button",
                                      x, x+1, y,
                                      x, x+1, y+1);
         
@@ -106,7 +106,7 @@ class Castle extends Place{
     
     private drawStairs(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleStairsButton", 
+        this.renderArea.addMultipleAsciiButtons("castleStairsButton",
                                      x, x+4, y,
                                      x, x+4, y+1,
                                      x, x+4, y+2,
@@ -123,7 +123,7 @@ class Castle extends Place{
     
     private drawTowerEntrance(x: number, y: number): void{
         // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleTowerEntranceButton", 
+        this.renderArea.addMultipleAsciiButtons("castleTowerEntranceButton",
                                      x, x+1, y,
                                      x, x+1, y+1);
         

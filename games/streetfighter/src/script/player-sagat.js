@@ -566,7 +566,7 @@ var createSagat = function(user)
     jump.Vy = (jumpY);
 
     jump.addRepeatingFrame(player,0,"",folder + "/crouch-0.png",4);
-    jump.addRepeatingFrame(player,0,"",folder + "/jump-0.png",5,{ Pose: POSE_FLAGS.AIRBORNE }).clip({Bottom:180});;
+    jump.addRepeatingFrame(player,0,"",folder + "/jump-0.png",5,{ Pose: POSE_FLAGS.AIRBORNE }).clip({Bottom:180});
     jump.addRepeatingFrame(player,0,"",folder + "/jump-1.png",3).clip({Bottom:100});
     jump.addRepeatingFrame(player,0,"",folder + "/jump-2.png",4).clip({Bottom:80});
     jump.addRepeatingFrame(player,0,"",folder + "/jump-3.png",6);
@@ -586,7 +586,7 @@ var createSagat = function(user)
     f_jump.Vy = (jumpY);
 
     f_jump.addRepeatingFrame(player,0,"",folder + "/crouch-0.png",4);
-    f_jump.addRepeatingFrame(player,0,"",folder + "/jump-0.png",5,{ Pose: POSE_FLAGS.AIRBORNE_FB }).clip({Bottom:180});;
+    f_jump.addRepeatingFrame(player,0,"",folder + "/jump-0.png",5,{ Pose: POSE_FLAGS.AIRBORNE_FB }).clip({Bottom:180});
     f_jump.addRepeatingFrame(player,0,"",folder + "/jump-1.png",3).clip({Bottom:100});
     f_jump.addRepeatingFrame(player,0,"",folder + "/jump-2.png",4).clip({Bottom:80});
     f_jump.addRepeatingFrame(player,0,"",folder + "/jump-3.png",6);
@@ -605,7 +605,7 @@ var createSagat = function(user)
     b_jump.Vy = (jumpY);
 
     b_jump.addRepeatingFrame(player,0,"",folder + "/crouch-0.png",4);
-    b_jump.addRepeatingFrame(player,0,"",folder + "/jump-0.png",5,{ Pose: POSE_FLAGS.AIRBORNE_FB }).clip({Bottom:180});;
+    b_jump.addRepeatingFrame(player,0,"",folder + "/jump-0.png",5,{ Pose: POSE_FLAGS.AIRBORNE_FB }).clip({Bottom:180});
     b_jump.addRepeatingFrame(player,0,"",folder + "/jump-1.png",3).clip({Bottom:100});
     b_jump.addRepeatingFrame(player,0,"",folder + "/jump-2.png",4).clip({Bottom:80});
     b_jump.addRepeatingFrame(player,0,"",folder + "/jump-3.png",6);

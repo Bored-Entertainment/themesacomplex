@@ -361,7 +361,7 @@ class TheSea extends Quest{
                     for(var j = i-4; j <= i; j++){
                         this.floors[j].setHasAPlant(true);
                     }
-                } 
+                }
             }
         }
     }

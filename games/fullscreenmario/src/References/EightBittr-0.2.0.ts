@@ -1,4 +1,4 @@
-declare module EightBittr {
+declare namespace EightBittr {
     /**
      * A basic representation of an in-game Thing. Size, velocity, and position
      * are stored, as well as a reference to the parent IEightBittr.
@@ -449,7 +449,7 @@ declare module EightBittr {
 }
 
 
-module EightBittr {
+namespace EightBittr {
     "use strict";
 
     /**

@@ -57,7 +57,7 @@ class Yourself extends Quest{
     }
     
     public update(): void{
-        if(this.getQuestEnded() == false){            
+        if(this.getQuestEnded() == false){
             // Test if the player is dead, if so, end the quest and return
             if(this.getGame().getPlayer().shouldDie()){
                 this.endQuest(false);

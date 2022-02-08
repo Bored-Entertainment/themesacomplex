@@ -132,7 +132,7 @@ body {
  cursor:url(../cursors/cursorActive.cur),url(../cursors/cursorActive.png),auto
 }
 footer .dot {
- margin:-2px 8px 2px 8px
+ margin:-2px 8px 2px
 }
 footer .zeptoLogo {
  position:relative;
@@ -1142,7 +1142,7 @@ body {
 	height: 733px;
 	background-image: url(../images/1920/ui/drawing-bg.png);
 	background-repeat: no-repeat;
-	margin: -19px auto 0 auto
+	margin: -19px auto 0
 }
 
 .ui-1920 #dpic {

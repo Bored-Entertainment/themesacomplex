@@ -425,10 +425,10 @@ ace.Avatar.prototype.onTick = function(game) {
       game.refreshInfoPanel();
     }
     if (game.keyIsDown(ace.KEY_SHIFT)) {
-      if (game.keyWasPressed(ace.KEY_RIGHT)) { this.x += 128 };
-      if (game.keyWasPressed(ace.KEY_LEFT)) { this.x -= 128 };
-      if (game.keyWasPressed(ace.KEY_DOWN)) { this.y -= 176/2 };
-      if (game.keyWasPressed(ace.KEY_UP)) { this.y += 176/2 };		
+      if (game.keyWasPressed(ace.KEY_RIGHT)) { this.x += 128 }
+      if (game.keyWasPressed(ace.KEY_LEFT)) { this.x -= 128 }
+      if (game.keyWasPressed(ace.KEY_DOWN)) { this.y -= 176/2 }
+      if (game.keyWasPressed(ace.KEY_UP)) { this.y += 176/2 }		
     }
 	}
 	

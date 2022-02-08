@@ -77,7 +77,7 @@ class QuestEntityWeapon{
     }
     
     private hit(questEntity: QuestEntity): void{
-        this.questEntity.hit(questEntity, this.getRealDamage(), new QuestEntityDamageReason(QuestEntityDamageReasonWhoType.ENTITY, 
+        this.questEntity.hit(questEntity, this.getRealDamage(), new QuestEntityDamageReason(QuestEntityDamageReasonWhoType.ENTITY,
                                                                            QuestEntityDamageReasonWhatType.WEAPON)
                                                                            .setQuestEntity(this.questEntity)
                                                                            .setQuestEntityWeapon(this));

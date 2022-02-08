@@ -386,7 +386,7 @@
     //fired every frame an ememy projectile is active
     MBisonAI.prototype.onEnemyProjectileMoved = function(frame,id,x,y,projectile,isSuperMove)
     {
-        if(!!this.AI.IgnoreProjectileGone)
+        if(this.AI.IgnoreProjectileGone)
             return;
         if(!this.AI.Player.isAirborne()
             && this.AI.Actions.length == 0 
@@ -474,10 +474,10 @@
 
         if(!this.AI.Player.isBlocking())
         {
-            if(!!this.AI.isAirborneReactBusy())
+            if(this.AI.isAirborneReactBusy())
                 return true;
         }
-        else if(!!this.AI.Player.isBlocking())
+        else if(this.AI.Player.isBlocking())
         {
             return true;
         }
@@ -485,7 +485,7 @@
         //react to a vulnerable enemy
         if(this.AI.Player.isFacingPlayer(attacker, true))
         {
-            if(!!isEnemyVulernerable)
+            if(isEnemyVulernerable)
             {
                 retVal = true;
 
@@ -514,7 +514,7 @@
         var rnd = getRand();
         if(item.X < 200)
         {
-            if(!!attacker)
+            if(attacker)
             {
                 if(rnd > 50)
                 {
@@ -627,7 +627,7 @@
 
                 case "b" : { input = bk_; break; } case "f" : { input = fwd_; break; } case "c" : { input = crouch_; break; } case "cb" : { input = crouchBack_; break; }
                 case "j" : { this.AI.jumpUp(); break; } case "fj" : { this.AI.jumpTowardEnemy(); break; } case "bj" : { this.AI.jumpAwayFromEnemy(); break; }
-                case "get_close" : { this.AI.moveToEnemy(0,sequence[i].C); break; } case "jump_in" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; }; this.AI.jumpInToEnemy(0,sequence[i].C); break; }
+                case "get_close" : { this.AI.moveToEnemy(0,sequence[i].C); break; } case "jump_in" : { if(this.AI.getClosestEnemy().X < (sequence[i].D || this.AI.TOO_CLOSE)) { return; } this.AI.jumpInToEnemy(0,sequence[i].C); break; }
                 case "lp1" : { input = lowPunches_[0]; break; } case "lp2" : { input = lowPunches_[1]; break; } case "lp3" : { input = lowPunches_[2]; break; }
                 case "lk1" : { input = lowKicks_[0]; break; } case "lk2" : { input = lowKicks_[1]; break; } case "lk3" : { input = lowKicks_[2]; break; }
                 case "p1" : { input = punches_[0]; break; } case "p2" : { input = punches_[1]; break; } case "p3" : { input = punches_[2]; break; }
@@ -636,7 +636,7 @@
                 case "fk1" : { input = fkicks_[0]; break; } case "fk2" : { input = fkicks_[1]; break; } case "fk3" : { input = fkicks_[2]; break; }
                 case "tf" : { input = teleportFarInput_; break; } case "tm" : { input = teleportMiddleInput_; break; } case "ti" : { input = teleportFrontInput_; break; } case "tb" : { input = teleportBehindInput_; break; }
                 case "t1" : { this.executeThrow(0,true); break; }
-            };
+            }
 
             //this.AI.sendInput(FLAGS.CLEAR_INPUT,sequence[i].A || 0,input,mustHit,move);
 
@@ -667,10 +667,10 @@
         {
             if(!this.AI.Player.isMobile())
                 return;
-            if(!!this.reactAirborne(frame, attacker, isEnemyVulernerable, x, y))
+            if(this.reactAirborne(frame, attacker, isEnemyVulernerable, x, y))
             {
             }
-            else if(!!this.reactNotAirborne(frame,attacker, isEnemyVulernerable, x, y))
+            else if(this.reactNotAirborne(frame,attacker, isEnemyVulernerable, x, y))
             {
             }
         }
@@ -681,7 +681,7 @@
         if(!this.AI.Player.isMobile() || this.AI.Player.isBlocking())
             return;
 
-        if(!!this.AI.isAttackReactBusy())
+        if(this.AI.isAttackReactBusy())
             return;
 
         var item = this.AI.getClosestEnemy();
@@ -768,11 +768,11 @@
         if(!this.AI.AllowOverrideBlock && !this.AI.Player.canBlock())
             this.AI.AllowOverrideBlock = true;
 
-        if(!!this.AI.AllowOverrideBlock)
+        if(this.AI.AllowOverrideBlock)
         {
             if(!this.AI.Player.isMobile())
             {
-                if(!!this.AI.JustAttacked)
+                if(this.AI.JustAttacked)
                     this.AI.JustBecameMobile = 3;
                 return;
             }

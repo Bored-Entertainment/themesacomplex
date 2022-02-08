@@ -1,4 +1,4 @@
-declare module ItemsHoldr {
+declare namespace ItemsHoldr {
     /**
      * A mapping of ItemValue values to triggered callbacks.
      */
@@ -488,7 +488,7 @@ declare module ItemsHoldr {
 }
 
 
-module ItemsHoldr {
+namespace ItemsHoldr {
     "use strict";
 
     /**

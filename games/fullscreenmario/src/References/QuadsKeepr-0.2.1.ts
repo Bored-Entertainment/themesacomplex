@@ -1,6 +1,6 @@
 /// <reference path="ObjectMakr-0.2.2.ts" />
 
-declare module QuadsKeepr {
+declare namespace QuadsKeepr {
     /**
      * Any bounding box that can be within quadrant(s).
      */
@@ -401,7 +401,7 @@ declare module QuadsKeepr {
 }
 
 
-module QuadsKeepr {
+namespace QuadsKeepr {
     "use strict";
 
     /**

@@ -1,4 +1,4 @@
-declare module GroupHoldr {
+declare namespace GroupHoldr {
     /**
      * An Object group containing objects of type T.
      * 
@@ -25,7 +25,7 @@ declare module GroupHoldr {
     /**
      * Abstract parent interface of all group Functions.
      */
-    export interface IGroupHoldrFunction extends Function { }
+    export type IGroupHoldrFunction = Function
 
     /**
      * Stores the given group internally.
@@ -275,7 +275,7 @@ declare module GroupHoldr {
 }
 
 
-module GroupHoldr {
+namespace GroupHoldr {
     "use strict";
 
     /**

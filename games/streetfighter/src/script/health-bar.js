@@ -104,7 +104,7 @@ var CreateHealthBar = function(pnlHealthbarID,team)
         var newAmount = Math.min(Math.max(this.Amount - delta,0), this.Max);
         var damage = this.Amount - newAmount;
         this.LifeElement.style.width = newAmount + "px";
-        if(!!damage)
+        if(damage)
         {
             this.setCurrentDamage(this.CurrentDamage + damage);
             var offset = HEALTHBAR.LIFE_OFFSETX + newAmount;

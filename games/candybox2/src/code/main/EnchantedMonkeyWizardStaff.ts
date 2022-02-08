@@ -17,7 +17,7 @@ class EnchantedMonkeyWizardStaff extends MonkeyWizardStaffMotherClass{
     
     // Public getters
     public getQuestEntityWeapon(quest: Quest, player: Player): QuestEntityWeapon{
-        var qew: QuestEntityWeapon = 
+        var qew: QuestEntityWeapon =
                  new QuestEntityWeapon(quest,
                                        player,
                                        new Naming("The monkey wizard staff (enchanted)", "the monkey wizard staff (enchanted)"),

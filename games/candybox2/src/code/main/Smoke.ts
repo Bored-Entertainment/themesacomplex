@@ -50,7 +50,7 @@ class Smoke{
             }
             else{
                 renderArea.drawString("(", this.x + this.xGap, this.y + this.yGap - 1);
-                renderArea.drawString(")", this.x + this.xGap + 1, this.y + this.yGap); 
+                renderArea.drawString(")", this.x + this.xGap + 1, this.y + this.yGap);
             }
         }
     }

@@ -99,7 +99,7 @@ Player.prototype.injectInput = function(isDown,bit,frame,funcName)
             }
         }
 
-        if(!!key)
+        if(key)
             this.onKeyStateChanged(isDown,key,frame);
     }
 }
@@ -124,7 +124,7 @@ Player.prototype.sendInput = function(input)
             }
         }
 
-        if(!!key) this.onKeyStateChanged(input[i].IsDown,key,frame);
+        if(key) this.onKeyStateChanged(input[i].IsDown,key,frame);
     }
 }
 
@@ -147,7 +147,7 @@ Player.prototype.getInputFrame = function(frame)
 //Handles key state changes
 Player.prototype.onKeyStateChanged = function(isDown,keyCode,frame)
 {
-    if(!!this.Buttons[keyCode])
+    if(this.Buttons[keyCode])
     {
         var key = this.Buttons[keyCode].Bit;
 
@@ -188,7 +188,7 @@ Player.prototype.compareButtonSequence = function(frame,move,input)
 
             moveItem = move.ButtonSequence[mIndex][b];
             var btn = [];
-            if(!!moveItem.Button.length)
+            if(moveItem.Button.length)
                 btn = moveItem.Button;
             else
                 btn.push(moveItem.Button);
@@ -279,14 +279,14 @@ Player.prototype.checkForAnimation = function(frame)
             while(tmpButtons.length > 0)
             {
                 var move = i == 0 ? this.findThrow(tmpButtons,frame) : this.findAnimation(tmpButtons,frame);
-                if(!!move)
+                if(move)
                 {
                     //was the move chained?
                     if(move == -1)
                         return;
 
                     //if IsMisc is set to true, then no animation will be set, but the flags will be read
-                    if(!!move.IsMisc)
+                    if(move.IsMisc)
                     {
                         this.checkFlags(move);
                     }

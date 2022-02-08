@@ -1,4 +1,4 @@
-declare module ChangeLinr {
+declare namespace ChangeLinr {
     /**
      * A container of transform Functions, referenced by their keys.
      */
@@ -123,7 +123,7 @@ declare module ChangeLinr {
 }
 
 
-module ChangeLinr {
+namespace ChangeLinr {
     "use strict";
 
     /**

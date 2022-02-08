@@ -1,7 +1,7 @@
 /// <reference path="ChangeLinr-0.2.0.ts" />
 /// <reference path="StringFilr-0.2.1.ts" />
 
-declare module PixelRendr {
+declare namespace PixelRendr {
     /**
      * A single [red, green, blue, alpha] pixel's colors.
      */
@@ -405,7 +405,7 @@ declare module PixelRendr {
     }
 }
 
-module PixelRendr {
+namespace PixelRendr {
     "use strict";
 
     /**
@@ -476,7 +476,7 @@ module PixelRendr {
     }
 }
 
-module PixelRendr {
+namespace PixelRendr {
     "use strict";
 
     /**
@@ -523,7 +523,7 @@ module PixelRendr {
 }
 
 
-module PixelRendr {
+namespace PixelRendr {
     "use strict";
 
     /**

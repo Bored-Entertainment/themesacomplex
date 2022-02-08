@@ -87,7 +87,7 @@ var CreateMatch = function(team1,team2,stage)
     Match.prototype.setPlayerCount = function(value) { playerCount_ = value; }
     Match.prototype.getHitSystem = function() { return actionSystem_; }
     Match.prototype.isSuperMoveActive = function() { return isSuperMoveActive_; }
-    Match.prototype.setSuperMoveActive = function(value) { isSuperMoveActive_ = value; if(!!value) {actionSystem_.pause();} else {actionSystem_.resume();}}
+    Match.prototype.setSuperMoveActive = function(value) { isSuperMoveActive_ = value; if(value) {actionSystem_.pause();} else {actionSystem_.resume();}}
     Match.prototype.getDimBackgroundElement = function() { return dimBackground_; }
     Match.prototype.getRound = function() { return round_; }
     Match.prototype.setRound = function(value) { round_ = value; }
@@ -150,7 +150,7 @@ var CreateMatch = function(team1,team2,stage)
         {
             case CONSTANTS.TEAM1: {teamA_.getHealthbar().change(changeAmount); break; }
             case CONSTANTS.TEAM2: {teamB_.getHealthbar().change(changeAmount); break; }
-        };
+        }
     }
     /*Changes the energy value for a team*/
     Match.prototype.changeEnergy = function(team, changeAmount)
@@ -159,7 +159,7 @@ var CreateMatch = function(team1,team2,stage)
         {
             case CONSTANTS.TEAM1: {teamA_.getEnergybar().change(changeAmount); break; }
             case CONSTANTS.TEAM2: {teamB_.getEnergybar().change(changeAmount); break; }
-        };
+        }
     }
     /*Returns the health for a team*/
     Match.prototype.getHealth = function(team)
@@ -355,9 +355,9 @@ var CreateMatch = function(team1,team2,stage)
             teamA_.getEnergybar().change(0,0);
             teamB_.getEnergybar().change(0,0);
 
-            if(!!teamA_.getPlayer(0))
+            if(teamA_.getPlayer(0))
                 teamA_.getPlayer(0).setX(STAGE.START_X);
-            if(!!teamB_.getPlayer(0))
+            if(teamB_.getPlayer(0))
                 teamB_.getPlayer(0).setX(STAGE.START_X);
 
             /*set the starting locations for each player*/
@@ -395,7 +395,7 @@ var CreateMatch = function(team1,team2,stage)
     /**/
     Match.prototype.resume = function()
     {
-        if(!!startedTheme_)
+        if(startedTheme_)
             stage_.resume();
         teamA_.resume();
         teamB_.resume();
@@ -406,7 +406,7 @@ var CreateMatch = function(team1,team2,stage)
     /*sets up the player to take part in the match*/
     Match.prototype.setupPlayer = function(player,team)
     {
-        var moveStageX           = function(thisValue,otherTeam) { return function(amount,dontOverrideSign) { for(var i = 0; i < otherTeam.getPlayers().length;++i) {amount = thisValue.getStage().scrollX(amount,this,otherTeam.getPlayer(i),thisValue,dontOverrideSign);}; return amount; } };
+        var moveStageX           = function(thisValue,otherTeam) { return function(amount,dontOverrideSign) { for(var i = 0; i < otherTeam.getPlayers().length;++i) {amount = thisValue.getStage().scrollX(amount,this,otherTeam.getPlayer(i),thisValue,dontOverrideSign);} return amount; } };
         /*var fixX               = function(thisValue,otherTeam) { return function(amount) {thisValue.getCDHelper().fixX(amount,this,false,true);  return 0; } };*/
         var fixX                 = function(thisValue,otherTeam) { return function(amount) {thisValue.getCDHelper().moveOtherPlayers(this);  return 0; } };
         var moveX                = function(thisValue,otherTeam) { return function(amount) {amount = thisValue.getStage().scrollX(amount,this,null,thisValue); thisValue.getCDHelper().moveX(amount,this,false,true); return 0; } };
@@ -513,7 +513,7 @@ var CreateMatch = function(team1,team2,stage)
             teamA_.getPlayer(0).setX(STAGE.START_X);
             teamA_.getPlayer(i).getDamageMultiplier = function() { return teamADamageMultiplier; }
         }
-        if(!!teamA_.getPlayer(0))
+        if(teamA_.getPlayer(0))
         {
             faceoff_.setTeamA(teamA_.getPlayer(0).Name);
         }
@@ -525,7 +525,7 @@ var CreateMatch = function(team1,team2,stage)
             teamB_.getPlayer(0).setX(STAGE.START_X);
             teamB_.getPlayer(i).getDamageMultiplier = function() { return teamBDamageMultiplier; }
         }
-        if(!!teamB_.getPlayer(0))
+        if(teamB_.getPlayer(0))
         {
             faceoff_.setTeamB(teamB_.getPlayer(0).Name);
         }
@@ -554,7 +554,7 @@ var CreateMatch = function(team1,team2,stage)
     /*Dims the background when a player is starting a super move*/
     Match.prototype.setBackgroundTransparent = function(player)
     {
-        if(!!player)
+        if(player)
         {
             this.getDimBackgroundElement().style.display = "";
         }
@@ -746,7 +746,7 @@ var CreateMatch = function(team1,team2,stage)
             {
                 insertCoinElement_.style.display = "none";
                 pressStartElement_.style.display = "";
-                if(!!hideInsertCoin_)
+                if(hideInsertCoin_)
                     pressStartElement_.style.display = "none";
                 else
                     pressStartElement_.style.display = "";
@@ -755,7 +755,7 @@ var CreateMatch = function(team1,team2,stage)
             {
                 pressStartElement_.style.display = "none";
                 insertCoinElement_.style.display = "";
-                if(!!hideInsertCoin_)
+                if(hideInsertCoin_)
                     insertCoinElement_.style.display = "none";
                 else
                     insertCoinElement_.style.display = "";

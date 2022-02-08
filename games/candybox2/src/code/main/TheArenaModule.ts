@@ -1,4 +1,4 @@
-module TheArenaModule{
+namespace TheArenaModule{
     var quests: { [s: string]: TheArenaModuleQuest; } = {};
 
     // Add a quest

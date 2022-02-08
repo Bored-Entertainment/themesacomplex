@@ -56,7 +56,7 @@
         var currentFrame = this.Frames[this.Frames.length-1];
         currentFrame.Vulernable = this.SetFramesToVulnerable;
 
-        if(!!this.IsThrow)
+        if(this.IsThrow)
         {
             currentFrame.FlagsToSet.Player = (currentFrame.FlagsToSet.Player || MISC_FLAGS.NONE) | PLAYER_FLAGS.INVULNERABLE;
         }
@@ -71,7 +71,7 @@
             currentFrame.IsPendingAttack = true;
         }
 
-        if(!!this.IsAttack)
+        if(this.IsAttack)
         {
             if(hasFlag(currentFrame.FlagsToSend, ATTACK_FLAGS.LIGHT))
                 currentFrame.HitStop = 8;
@@ -82,7 +82,7 @@
 
             //Moves that can be air blocked (jump attacks), can ALSO be blocked on the ground, but not in the crouch
             var flags = MISC_FLAGS.NONE;
-            if(!!this.AllowAirBlock)
+            if(this.AllowAirBlock)
                 flags = COMBAT_FLAGS.CAN_BE_AIR_BLOCKED;
             else
                 flags = COMBAT_FLAGS.CAN_BE_BLOCKED;
@@ -98,7 +98,7 @@
                 }
 
             }
-            else if(!!this.CanAddStopBlock)
+            else if(this.CanAddStopBlock)
             {
                 this.CanAddStopBlock = null;
                 currentFrame.FlagsToClear.Combat = (currentFrame.FlagsToClear.Combat || MISC_FLAGS.NONE) | flags;

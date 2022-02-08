@@ -13,33 +13,41 @@ import { math } from '../math/math.js';
 
 export class ParkTool extends BaseTool {
 
-    constructor ( map ) {
+    constructor( map ) {
 
-        super()
+        super();
         this.init( 10, map, true );
 
     }
 
-    doTool ( x, y, blockMaps ) {
+    doTool( x, y, blockMaps ) {
 
-        if (this._worldEffects.getTileValue(x, y) !== Tile.DIRT) {
+        if ( this._worldEffects.getTileValue( x, y ) !== Tile.DIRT ) {
+
             this.result = this.TOOLRESULT_NEEDS_BULLDOZE;
             return;
-        }
-        let value = math.getRandom(4);
+
+}
+
+        let value = math.getRandom( 4 );
         let tileFlags = Tile.BURNBIT | Tile.BULLBIT;
         let tileValue;
 
-        if (value === 4) {
+        if ( value === 4 ) {
+
             tileValue = Tile.FOUNTAIN;
             tileFlags |= Tile.ANIMBIT;
-        } else {
-            tileValue = value + Tile.WOODS2;
-        }
 
-        this._worldEffects.setTile(x, y, tileValue, tileFlags);
-        this.addCost(10);
+} else {
+
+            tileValue = value + Tile.WOODS2;
+
+}
+
+        this._worldEffects.setTile( x, y, tileValue, tileFlags );
+        this.addCost( 10 );
         this.result = this.TOOLRESULT_OK;
 
     }
+
 }

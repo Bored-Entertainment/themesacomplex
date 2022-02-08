@@ -1,4 +1,4 @@
-declare module TimeHandlr {
+declare namespace TimeHandlr {
     /**
      * Lookup of current events, mapping times to all associated events.
      */
@@ -330,7 +330,7 @@ declare module TimeHandlr {
     }
 }
 
-module TimeHandlr {
+namespace TimeHandlr {
     "use strict";
 
     /**
@@ -418,7 +418,7 @@ module TimeHandlr {
 }
 
 
-module TimeHandlr {
+namespace TimeHandlr {
     "use strict";
 
     /**

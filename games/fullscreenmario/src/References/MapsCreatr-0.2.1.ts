@@ -1,6 +1,6 @@
 /// <reference path="ObjectMakr-0.2.2.ts" />
 
-declare module MapsCreatr {
+declare namespace MapsCreatr {
     /**
      * A raw JSON-friendly description of a map.
      */
@@ -544,7 +544,7 @@ declare module MapsCreatr {
     }
 }
 
-module MapsCreatr {
+namespace MapsCreatr {
     "use strict";
 
     /**
@@ -624,7 +624,7 @@ module MapsCreatr {
 }
 
 
-module MapsCreatr {
+namespace MapsCreatr {
     "use strict";
 
     /**

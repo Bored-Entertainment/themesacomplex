@@ -243,7 +243,7 @@ var CreateAnnouncer = function()
         }
         
 
-        if(!!showPerfect)
+        if(showPerfect)
         {
             perfect_.IsAnimating = true;
             perfect_.StartFrame = match_.getCurrentFrame() + delay+95;

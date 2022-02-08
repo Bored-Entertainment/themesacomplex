@@ -1,4 +1,4 @@
-module LocalSaving{
+namespace LocalSaving{
     // Public functions
     export function getSlotSummaryAsString(slotId: string): string{
         // If there's no save on this slot
@@ -82,15 +82,15 @@ module LocalSaving{
              + "/"
              + (currentdate.getMonth()+1 < 10? "0":"") // 0 before month
              + (currentdate.getMonth()+1) // month
-             + "/" 
+             + "/"
              + currentdate.getFullYear() // year
-             + " @ "  
+             + " @ "
              + (currentdate.getHours() < 10? "0":"") // 0 before hours
              + currentdate.getHours() // hour
              + ":"
              + (currentdate.getMinutes() < 10? "0":"") // 0 before minutes
              + currentdate.getMinutes() // minutes
-             + ":" 
+             + ":"
              + (currentdate.getSeconds() < 10? "0":"") // 0 before seconds
              + currentdate.getSeconds(); // seconds
     }

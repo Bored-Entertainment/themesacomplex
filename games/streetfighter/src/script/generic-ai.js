@@ -221,7 +221,7 @@ var CreateGenericAI = function(player)
         var retVal = {Player:null,X:999999};
         for(var i = 0; i < otherPlayers.length; ++i)
         {
-            if(!!otherPlayers[i].isAirborne()) 
+            if(otherPlayers[i].isAirborne()) 
             {
                 var temp = this.Player.getCDHelper().getImgDistanceX(this.Player,otherPlayers[i]);
                 if(temp < retVal.X)
@@ -283,7 +283,7 @@ var CreateGenericAI = function(player)
         var canClear = true;
         var canSendInput = true;
 
-        if(!!this.Actions[0].AutoCombo)
+        if(this.Actions[0].AutoCombo)
         {
             if(!!this.AutoCombo.isWaiting() 
                 || (!this.Player.isMobile() && !this.Player.allowInterupt())
@@ -314,11 +314,11 @@ var CreateGenericAI = function(player)
         {
             this.Player.sendInput(this.getOtherInputCleared(this.Actions[0].Button));
         }
-        if(!!this.Actions[0].MustHit)
+        if(this.Actions[0].MustHit)
         {
             this.MustHit = true;
         }
-        if(!!this.Actions[0].SetForceBusy)
+        if(this.Actions[0].SetForceBusy)
         {
             this.setForceBusy();
         }
@@ -373,9 +373,9 @@ var CreateGenericAI = function(player)
             canSendInput = false;
         }
 
-        if(!!canSendInput)
+        if(canSendInput)
             this.Player.sendInput(this.Actions[0].Input);
-        if(!!canClear)
+        if(canClear)
             this.Actions.splice(0,1);
         if(this.Actions.length == 0)
             this.IgnoreProjectileGone = false;
@@ -408,7 +408,7 @@ var CreateGenericAI = function(player)
 
     GenericAI.prototype.releaseButton = function(button, releaseFrame)
     {
-        if(!!releaseFrame)
+        if(releaseFrame)
         {
             this.Actions.push(this.createAction(releaseFrame,null,[{IsDown:false,Button:button}]));
         }
@@ -531,7 +531,7 @@ var CreateGenericAI = function(player)
     //fired every frame an enemy projectile is active
     GenericAI.prototype.onEnemyProjectileMoved = function(frame,id,x,y,projectile,isSuperMove)
     {
-        if(!!this.isProjectileReactBusy())
+        if(this.isProjectileReactBusy())
             return;
 
         var blockKey = this.Player.MustChangeDirection ?  BUTTONS.FORWARD : BUTTONS.BACK;
@@ -555,9 +555,9 @@ var CreateGenericAI = function(player)
     //fired every attack frame
     GenericAI.prototype.onEnemyContinueAttack = function(frame, attacker, hitPoints)
     {
-        if(!!this.isAttackReactBusy())
+        if(this.isAttackReactBusy())
             return;
-        if(!!this.isAirborneReactBusy())
+        if(this.isAirborneReactBusy())
             return;
         var blockKey = this.Player.MustChangeDirection ?  BUTTONS.FORWARD : BUTTONS.BACK;
         if(this.Player.canBlock())
@@ -583,11 +583,11 @@ var CreateGenericAI = function(player)
         if(!this.AllowOverrideBlock && !this.Player.canBlock())
             this.AllowOverrideBlock = true;
 
-        if(!!this.AllowOverrideBlock)
+        if(this.AllowOverrideBlock)
         {
             if(!player.isMobile())
             {
-                if(!!this.JustAttacked)
+                if(this.JustAttacked)
                     this.nbMobileDelay = 3;
                 return;
             }

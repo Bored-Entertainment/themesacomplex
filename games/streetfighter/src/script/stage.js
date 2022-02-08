@@ -18,13 +18,13 @@ var CreateStage = function(bg0XOffset)
         
         if(p1x1 < (p2x0 - tmp) && canCheck)
         {
-            if(!!isMovingBackwards)
+            if(isMovingBackwards)
             {
                 tmp = Math.min(diffX,amount * 2);
             }
         }
 
-        if(!!canIncreaseDeltaX)
+        if(canIncreaseDeltaX)
             tmp *= 4;
 
         thisRef._MoveX(-tmp,false,p2NewX);
@@ -244,7 +244,7 @@ var CreateStage = function(bg0XOffset)
     Stage.prototype.fixX = function(amount)
     {
         var stageMovedX = game_.getMatch().DeltaX;
-        if(!!stageMovedX)
+        if(stageMovedX)
         {
             /*ensure the directions are the opposite*/
             amount = 0.5 * (Math.abs(amount) * (Math.abs(stageMovedX) / stageMovedX));
@@ -367,12 +367,12 @@ var CreateStage = function(bg0XOffset)
     {
         if(this.IsIncrementingY !== undefined)
         {
-            if(!!this.HoldFrame)
+            if(this.HoldFrame)
             {
                 return;
             }
 
-            if(!!this.IsIncrementingY)
+            if(this.IsIncrementingY)
             {
                 this.incYOffset();
                 var offsetY = Math.sin(this.YCount) * -this.YIncMultiplier;
@@ -380,7 +380,7 @@ var CreateStage = function(bg0XOffset)
                 this.DeltaOffsetY = offsetY - this.OffsetY;
                 this.OffsetY = offsetY;
             }
-            else if(!!this.OffsetY)
+            else if(this.OffsetY)
             {
                 this.decYOffset();
 

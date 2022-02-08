@@ -44,7 +44,7 @@ function ApplyFlip(element, applied) {
         } else {
             element.className = element.className.replace(" flipped", "");
         }
-    } else if (!!applied) {
+    } else if (applied) {
         element.className += " flipped";
     } else {
         element.className = element.className.replace(" flipped", "");

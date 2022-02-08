@@ -14,7 +14,7 @@ import { WorldEffects } from './WorldEffects.js';
 
 export class BaseTool {
 
-    constructor () {
+    constructor() {
 
         this.TOOLRESULT_OK = 0;
         this.TOOLRESULT_FAILED = 1;
@@ -25,7 +25,7 @@ export class BaseTool {
 
     }
 
-    init ( cost, map, shouldAutoBulldoze, IsDraggable = false ) {
+    init( cost, map, shouldAutoBulldoze, IsDraggable = false ) {
 
         //Object.defineProperty(this, 'toolCost', MiscUtils.mcd(cost));
         this.toolCost = cost;
@@ -38,58 +38,72 @@ export class BaseTool {
 
     }
 
-    clear () {
+    clear() {
 
         this._applicationCost = 0;
         this._worldEffects.clear();
 
     }
 
-    addCost ( cost ) {
+    addCost( cost ) {
 
         this._applicationCost += cost;
 
     }
 
-    doAutoBulldoze ( x, y ) {
+    doAutoBulldoze( x, y ) {
 
         //if ( !this._shouldAutoBulldoze ) return;
-        let tile = this._worldEffects.getTile(x, y);
+        let tile = this._worldEffects.getTile( x, y );
         if ( tile.isBulldozable() ) {
+
             tile = ZoneUtils.normalizeRoad( tile );
-            if ((tile >= Tile.TINYEXP && tile <= Tile.LASTTINYEXP) || (tile < Tile.HBRIDGE && tile !== Tile.DIRT)) {
-              this.addCost(1);
-              this._worldEffects.setTile(x, y, Tile.DIRT);
-            }
-        }
+            if ( ( tile >= Tile.TINYEXP && tile <= Tile.LASTTINYEXP ) || ( tile < Tile.HBRIDGE && tile !== Tile.DIRT ) ) {
+
+              this.addCost( 1 );
+              this._worldEffects.setTile( x, y, Tile.DIRT );
+
+}
+
+}
 
     }
 
-    apply ( budget ) {
+    apply( budget ) {
 
         this._worldEffects.apply();
-        budget.spend(this._applicationCost);
+        budget.spend( this._applicationCost );
         this.clear();
 
     }
 
-    modifyIfEnoughFunding ( budget ) {
+    modifyIfEnoughFunding( budget ) {
 
-        if (this.result !== this.TOOLRESULT_OK) { this.clear(); return false; }
-        if (budget.totalFunds < this._applicationCost) { this.result = this.TOOLRESULT_NO_MONEY; this.clear(); return false; }
-        this.apply.call(this, budget);
+        if ( this.result !== this.TOOLRESULT_OK ) {
+
+ this.clear(); return false;
+
+}
+
+        if ( budget.totalFunds < this._applicationCost ) {
+
+ this.result = this.TOOLRESULT_NO_MONEY; this.clear(); return false;
+
+}
+
+        this.apply.call( this, budget );
         this.clear();
         return true;
 
     }
 
-    setAutoBulldoze ( value ) {
+    setAutoBulldoze( value ) {
 
         this.autoBulldoze = value;
 
     }
 
-    getAutoBulldoze () {
+    getAutoBulldoze() {
 
         return this.autoBulldoze;
 

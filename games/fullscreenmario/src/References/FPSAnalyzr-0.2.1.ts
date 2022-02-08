@@ -1,4 +1,4 @@
-declare module FPSAnalyzr {
+declare namespace FPSAnalyzr {
     /**
      * A Function to generate a current timestamp, such as performance.now.
      */
@@ -119,7 +119,7 @@ declare module FPSAnalyzr {
 }
 
 
-module FPSAnalyzr {
+namespace FPSAnalyzr {
     "use strict";
 
     /**

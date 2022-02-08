@@ -11,21 +11,29 @@
 
 export class MessageManager {
 
-    constructor () {
-        this.data = [];
-    }
+    constructor() {
 
-    sendMessage (message, data) {
-        this.data.push({message: message, data: data});
-    }
-    
-    clear () {
         this.data = [];
-    }
 
-    getMessages () {
+}
+
+    sendMessage( message, data ) {
+
+        this.data.push( { message: message, data: data } );
+
+}
+
+    clear() {
+
+        this.data = [];
+
+}
+
+    getMessages() {
+
         return this.data.slice();
-    }
+
+}
 
 }
 

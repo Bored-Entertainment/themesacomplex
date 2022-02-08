@@ -1,6 +1,6 @@
 /// <reference path="InputWritr-0.2.0.ts" />
 
-declare module TouchPassr {
+declare namespace TouchPassr {
     /**
      * Schema for where a control should lay on the screen. 
      */
@@ -239,7 +239,7 @@ declare module TouchPassr {
     }
 }
 
-module TouchPassr {
+namespace TouchPassr {
     /**
      * Abstract class for on-screen controls. Element creation for .element
      * and .elementInner within the constrained position is provided.
@@ -551,7 +551,7 @@ module TouchPassr {
     }
 }
 
-module TouchPassr {
+namespace TouchPassr {
     /**
      * Control schema for a simple button. Pipes are activated on press and on release.
      */
@@ -565,7 +565,7 @@ module TouchPassr {
     /**
      * Styles schema for a button control.
      */
-    export interface IButtonStyles extends IControlStyles { }
+    export type IButtonStyles = IControlStyles
 
     /**
      * Global declaration of styles for all controls, typically passed from a
@@ -631,7 +631,7 @@ module TouchPassr {
     }
 }
 
-module TouchPassr {
+namespace TouchPassr {
     /**
      * Control schema for a joystick. It may have any number of directions that it
      * will snap to, each of which will have its own pipes.
@@ -1056,7 +1056,7 @@ module TouchPassr {
 }
 
 
-module TouchPassr {
+namespace TouchPassr {
     "use strict";
 
     /**

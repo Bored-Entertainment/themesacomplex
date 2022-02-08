@@ -1515,7 +1515,7 @@ var createAkumaSuperUppercut = function(player)
 
         s_uppercut.Vy = 220;
         //the following object will be passed in to the function that will be used to compute the X coordinate
-        s_uppercut.VxFnArgs = {xMax:70,xMin:3,xInc:1.8,valueMax:10};;
+        s_uppercut.VxFnArgs = {xMax:70,xMin:3,xInc:1.8,valueMax:10};
         //the following function will be executed each frame to compute the X coordinate of this move
         s_uppercut.vxFn = (function(args)
         {

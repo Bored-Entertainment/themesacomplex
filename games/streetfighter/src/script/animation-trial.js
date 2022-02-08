@@ -40,7 +40,7 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
         this.Trail[this.Trail.length] = {StartFrame:0,Element:div,Animation:animation,FrameIndex:0,LastImageSrc:"",Coords:[],HasB64:false};
 
         this.FollowElement = this.FollowElement || followElement;
-        if(!!this.FollowElement)
+        if(this.FollowElement)
         {
             var container = this.FollowElement.parentNode;
             if(container.children.length == 0)
@@ -53,7 +53,7 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
 
     AnimationTrail.prototype.disable = function()
     {
-        if(!!this.Enabled)
+        if(this.Enabled)
         {
             this.StageDeltaX = 0;
             this.StageDeltaY = 0;
@@ -105,7 +105,7 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
             var left = this.FollowElement.style.left;
             var right = this.FollowElement.style.right;
 
-            if(!!this.Player)
+            if(this.Player)
             {
                 var rect = this.Player.getImgRect();
                 bottom = rect.BottomNoOffset;
@@ -144,7 +144,7 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
     /*The trail is applying the exact coords of the player, but the screen may move, which must be applied to all trail coords!*/
     AnimationTrail.prototype.applyStageOffset = function(stageDiffX,stageDiffY)
     {
-        if(!!stageDiffX)
+        if(stageDiffX)
         {
             for(var trailIndex = 0, nbTrails = this.Trail.length; trailIndex < nbTrails; trailIndex++)
             {
@@ -160,7 +160,7 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
             }
         }
 
-        if(!!stageDiffY)
+        if(stageDiffY)
         {
             for(var trailIndex = 0, nbTrails = this.Trail.length; trailIndex < nbTrails; trailIndex++)
             {
@@ -183,7 +183,7 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
         /*get the current frame*/
         var retVal =  null;
         var frameToRender = this.getCurrentFrame(index);
-        if(!!frameToRender)
+        if(frameToRender)
         {
             var tmp = frameToRender.UserData.splice(0,1);
             retVal = tmp[0];
@@ -204,13 +204,13 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
                 if(frame > this.Trail[i].StartFrame)
                 {
                     var coords = this.getNextCoord(i);
-                    if(!!coords)
+                    if(coords)
                     {
-                        this.Trail[i].Element.style.left = (!!coords.Left) ? coords.DeltaX + parseInt(coords.Left) + "px" : "";
-                        this.Trail[i].Element.style.right = (!!coords.Right) ? coords.DeltaX + parseInt(coords.Right) + "px" : "";
-                        this.Trail[i].Element.style.bottom = (!!coords.Bottom) ? coords.DeltaY + stageOffsetY + parseInt(coords.Bottom) + "px" : "";
-                        this.Trail[i].Element.style.top = (!!coords.Top) ? coords.DeltaY + parseInt(coords.Top) + "px" : "";
-                        if(!!coords.Flip)
+                        this.Trail[i].Element.style.left = (coords.Left) ? coords.DeltaX + parseInt(coords.Left) + "px" : "";
+                        this.Trail[i].Element.style.right = (coords.Right) ? coords.DeltaX + parseInt(coords.Right) + "px" : "";
+                        this.Trail[i].Element.style.bottom = (coords.Bottom) ? coords.DeltaY + stageOffsetY + parseInt(coords.Bottom) + "px" : "";
+                        this.Trail[i].Element.style.top = (coords.Top) ? coords.DeltaY + parseInt(coords.Top) + "px" : "";
+                        if(coords.Flip)
                             AutoApplyFlip(this.Trail[i].Element, this.Direction == 1 ? coords.Flip : !coords.Flip);
                     }
                 }
@@ -222,7 +222,7 @@ var CreateAnimationTrail = function(animations,zIndex,delay)
                         ++currentItem.FrameIndex;
 
                     var frameToRender = this.getCurrentFrame(i);
-                    if(!!frameToRender)
+                    if(frameToRender)
                     {
                         spriteLookup_.set(currentItem.Element,frameToRender.RightSrc);
                     }

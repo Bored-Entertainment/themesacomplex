@@ -7,54 +7,54 @@ export class Point {
 
         this.x = x;
         this.y = y;
-        
+
     }
 
     get length() {
 
-        return Traffic.sqrt(this.x * this.x + this.y * this.y);
+        return Traffic.sqrt( this.x * this.x + this.y * this.y );
 
     }
 
     get direction() {
 
-        return Traffic.atan2(this.y, this.x);
+        return Traffic.atan2( this.y, this.x );
 
     }
 
     get normalized() {
 
-        return new this.constructor(this.x / this.length, this.y / this.length);
+        return new this.constructor( this.x / this.length, this.y / this.length );
 
     }
 
-    toKey(){
+    toKey() {
 
-        return [this.x, this.y].join(',');
+        return [ this.x, this.y ].join( ',' );
 
     }
 
     add( o ) {
 
-        return new this.constructor(this.x + o.x, this.y + o.y);
+        return new this.constructor( this.x + o.x, this.y + o.y );
 
     }
 
     subtract( o ) {
 
-        return new this.constructor(this.x - o.x, this.y - o.y);
+        return new this.constructor( this.x - o.x, this.y - o.y );
 
     }
 
     mult( k ) {
 
-        return new this.constructor(this.x * k, this.y * k);
+        return new this.constructor( this.x * k, this.y * k );
 
     }
 
     divide( k ) {
 
-        return new this.constructor(this.x / k, this.y / k);
+        return new this.constructor( this.x / k, this.y / k );
 
     }
 

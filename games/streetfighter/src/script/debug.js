@@ -33,9 +33,9 @@ function GetDebugInstance(game)
             {
                 if(t1[a].A === t2[b].A)
                 {
-                    if(!!t1[a].B)
+                    if(t1[a].B)
                         t2[b].B = false;
-                    if(!!t2[b].B)
+                    if(t2[b].B)
                         t1[a].B = false;
                     if(!t1[a].B && !t2[b].B)
                         t2[b].B = true;
@@ -44,14 +44,14 @@ function GetDebugInstance(game)
         }
 
         /*TEAM 1*/
-        if(!!t1[0])
+        if(t1[0])
             user1_.resetChar(t1[0].A, t1[0].B, t1[0].C);
         else
             user1_.resetChar(CHARACTERS.KEN);
 
-        if(!!t1[1])
+        if(t1[1])
         {
-            if(!!t1[1].D)
+            if(t1[1].D)
             {
                 teamB.pop();
                 user2_.resetChar(t1[1].A, t1[1].B, t1[1].C);
@@ -63,12 +63,12 @@ function GetDebugInstance(game)
                 teamA.push(2);
             }
         }
-        if(!!t1[2])
+        if(t1[2])
         {
             user4_.resetChar(t1[2].A, t1[2].B, t1[2].C);
             teamA.push(3);
         }
-        if(!!t1[3])
+        if(t1[3])
         {
             user5_.resetChar(t1[3].A, t1[3].B, t1[3].C);
             teamA.push(4);
@@ -77,7 +77,7 @@ function GetDebugInstance(game)
         /*TEAM 2*/
         if(!!t1[1] && !!t1[1].D)
         {
-            if(!!t2[0])
+            if(t2[0])
                 user3_.resetChar(t2[0].A, t2[0].B, t2[0].C);
             else
                 user3_.resetChar(CHARACTERS.RYU);
@@ -86,23 +86,23 @@ function GetDebugInstance(game)
         }
         else
         {
-            if(!!t2[0])
+            if(t2[0])
                 user2_.resetChar(t2[0].A, t2[0].B, t2[0].C);
             else
                 user2_.resetChar(CHARACTERS.RYU);
         }
 
-        if(!!t2[1])
+        if(t2[1])
         {
             user6_.resetChar(t2[1].A, t2[1].B, t2[1].C);
             teamB.push(5);
         }
-        if(!!t2[2])
+        if(t2[2])
         {
             user7_.resetChar(t2[2].A, t2[2].B, t2[2].C);
             teamB.push(6);
         }
-        if(!!t2[3])
+        if(t2[3])
         {
             user8_.resetChar(t2[3].A, t2[3].B, t2[3].C);
             teamB.push(7);
@@ -141,35 +141,35 @@ function GetDebugInstance(game)
 
     Debug.prototype.p1 = function()
     {
-        if(!!game_.getMatch())
+        if(game_.getMatch())
             return game_.getMatch().getTeamA().getPlayer(0);
         return null;
     }
 
     Debug.prototype.p2 = function()
     {
-        if(!!game_.getMatch())
+        if(game_.getMatch())
             return game_.getMatch().getTeamB().getPlayer(0);
         return null;
     }
 
     Debug.prototype.t1 = function(index)
     {
-        if(!!game_.getMatch())
+        if(game_.getMatch())
             return game_.getMatch().getTeamA().getPlayer(index || 0);
         return null;
     }
 
     Debug.prototype.t2 = function(index)
     {
-        if(!!game_.getMatch())
+        if(game_.getMatch())
             return game_.getMatch().getTeamB().getPlayer(index || 0);
         return null;
     }
 
     Debug.prototype.p1Execute = function(input)
     {
-        if(!!game_.getMatch())
+        if(game_.getMatch())
         {
             if(!this.p1().Ai.isRunning())
                 this.p1().enableAI();
@@ -180,7 +180,7 @@ function GetDebugInstance(game)
 
     Debug.prototype.p2Execute = function(input)
     {
-        if(!!game_.getMatch())
+        if(game_.getMatch())
         {
             if(!this.p2().Ai.isRunning())
                 this.p2().enableAI();
@@ -191,7 +191,7 @@ function GetDebugInstance(game)
 
     Debug.prototype.p2TestAI = function()
     {
-        if(!!game_.getMatch())
+        if(game_.getMatch())
         {
             this.p2().enableAI();
         }
@@ -241,7 +241,7 @@ function GetDebugInstance(game)
             debug_.p1().CurrentFrame.ImageOffsetX = +x;
         if(!!+y || y === 0)
             debug_.p1().CurrentFrame.ImageOffsetY = +y;
-        if(!!s)
+        if(s)
             debug_.p1().CurrentFrame.ShadowImageSrc = "images/misc/misc/shadow-" + s + ".png";
         if(!!+sx || sx === 0)
             debug_.p1().CurrentFrame.ShadowOffset.X = +sx;
@@ -287,7 +287,7 @@ function GetDebugInstance(game)
         turn = Debug.prototype.keyCount++;
         var user = new User(right,up,left,down,p1,p2,p3,k1,k2,k3,turn);
         user.resetChar(playerId,isAlternate,true);
-        if(!!user.getName())
+        if(user.getName())
         {
             var name = user.getName();
             var folder = user.getFolder();

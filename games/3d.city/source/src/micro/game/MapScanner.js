@@ -14,59 +14,76 @@ import { Tiles, Tile } from '../Tile.js';
 
 export class MapScanner {
 
-    constructor ( map ) {
+    constructor( map ) {
 
         this._map = map;
         this._actions = [];
 
     }
 
-    addAction ( criterion, action ) {
+    addAction( criterion, action ) {
 
-        this._actions.push({ criterion: criterion, action: action });
+        this._actions.push( { criterion: criterion, action: action } );
 
     }
 
-    mapScan ( startX, maxX, simData ) {
+    mapScan( startX, maxX, simData ) {
 
-        if(!simData) simData = Micro.simData
+        if ( ! simData ) simData = Micro.simData;
 
         let y = this._map.height, x, i, id, tile, tileValue, current, callable;
-        
-        while( y-- ){
 
-            for ( x = startX; x < maxX; x++ ) {
-                
-                id = this._map.getId( x, y ); //x + y * this.mapWidth; 
-                tile = this._map.data[id] || new Tiles();
+        while ( y -- ) {
+
+            for ( x = startX; x < maxX; x ++ ) {
+
+                id = this._map.getId( x, y ); //x + y * this.mapWidth;
+                tile = this._map.data[ id ] || new Tiles();
                 tileValue = tile.getValue();
 
                 if ( tileValue < Tile.FLOOD ) continue;
 
-                if ( tile.isConductive() ) simData.powerManager.setTilePower(x, y);
+                if ( tile.isConductive() ) simData.powerManager.setTilePower( x, y );
 
                 if ( tile.isZone() ) {
+
                     simData.repairManager.checkTile( x, y, simData.cityTime );
-                    if ( tile.isPowered() ){ simData.census.poweredZoneCount += 1; this._map.powered({ v:1, id:id })/*this._map.powerData[id] = 1;*/ }
-                    else { simData.census.unpoweredZoneCount += 1; this._map.powered({ v:2, id:id })/*this._map.powerData[id] = 2;*/ }
-                }
+                    if ( tile.isPowered() ) {
+
+ simData.census.poweredZoneCount += 1; this._map.powered( { v: 1, id: id } );
+
+/*this._map.powerData[id] = 1;*/ } else {
+
+ simData.census.unpoweredZoneCount += 1; this._map.powered( { v: 2, id: id } );
+
+/*this._map.powerData[id] = 2;*/ }
+
+}
 
                 i = this._actions.length;
-                while(i--){
+                while ( i -- ) {
 
-                    current = this._actions[i];
-                    callable = MiscUtils.isCallable(current.criterion);
+                    current = this._actions[ i ];
+                    callable = MiscUtils.isCallable( current.criterion );
 
-                    if (callable && current.criterion.call(null, tile)) {
-                        current.action.call(null, this._map, x, y, simData);
+                    if ( callable && current.criterion.call( null, tile ) ) {
+
+                        current.action.call( null, this._map, x, y, simData );
                         break;
-                    } else if (!callable && current.criterion === tileValue) {
-                        current.action.call(null, this._map, x, y, simData);
+
+} else if ( ! callable && current.criterion === tileValue ) {
+
+                        current.action.call( null, this._map, x, y, simData );
                         break;
-                    }
-                }
-            }
-        }
-    }
+
+}
+
+}
+
+}
+
+}
+
+}
 
 }

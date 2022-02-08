@@ -1,4 +1,4 @@
-declare module WorldSeedr {
+declare namespace WorldSeedr {
     /**
      * A general listing of possibilities, keyed by title.
      */
@@ -383,7 +383,7 @@ declare module WorldSeedr {
     }
 }
 
-declare module WorldSeedr {
+declare namespace WorldSeedr {
     /**
      * A random number generator that returns a decimal within [min,max).
      * 
@@ -436,7 +436,7 @@ declare module WorldSeedr {
 }
 
 
-module WorldSeedr {
+namespace WorldSeedr {
     "use strict";
 
     /**
@@ -526,7 +526,7 @@ module WorldSeedr {
 }
 
 
-module WorldSeedr {
+namespace WorldSeedr {
     "use strict";
 
     /**

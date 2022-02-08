@@ -1,6 +1,6 @@
 /// <reference path="../FullScreenMario.ts" />
 
-module FullScreenMario {
+namespace FullScreenMario {
     "use strict";
 
     FullScreenMario.settings.collisions = {

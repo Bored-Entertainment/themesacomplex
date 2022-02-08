@@ -100,7 +100,7 @@
     this.ImgBBox = {};
 
     this.Ai = new CreateAIProxy();
-    if (!!user.IsAI)
+    if (user.IsAI)
         this.enableAI();
 
     this.HasPendingGrapple = false;
@@ -250,7 +250,7 @@ Player.prototype.getGame = function () {
 };
 
 Player.prototype.getHealth = function () {
-    return !!this.getHealthFn ? this.getHealthFn() : -1;
+    return this.getHealthFn ? this.getHealthFn() : -1;
 };
 
 Player.prototype.getEnergy = function () {
@@ -268,7 +268,7 @@ Player.prototype.getIndex = function () {
 Player.prototype.playerCount = 0;
 
 Player.prototype.changeEnergy = function (amount) {
-    if (!!amount) this.changeEnergyFn(amount);
+    if (amount) this.changeEnergyFn(amount);
 };
 
 Player.prototype.getIsExecutingSuperMove = function () {
@@ -308,7 +308,7 @@ Player.prototype.takeDamage = function (amount, attackDirection, ignoreNoDamage)
 Player.prototype.enableAI = function (createAiFn) {
     this.IsAI = true;
     this.Ai.enableAI(this, createAiFn || (window["Create" + this.Name[0].toUpperCase() + this.Name.substring(1) + "AI"]));
-    if (!!this.getMatch())
+    if (this.getMatch())
         this.getMatch().checkAIMatch();
 };
 
@@ -380,7 +380,7 @@ Player.prototype.getFrame = function () {
 };
 
 Player.prototype.resetCombo = function () {
-    if (!!this.onDecComboRefCountFn)
+    if (this.onDecComboRefCountFn)
         this.onDecComboRefCountFn();
     this.ComboCount = 0;
 
@@ -393,7 +393,7 @@ Player.prototype.incCombo = function (attackId) {
     this.onIncComboFn();
     ++this.ComboCount;
 
-    if (!!attackId) {
+    if (attackId) {
         this.Hits[attackId] = this.Hits[attackId] || {Nb: 0};
         ++this.Hits[attackId].Nb;
     }
@@ -514,7 +514,7 @@ Player.prototype.createElement = function (x, y, parentElement) {
     var createElement = function (tagName, className, attrib, value, parent) {
         var i = window.document.createElement(tagName);
         i.className = className;
-        if (!!attrib)
+        if (attrib)
             i.style[attrib] = value;
         (parent || self.Element).appendChild(i);
         return i;
@@ -686,32 +686,32 @@ Player.prototype.otherAnimationFrameMove = function (frame, stageX, stageY) {
 };
 //Moves the animation back one frame
 Player.prototype.reverseFrame = function (frame) {
-    if (!!this.CurrentFrame)
+    if (this.CurrentFrame)
         this.CurrentAnimation.StartFrame += 2;
 };
 //Prevents the animation from continuing for one frame
 Player.prototype.holdFrame = function (frame) {
     this.FrameFreeze = Math.max(this.FrameFreeze - 1, 0);
-    if (!!this.CurrentFrame)
+    if (this.CurrentFrame)
         ++this.CurrentAnimation.StartFrame;
     if (this.isAirborne())
         this.getStage().holdFrame();
 };
 //Prevents the animation from continuing for one frame
 Player.prototype.forceHoldFrame = function (frame) {
-    if (!!this.CurrentFrame)
+    if (this.CurrentFrame)
         ++this.CurrentAnimation.StartFrame;
     if (this.isAirborne())
         this.getStage().holdFrame();
 };
 //Prevents the animation from continuing for one frame
 Player.prototype.forceNextFrame = function (frame) {
-    if (!!this.CurrentFrame)
+    if (this.CurrentFrame)
         this.CurrentAnimation.StartFrame = frame - this.CurrentFrame.getEndFrameOffset();
 };
 //Can the current move be interrupted by a speial move?
 Player.prototype.checkForInterupt = function (frame) {
-    if (!!this.InteruptAnimation) {
+    if (this.InteruptAnimation) {
         if ((--this.InteruptAnimation.Delay <= 0)) {
             var temp = this.InteruptAnimation;
             temp.StartFrame = frame;
@@ -724,7 +724,7 @@ Player.prototype.checkForInterupt = function (frame) {
 
             var state = this.CurrentAnimation.Animation.InteruptAnimation.ButtonSequence[this.CurrentAnimation.Animation.InteruptAnimation.ButtonSequence.length - 1];
             //if the key is NOT pressed, then offset into the next frame in the current move
-            if (!!this.hasButtonState(state)) {
+            if (this.hasButtonState(state)) {
                 this.chainToAnimation(frame, this.CurrentAnimation.Animation.InteruptAnimation);
             }
         }
@@ -777,7 +777,7 @@ Player.prototype.isFloater = function (frame) {
 };
 
 Player.prototype.checkFloater = function (frame) {
-    if (!!this.isFloater()) {
+    if (this.isFloater()) {
         this.onFloatingFn(frame, this.getFrontX(), this.getMidY());
         return true;
     }
@@ -790,18 +790,18 @@ Player.prototype.onFrameMove = function (frame, stageX, stageY) {
         if (!this.isCurrentMoveAttack())
             this.onAttackStateChanged(null, ATTACK_STATE.NOT_AN_ATTACK);
         this.doAnimationAlerts();
-        if (!!this.TeleportFramesLeft)
+        if (this.TeleportFramesLeft)
             this.advanceTeleportation(frame);
         this.decreaseDizziness(frame);
         this.sendAttackAlerts(frame);
         this.checkForInterupt(frame);
         this.checkGroundY();
         this.frameMove(frame, stageX, stageY);
-        if (!!this.IsInAttackFrame)
+        if (this.IsInAttackFrame)
             this.handleAttack(frame, this.CurrentFrame);
         else if (!this.checkFloater(frame))
             this.checkVulnerable(frame);
-        if (!!this.GrappledPlayer)
+        if (this.GrappledPlayer)
             this.handleGrapple(this.CurrentAnimation.FrameIndex - 1, frame, stageX, stageY);
         if (!!this.CurrentAnimation.Animation && !!this.CurrentAnimation.Animation.Trail)
             this.frameMoveTrail(frame, this.getStage().DeltaX, stageY);
@@ -818,9 +818,9 @@ Player.prototype.frameMoveTrail = function (frame, stageX, stageY) {
 };
 //sets some data beforehand
 Player.prototype.setPendingFrame = function (pendingFrame) {
-    if (!!pendingFrame) {
+    if (pendingFrame) {
         var data = spriteLookup_.get(pendingFrame.RightSrc);
-        if (!!data) {
+        if (data) {
             this.PendingWidth = data.WidthInt;
         }
     }
@@ -839,7 +839,7 @@ Player.prototype.frameMove = function (frame, stageX, stageY) {
     this.handleProjectiles(frame, stageX, stageY);
     this.otherAnimationFrameMove(frame, stageX, stageY);
 
-    if (!!this.isBeingGrappled())
+    if (this.isBeingGrappled())
         return;
 
     if (!!this.FrameFreeze && !this.IgnoreHoldFrame) {
@@ -847,7 +847,7 @@ Player.prototype.frameMove = function (frame, stageX, stageY) {
         this.holdFrame(frame);
     }
 
-    if (!!this.ForceEndAnimation) {
+    if (this.ForceEndAnimation) {
         this.ForceEndAnimation = false;
         this.tryChainAnimation(frame);
         return;
@@ -867,15 +867,15 @@ Player.prototype.frameMove = function (frame, stageX, stageY) {
             }
 
             //check to see if the new frame needs to be airborne
-            if (!!currentFrame) {
+            if (currentFrame) {
                 if (currentFrame.isSettingAirborneFlag()) {
                     if (!this.isAirborne() || hasFlag(currentFrame.FlagsToSet.Pose, POSE_FLAGS.FORCE_START_AIRBORNE) || !!currentFrame.Jump) {
                         var direction = 1;
                         if (hasFlag(currentFrame.FlagsToSet.Player, PLAYER_FLAGS.USE_ATTACK_DIRECTION))
                             direction = this.CurrentAnimation.AttackDirection;
 
-                        var fx = !!currentFrame.Jump ? currentFrame.Jump.Fx : this.CurrentAnimation.Vx;
-                        var fy = !!currentFrame.Jump ? currentFrame.Jump.Fy : this.CurrentAnimation.Vy;
+                        var fx = currentFrame.Jump ? currentFrame.Jump.Fx : this.CurrentAnimation.Vx;
+                        var fy = currentFrame.Jump ? currentFrame.Jump.Fy : this.CurrentAnimation.Vy;
 
                         this.performJump(direction * fx, fy, this.CurrentAnimation.Animation.getXModifier(), this.CurrentAnimation.Animation.getYModifier(), this.CurrentAnimation.Animation.NbFramesAirborneAdvance, this.CurrentAnimation.Animation.AirborneStartDeltaY, this.CurrentAnimation.Animation.UseJumpSpeed, this.CurrentAnimation.Animation.UseJumpT);
                     } else {
@@ -1004,7 +1004,7 @@ Player.prototype.release = function() {
     utils_.removeFromDOM(this.DizzyElement);
     utils_.removeFromDOM(this.FireElement);
 
-    if (!!this.User) {
+    if (this.User) {
         this.User.Player = null;
         if (this.Ai.isRunning()) {
             this.User.reset(true);

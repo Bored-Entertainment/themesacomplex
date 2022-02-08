@@ -1,4 +1,4 @@
-declare module UsageHelpr {
+declare namespace UsageHelpr {
     /**
      * Styles that may be applied to logged help text.
      */
@@ -145,7 +145,7 @@ declare module UsageHelpr {
 }
 
 
-module UsageHelpr {
+namespace UsageHelpr {
     "use strict";
 
     /**

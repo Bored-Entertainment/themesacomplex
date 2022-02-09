@@ -50,9 +50,10 @@ li {
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.splash {
-    font-size: 15px;
+#splash {
+    font-size: 20px;
     font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
 }
 
 /* width */

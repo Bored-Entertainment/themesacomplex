@@ -11,8 +11,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WZ946DH');</script>
 <!-- End Google Tag Manager -->
 <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
-<script id="splash"></script>
 <br>
+
+<p id="splash"></p>
 
 <h1 class="text-center">Categorys:</h1>
 <a class="list" href="games">Games</a>

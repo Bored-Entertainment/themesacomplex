@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<a>Website is still a W.I.P, We are still working at bugs, so please be patient.<a>
+<footer>Website is still a W.I.P, We are still working at bugs, so please be patient.</footer>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

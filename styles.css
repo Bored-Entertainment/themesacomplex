@@ -9,6 +9,12 @@ a {
     color: white;
 }
 
+footer {
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
 p {
     font-family: 'Ubuntu Mono', monospace;
     color: white;

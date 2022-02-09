@@ -54,6 +54,7 @@
     <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body>
@@ -145,6 +146,22 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+      <script>
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#030404",
+            "text": "#ffffff"
+          },
+          "button": {
+            "background": "#fb7e14",
+            "text": "#ffffff"
+          }
+        },
+        "theme": "edgeless"
+      });
       </script>
 </body>
 

@@ -21,11 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="games">Games</a>
 <a class="list" href="emulators">Emulators</a>
 <a class="list" href="bypass">Bypasses and Proxys</a>
-
-
-
-
-
+<br>
 <footer>Website is still a W.I.P, We are still working at bugs, so please be patient.</footer>
 
 <!-- Google Tag Manager (noscript) -->

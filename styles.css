@@ -58,7 +58,7 @@ li {
 
 #splash {
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     overflow: hidden; /* Ensures the content is not revealed until the animation */

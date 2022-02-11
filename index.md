@@ -25,8 +25,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="emulators">Emulators</a>
 <a class="list" href="bypass">Bypasses and Proxys</a>
 <br>
-<footer>Website is still a W.I.P, We are still working at bugs, so please be patient.</footer>
-
+<footer>
+  <p>Website is still a W.I.P, We are still working at bugs, so please be patient.</p>
+  <!-- Start of CuterCounter Code -->
+<a href="https://www.webfreecounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=huxandxo&nd=9&style=49" border="0" alt="website counter"></a>
+<!-- End of CuterCounter Code -->
+</footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

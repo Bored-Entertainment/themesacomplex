@@ -25,9 +25,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br>
 <footer>
   <p>Website is still a W.I.P, We are still working at bugs, so please be patient.</p>
-  <!-- Start of CuterCounter Code -->
-<a target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gvrupppdd&nd=6&style=38" border="0" alt="hit counter"></a>
-<!-- End of CuterCounter Code -->
+<!-- Start of WebFreeCounter Code -->
+<a href="https://www.webfreecounter.com/" target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gurvpppxd&nd=9&style=38" border="0" alt="hit counter"></a>
+<!-- End of WebFreeCounter Code -->
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

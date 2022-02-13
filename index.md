@@ -19,9 +19,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br>
 <br>
 <h1 class="text-center">Categorys:</h1>
-<button class="list" href="games">Games</button>
-<button class="list" href="emulators">Emulators</button>
-<button class="list" href="bypass">Bypasses and Proxys</button>
+<a class="list" href="games">Games</a>
+<a class="list" href="emulators">Emulators</a>
+<a class="list" href="bypass">Bypasses and Proxys</a>
 <br>
 <footer>
   <p>Website is still a W.I.P, We are still working at bugs, so please be patient.</p>

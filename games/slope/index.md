@@ -2,6 +2,6 @@
 layout: game
 title: "Slope"
 ---
-<iframe src="https://files.twoplayergames.org/files/games/o4/Get_on_Top/" width="900" height="700" allowfullscreen>
-
+<iframe src="src/" width="900" height="700" allowfullscreen>
+<a href="src/">Fullscreen</a>
  

@@ -24,7 +24,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="bypass">Bypasses and Proxys</a>
 <br>
 <footer>
-  <p>Website is still a W.I.P, We are still working at bugs, so please be patient.</p>
 <a rel="license" style=" font-family: 'Ubuntu Mono', monospace;
    color: white;
    text-align: center;" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="display: block;

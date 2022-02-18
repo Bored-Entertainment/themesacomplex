@@ -4,6 +4,10 @@ title: "Home"
 ---
 <script type="text/javascript" src="js/splashtext.js"></script>
 <script type="text/javascript" src="js/consolelog.js"></script>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1455382176703207"
+     crossorigin="anonymous"></script>
+</head>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

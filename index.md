@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    color: white;
    text-align: center;" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="display: block;
    margin-left: auto;
-   margin-right: auto;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+   margin-right: auto;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

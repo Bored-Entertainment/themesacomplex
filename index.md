@@ -20,7 +20,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br>
 <h1 class="text-center">Categorys:</h1>
 <a class="list" href="games">Games</a>
-<p>  </p>
 <a class="list" href="emulators">Emulators</a>
 <br>
 <footer>
@@ -28,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    color: white;
    text-align: center;" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="display: block;
    margin-left: auto;
-   margin-right: auto;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></a>.
+   margin-right: auto;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

@@ -23,6 +23,7 @@ title: Games
             <li><a href="ctr/">Cut The Rope</a></li>
             <li><a href="custom-tetris/">Custom Tetris</a></li>
             <li><a href="desktoptd/">Desktop Tower Defense</a></li>
+            <li><a href="drifthunters/">Drift Hunters</a></li>
             <li><a href="dino/">Chrome Dino Run</a></li>
             <li><a href="duckhunt/">Duck Hunt</a></li>
             <li><a href="DuckLife/">Duck Life</a></li>

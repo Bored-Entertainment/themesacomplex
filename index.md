@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1455382176703207"
      crossorigin="anonymous"></script>
-<img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
+<img alt="bannerlogo" src="images/aaaarasdfasdfasdfasdfasdf.png" alt="bannerlogo" class="bannerlogo">
 <br>
 <p id="splash"></p>
 <br>

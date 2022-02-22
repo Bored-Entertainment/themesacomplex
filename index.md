@@ -27,12 +27,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="games">Games</a>
 <a class="list" href="emulators">Emulators</a>
 <a class="list" href="https://forum.mesacomplex.tk/">Forums</a>
-<footer>
-<a>Half-Life 3 Confirmed!</a>
 <br>
 <a>brought to you in part by:</a>
 <br>
 <p id="sponsor"></p>
+<footer>
+<a>Half-Life 3 Confirmed!</a>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

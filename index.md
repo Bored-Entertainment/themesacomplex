@@ -4,7 +4,6 @@ title: "Home"
 ---
 <script type="text/javascript" src="js/splashtext.js"></script>
 <script type="text/javascript" src="js/consolelog.js"></script>
-<script type="text/javascript" src="js/sponsortext.js"></script>
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1455382176703207"
      crossorigin="anonymous"></script>
@@ -28,12 +27,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="emulators">Emulators</a>
 <a class="list" href="https://forum.mesacomplex.tk/">Forums</a>
 <br>
+<br>
+<footer>
 <a>brought to you in part by:</a>
 <br>
 <p id="sponsor"></p>
-<br>
-<footer>
-<a>Half-Life 3 Confirmed!</a>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

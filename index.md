@@ -21,7 +21,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br>
 <p id="splash"></p>
 <br>
-<br>
 <h1 class="text-center">Categorys:</h1>
 <a class="list" href="games">Games</a>
 <a class="list" href="emulators">Emulators</a>

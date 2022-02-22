@@ -27,9 +27,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="https://forum.mesacomplex.tk/">Forums</a>
 <br>
 <footer>
-<a>brought to you in part by:</a>
+<h5>MesaComplex.tk is made possible in part by:</h5>
 <br>
-<p id="sponsor"></p>
+     <h4><p id="sponsor"></p></h4>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

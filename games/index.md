@@ -85,4 +85,4 @@ title: Games
 </p>
 <br>
 <br>
-<a href="todo.md">games we will add soon</a>
+<a href="todo/">games we will add soon</a>

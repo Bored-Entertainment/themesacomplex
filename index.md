@@ -30,8 +30,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <footer>
 <a>Half-Life 3 Confirmed!</a>
 <br>
-     <a>brought to you in part by:</a>
-     <p id="sponsor"></p>
+<a>brought to you in part by:</a>
+<br>
+<p id="sponsor"></p>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

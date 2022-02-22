@@ -54,8 +54,9 @@ title: Games
             <li><a href="ngr/">Newgrounds Rumble</a></li>
             <li><a href="pacman/">Pac-Man: Flash</a></li>
             <li><a href="pokemon/">Pokemon:Flash Edition</a></li>
-            <li><a href="pong/">V-Pong</a></li>
+            <li><a href="pong/">Pong</a></li>
             <li><a href="portalflash/">Portal: Flash Edition</a></li>
+            <li><a href="pottyracers/">Pottyracers</a></li>
             <li><a href="radius-raid/">Radius Raid</a></li>
             <li><a href="redball/">RedBall</a></li>
             <li><a href="RiddleSchool/">Riddle School Games</a></li>
@@ -77,7 +78,6 @@ title: Games
             <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>
             <li><a href="xx142-b2.exe/">XX142-bB.EXE</a></li>
             <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
-            <li><a href="pottyracers/">pottyracers</a></li>
         </ul>
     </div>
     <div class="col"></div>

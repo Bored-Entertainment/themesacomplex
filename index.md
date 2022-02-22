@@ -31,6 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a>brought to you in part by:</a>
 <br>
 <p id="sponsor"></p>
+<br>
 <footer>
 <a>Half-Life 3 Confirmed!</a>
 </footer>

@@ -27,7 +27,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="emulators">Emulators</a>
 <a class="list" href="https://forum.mesacomplex.tk/">Forums</a>
 <br>
-<br>
 <footer>
 <a>brought to you in part by:</a>
 <br>

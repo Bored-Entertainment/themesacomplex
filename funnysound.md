@@ -1,5 +1,8 @@
-<figure>
-<embed name="connectionterminated" src="connect.mp3" loop="true" hidden="true" autostart="true">
+---
+layout: default
+title: "Connection Terminated."
+---
+
 <p>Connection terminated.
 I'm sorry to interrupt you Elizabeth, if you still even remember that name. But I'm afraid you've been misinformed. You are not here to receive a gift, nor have you been called here by the individual you assume. Although you have indeed been called.
 
@@ -19,4 +22,8 @@ It's time to rest. For you, and for those you have carried in your arms.
 This ends for all of us.
 
 End communication.</p>
+<audio autoplay preload="auto" style=" width:300px;">
+	<source src="connect.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio><br />
 </figure>

@@ -1,5 +1,5 @@
 ---
 layout: game
-title: "Universal Paperclip"
+title: "a palace for fools"
 ---
-<embed src="yeehaw/" width="900" height="700" allowfullscreen>
+<embed src="index.html" width="900" height="700" allowfullscreen>

@@ -78,6 +78,7 @@ title: Games
             <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>
             <li><a href="xx142-b2.exe/">XX142-bB.EXE</a></li>
             <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
+            <li><a href="a palace for fools/">a palace for fools</a></li>
         </ul>
     </div>
     <div class="col"></div>

@@ -1,0 +1,700 @@
+<?xml version = "1.0"?>
+
+<localization lang="en">
+
+<dialogue id="general">
+<chunk>
+Enable audio?
+(Press ENTER to
+confirm.)
+</chunk>
+<chunk>
+Yes
+</chunk>
+<chunk>
+No
+</chunk>
+<chunk>
+Are you sure?
+</chunk>
+<chunk>
+No saved data
+found!
+</chunk>
+<chunk>
+You do not have 
+the map of this 
+area!
+</chunk>
+
+</dialogue>
+
+<dialogue id="beginning">
+
+<chunk>
+You wake up
+after a long
+state of un-
+consciousness.
+</chunk>
+
+<chunk>
+The only thing you
+remember is that
+you can move using
+the arrow keys and
+jump by pressing
+the Z key.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="npc1">
+<chunk>
+See that door
+frame? It is
+a portal that
+leads to the
+domain of The
+Eye.
+</chunk>
+
+<chunk>
+You need a
+blood gem
+to activate
+it, though.
+</chunk>
+
+</dialogue>
+
+<dialogue id="npc2">
+<chunk>
+All the people
+are dead. They
+died long time
+ago.
+</chunk>
+<chunk>
+When The Eye
+saw the palace,
+she killed them
+immediately.
+</chunk>
+<chunk>
+It was robots
+who finished
+building
+the palace.
+</chunk>
+</dialogue>
+
+<dialogue id="npc3">
+<chunk>
+The Eye lives
+in the sky.
+She did not
+kill her people
+because she was
+mad.
+</chunk>
+<chunk>
+She killed them
+because she was
+afraid.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="npc4">
+<chunk>
+They say The
+Shopkeeper is
+immortal.
+</chunk>
+<chunk>
+You cannot die
+if you have never
+been alive in the
+first place...
+</chunk>
+</dialogue>
+
+
+<dialogue id="npc5">
+
+<chunk>
+They say that 
+The Eye is not 
+a god, really.
+</chunk>
+
+<chunk>
+She is an
+apparatus
+created by
+people from
+the past.
+</chunk>
+
+<chunk>
+But who built
+her? And why?
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="npc6">
+
+<chunk>
+Most of us don't
+remember what we
+used to be.
+</chunk>
+
+<chunk>
+We were people,
+once. We used
+the power of
+blood gems to
+enter the domain
+of The Eye.
+</chunk>
+
+<chunk>
+We tried to
+challenge our
+old god. We
+failed.
+</chunk>
+
+
+</dialogue>
+
+
+<dialogue id="npc7">
+
+<chunk>
+We are immortal.
+It's a curse, not
+a gift.
+</chunk>
+
+<chunk>
+We cannot oppose
+our god. We can
+just... wait.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="npc8">
+
+<chunk>
+We built the
+robots to
+finish the
+palace if the
+people happen
+to die.
+</chunk>
+
+<chunk>
+However, we also
+programmed them
+to fight, just in
+case.
+</chunk>
+
+<chunk>
+Some of them
+went mad, some
+of them entered
+the domain of
+The Eye.
+</chunk>
+
+<chunk>
+But just like us,
+they failed.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="npc9">
+
+<chunk>
+We used that
+fire to craft
+blood gems.
+</chunk>
+
+<chunk>
+If you had 
+enough many
+blood shards,
+you could do
+the same.
+</chunk>
+
+<chunk>
+Just be quick,
+that fire might
+not burn for-
+ever.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="npc10">
+
+<chunk>
+This is the domain
+of The Eye. Some
+say this is the
+future.
+</chunk>
+
+<chunk>
+A future that
+will never
+happen, I hope.
+</chunk>
+
+</dialogue>
+
+
+
+<dialogue id="lever1_fail">
+<chunk>
+If you had all
+the BLOOD SHARDS,
+you could craft
+a BLOOD GEM here.
+</chunk>
+</dialogue>
+
+
+<dialogue id="lever0">
+<chunk>
+You have
+activated
+the time
+portals.
+</chunk>
+</dialogue>
+
+<dialogue id="lever1">
+<chunk>
+You obtain a
+BLOOD GEM!
+</chunk>
+</dialogue>
+
+<dialogue id="lever2">
+<chunk>
+Destroy the
+world and 
+create a 
+new one?
+</chunk>
+</dialogue>
+
+
+
+<dialogue id="enter_final">
+<chunk>
+You can use 
+BLOOD GEM to 
+enter this 
+portal.
+</chunk>
+
+<chunk>
+However, you 
+cannot come 
+back.
+</chunk>
+
+<chunk>
+Proceed?
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="story">
+<chunk>
+A long time ago
+people worshipped
+a god they called
+"The Eye".
+</chunk>
+
+<chunk>
+She watched over
+her people and
+protected them
+from evil.
+</chunk>
+
+<chunk>
+But centuries
+passed and
+people thought
+they need a
+god no longer, 
+</chunk>
+
+<chunk>
+They built a
+huge flying
+palace to
+rival their
+own god.
+</chunk>
+
+<chunk>
+It was a mistake.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="ending">
+
+<chunk>
+And so the 
+old world was 
+destroyed and 
+a new one was 
+created.
+</chunk>
+
+<chunk>
+A new world 
+without
+The Eye...
+</chunk>
+
+<chunk>
+A new world 
+without
+you...
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item32">
+<chunk>
+You obtain a
+"BLOOD SHARD!"
+</chunk>
+<chunk>
+Only %d more 
+to go!
+</chunk>
+</dialogue>
+
+<dialogue id="item32_op">
+<chunk>
+You obtain a
+"BLOOD SHARD!"
+</chunk>
+<chunk>
+Now you have 
+them all!
+</chunk>
+</dialogue>
+
+
+<dialogue id="item0">
+
+<chunk>
+You obtain a
+"HEART
+CONTAINER!"
+</chunk>
+
+<chunk>
+It increases
+your life by 1!
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item1">
+
+<chunk>
+You obtain a
+"HAND CANNON"!
+</chunk>
+
+<chunk>
+Press X to shoot
+something green.
+Laser? Plasma?
+Who cares!
+</chunk>
+
+</dialogue>
+
+<dialogue id="item2">
+
+<chunk>
+You obtain a jar
+of "LUBRICANT"!
+</chunk>
+
+<chunk>
+Press DOWN + Z
+to slide like a
+pro!
+</chunk>
+
+</dialogue>
+
+<dialogue id="item3">
+
+<chunk>
+You obtain a
+"DIVING SUIT"!
+</chunk>
+
+<chunk>
+It lets you
+touch water
+without dying.
+Cool, right?
+</chunk>
+
+</dialogue>
+
+<dialogue id="item4">
+
+<chunk>
+You obtain a
+"ROCKET PACK V1!"
+</chunk>
+
+<chunk>
+Hold Z while on
+air to to use it.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item5">
+
+<chunk>
+You obtain a 
+"ROCKET PACK V2!"
+</chunk>
+
+<chunk>
+It can take you
+to new heights!
+Literally.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item6">
+
+<chunk>
+You obtain an
+"IMPROVED HAND
+CANNON!"
+</chunk>
+
+<chunk>
+Hold X after 
+shooting to 
+charge a... 
+charge shot.
+</chunk>
+
+<chunk>
+Release X to
+shoot it. It can 
+break walls you
+couldn't break 
+before!
+</chunk>
+
+</dialogue>
+
+
+
+<dialogue id="item16">
+
+<chunk>
+You obtain a
+"RUSTY KEY"!
+</chunk>
+
+<chunk>
+Despite being
+rusty, it can
+still open 
+locks. Maybe.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item17">
+
+<chunk>
+You obtain an
+"UP-TO-DATE MAP"!
+</chunk>
+
+<chunk>
+Press Shift to
+open the map.
+Does not work in 
+the past.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item18">
+
+<chunk>
+You obtain a
+pair of 
+"RUNNING BOOTS"!
+</chunk>
+
+<chunk>
+Now you can run 
+and climb faster.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item19">
+
+<chunk>
+You obtain a
+"SHIELD"!
+</chunk>
+
+<chunk>
+It protects you
+from powerful
+attacks.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="item20">
+
+<chunk>
+You obtain a
+"BOXING GLOVE"!
+</chunk>
+
+<chunk>
+For some reason 
+it makes your 
+bullets more 
+powerful.
+</chunk>
+
+</dialogue>
+
+
+
+<dialogue id="item21">
+
+<chunk>
+Wait what you
+shouldn't be
+seeing this.
+</chunk>
+
+<chunk>
+Report the dev,
+please.
+</chunk>
+
+</dialogue>
+
+
+
+<dialogue id="item22">
+
+<chunk>
+You obtain an
+"OUTDATED MAP"!
+</chunk>
+
+<chunk>
+Press R.Shift to
+open the map. 
+Does not work in
+the present.
+</chunk>
+
+</dialogue>
+
+
+<dialogue id="shop">
+
+<chunk>
+You cannot afford
+that.
+</chunk>
+
+<chunk>
+Buy this item for
+%d gems?
+</chunk>
+
+</dialogue>
+
+
+
+<dialogue id="savepoint">
+
+<chunk>
+Do you want to
+save your 
+progress?
+</chunk>
+
+<chunk>
+Game saved
+successfully!
+</chunk>
+
+<chunk>
+Failed to save
+the game!
+</chunk>
+
+<chunk>
+Error
+occurred!
+</chunk>
+
+
+</dialogue>
+
+
+</localization>

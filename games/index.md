@@ -11,6 +11,7 @@ title: Games
             <li><a href="3Dchess/">3DChess</a></li>
             <li><a href="2048/">2048</a></li>
             <li><a href="achievement_unlocked/">Achivement Unlocked</a></li>
+            <li><a href="a palace for fools/">A palace for fools</a></li>
             <li><a href="adg/">Action Driving Game</a></li>
             <li><a href="alienhominid/">Alien Hominid</a></li>
             <li><a href="bbs/">Bang, Boom, Splat!</a></li>
@@ -28,6 +29,7 @@ title: Games
             <li><a href="duckhunt/">Duck Hunt</a></li>
             <li><a href="DuckLife/">Duck Life</a></li>
             <li><a href="fbf/">Factory Balls Forever</a></li>
+            <li><a href="fnaf/">Five Nights at Freddys</a></li>
             <li><a href="fnf/">Friday Night Funkin&#39;&#39;</a></li>
             <li><a href="FruitNinja/">Fruit Ninja</a></li>
             <li><a href="fullscreenmario/">FullScreen Mario</a></li>
@@ -78,7 +80,6 @@ title: Games
             <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>
             <li><a href="xx142-b2.exe/">XX142-bB.EXE</a></li>
             <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
-            <li><a href="a palace for fools/">a palace for fools</a></li>
         </ul>
     </div>
     <div class="col"></div>

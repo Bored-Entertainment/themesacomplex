@@ -45,6 +45,35 @@ h2 {
     margin-right: auto;
     width: 50%;
 }
+
+.ascii {
+    color: green;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.blackbg {
+    background-color: black;
+}
+
+.consoletext {
+    color: green;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#play {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#pause {
+    color: green;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 button {
     background-color:#23272a;
     font-family: 'Ubuntu Mono', monospace;

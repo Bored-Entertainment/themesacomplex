@@ -6,4 +6,4 @@
 <br>
 # themesacomplex
 funny jekyll site,
-bored in school right now 2.0 or something
+bored in school right now/schoolgrounds/dirtcool/etc. 2.0 or something

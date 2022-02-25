@@ -1,0 +1,15 @@
+.ascii {
+    color: green;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+    background-color: black !important;
+}
+
+.consoletext {
+    color: green;
+    font-family: 'Ubuntu Mono', monospace;
+}

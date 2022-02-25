@@ -2,7 +2,7 @@
 layout: connect
 title: "Connection Terminated"
 ---
-<script type="text/javascript" src="js\connectionterminated.js"></script>
+<script type="text/javascript" src="connectionterminated.js"></script>
 <!-- Google Tag Manager -->
 <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -83,7 +83,7 @@ End communication.
 <source src="connect.mp3" type="audio/mp3">
 Your browser does not support the audio element.
 </audio>
-<img id="play" src="info\about\greymesa\connectionterminated\play.png">
+<img id="play" src="play.png">
 <p id="pause">No Pausing.</p>
 </body>                                                                                 
                                                                                           

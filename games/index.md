@@ -80,6 +80,8 @@ title: Games
             <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>
             <li><a href="xx142-b2.exe/">XX142-bB.EXE</a></li>
             <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
+            <li><a href="badtimesim/">bad time simulator</a></li>
+            <br>
             <li><a href="todo/">games we will add soon</a></li>
         </ul>
     </div>

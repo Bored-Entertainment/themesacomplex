@@ -1,12 +1,12 @@
 ---
 layout: game
-title: "Alien Hominid"
+title: "dad n me"
 ---
 
 <object width="100" height="100">
-    <embed src="alien_hominid.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="" wmode="window" width="650" height="575" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+    <embed src="dad N me.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="" wmode="window" width="650" height="575" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
 </object>
 
 <br>
 
-<a href="alien_hominid.swf" download class="btn btn-secondary">Download</a>
+<a href="dad N me.swf" download class="btn btn-secondary">Download</a>

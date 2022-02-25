@@ -1,4 +1,7 @@
---- title: "Connection Terminated" ---
+--- 
+layout: connect
+title: "Connection Terminated"
+---
 <script type="text/javascript" src="js\connectionterminated.js"></script>
 <!-- Google Tag Manager -->
 <script>

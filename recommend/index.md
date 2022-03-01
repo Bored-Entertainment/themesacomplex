@@ -7,7 +7,7 @@ title: Games
     <div class="col"></div>
     <div class="col text-start">
         <ul>
-            <li><a href="https://portablemc.ml">PortableMC</a></li>
+            <li><a href="https://portablemc.ml">PortableMC (Minecraft In School)</a></li>
             <li><a href="/games/slope">Slope</a></li>
             <li><a href="/games/getontop">Get On Top</a></li>
             <li><a href="/games/hl">Half-Life</a></li>

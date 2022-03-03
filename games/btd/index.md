@@ -1,12 +1,12 @@
 ---
 layout: game
-title: "Bloons Tower Defense"
+title: "funny monke game lore trilogy"
 ---
 
-<object width="100" height="100">
-    <embed src="bloonstd_moved.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="" wmode="window" width="600" height="500" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-</object>
-
-<br>
-
-<a href="bloonstd_moved.swf" download class="btn btn-secondary">Download</a>
+<ul>
+    <li><a href="btd1/">bloons td OG</a></li>
+    <li><a href="btd2/">bloons td 2 (not working)</a></li>
+    <li><a href="btd3/">bloons td 3 (not working)</a></li>
+    <li><a href="btd4/">bloons td 4 (not working)</a></li>
+    <li><a href="btd5/">bloons td 5 (not working)</a></li>
+</ul>

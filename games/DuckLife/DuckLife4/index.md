@@ -1,6 +1,6 @@
 ---
 layout: game
-title: "Duck Life 3"
+title: "Duck Life 4"
 ---
 
 <object width="100" height="100">

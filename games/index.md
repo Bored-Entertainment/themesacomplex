@@ -84,6 +84,7 @@ title: Games
             <li><a href="dadnme/">dad n' me</a></li>
             <li><a href="sugarsugar/">sugarsugar</a></li>
             <li><a href="snailbob/">snail bob</a></li>
+            <li><a href="tinytactics/">tiny tactics</a></li>
             <br>
             <li><a href="todo/">games we will add soon</a></li>
         </ul>

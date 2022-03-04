@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      crossorigin="anonymous"></script>
 <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <br>
-<marquee scrollamount="12"><p id="splash"></p></marquee>
+<p id="splash"></p>
 <br>
 <h1 class="text-center">Categorys:</h1>
 <a class="list" href="games">Games</a>

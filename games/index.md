@@ -86,7 +86,7 @@ title: Games
             <li><a href="snailbob/">snail bob</a></li>
             <li><a href="tinytactics/">tiny tactics</a></li>
             <br>
-            <li><a href="todo/">games we will add soon</a></li>
+            <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">suggest games!</a></li>
         </ul>
     </div>
     <div class="col"></div>

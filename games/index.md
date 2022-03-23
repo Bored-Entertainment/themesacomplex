@@ -74,7 +74,7 @@ title: Games
             <li><a href="super-smash-flash/">Super Smash Flash</a></li>
             <li><a href="tetris/">Tetris: Flash Edition</a></li>
             <li><a href="thereisnogame/">There is No Game</a></li>
-            <li><a href="universal-paperclip/">Universal Paperclips</a></li>
+            <li><a href="universal-paperclips/">Universal Paperclips</a></li>
             <li><a href="winmister/">Windows Mister</a></li>
             <li><a href="WorldHardestGame/">The World&#39;s Hardest Game</a></li>
             <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>

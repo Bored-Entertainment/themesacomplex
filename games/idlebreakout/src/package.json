@@ -1,0 +1,22 @@
+{
+  "name": "idle-breakout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --env.dev --inline",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "p2": "^0.7.1",
+    "phaser": "^2.6.2"
+  },
+  "devDependencies": {
+    "script-loader": "^0.7.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

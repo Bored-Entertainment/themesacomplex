@@ -2,9 +2,16 @@
 layout: default
 title: "Home"
 ---
+
 <script type="text/javascript" src="js/splashtext.js"></script>
 <script type="text/javascript" src="js/consolelog.js"></script>
 <head>
+<script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CUI477C5" async="async"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1455382176703207"
      crossorigin="anonymous"></script>
 </head>

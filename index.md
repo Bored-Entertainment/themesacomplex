@@ -28,10 +28,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br>
 <a class="recommend" href="recommend">MesaComplex Recommendations</a>
 <br>
-<footer>
-<a>brought to you in part by:</a>
-<br>
-<p id="sponsor"></p>
 <div id="514763859">
     <script type="text/javascript">
         try {
@@ -42,6 +38,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         catch (error) {}
     </script>
 </div>
+<footer>
+<a>brought to you in part by:</a>
+<br>
+<p id="sponsor"></p>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

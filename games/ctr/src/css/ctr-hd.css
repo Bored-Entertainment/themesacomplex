@@ -2,7 +2,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  margin:0;
  padding:0;
  border:0;
- font-size:100%;
+ font-size:50%;
  font:inherit;
  vertical-align:baseline;
  -ms-content-zooming:none
@@ -74,8 +74,8 @@ a:active,a:focus {
  padding-left:10px
 }
 #loaderCanvasHost {
- width:100%;
- height:100%;
+ width:50%;
+ height:50%;
  position:absolute;
  top:0;
  left:0
@@ -115,8 +115,8 @@ body {
  -ms-touch-action:none
 }
 #bg {
- width:100%;
- height:100%;
+ width:50%;
+ height:50%;
  position:absolute;
  top:0;
  left:0;
@@ -198,7 +198,7 @@ footer .zeptoLogo {
 }
 table {
  margin-bottom:30px;
- width:100%
+ width:50%
 }
 tbody tr:nth-child(odd) {
  background-color:rgba(0,0,0,.1)
@@ -936,7 +936,7 @@ body {
 	position: absolute;
 	top: 188px;
 	left: 0;
-	width: 100%;
+	width: 50%;
 	text-align: center
 }
 

@@ -17,6 +17,7 @@ title: Games
             <li><a href="bbs/">Bang, Boom, Splat!</a></li>
             <li><a href="bloxors/">Bloxors</a></li>
             <li><a href="bowman/">Bowman</a></li>
+            <li><a href="boxhead/">boxheads: collectors edition</a></li>
             <li><a href="btd/">Bloons Tower Defense</a></li>
             <li><a href="candybox/">Candybox</a></li>
             <li><a href="candybox2/">Candybox 2</a></li>
@@ -87,6 +88,9 @@ title: Games
             <li><a href="tinytactics/">tiny tactics</a></li>
             <li><a href="3dmari0/">3d mari0</a></li>
             <li><a href="pvz/">plants vs zombies</a></li>
+            <li><a href="interactivebuddy/">interactive buddy</a></li>
+            <li><a href="learntofly/">learn to fly</a></li>
+            <li><a href="spewer/">spewer</a></li>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">suggest games!</a></li>
         </ul>

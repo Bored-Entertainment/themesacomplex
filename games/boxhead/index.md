@@ -1,6 +1,6 @@
 ---
 layout: game
-title: "boxheads: full trilogy"
+title: "boxheads: collectors edition"
 ---
 
 <ul>

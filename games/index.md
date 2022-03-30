@@ -91,6 +91,9 @@ title: Games
             <li><a href="interactivebuddy/">interactive buddy</a></li>
             <li><a href="learntofly/">learn to fly</a></li>
             <li><a href="spewer/">spewer</a></li>
+            <li><a href="cursor10/">cursor*10</a></li>
+            <li><a href="vvvvvv/">vvvvvv</a></li>
+            <li><a href="timefcuk/">time fcuk</a></li>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">suggest games!</a></li>
         </ul>

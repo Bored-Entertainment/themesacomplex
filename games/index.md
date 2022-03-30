@@ -88,6 +88,9 @@ title: Games
             <li><a href="3dmari0/">3d mari0</a></li>
             <li><a href="hobo/">hobo cinematic universe (1-4)</a></li>
             <li><a href="/games/onac">One Night At Cheems Series</a></li>
+            <li><a href="/games/learntofly">learn to fly: full dvd boxset</a></li>
+            <li><a href="/games/interactivebuddy">interactive buddy</a></li>
+            <li><a href="/games/boxhead">boxheads: collectors edition</a></li>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">suggest games!</a></li>
         </ul>

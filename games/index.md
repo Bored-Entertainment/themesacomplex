@@ -59,6 +59,7 @@ title: Games
             <li><a href="pokemon/">Pokemon:Flash Edition</a></li>
             <li><a href="pong/">Pong</a></li>
             <li><a href="portalflash/">Portal: Flash Edition</a></li>
+            <li><a href="portal2flash/">Portal 2: Flash Edition</a></li>
             <li><a href="pottyracers/">Pottyracers</a></li>
             <li><a href="radius-raid/">Radius Raid</a></li>
             <li><a href="redball/">RedBall</a></li>
@@ -81,21 +82,23 @@ title: Games
             <li><a href="xtractpaperclip/">X-Tract Paperclip</a></li>
             <li><a href="xx142-b2.exe/">XX142-bB.EXE</a></li>
             <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
-            <li><a href="badtimesim/">bad time simulator</a></li>
-            <li><a href="dadnme/">dad n' me</a></li>
-            <li><a href="sugarsugar/">sugarsugar</a></li>
-            <li><a href="snailbob/">snail bob</a></li>
-            <li><a href="tinytactics/">tiny tactics</a></li>
-            <li><a href="3dmari0/">3d mari0</a></li>
-            <li><a href="pvz/">plants vs zombies</a></li>
-            <li><a href="interactivebuddy/">interactive buddy</a></li>
-            <li><a href="learntofly/">learn to fly</a></li>
-            <li><a href="spewer/">spewer</a></li>
-            <li><a href="cursor10/">cursor*10</a></li>
-            <li><a href="vvvvvv/">vvvvvv</a></li>
-            <li><a href="timefcuk/">time fcuk</a></li>
+            <li><a href="dadnme/">Dad n' me</a></li>
+            <li><a href="sugarsugar/">Sugarsugar</a></li>
+            <li><a href="snailbob/">Snail Bob</a></li>
+            <li><a href="tinytactics/">Tiny Tactics</a></li>
+            <li><a href="3dmari0/">3D Mari0</a></li>
+            <li><a href="interactivebuddy/">Interactive Buddy</a></li>
+            <li><a href="learntofly/">Learn to Fly</a></li>
+            <li><a href="spewer/">Spewer</a></li>
+            <li><a href="cursor10/">Cursor*10</a></li>
+            <li><a href="retro-bowl/">Retro Bowl</a></li>
+            <li><a href="ritz/">Ritz</a></li>
+            <li><a href="osu/">osu!</a></li>
+            <li><a href="vex/">Vex</a></li>
+            <li><a href="microsoft-flight-simulator/">Microsoft Flight Simulator</a></li>
+            <li><a href="idlebreakout/">Idle Breakout</a></li>
             <br>
-            <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">suggest games!</a></li>
+            <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</a></li>
         </ul>
     </div>
     <div class="col"></div>

@@ -1,4 +1,4 @@
----
+how to colo---
 layout: game
 title: Games
 ---
@@ -97,6 +97,7 @@ title: Games
             <li><a href="vex/">Vex</a></li>
             <li><a href="microsoft-flight-simulator/">Microsoft Flight Simulator</a></li>
             <li><a href="idlebreakout/">Idle Breakout</a></li>
+            <li><a href="egg_ascent/">Egg Ascent</a></li><p style="color:##EF883C";>[MESACOMPLEX SEMIEXCLUSIVE!]</p>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</a></li>
         </ul>

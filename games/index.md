@@ -1,4 +1,4 @@
-how to colo---
+---
 layout: game
 title: Games
 ---
@@ -102,6 +102,7 @@ title: Games
             <li><a href="pandemic/">Pandemic</a></li>
             <li><a href="pokeclicker/">Pokeclicker</a></li>
             <li><a href="effingworms/">Effing Worms</a></li>
+            <li><a href="homestarrunner/">homestarruner.com</a></li>
             <li><a href="egg_ascent/">Egg Ascent</a></li><p style="color:##EF883C";>[MESACOMPLEX SEMIEXCLUSIVE!]</p>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</a></li>

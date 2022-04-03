@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from jellymar.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2019 05:15:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10433828-16"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-10433828-16');
+    </script>
+    <title>Jelly Mario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="twitter:creator" content="@schteppe" />
+    <meta property="og:title" content="Jelly Mario" />
+    <meta property="og:description" content="Something is VERY wrong in the Mushroom Kingdom..." />
+    <meta property="og:url" content="http://jellymar.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://jellymar.io/jelly-mario.gif" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="400" />
+
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            color: white;
+            font-family: "Lucida Grande", sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            text-align: center;
+            background-color: #000000;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /*
+        @media screen and (min-aspect-ratio: 256/240) {
+            canvas {
+                overflow-y: auto;
+                height: 100%;
+            }
+        }
+
+        @media screen and (max-aspect-ratio: 256/240) {
+            canvas {
+                overflow-x: auto;
+                width: 100%;
+            }
+        }
+        */
+
+        #container-container {
+            width:100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #adcontainer {
+            height: 100%;
+            width: 300px;
+            background-color:red;
+        }
+
+        #container {
+            /*
+            width:100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            */
+            overflow: hidden;
+        }
+
+        #loading, #mobile-info {
+            width:100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mobile-info {
+            display:none;
+            flex-direction: column;
+        }
+
+        #toggleSound {
+            left: 5px;
+            bottom: 5px;
+            position: absolute;
+        }
+
+        #info {
+            right: 5px;
+            bottom: 5px;
+            position: absolute;
+        }
+
+        #version {
+            top: 5px;
+            right: 5px;
+            position: absolute;
+        }
+
+        #hashtag {
+            top: 5px;
+            left: 5px;
+            position: absolute;
+            display: table;
+        }
+        #hashtag * {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div id="mobile-info">
+    <p id="mobile-info-message">Jelly Mario does not work on mobile, sorry :(</p>
+</div>
+
+<div id="loading">
+Loading&nbsp;<span id="loadedPercent">0</span>%
+</div>
+
+<div id="toggleSound">
+    Sound <input id="toggleSoundCheckbox" type="checkbox" checked="checked" value="1"/>
+</div>
+
+<div id="hashtag">
+    <table>
+        <td><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Something is VERY wrong in the Mushroom Kingdom... Play Jelly Mario!" data-hashtags="jellymario" data-related="schteppe" data-show-count="false">Tweet</a><script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script></td>
+        <td>#jellymario</td>
+    </table>
+</div>
+
+<div id="info">
+    Made by <a href="https://twitter.com/schteppe">@schteppe</a>
+</div>
+
+<div id="version">
+r14 (pre-alpha)
+</div>
+
+<table width="100%" height="100%" style="table-layout:fixed; border: none;" cellspacing="0" cellpadding="0">
+    <tr>
+        <td id="container"></td>
+    </tr>
+</table>
+
+<script src="lib/three.min.js"></script>
+<script src="lib/stats.min.js"></script>
+<script src="lib/dat.gui.min.js"></script>
+<script src="build/main.js"></script>
+</body>
+
+<!-- Mirrored from jellymar.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2019 05:15:34 GMT -->
+</html>

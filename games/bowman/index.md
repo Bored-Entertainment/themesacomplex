@@ -1,12 +1,10 @@
 ---
 layout: game
-title: "Bow man"
+title: "funny monke game lore trilogy"
 ---
 
-<object width="100" height="100">
-    <embed src="bowman.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="window" width="400" height="300" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-</object>
+<ul>
+    <li><a href="bowman1/">Bowman</a></li>
+    <li><a href="bowman2/">Bowman 2</a></li>
 
-<br>
-
-<a href="bowman.swf" download class="btn btn-secondary">Download</a>
+</ul>

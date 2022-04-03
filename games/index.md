@@ -99,6 +99,7 @@ title: Games
             <li><a href="idlebreakout/">Idle Breakout</a></li>
             <li><a href="jellymario/">Jelly Mario</a></li>
             <li><a href="gravitytetris/">Gravity Tetris</a></li>
+            <li><a href="pandemic/">Pandemic</a></li>
             
             <li><a href="egg_ascent/">Egg Ascent</a></li><p style="color:##EF883C";>[MESACOMPLEX SEMIEXCLUSIVE!]</p>
             <br>

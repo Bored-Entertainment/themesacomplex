@@ -22,28 +22,29 @@ title: Games
             <li><a href="candybox/">Candybox</a></li>
             <li><a href="candybox2/">Candybox 2</a></li>
             <li><a href="cookieclicker/">Cookie Clicker</a></li>
-            <li><a href="ctr/">Cut The Rope</a></li>
+            <li><a href="ctr/">Cut The Rope (experimental)</a></li>
             <li><a href="custom-tetris/">Custom Tetris</a></li>
             <li><a href="desktoptd/">Desktop Tower Defense</a></li>
-            <li><a href="drifthunters/">Drift Hunters</a></li>
+            <li><a href="drifthunters/">Drift Hunters (experimental)</a></li>
             <li><a href="dino/">Chrome Dino Run</a></li>
             <li><a href="duckhunt/">Duck Hunt</a></li>
             <li><a href="DuckLife/">Duck Life</a></li>
             <li><a href="electricman2/">Electricman 2</a></li>
+            <li><a href="DuckLife/">Duck Life (experimental)</a></li>
             <li><a href="fbf/">Factory Balls Forever</a></li>
             <li><a href="fnaf/">Five Nights at Freddys</a></li>
-            <li><a href="fnf/">Friday Night Funkin&#39;&#39;</a></li>
+            <li><a href="fnf/">Friday Night Funkin&#39;&#39; (experimental)</a></li>
             <li><a href="FruitNinja/">Fruit Ninja</a></li>
             <li><a href="fullscreenmario/">FullScreen Mario</a></li>
             <li><a href="galaga/">Galaga</a></li>
             <li><a href="gdash/">Geometry Dash</a></li>
             <li><a href="getontop/">Get On Top</a></li>
             <li><a href="gpacman/">Google Pac-Man</a></li>
-            <li><a href="henrystikmin/">Henry Stikmin</a></li>
+            <li><a href="henrystikmin/">Henry Stikmin (experimental)</a></li>
             <li><a href="HexGL/">HexGL</a></li>
-            <li><a href="hl/">Half-Life</a></li>
+            <li><a href="hl/">Half-Life (experimental)</a></li>
             <li><a href="iq/">Impossible Quiz</a></li>
-            <li><a href="issac/">The Binding of Issac</a></li>
+            <li><a href="issac/">The Binding of Issac (experimental)</a></li>
             <li><a href="linerider/">Line Rider</a></li>
             <li><a href="mari0/">Mari0</a></li>
             <li><a href="marioclone/">Mario Clone</a></li>
@@ -55,12 +56,13 @@ title: Games
             <li><a href="minecraftjs/">Minecraft: JS Edition</a></li>
             <li><a href="minesweeper/">MineSweeper</a></li>
             <li><a href="mtd2/">Minecraft Tower Defense 2</a></li>
-            <li><a href="ngr/">Newgrounds Rumble</a></li>
+            <li><a href="ngr/">Newgrounds Rumble (experimental)</a></li>
             <li><a href="pacman/">Pac-Man: Flash</a></li>
             <li><a href="pokemon/">Pokemon:Flash Edition</a></li>
             <li><a href="pong/">Pong</a></li>
             <li><a href="portalflash/">Portal: Flash Edition</a></li>
-            <li><a href="pottyracers/">Pottyracers</a></li>
+            <li><a href="portal2flash/">Portal 2: Flash Edition</a></li>
+            <li><a href="pottyracers/">Pottyracers (experimental)</a></li>
             <li><a href="radius-raid/">Radius Raid</a></li>
             <li><a href="redball/">RedBall</a></li>
             <li><a href="RiddleSchool/">Riddle School Games</a></li>
@@ -75,7 +77,7 @@ title: Games
             <li><a href="streetfighter/">Street Fighter Alpha</a></li>
             <li><a href="super-smash-flash/">Super Smash Flash</a></li>
             <li><a href="tetris/">Tetris: Flash Edition</a></li>
-            <li><a href="thereisnogame/">There is No Game</a></li>
+            <li><a href="thereisnogame/">There is No Game (experimental)</a></li>
             <li><a href="universal-paperclips/">Universal Paperclips</a></li>
             <li><a href="winmister/">Windows Mister</a></li>
             <li><a href="WorldHardestGame/">The World&#39;s Hardest Game</a></li>
@@ -95,12 +97,39 @@ title: Games
             <li><a href="cursor10/">cursor*10</a></li>
             <li><a href="vvvvvv/">vvvvvv</a></li>
             <li><a href="timefcuk/">time f</a></li>
+            <li><a href="dadnme/">Dad n' me</a></li>
+            <li><a href="sugarsugar/">Sugarsugar (experimental)</a></li>
+            <li><a href="snailbob/">Snail Bob (experimental)</a></li>
+            <li><a href="tinytactics/">Tiny Tactics</a></li>
+            <li><a href="3dmari0/">3D Mari0</a></li>
+            <li><a href="interactivebuddy/">Interactive Buddy</a></li>
+            <li><a href="learntofly/">Learn to Fly (experimental)</a></li>
+            <li><a href="spewer/">Spewer (experimental)</a></li>
+            <li><a href="cursor10/">Cursor*10</a></li>
+            <li><a href="retro-bowl/">Retro Bowl</a></li>
+            <li><a href="ritz/">Ritz</a></li>
+            <li><a href="osu/">osu! (experimental)</a></li>
+            <li><a href="vex/">Vex</a></li>
+            <li><a href="microsoft-flight-simulator/">Microsoft Flight Simulator</a></li>
+            <li><a href="idlebreakout/">Idle Breakout</a></li>
+            <li><a href="jellymario/">Jelly Mario</a></li>
+            <li><a href="gravitytetris/">Gravity Tetris</a></li>
+            <li><a href="pandemic/">Pandemic</a></li>
+            <li><a href="pokeclicker/">Pokeclicker</a></li>
+            <li><a href="effingworms/">Effing Worms</a></li>
+            <li><a href="homestarrunner/">homestarruner.com</a></li>
+            <li><a href="onac/">One Night at Cheems</a></li>
+            <li><a href="blueball/">Blueball's Cool Adventure</a></li>
+            <li><a href="pico8/">Pico-8 Games</a></li>
+            <li><a href="celeste/">Celeste Games</a></li>
+            <li><a href="egg_ascent/">Egg Ascent</a><p style="color:##EF883C";>[MESACOMPLEX SEMIEXCLUSIVE!]</p></li>
             <br>
-            <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">suggest games!</a></li>
+            <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</a></li>
         </ul>
     </div>
     <div class="col"></div>
 </div>
 </p>
 <br>
+<p>if something is tagged "experimental," it may not work, or is unstable.</p>
 <br>

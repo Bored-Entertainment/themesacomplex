@@ -29,6 +29,7 @@ title: Games
             <li><a href="dino/">Chrome Dino Run</a></li>
             <li><a href="duckhunt/">Duck Hunt</a></li>
             <li><a href="DuckLife/">Duck Life</a></li>
+            <li><a href="electricman2/">Electricman 2</a></li>
             <li><a href="fbf/">Factory Balls Forever</a></li>
             <li><a href="fnaf/">Five Nights at Freddys</a></li>
             <li><a href="fnf/">Friday Night Funkin&#39;&#39;</a></li>
@@ -93,7 +94,7 @@ title: Games
             <li><a href="spewer/">spewer</a></li>
             <li><a href="cursor10/">cursor*10</a></li>
             <li><a href="vvvvvv/">vvvvvv</a></li>
-            <li><a href="timefcuk/">time fcuk</a></li>
+            <li><a href="timefcuk/">time f</a></li>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">suggest games!</a></li>
         </ul>

@@ -133,3 +133,7 @@ title: Games
 <br>
 <p>if something is tagged "experimental," it may not work, or is unstable.</p>
 <br>
+<footer>
+<p>n1swordslashers chat!</p>
+<embed src="chat/" width="900" height="700" allowfullscreen>
+</footer>

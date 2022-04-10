@@ -135,5 +135,5 @@ title: Games
 <br>
 <footer>
 <p>n1swordslashers chat!</p>
-<iframe src="chat2/index.html" width="100%" height="790px" frameBorder="0" style="border: 0;"></iframe>
+ <embed src="chat2/" width="900" height="700" allowfullscreen>
 </footer>

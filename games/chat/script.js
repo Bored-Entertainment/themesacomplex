@@ -130,3 +130,9 @@ function addMessageToListDOM(text, member) {
     el.scrollTop = el.scrollHeight - el.clientHeight;
   }
 }
+// PS! Replace this with your own channel ID
+// If you use this channel ID your app will stop working in the future
+const CLIENT_ID = '8e0kVroe3TnQ5VGY';
+
+const drone = new ScaleDrone(CLIENT_ID, {
+  data: { // Will be sent out as clientData via events

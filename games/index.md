@@ -135,5 +135,17 @@ title: Games
 <br>
 <footer>
 <p>n1swordslashers chat!</p>
-<embed src="chat/" width="900" height="700" allowfullscreen>
+                      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+                      <script type="text/javascript">
+                      $(function(){
+                          $('#button').click(function(){ 
+                              if(!$('#iframe').length) {
+                                      $('#iframeHolder').html(' <iframe src="chat/index.html" width="100%" height="790px" frameBorder="0" style="border: 0;"></iframe></a>');
+                              }
+                          });   
+                      });
+                      </script>
+                       
+                      <button id="button">Load Chat Page</button>
+                      <div id="iframeHolder"></div>
 </footer>

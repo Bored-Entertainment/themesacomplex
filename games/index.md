@@ -64,7 +64,6 @@ title: Games
             <li><a href="portal2flash/">Portal 2: Flash Edition</a></li>
             <li><a href="pottyracers/">Pottyracers (experimental)</a></li>
             <li><a href="radius-raid/">Radius Raid</a></li>
-            <li><a href="redball/">RedBall</a></li>
             <li><a href="RiddleSchool/">Riddle School Games</a></li>
             <li><a href="sansfight/">Sans Fight</a></li>
             <li><a href="sleeping-beauty/">Sleeping Beauty</a></li>
@@ -90,7 +89,6 @@ title: Games
             <li><a href="snailbob/">snail bob</a></li>
             <li><a href="tinytactics/">tiny tactics</a></li>
             <li><a href="3dmari0/">3d mari0</a></li>
-            <li><a href="pvz/">plants vs zombies</a></li>
             <li><a href="interactivebuddy/">interactive buddy</a></li>
             <li><a href="learntofly/">learn to fly</a></li>
             <li><a href="spewer/">spewer</a></li>
@@ -105,7 +103,6 @@ title: Games
             <li><a href="interactivebuddy/">Interactive Buddy</a></li>
             <li><a href="learntofly/">Learn to Fly (experimental)</a></li>
             <li><a href="spewer/">Spewer (experimental)</a></li>
-            <li><a href="cursor10/">Cursor*10</a></li>
             <li><a href="retro-bowl/">Retro Bowl</a></li>
             <li><a href="ritz/">Ritz</a></li>
             <li><a href="osu/">osu! (experimental)</a></li>

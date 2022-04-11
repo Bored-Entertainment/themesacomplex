@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="games">Games</a>
 <a class="list" href="emulators">Emulators</a>
 <a class="list" href="https://forum.mesacomplex.tk/">Forums</a>
-<a class="list" href="https://mesacomplex.tk/credits">credits</a>
+<a class="list" href="https://mesacomplex.tk/credits/index.html">credits</a>
 <br>
 <a class="recommend" href="recommend">MesaComplex Recommendations</a>
 <br>

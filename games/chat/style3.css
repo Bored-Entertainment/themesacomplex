@@ -6,6 +6,7 @@
   html, body {
     height: 100%;
     margin: 0;
+    color: white;
   }
   
   .container {
@@ -92,7 +93,7 @@
     font-family: 'arial black', arial, sans-serif;
     padding: 0.5vh;
     text-decoration: none;
-  
+    color: white;
     background-color: black;
   }
   
@@ -116,7 +117,7 @@
   
   .content{
     background-color: rgba(232, 233, 235, 0.8);
-  
+      color: white;
       margin: auto;
       min-height: 700px;
       padding: 50px;

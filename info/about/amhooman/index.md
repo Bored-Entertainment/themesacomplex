@@ -15,7 +15,7 @@ title: "slash/amhooman"
 <br>
 <a href="https://github.com/amhooman">my github</a>
 <br>
-<img src="https://mesacomplex.tk/images/spin.gif">
+<img src="http://swordslasher.com/images/spin.gif">
 <br>
 <p>WHO DELETED MY GIF FILE???????/</p>
 <script>

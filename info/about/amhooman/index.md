@@ -16,8 +16,6 @@ title: "slash/amhooman"
 <a href="https://github.com/amhooman">my github</a>
 <br>
 <img src="http://swordslasher.com/images/spin.gif">
-<br>
-<p>WHO DELETED MY GIF FILE???????/</p>
 <script>
 document.getElementById("aboutNav").classList.add("active");
 </script>

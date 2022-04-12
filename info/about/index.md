@@ -21,7 +21,7 @@ title: "About"
 <a class="list" href="duck">duck</a>
 <a class="list" href="cupofdirtfordinner">cupofdirtfordinner</a>
 <a class="list" href="https://github.com/amhooman">amhooman(or swordslasher)</a>
-<a class="list" href="https://github.com/existentiality">Exists)</a>
+<a class="list" href="https://github.com/existentiality">Exists</a>
 
 <script>
 document.getElementById("aboutNav").classList.add("active");

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "greymesa"
+title: "slash/amhooman"
 ---
 <h1 class="text-center">Swordslasher</h1>
 <br>
 <br>
-<a>greymesa is a idiot with access to a computer.</a>
+<a>Slash is a crazy person who somehow got into coding.</a>
 <br>
 <a href="http://swordslasher.com">slash's website</a>
 <br>

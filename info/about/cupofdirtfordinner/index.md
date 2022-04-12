@@ -15,4 +15,4 @@ title: "cupofdirtfordinner"
 <p>discord: dirt#0953</p>
 <br>
 <img src="https://mesacomplex.tk/images/mesacomplexlogo.gif">
-<img src="images/spinny-mesa-text.gif">
+<img src="https://mesacomplex.tk/images/spinny-mesa-text.gif">

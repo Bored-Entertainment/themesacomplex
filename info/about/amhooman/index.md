@@ -9,7 +9,7 @@ title: "slash/amhooman"
 <br>
 <a href="http://swordslasher.com">slash's website</a>
 <br>
-<a href="https://amhooman.github">slash's website (alt link 1)</a>
+<a href="https://amhooman.github.io/website">slash's website (alt link 1)</a>
 <br>
 <a href="https://swordslasher.netlify.app">slash's website (alt link 2)</a>
 <br>

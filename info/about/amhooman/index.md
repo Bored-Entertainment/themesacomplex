@@ -15,6 +15,7 @@ title: "slash/amhooman"
 <br>
 <a href="https://github.com/amhooman">my github</a>
 <br>
+<p>WHO DELETED MY GIF FILE???????/</p>
 <script>
 document.getElementById("aboutNav").classList.add("active");
 </script>

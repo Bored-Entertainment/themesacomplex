@@ -16,9 +16,12 @@ title: "About"
 
 
 <h1 class="text-center">About:</h1>
+<a href="https://github.com/PiSaucer">PiSaucer</a>
 <a class="list" href="greymesa">greymesa</a>
 <a class="list" href="duck">duck</a>
 <a class="list" href="cupofdirtfordinner">cupofdirtfordinner</a>
+<a class="list" href="https://github.com/amhooman">amhooman(or swordslasher)</a>
+<a class="list" href="https://github.com/existentiality">Exists)</a>
 
 <script>
 document.getElementById("aboutNav").classList.add("active");

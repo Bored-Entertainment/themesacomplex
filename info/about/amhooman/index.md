@@ -5,15 +5,15 @@ title: "slash/amhooman"
 <h1 class="text-center">Swordslasher</h1>
 <br>
 <br>
-<a>Slash is a crazy person who somehow got into coding.</a>
+<a>I am a crazy person who somehow got into coding.</a>
 <br>
-<a href="http://swordslasher.com">slash's website</a>
+<a href="http://swordslasher.com">my website</a>
 <br>
-<a href="https://amhooman.github.io/website">slash's website (alt link 1)</a>
+<a href="https://amhooman.github.io/website">my website (alt link 1)</a>
 <br>
-<a href="https://swordslasher.netlify.app">slash's website (alt link 2)</a>
+<a href="https://swordslasher.netlify.app">my website (alt link 2)</a>
 <br>
-<a href="https://github.com/amhooman">slash's github</a>
+<a href="https://github.com/amhooman">my github</a>
 <br>
 <img src="https://mesacomplex.tk/images/spin.gif">
 <script>

@@ -92,7 +92,6 @@ title: Games
             <li><a href="learntofly/">learn to fly</a></li>
             <li><a href="spewer/">spewer</a></li>
             <li><a href="cursor10/">cursor*10</a></li>
-            <li><a href="vvvvvv/">vvvvvv</a></li>
             <li><a href="timefcuk/">time f</a></li>
             <li><a href="dadnme/">Dad n' me</a></li>
             <li><a href="sugarsugar/">Sugarsugar (experimental)</a></li>

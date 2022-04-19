@@ -33,7 +33,7 @@ my club penguin rewritten avatar. Rip.....
 <br>
 My first attempt at a flash game:
 <br>
-  <embed src="https://amhooman.github.io/website/games/mygame/mygame.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true"
+  <embed src="https://amhooman.github.io/website/games/mygame/mygame.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true">
  <br>
  My mediocre fnf mod:
  <br>

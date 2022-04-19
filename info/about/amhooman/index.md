@@ -21,6 +21,8 @@ my club penguin rewritten avatar. Rip.....
 <br>
 <img src="https://avatars.githubusercontent.com/u/95942514?s=96&v=4">
 <br>
+<br>
+<br>
 <img src="http://swordslasher.com/images/spin.gif">
 
 <script>

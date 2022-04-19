@@ -15,7 +15,11 @@ title: "slash/amhooman"
 <br>
 <a href="https://github.com/amhooman">my github</a>
 <br>
+<a href="https://mesacomplex.tk/asfaikfk;sajklf">my sanity</a>
 <img src="http://swordslasher.com/images/spin.gif">
+my club penguin rewritten avatar. Rip.....
+<img src="https://avatars.githubusercontent.com/u/95942514?s=96&v=4">
+
 <script>
 document.getElementById("aboutNav").classList.add("active");
 </script>

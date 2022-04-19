@@ -37,8 +37,7 @@ My first attempt at a flash game:
  <br>
  My mediocre fnf mod:
  <br>
- <embed src="https://amhooman.github.io/website/games/mymod/" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" 
-         wmode="window" width="654" height="280" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+ <embed src="https://amhooman.github.io/website/games/mymod/">
   
   
 <script src="../../../../ruffle/ruffle.js"></script>

@@ -28,7 +28,7 @@ my club penguin rewritten avatar. Rip.....
 <br>
 <br>
 <br>
-<img src="http://swordslasher.com/images/spin.gif">
+<img src="https://amhooman.github.io/website/images/spin.gif">
 <br>
 <br>
 My first attempt at a flash game (bad):

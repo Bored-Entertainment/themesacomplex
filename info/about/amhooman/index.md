@@ -17,11 +17,11 @@ title: "slash/amhooman"
 <br>
 <a href="https://mesacomplex.tk/404.html">my sanity</a>
 <br>
-<img src="http://swordslasher.com/images/spin.gif">
-<br>
 my club penguin rewritten avatar. Rip.....
 <br>
 <img src="https://avatars.githubusercontent.com/u/95942514?s=96&v=4">
+<br>
+<img src="http://swordslasher.com/images/spin.gif">
 
 <script>
 document.getElementById("aboutNav").classList.add("active");

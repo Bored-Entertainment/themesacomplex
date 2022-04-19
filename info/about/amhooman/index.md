@@ -24,7 +24,10 @@ my club penguin rewritten avatar. Rip.....
 <br>
 <br>
 <img src="http://swordslasher.com/images/spin.gif">
-
+<br>
+<br>
+My game: <ruffle-embed src="https://amhooman.github.io/games/mygame.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="window" width="500" height="400" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></ruffle-embed>
+<script src="../../../../ruffle/ruffle.js"></script>
 <script>
 document.getElementById("aboutNav").classList.add("active");
 </script>

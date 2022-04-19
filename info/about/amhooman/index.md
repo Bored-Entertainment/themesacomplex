@@ -31,13 +31,10 @@ my club penguin rewritten avatar. Rip.....
 <img src="http://swordslasher.com/images/spin.gif">
 <br>
 <br>
-My first attempt at a flash game:
+My first attempt at a flash game (bad):
 <br>
   <embed src="https://amhooman.github.io/website/games/mygame/mygame.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true">
  <br>
- My mediocre fnf mod (to mute it, press the minus key multiple times):
- <br>
- <embed src="https://amhooman.github.io/website/games/mymod/">
   
   
 <script src="../../../../ruffle/ruffle.js"></script>

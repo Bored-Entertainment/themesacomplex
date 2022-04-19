@@ -5,6 +5,9 @@ title: "slash/amhooman"
 <h1 class="text-center">Swordslasher</h1>
 <br>
 <br>
+
+<img src="logo2.png">
+<p> ^My website's logo ^</p>
 <a>I am a crazy person who somehow got into coding.</a>
 <br>
 <a href="http://swordslasher.com">my website</a>

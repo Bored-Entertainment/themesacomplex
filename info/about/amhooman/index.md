@@ -6,7 +6,7 @@ title: "slash/amhooman"
 <br>
 <br>
 
-<img src="logo2.png">
+<img src="logo3.png">
 <br>
 <p> ^My website's logo ^</p>
 <br>
@@ -31,9 +31,14 @@ my club penguin rewritten avatar. Rip.....
 <img src="http://swordslasher.com/images/spin.gif">
 <br>
 <br>
-My game:
+My first attempt at a flash game:
 <br>
-  <embed src="https://amhooman.github.io/games/mygame.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="window" width="854" height="480" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+  <embed src="https://amhooman.github.io/website/games/mygame/mygame.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true"
+ <br>
+ My mediocre fnf mod:
+ <br>
+ <embed src="https://amhooman.github.io/website/games/mymod/" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" 
+         wmode="window" width="654" height="280" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
   
   
 <script src="../../../../ruffle/ruffle.js"></script>

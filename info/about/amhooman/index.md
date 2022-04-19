@@ -7,7 +7,9 @@ title: "slash/amhooman"
 <br>
 
 <img src="logo2.png">
+<br>
 <p> ^My website's logo ^</p>
+<br>
 <a>I am a crazy person who somehow got into coding.</a>
 <br>
 <a href="http://swordslasher.com">my website</a>
@@ -32,6 +34,8 @@ my club penguin rewritten avatar. Rip.....
 My game:
 <br>
   <embed src="https://amhooman.github.io/games/mygame.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="window" width="854" height="480" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+  
+  
 <script src="../../../../ruffle/ruffle.js"></script>
 <script>
 document.getElementById("aboutNav").classList.add("active");

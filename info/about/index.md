@@ -19,7 +19,7 @@ title: "About"
 <a class="list" href="greymesa">greymesa</a>
 <a class="list" href="duck">duck</a>
 <a class="list" href="cupofdirtfordinner">cupofdirtfordinner</a>
-<a class="list" href="amhooman">amhooman(or swordslasher)</a>
+<a class="list" href="amhooman/index.html">amhooman(or swordslasher)</a>
 
 <script>
 document.getElementById("aboutNav").classList.add("active");

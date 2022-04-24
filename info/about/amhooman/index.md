@@ -8,12 +8,12 @@ title: "slash/amhooman"
 <br>
   <nav>
     <a href="http://swordslasher.com"> my website </a>
+ 
+    <a href="https://amhooman.github.io/website"> my website alt link 1 </a>
 
-    <a href="https://amhooman.github.io/website"> my website (alt link 1) </a>
+    <a href="https://swordslasher.netlify.app">my website alt link 2</a>
 
-    <a href="https://swordslasher.netlify.app">my website (alt link 2)</a>
-
-    <a href="https://github.com/amhooman"> Games </a>
+    <a href="https://github.com/amhooman">my github </a>
 
     <a href="https://mesacomplex.tk/404.html">my sanity</a>
   </nav>

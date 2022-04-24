@@ -4,6 +4,7 @@ title: "slash/amhooman"
 ---
 <h1 class="text-center">Swordslasher</h1>
 <br>
+ <link rel="stylesheet" href="style2.css">
 <br>
   <nav>
     <a href="http://swordslasher.com" class="nav-home"> my website </a>

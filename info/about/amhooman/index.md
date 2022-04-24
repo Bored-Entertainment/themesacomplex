@@ -5,23 +5,23 @@ title: "slash/amhooman"
 <h1 class="text-center">Swordslasher</h1>
 <br>
 <br>
+  <nav>
+    <a href="http://swordslasher.com" class="nav-home"> my website </a>
 
+    <a href="https://amhooman.github.io/website" class="nav-home"> my website (alt link 1) </a>
 
-<img src="https://cdn.discordapp.com/attachments/708048947159105546/967434387513815060/slash.png" width="70%" height=auto></img>
+    <a href="https://swordslasher.netlify.app" class="nav-home">my website (alt link 2)</a>
+
+    <a href="https://github.com/amhooman" class="nav-home"> Games </a>
+
+    <a href="https://mesacomplex.tk/404.html" class="nav-home">my sanity</a>
+  </nav>
+
+<img src="https://cdn.discordapp.com/attachments/708048947159105546/967434387513815060/slash.png" width="70%" height=auto>
 <br>
 <p> ^My website's logo ^</p>
 <br>
 <a>I am a crazy person who somehow got into coding.</a>
-<br>
-<a href="http://swordslasher.com">my website</a>
-<br>
-<a href="https://amhooman.github.io/website">my website (alt link 1)</a>
-<br>
-<a href="https://swordslasher.netlify.app">my website (alt link 2)</a>
-<br>
-<a href="https://github.com/amhooman">my github</a>
-<br>
-<a href="https://mesacomplex.tk/404.html">my sanity</a>
 <br>
 my club penguin rewritten avatar. Rip.....
 <br>

@@ -7,15 +7,15 @@ title: "slash/amhooman"
  <link rel="stylesheet" href="style2.css">
 <br>
   <nav>
-    <a href="http://swordslasher.com" class="nav-home"> my website </a>
+    <a href="http://swordslasher.com"> my website </a>
 
-    <a href="https://amhooman.github.io/website" class="nav-home"> my website (alt link 1) </a>
+    <a href="https://amhooman.github.io/website"> my website (alt link 1) </a>
 
-    <a href="https://swordslasher.netlify.app" class="nav-home">my website (alt link 2)</a>
+    <a href="https://swordslasher.netlify.app">my website (alt link 2)</a>
 
-    <a href="https://github.com/amhooman" class="nav-home"> Games </a>
+    <a href="https://github.com/amhooman"> Games </a>
 
-    <a href="https://mesacomplex.tk/404.html" class="nav-home">my sanity</a>
+    <a href="https://mesacomplex.tk/404.html">my sanity</a>
   </nav>
 
 <img src="https://cdn.discordapp.com/attachments/708048947159105546/967434387513815060/slash.png" width="70%" height=auto>

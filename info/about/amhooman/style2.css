@@ -15,15 +15,9 @@ nav {
     text-decoration: none;
   
     background-color: black;
+    hover {background-color: yellow; color: black;}
   }
-  
-  .nav-home {background-color: black;}
-  
-  .nav-my-videos {background-color: black;}
-  
-  .nav-about-my-channel {background-color: black;}
-  
-  .nav-my-photoshop {background-color: black;}
+
   
   
   .nav-home:hover {background-color: yellow; color: black;}

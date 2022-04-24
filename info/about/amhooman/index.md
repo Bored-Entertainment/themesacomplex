@@ -6,7 +6,7 @@ title: "slash/amhooman"
 <br>
 <br>
 
-<img src="logo3.png">
+<img src="https://cdn.discordapp.com/attachments/708048947159105546/967434387513815060/slash.png">
 <br>
 <p> ^My website's logo ^</p>
 <br>

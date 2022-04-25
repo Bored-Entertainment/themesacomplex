@@ -121,7 +121,7 @@ title: Games
             <li><a href="spelunky/">Spelunky Classic</a></li>
             <li><a href="egg_ascent/">Egg Ascent</a><p>[MESACOMPLEX SEMIEXCLUSIVE!]</p></li>
             <li><a href="tetrisbb/">tetris but better</a></li>
-            <li><a href="dosboxgames/">DOSbox Games</a></li>
+            <li><a href="/emulators/dosboxgames/">DOSbox Games</a></li>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</a></li>
         </ul>

@@ -32,6 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="list" href="games">Games</a>
 <a class="list" href="emulators">Emulators</a>
 <a class="list" href="https://forum.mesacomplex.tk/">Forums</a>
+<a class="list" href="info/about">Info</a>
 <br>
 <a class="recommend" href="recommend">Mesacomplex Recommendations</a>
 <br>

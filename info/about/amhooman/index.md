@@ -24,7 +24,7 @@ title: "slash/amhooman"
 
 <img src="https://cdn.discordapp.com/attachments/708048947159105546/967852129123446885/transparent_background.png" width="70%" height=auto>
 <br>
-<p> ^My website's logo ^</p>
+<img src="../../../images/sanity2.png" alt="sanity">
 <br>
 <br>
 my club penguin rewritten avatar. Rip.....

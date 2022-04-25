@@ -21,7 +21,7 @@ title: "About"
 <a class="list" href="cupofdirtfordinner">cupofdirtfordinner</a>
 <a class="list" href="amhooman/index.html">amhooman(or swordslasher)</a>
 <br>
-<a class="list" href="info/Contact">Contact Us.</a>
+<a class="list" href="/info/Contact">Contact Us</a>
 
 
 <script>

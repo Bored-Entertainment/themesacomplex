@@ -1,17 +1,16 @@
 ---
 layout: default
-title: Emulators
+title: DOSbox Games
 ---
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item active">Emulators</li>
+        <li class="breadcrumb-item active">DOSbox Games</li>
     </ol>
 </nav>
 
-<h1 class="text-center">Emulators</h1>
+<h1 class="text-center">DOSbox Games</h1>
 <ul>
-    <li><a href="#">DOSbox Games:</a></li>
     <li><a href="dosbox/?soft=DOOM">Doom</a></li>
     <li><a href="dosbox/?soft=DOOM2">Doom II: Hell on Earth</a></li>
     <li><a href="dosbox/?soft=WOLF3D">Wolfenstien 3D Demo</a></li>

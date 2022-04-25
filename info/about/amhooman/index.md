@@ -17,8 +17,6 @@ title: "slash/amhooman"
     <a href="https://github.com/amhooman" class="nav-home"> my github </a>
       
     <a href="https://mesacomplex.tk/404.html" class="nav-home"> my sanity </a>
- 
-    <a href="index.html" class="nav-home"> html version of my about me </a>
 
     <a href="https://amhooman.github.io/website/images/spin.gif" class="nav-home"> spin </a>
 

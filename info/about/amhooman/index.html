@@ -22,7 +22,7 @@ title: "slash/amhooman"
 
   </nav>
 
-<img src="https://cdn.discordapp.com/attachments/708048947159105546/967434387513815060/slash.png" width="70%" height=auto>
+<img src="https://cdn.discordapp.com/attachments/708048947159105546/967852129123446885/transparent_background.png" width="70%" height=auto>
 <br>
 <p> ^My website's logo ^</p>
 <br>

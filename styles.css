@@ -3,34 +3,34 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local('Work Sans Regular'), url('/fonts/WorkSans-Regular.woff2') format('woff2'),
+    src: local('Work Sans'), url('/fonts/WorkSans-Regular.woff2') format('woff2'),
          url('/fonts/WorkSans-Regular.woff') format('woff');
   }
   
 body {
     background-color: #121211 !important;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
 }
 
 a {
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
     color: white;
 }
 
 footer {
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
     color: white;
     text-align: center;
 }
 
 p {
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
     color: white;
     text-align: center;
 }
 
 h1 {
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
     color: white;
     text-align: center;
 }
@@ -38,13 +38,13 @@ h1 {
 h2 {
     text-align: center;
     color: white;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
 }
 .list {
     font-size: 24px;
     text-align: center;
     color: white;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
 }
 
 .bannerlogo {
@@ -55,17 +55,17 @@ h2 {
 }
 button {
     background-color:#121211;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
     border-color:#121211;
 }
 
 li {
     text-align: center;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
 }
 
 #splash {
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -93,7 +93,7 @@ li {
 
 .topnav {
     overflow: hidden;
-    background-color: #2a2a29;
+    background-color: #10100f;
 }
 
 .topnav a {
@@ -104,7 +104,7 @@ li {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
 }
 
 .topnav img {
@@ -129,7 +129,7 @@ li {
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
 }
 
 @media screen and (max-width: 600px) {
@@ -155,7 +155,7 @@ h5,
 h6,
 p {
     color: white;
-    font-family: 'Work Sans Regular', normal;
+    font-family: 'Work Sans', normal;
 }
 
 *, ::after, ::before {

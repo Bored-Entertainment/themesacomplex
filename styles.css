@@ -1,28 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Work Sans'), url('/fonts/WorkSans-Regular.woff2') format('woff2'),
+         url('/fonts/WorkSans-Regular.woff') format('woff');
+  }
+  
 body {
-    background-color: #23272a !important;
-    font-family: 'Ubuntu Mono', monospace;
+    background-color: #121211 !important;
+    font-family: 'Work Sans', normal;
 }
 
 a {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
     color: white;
 }
 
 footer {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
     color: white;
     text-align: center;
 }
 
 p {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
     color: white;
     text-align: center;
 }
 
 h1 {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
     color: white;
     text-align: center;
 }
@@ -30,13 +38,13 @@ h1 {
 h2 {
     text-align: center;
     color: white;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
 }
 .list {
     font-size: 24px;
     text-align: center;
     color: white;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
 }
 
 .bannerlogo {
@@ -46,18 +54,18 @@ h2 {
     width: 50%;
 }
 button {
-    background-color:#23272a;
-    font-family: 'Ubuntu Mono', monospace;
-    border-color:#23272a;
+    background-color:#121211;
+    font-family: 'Work Sans', normal;
+    border-color:#121211;
 }
 
 li {
     text-align: center;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
 }
 
 #splash {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -70,22 +78,22 @@ li {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #23272a;
+    background: #121211;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #393d3f;
+    background: #2a2a29;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #4f5255;
+    background: #414141;
   }
 
 .topnav {
     overflow: hidden;
-    background-color: #121415;
+    background-color: #0d0d0c;
 }
 
 .topnav a {
@@ -96,7 +104,7 @@ li {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
 }
 
 .topnav img {
@@ -110,7 +118,7 @@ li {
 }
 
 .topnav a.active {
-    background-color: #fb7e14;
+    background-color: #F06520;
     color: white;
 }
 
@@ -121,7 +129,7 @@ li {
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
 }
 
 @media screen and (max-width: 600px) {
@@ -147,7 +155,7 @@ h5,
 h6,
 p {
     color: white;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Work Sans', normal;
 }
 
 *, ::after, ::before {

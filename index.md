@@ -5,6 +5,8 @@ title: "Home"
 
 <script type="text/javascript" src="js/splashtext.js"></script>
 <script type="text/javascript" src="js/consolelog.js"></script>
+<script type="text/javascript" src="js/particle.js"></script>
+<link rel="stylesheet" href="particle.css">
 <head>
 <script type="text/javascript">
     window._mNHandle = window._mNHandle || {};

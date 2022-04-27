@@ -25,29 +25,29 @@ title: Games
             <button onclick="window.location.href='candybox/'">Candybox</button>
             <button onclick="window.location.href='candybox2/'">Candybox 2</button>
             <button onclick="window.location.href='cookieclicker/'">Cookie Clicker</button>
-            <button onclick="window.location.href='ctr/'">Cut The Rope (experimental)</button>
+            <button onclick="window.location.href='ctr/'">Cut The Rope (exp.)</button>
             <button onclick="window.location.href='custom-tetris/'">Custom Tetris</button>
             <button onclick="window.location.href='desktoptd/'">Desktop Tower Defense</button>
-            <button onclick="window.location.href='drifthunters/'">Drift Hunters (experimental)</button>
+            <button onclick="window.location.href='drifthunters/'">Drift Hunters (exp.)</button>
             <button onclick="window.location.href='dino/'">Chrome Dino Run</button>
             <button onclick="window.location.href='duckhunt/'">Duck Hunt</button>
             <button onclick="window.location.href='DuckLife/'">Duck Life</button>
             <button onclick="window.location.href='electricman2/'">Electricman 2</button>
-            <button onclick="window.location.href='DuckLife/'">Duck Life (experimental)</button>
+            <button onclick="window.location.href='DuckLife/'">Duck Life (exp.)</button>
             <button onclick="window.location.href='fbf/'">Factory Balls Forever</button>
             <button onclick="window.location.href='fnaf/'">Five Nights at Freddys</button>
-            <button onclick="window.location.href='fnf/'">Friday Night Funkin&#39;&#39; (experimental)</button>
+            <button onclick="window.location.href='fnf/'">Friday Night Funkin&#39;&#39; (exp.)</button>
             <button onclick="window.location.href='FruitNinja/'">Fruit Ninja</button>
             <button onclick="window.location.href='fullscreenmario/'">FullScreen Mario</button>
             <button onclick="window.location.href='galaga/'">Galaga</button>
             <button onclick="window.location.href='gdash/'">Geometry Dash</button>
             <button onclick="window.location.href='getontop/'">Get On Top</button>
             <button onclick="window.location.href='gpacman/'">Google Pac-Man</button>
-            <button onclick="window.location.href='henrystikmin/'">Henry Stikmin (experimental)</button>
+            <button onclick="window.location.href='henrystikmin/'">Henry Stikmin (exp.)</button>
             <button onclick="window.location.href='HexGL/'">HexGL</button>
-            <button onclick="window.location.href='hl/'">Half-Life (experimental)</button>
+            <button onclick="window.location.href='hl/'">Half-Life (exp.)</button>
             <button onclick="window.location.href='iq/'">Impossible Quiz</button>
-            <button onclick="window.location.href='issac/'">The Binding of Issac (experimental)</button>
+            <button onclick="window.location.href='issac/'">The Binding of Issac (exp.)</button>
             <button onclick="window.location.href='linerider/'">Line Rider</button>
             <button onclick="window.location.href='mari0/'">Mari0</button>
             <button onclick="window.location.href='marioclone/'">Mario Clone</button>
@@ -59,13 +59,13 @@ title: Games
             <button onclick="window.location.href='minecraftjs/'">Minecraft: JS Edition</button>
             <button onclick="window.location.href='minesweeper/'">MineSweeper</button>
             <button onclick="window.location.href='mtd2/'">Minecraft Tower Defense 2</button>
-            <button onclick="window.location.href='ngr/'">Newgrounds Rumble (experimental)</button>
+            <button onclick="window.location.href='ngr/'">Newgrounds Rumble (exp.)</button>
             <button onclick="window.location.href='pacman/'">Pac-Man: Flash</button>
             <button onclick="window.location.href='pokemon/'">Pokemon:Flash Edition</button>
             <button onclick="window.location.href='pong/'">Pong</button>
             <button onclick="window.location.href='portalflash/'">Portal: Flash Edition</button>
             <button onclick="window.location.href='portal2flash/'">Portal 2: Flash Edition</button>
-            <button onclick="window.location.href='pottyracers/'">Pottyracers (experimental)</button>
+            <button onclick="window.location.href='pottyracers/'">Pottyracers (exp.)</button>
             <button onclick="window.location.href='radius-raid/'">Radius Raid</button>
             <button onclick="window.location.href='RiddleSchool/'">Riddle School Games</button>
             <button onclick="window.location.href='sansfight/'">Sans Fight</button>
@@ -79,7 +79,7 @@ title: Games
             <button onclick="window.location.href='streetfighter/'">Street Fighter Alpha</button>
             <button onclick="window.location.href='super-smash-flash/'">Super Smash Flash</button>
             <button onclick="window.location.href='tetris/'">Tetris: Flash Edition</button>
-            <button onclick="window.location.href='thereisnogame/'">There is No Game (experimental)</button>
+            <button onclick="window.location.href='thereisnogame/'">There is No Game (exp.)</button>
             <button onclick="window.location.href='universal-paperclips/'">Universal Paperclips</button>
             <button onclick="window.location.href='winmister/'">Windows Mister</button>
             <button onclick="window.location.href='WorldHardestGame/'">The World&#39;s Hardest Game</button>
@@ -97,16 +97,16 @@ title: Games
             <button onclick="window.location.href='cursor10/'">cursor*10</button>
             <button onclick="window.location.href='timefcuk/'">time f</button>
             <button onclick="window.location.href='dadnme/'">Dad n' me</button>
-            <button onclick="window.location.href='sugarsugar/'">Sugarsugar (experimental)</button>
-            <button onclick="window.location.href='snailbob/'">Snail Bob (experimental)</button>
+            <button onclick="window.location.href='sugarsugar/'">Sugarsugar (exp.)</button>
+            <button onclick="window.location.href='snailbob/'">Snail Bob (exp.)</button>
             <button onclick="window.location.href='tinytactics/'">Tiny Tactics</button>
             <button onclick="window.location.href='3dmari0/'">3D Mari0</button>
             <button onclick="window.location.href='interactivebuddy/'">Interactive Buddy</button>
-            <button onclick="window.location.href='learntofly/'">Learn to Fly (experimental)</button>
-            <button onclick="window.location.href='spewer/'">Spewer (experimental)</button>
+            <button onclick="window.location.href='learntofly/'">Learn to Fly (exp.)</button>
+            <button onclick="window.location.href='spewer/'">Spewer (exp.)</button>
             <button onclick="window.location.href='retro-bowl/'">Retro Bowl</button>
             <button onclick="window.location.href='ritz/'">Ritz</button>
-            <button onclick="window.location.href='osu/'">osu! (experimental)</button>
+            <button onclick="window.location.href='osu/'">osu! (exp.)</button>
             <button onclick="window.location.href='vex/'">Vex</button>
             <button onclick="window.location.href='microsoft-flight-simulator/'">Microsoft Flight Simulator</button>
             <button onclick="window.location.href='idlebreakout/'">Idle Breakout</button>
@@ -136,7 +136,7 @@ title: Games
 </div>
 </p>
 <br>
-<p>if something is tagged "experimental," it may not work, or is unstable.</p>
+<p>if something is tagged as "experimental" or "exp." it may not work, have glitches, or is unstable.</p>
 <br>
 <footer>
 <p>n1swordslashers chat!</p>

@@ -21,7 +21,7 @@ title: Games
             <button onclick="window.location.href='bowman/'">Bowman</button>
             <button onclick="window.location.href='boxhead/'">boxheads: collectors edition</button>
             <button onclick="window.location.href='btd/'">Bloons Tower Defense</button>
-            <button onclick="window.location.href='cartsurfer/'">Cart Surfer</button>
+            <button onclick="window.location.href='cartsurfer/'">Cart Surfer (club penguin)</button>
             <button onclick="window.location.href='candybox/'">Candybox</button>
             <button onclick="window.location.href='candybox2/'">Candybox 2</button>
             <button onclick="window.location.href='cookieclicker/'">Cookie Clicker</button>

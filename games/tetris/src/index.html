@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>TwitchTetris</title>
+    <link href="http://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css" />
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/cookie.js"></script>
+
+    <script src="game/gameControls.js"></script>
+    <script src="game/jawsjs.js"></script>
+    <script src="game/Block.js"></script>
+    <script src="game/Shapes.js"></script>
+    <script src="game/WallKicks.js"></script>
+    <script src="game/ControlGroup.js"></script>
+    <script src="game/Background.js"></script>
+    <script src="game/RandomBag.js"></script>
+    <script src="game/PreviewGroup.js"></script>
+    <script src="game/ScoreTracker.js"></script>
+    <script src="game/TtyBlock.js"></script>
+    <script src="game/Game.js"></script>
+    <script src="game/Game_Logic.js"></script>
+    <script src="game/Button.js"></script>
+    <script src="game/tetris.js"></script>
+
+
+    <script>
+      function onClickEvent(event){
+      if (Tetris.currentInstance) {
+      Tetris.currentInstance.mouseClicked(event.layerX, event.layerY);
+      }
+      }
+    </script>
+
+  </head>
+  <body>
+    <table border="0" class="mainTable">
+      <tr>
+	<td class="contentCell">
+	  <div class="gamePanel">
+	
+	    <div class="gameElements">
+	      <div class="ttyOutput scoreOutput" id="scoreDiv"></div>
+	      <div class="ttyOutput linesOutput" id="linesDiv"></div>
+	      <div class="ttyOutput levelOutput" id="levelDiv"></div>
+	      <div class="ttyOutput tickerOutput" id="tickerDiv"></div>
+	      
+	      <div class="gameEndOutputHidden" id="gameEndContainer">
+		<div style="padding:5px;" id="gameEndDiv"></div>
+	      </div>
+	      
+	      <canvas class="gameCanvas" id="gameCanvas" width="1000" height="500" onclick="onClickEvent(event)" class="gameCanvas">Your browser does not natively support Html5, or the Canvas Tag. Using this browser is slowing the progress of the web. Please get a modern browser, such as Google Chrome or Mozzila FireFox</canvas>
+	    </div>
+	    <div class="controlsTitle">
+	      <br/>
+	      <b>Controls:</b><br/>
+	      <table border="1" cellpadding="3" class="controlsTable">
+		<tr class="controlsTableHeader">
+		  <td width="80">Move Block</td>
+		  <td width="80">Soft Drop</td>
+		  <td width="80">Rotate</td>
+		  <td width="80">Save Piece</td>
+		  <td width="80">Hard Drop</td>
+		  <td width="80">Pause</td>
+		</tr>
+
+		<tr>
+		  <td><span id="shiftLeft">Left</span>, <span id="shiftRight">Right</span></td>
+		  <td><span id="softDrop">Down</span></td>
+		  <td><span id="rotateLeft">Z</span>, <span id="rotateRight">X, Up</span></td>
+		  <td><span id="swap">C, Shift</span></td>
+		  <td><span id="hardDrop">Space</span></td>
+		  <td>Esc</td>
+		</tr>
+
+	      </table>
+	    </div>
+	    <br/>
+	    <a href="controls.html" class="bareLink">
+	      <div class="menuItem">Controls Options</div>
+	    </a>
+
+	  </div>
+	</td>
+	<td width="20"> </td>
+	<td class="towerAdCell">
+	  <div class="towerAd">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406939281323264";
+/* High Contrast Wdie */
+google_ad_slot = "5532038480";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	  </div>
+	</td>
+      </tr>
+    </table>
+    
+  </body>
+</html>

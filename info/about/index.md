@@ -16,12 +16,12 @@ title: "About"
 
 
 <h1 class="text-center">About:</h1>
-<a class="list" href="greymesa">greymesa</a>
-<a class="list" href="duck">duck</a>
-<a class="list" href="cupofdirtfordinner">cupofdirtfordinner</a>
-<a class="list" href="amhooman/index.html">amhooman(or swordslasher)</a>
+<a class="list" href="greymesa">greymesa</a><br>
+<a class="list" href="duck">The Duck🦆</a><br>
+<a class="list" href="cupofdirtfordinner">cupofdirtfordinner🥤</a><br>
+<a class="list" href="amhooman/index.html">amhooman(or swordslasher)</a><br>
 <br>
-<a class="list" href="/info/Contact">Contact Us</a>
+<a class="list" href="/info/contact">Contact Us</a>
 
 
 <script>

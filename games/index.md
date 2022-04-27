@@ -78,7 +78,7 @@ title: Games
             <button onclick="window.location.href='SpaceCompany/'">Space Company</button>
             <button onclick="window.location.href='streetfighter/'">Street Fighter Alpha</button>
             <button onclick="window.location.href='super-smash-flash/'">Super Smash Flash</button>
-            <button onclick="window.location.href='tetris/'">Tetris: Flash Edition</button>
+            <button onclick="window.location.href='tetris/'">Tetris</button>
             <button class="exp" onclick="window.location.href='thereisnogame/'">There is No Game (exp.)</button>
             <button onclick="window.location.href='universal-paperclips/'">Universal Paperclips</button>
             <button onclick="window.location.href='winmister/'">Windows Mister</button>

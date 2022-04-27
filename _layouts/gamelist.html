@@ -128,6 +128,49 @@ margin-right: 15vw;
 
 </style>
 
+    <div class="topnav">
+        <a href="/"><img src="/images/lambda.png" width="25" height="25" alt="searchlogo" class="searchlogo"></a>
+        <a id="homeNav" href="/">Home</a>
+        <a id="gamesNav" href="/games/">Games</a>
+        <a id="emuNav" href="/emulators/">Emulators</a>
+        <a id="aboutNav" href="/info/about/">About</a>
+        <a id="forumNav" href="https://forum.mesacomplex.tk">Forums</a>
+        {% include search-lunr.html %}
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+
+            {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+            <li class="breadcrumb-item active" aria-current="page">
+                {{
+                crumb | replace:'-',' ' | remove:'.html' |
+                capitalize
+                }}
+            </li>
+            {% else %}
+            <li class="breadcrumb-item">
+                <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+                    {{
+                    crumb | replace:'-',' ' | remove:'.html' | capitalize
+                    }}
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+
+
+
+        </ol>
+    </nav>
+
+    <div id="lunrsearchresults">
+        <ul></ul>
+    </div>
+    
 </head>
 <body>
 

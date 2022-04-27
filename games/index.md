@@ -1,5 +1,5 @@
 ---
-layout: gamelist
+layout: game
 title: Games
 ---
 <p align="center">

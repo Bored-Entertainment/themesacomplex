@@ -151,6 +151,19 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
+      <script>
+        window.onbeforeunload = function (e) {
+            e = e || window.event;
+        
+            // For IE and Firefox prior to version 4
+            if (e) {
+                e.returnValue = 'Sure?';
+            }
+        
+            // For Safari
+            return 'Sure?';
+        };
+        </script>
       <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
       <script>
       window.cookieconsent.initialise({

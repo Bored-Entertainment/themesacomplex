@@ -22,7 +22,6 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WWNF2VN');</script>
     <!-- End Google Tag Manager -->
-
     <!-- Primary Meta Tags -->
     <title>{{ page.title }} – {{ site.title }}</title>
     <meta name="title" content="The Mesa Complex - Unblocked Games and Emulators.">
@@ -50,7 +49,10 @@
     <meta name="application-name" content="The Mesa Complex">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    
+
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/cookie.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1455382176703207"
@@ -149,19 +151,6 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
-      <script>
-        window.onbeforeunload = function (e) {
-            e = e || window.event;
-        
-            // For IE and Firefox prior to version 4
-            if (e) {
-                e.returnValue = 'Sure?';
-            }
-        
-            // For Safari
-            return 'Sure?';
-        };
-        </script>
       <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
       <script>
       window.cookieconsent.initialise({

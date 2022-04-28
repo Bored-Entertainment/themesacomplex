@@ -137,7 +137,7 @@ title: Games
 </p>
 <br>
 <p>if something is tagged as "experimental" or "exp." it may not work, have glitches, or is unstable. <br>
-if something is tagged as "mesacomplex semiexclusive," or is orange colored, then we either got explicit permission from it's developers or we are the developers. there are currently no fully original mesacomplex games, but they are in the works.</p>
+if something is tagged as "semiexclusive," or is orange colored, then we got explicit permission from it's developers to host it.</p>
 <br>
 <footer>
 <p>n1swordslashers chat!</p>

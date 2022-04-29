@@ -87,13 +87,9 @@ title: Games
             <button onclick="window.location.href='xx142-b2.exe/'">XX142-bB.EXE</button>
             <button onclick="window.location.href='zelda3d/'">The Legend of Zelda: But 3D</button>
             <button onclick="window.location.href='badtimesim/'">bad time simulator</button>
-            <button onclick="window.location.href='sugarsugar/'">sugarsugar</button>
-            <button onclick="window.location.href='snailbob/'">snail bob</button>
             <button onclick="window.location.href='tinytactics/'">tiny tactics</button>
             <button onclick="window.location.href='3dmari0/'">3d mari0</button>
             <button onclick="window.location.href='interactivebuddy/'">interactive buddy</button>
-            <button onclick="window.location.href='learntofly/'">learn to fly</button>
-            <button onclick="window.location.href='spewer/'">spewer</button>
             <button onclick="window.location.href='cursor10/'">cursor*10</button>
             <button onclick="window.location.href='timefcuk/'">time f</button>
             <button onclick="window.location.href='dadnme/'">Dad n' me</button>

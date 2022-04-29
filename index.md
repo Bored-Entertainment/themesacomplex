@@ -52,6 +52,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a>brought to you in part by:</a>
 <br>
 <p id="sponsor"></p>
+    <a href="https://ko-fi.com/themesacomplex">and viewers like you. thank you!<br>give us money on kofi</a>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

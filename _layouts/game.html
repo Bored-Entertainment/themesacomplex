@@ -146,7 +146,19 @@
           appId: "1:936739543025:web:0d9d4ecf739fd8f89d1650",
           measurementId: "G-LX2G6GWH19"
         };
-      
+      <script>
+window.onbeforeunload = function (e) {
+    e = e || window.event;
+
+    // For IE and Firefox prior to version 4
+    if (e) {
+        e.returnValue = 'Sure?';
+    }
+
+    // For Safari
+    return 'Sure?';
+};
+</script>
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);

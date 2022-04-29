@@ -133,7 +133,7 @@ title: Games
 </p>
 <br>
 <p>if something is tagged as "experimental" or "exp." it may not work, have glitches, or is unstable. <br>
-if something is tagged as "semiexclusive," or is orange colored, then we got explicit permission from it's developers to host it.</p>
+if something is tagged as "semiexclusive," or is orange colored, then we got explicit permission from it's developers to host it.<br>if something is green, its reccomended to play with a mouse.</p>
 <br>
 <footer>
 <p>n1swordslashers chat!</p>

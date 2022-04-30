@@ -59,6 +59,7 @@ title: Games
             <button onclick="window.location.href='minecraftjs/'">Minecraft: JS Edition</button>
             <button onclick="window.location.href='minesweeper/'">MineSweeper</button>
             <button onclick="window.location.href='mtd2/'">Minecraft Tower Defense 2</button>
+            <button class="exc" onclick="window.location.href='necromicide/'">NECROMICIDE</button>
             <button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble (exp.)</button>
             <button onclick="window.location.href='pacman/'">Pac-Man: Flash</button>
             <button onclick="window.location.href='pokemon/'">Pokemon:Flash Edition</button>

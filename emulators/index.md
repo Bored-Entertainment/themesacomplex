@@ -13,7 +13,7 @@ title: Emulators
 <ul>
     <li><a href="atari-gameroom/">Atari Gameroom</a></li>
     <li><a href="desmume/">Desmume (DS)</a></li>
-    <li><a href="fba/">Virtual Boy Advance (GBA)</a></li>
+    <li><a href="vba/">Virtual Boy Advance (GBA)</a></li>
     <li><a href="dosboxgames/">DOSbox Games</a></li>
     <li><a href="webretro/">WebRetro (Gensis, NES,SNES,N64,GB,GBC and GBA)</a></li>
     <li><a href="emulator.js/">Emulator.js (NES,SNES,N64,GB,GBC,GBA,PS1,DS,VB, and Sega Gensis)</a></li>

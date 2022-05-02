@@ -8,73 +8,70 @@ title: Games
     <div class="col text-start">
         <ul>
             <div id="rows">
-<p>if a game has a blue color, it may not work, have glitches, or is unstable. <br>
+<li><p>if a game has a blue color, it may not work, have glitches, or is unstable. <br>
 if a game has an orange color, then we got explicit permission from it's developers to host it.<br>
-if a game has a green color, its reccomended to play with a mouse.</p>
-<button onclick="window.location.href='3d.city/'">3D City</button>
-            <button onclick="window.location.href='3Dchess/'">3DChess</button>
-            <button onclick="window.location.href='2048/'">2048</button>
-            <button onclick="window.location.href='achievement_unlocked/'">Achivement Unlocked</button>
-            <button onclick="window.location.href='a palace for fools/'">A palace for fools</button>
-            <button onclick="window.location.href='adg/'">Action Driving Game</button>
-            <button onclick="window.location.href='alienhominid/'">Alien Hominid</button>
-            <button onclick="window.location.href='bbs/'">Bang, Boom, Splat!</button>
-            <button onclick="window.location.href='bloxors/'">Bloxors</button>
-            <button onclick="window.location.href='bowman/'">Bowman</button>
-            <button onclick="window.location.href='boxhead/'">boxheads: collectors edition</button>
-            <button onclick="window.location.href='btd/'">Bloons Tower Defense</button>
+if a game has a green color, its reccomended to play with a mouse.</p></li>
+<button onclick="window.location.href='3d.city/'">3D City</button></li>
+            <li><button onclick="window.location.href='3Dchess/'">3DChess</button></li>
+            <li><button onclick="window.location.href='2048/'">2048</button></li>
+            <li><button onclick="window.location.href='achievement_unlocked/'">Achivement Unlocked</button></li>
+            <li><button onclick="window.location.href='a palace for fools/'">A palace for fools</button></li>
+            <li><button onclick="window.location.href='adg/'">Action Driving Game</button></li>
+            <li><button onclick="window.location.href='alienhominid/'">Alien Hominid</button></li>
+            <li><button onclick="window.location.href='bbs/'">Bang, Boom, Splat!</button></li>
+            <li><button onclick="window.location.href='bloxors/'">Bloxors</button></li>
+            <li><button onclick="window.location.href='bowman/'">Bowman</button></li>
+            <li><button onclick="window.location.href='boxhead/'">boxheads: collectors edition</button></li>
+            <li><button onclick="window.location.href='btd/'">Bloons Tower Defense</button></li>
             <!--club penguin was actual doodoo-->
-            <button onclick="window.location.href='candybox/'">Candybox</button>
-            <button onclick="window.location.href='candybox2/'">Candybox 2</button>
-            <button onclick="window.location.href='cookieclicker/'">Cookie Clicker</button>
-            <button class="expmos" onclick="window.location.href='ctr/'">Cut The Rope</button>
-            <button onclick="window.location.href='custom-tetris/'">Custom Tetris</button>
-            <button onclick="window.location.href='desktoptd/'">Desktop Tower Defense</button>
-            <button class="exp" onclick="window.location.href='drifthunters/'">Drift Hunters</button>
-            <button onclick="window.location.href='dino/'">Chrome Dino Run</button>
-            <button onclick="window.location.href='duckhunt/'">Duck Hunt</button>
-            <button onclick="window.location.href='DuckLife/'">Duck Life</button>
-            <button onclick="window.location.href='electricman2/'">Electricman 2</button>
-            <button class="exp" onclick="window.location.href='DuckLife/'">Duck Life</button>
-            <button onclick="window.location.href='fbf/'">Factory Balls Forever</button>
-            <button onclick="window.location.href='fnaf/'">Five Nights at Freddys</button>
-            <button class="exp" onclick="window.location.href='fnf/'">Friday Night Funkin&#39;</button>
-            <button onclick="window.location.href='FruitNinja/'">Fruit Ninja</button>
-            <button onclick="window.location.href='fullscreenmario/'">FullScreen Mario</button>
-            <button onclick="window.location.href='galaga/'">Galaga</button>
+           <li><button onclick="window.location.href='candybox/'">Candybox</button></li>
+            <li><button onclick="window.location.href='candybox2/'">Candybox 2</button></li>
+           <li><button onclick="window.location.href='cookieclicker/'">Cookie Clicker</button></li>
+            <li><button class="expmos" onclick="window.location.href='ctr/'">Cut The Rope</button></li>
+            <li><button onclick="window.location.href='custom-tetris/'">Custom Tetris</button></li>
+            <li><button onclick="window.location.href='desktoptd/'">Desktop Tower Defense</button></li>
+            <li><button class="exp" onclick="window.location.href='drifthunters/'">Drift Hunters</button></li>
+            <li><button onclick="window.location.href='dino/'">Chrome Dino Run</button></li>
+            <li><button onclick="window.location.href='duckhunt/'">Duck Hunt</button></li>
+            <li><button onclick="window.location.href='DuckLife/'">Duck Life</button></li>
+            <li><button onclick="window.location.href='electricman2/'">Electricman 2</button></li>
+            <li><button class="exp" onclick="window.location.href='DuckLife/'">Duck Life</button></li>
+            <li><button onclick="window.location.href='fbf/'">Factory Balls Forever</button></li>
+            <li><button onclick="window.location.href='fnaf/'">Five Nights at Freddys</button></li>
+            <li><button class="exp" onclick="window.location.href='fnf/'">Friday Night Funkin&#39;</button></li>
+            <li><button onclick="window.location.href='FruitNinja/'">Fruit Ninja</button>
+            <li><button onclick="window.location.href='fullscreenmario/'">FullScreen Mario</button></li>
+            <li><button onclick="window.location.href='galaga/'">Galaga</button></li>
             <!--gd was just a garbage flash port. we can find a better one, im sure-->
-            <button onclick="window.location.href='getontop/'">Get On Top</button>
-            <button onclick="window.location.href='gpacman/'">Google Pac-Man</button>
-            <button class="exp" onclick="window.location.href='henrystikmin/'">Henry Stikmin</button>
-            <button class="exp" onclick="window.location.href='HexGL/'">HexGL</button>
-            <button class="expmos" onclick="window.location.href='hl/'">Half-Life</button>
-            <button onclick="window.location.href='iq/'">Impossible Quiz</button>
-            <button class="exp" onclick="window.location.href='issac/'">The Binding of Issac</button>
-            <button class="mos" onclick="window.location.href='linerider/'">Line Rider</button>
-            <button class="mos" onclick="window.location.href='mari0/'">Mari0</button>
-            <button onclick="window.location.href='marioclone/'">Mario Clone</button>
-            <button onclick="window.location.href='mariocombat/'">Mario Combat</button>
-            <!--portable mc only works on windows barely, and even still most schools have completely switched to chromebooks. it was also a redirect, which isnt good.-->
-            <button class="exp" onclick="window.location.href='mcclone1/'">Minecraft Clone</button>
-            <button onclick="window.location.href='meatboy/'">Meat Boy</button>
+            <li><button onclick="window.location.href='getontop/'">Get On Top</button></li>
+            <li><button onclick="window.location.href='gpacman/'">Google Pac-Man</button></li>
+            <li><button class="exp" onclick="window.location.href='henrystikmin/'">Henry Stikmin</button></li>
+            <li><button class="exp" onclick="window.location.href='HexGL/'">HexGL</button></li>
+            <li><button class="expmos" onclick="window.location.href='hl/'">Half-Life</button></li>
+            <li><button onclick="window.location.href='iq/'">Impossible Quiz</button></li>
+            <li><button class="exp" onclick="window.location.href='issac/'">The Binding of Issac</button></li>
+            <li><button class="mos" onclick="window.location.href='linerider/'">Line Rider</button></li>
+            <li><button class="mos" onclick="window.location.href='mari0/'">Mari0</button></li>
+            <li><button onclick="window.location.href='marioclone/'">Mario Clone</button></li>
+            <li><button onclick="window.location.href='mariocombat/'">Mario Combat</button></li>
+            <li><button onclick="window.location.href='https://portablemc.ml/'">PortableMC (play minecraft in class without admin perms)</button></li>
+            <li><button class="exp" onclick="window.location.href='mcclone1/'">Minecraft Clone</button></li>
+            <li><button onclick="window.location.href='meatboy/'">Meat Boy</button></li>
             <!--minecraft flash edition is no longer listed (bc it sucks) but it still has to be deleted-->
-            <button onclick="window.location.href='minecraftjs/'">Minecraft: JS Edition</button>
+            <li><button onclick="window.location.href='minecraftjs/'">Minecraft: JS Edition</button></li>
             <!--minesweeper is already on google, literally no reason to play it here-->
-            <button onclick="window.location.href='mtd2/'">Minecraft Tower Defense 2</button>
-<<<<<<< HEAD
-            <button class="exc" onclick="window.location.href='necromicide/'">NECROMICIDE</button>
-            <button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble (exp.)</button>
-=======
-            <button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble</button>
->>>>>>> 3ab01dafb874792016ac6bd01867d986d921fb8b
-            <button onclick="window.location.href='pacman/'">Pac-Man: Flash</button>
-            <button onclick="window.location.href='pokemon/'">Pokemon:Flash</button>
+            <li><button onclick="window.location.href='mtd2/'">Minecraft Tower Defense 2</button></li>
+            <li><button class="exc" onclick="window.location.href='necromicide/'">NECROMICIDE</button></li>
+            <li><button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble (exp.)</button></li>
+            <li><button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble</button></li>
+            <li><button onclick="window.location.href='pacman/'">Pac-Man: Flash</button></li>
+            <li><button onclick="window.location.href='pokemon/'">Pokemon:Flash</button></li>
             <!--even if people play pong its very few and is honestly just low hanging fruit. also ai garb-->
-            <button onclick="window.location.href='portalflash/'">Portal: Flash Edition</button>
-            <button onclick="window.location.href='portal2flash/'">Portal 2: Flash Edition</button>
-            <button class="exp" onclick="window.location.href='pottyracers/'">Pottyracers</button>
-            <button onclick="window.location.href='radius-raid/'">Radius Raid</button>
-            <button onclick="window.location.href='RiddleSchool/'">Riddle School Games</button>
+            <li><button onclick="window.location.href='portalflash/'">Portal: Flash Edition</button></li>
+            <li><button onclick="window.location.href='portal2flash/'">Portal 2: Flash Edition</button></li>
+            <li><button class="exp" onclick="window.location.href='pottyracers/'">Pottyracers</button></li>
+            <li><button onclick="window.location.href='radius-raid/'">Radius Raid</button></li>
+            <li><button onclick="window.location.href='RiddleSchool/'">Riddle School Games</button></li>
             <!--we have bad time simulator, no point in 
             <button onclick="window.location.href='sleeping-beauty/'">Sleeping Beauty</button>
             <button onclick="window.location.href='slope/'">Slope</button>

@@ -75,7 +75,7 @@ if a game has a green color, its reccomended to play with a mouse.</p>
             <button class="exp" onclick="window.location.href='pottyracers/'">Pottyracers</button>
             <button onclick="window.location.href='radius-raid/'">Radius Raid</button>
             <button onclick="window.location.href='RiddleSchool/'">Riddle School Games</button>
-            <!--we have bad time simulator, no point in 
+            <!--we have bad time simulator, no point in having this-->
             <button onclick="window.location.href='sleeping-beauty/'">Sleeping Beauty</button>
             <button onclick="window.location.href='slope/'">Slope</button>
             <button onclick="window.location.href='sm63/'">Super Mario 63</button>
@@ -114,6 +114,7 @@ if a game has a green color, its reccomended to play with a mouse.</p>
             <button onclick="window.location.href='microsoft-flight-simulator/'">Microsoft Flight Simulator</button>
             <button onclick="window.location.href='idlebreakout/'">Idle Breakout</button>
             <button onclick="window.location.href='jellymario/'">Jelly Mario</button>
+            <button onclick="window.location.href='jump_king'">Jump King (full game! sorta)</button>
             <button onclick="window.location.href='gravitytetris/'">Gravity Tetris</button>
             <button onclick="window.location.href='pandemic/'">Pandemic</button>
             <button onclick="window.location.href='pokeclicker/'">Pokeclicker</button>
@@ -138,9 +139,3 @@ if a game has a green color, its reccomended to play with a mouse.</p>
     <div class="col"></div>
 </div>
 </p>
-
-<br>
-<footer>
-<p>n1swordslashers chat!</p>
- <embed src="chat2/" width="900" height="700" allowfullscreen>
-</footer>

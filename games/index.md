@@ -114,7 +114,7 @@ if a game has a green color, its reccomended to play with a mouse.</p>
             <button onclick="window.location.href='microsoft-flight-simulator/'">Microsoft Flight Simulator</button>
             <button onclick="window.location.href='idlebreakout/'">Idle Breakout</button>
             <button onclick="window.location.href='jellymario/'">Jelly Mario</button>
-            <button onclick="window.location.href='jump_king'">Jump King (full game! sorta)</button>
+            <button onclick="window.location.href='jump_king2/'">Jump King (full game! sorta)</button>
             <button onclick="window.location.href='gravitytetris/'">Gravity Tetris</button>
             <button onclick="window.location.href='pandemic/'">Pandemic</button>
             <button onclick="window.location.href='pokeclicker/'">Pokeclicker</button>

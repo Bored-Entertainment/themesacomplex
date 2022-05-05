@@ -24,7 +24,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='bbs/'">Bang, Boom, Splat!</button>
             <button onclick="window.location.href='bloxors/'">Bloxors</button>
             <button onclick="window.location.href='bowman/'">Bowman</button>
-            <button onclick="window.location.href='boxhead/'">boxheads: collectors edition</button>
+            <button class="colusr" onclick="window.location.href='boxhead/'">boxheads: collectors edition</button>
             <button onclick="window.location.href='btd/'">Bloons Tower Defense</button>
             <!--club penguin was actual doodoo-->
             <button onclick="window.location.href='candybox/'">Candybox</button>
@@ -59,14 +59,13 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='mariocombat/'">Mario Combat</button>
             <!--portable mc only works on windows barely, and even still most schools have completely switched to chromebooks. it was also a redirect, which isnt good.-->
             <button class="exp" onclick="window.location.href='mcclone1/'">Minecraft Clone</button>
-            <button onclick="window.location.href='meatboy/'">Meat Boy</button>
+            <button class="col" onclick="window.location.href='meatboy/'">Meat Boy</button>
             <!--minecraft flash edition is no longer listed (bc it sucks) but it still has to be deleted-->
             <button onclick="window.location.href='minecraftjs/'">Minecraft: JS Edition</button>
             <!--minesweeper is already on google, literally no reason to play it here-->
             <button onclick="window.location.href='mtd2/'">Minecraft Tower Defense 2</button>
             <button class="exc" onclick="window.location.href='necromicide/'">NECROMICIDE</button>
-            <button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble (exp.)</button>
-            <button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble</button>
+            <button class="col" onclick="window.location.href='ngr/'">Newgrounds Rumble</button>
             <button onclick="window.location.href='pacman/'">Pac-Man: Flash</button>
             <button onclick="window.location.href='pokemon/'">Pokemon:Flash</button>
             <!--even if people play pong its very few and is honestly just low hanging fruit. also ai garb-->
@@ -77,7 +76,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='RiddleSchool/'">Riddle School Games</button>
             <!--we have bad time simulator, no point in having this-->
             <button onclick="window.location.href='sleeping-beauty/'">Sleeping Beauty</button>
-            <button onclick="window.location.href='slope/'">Slope</button>
+            <button class="usr" onclick="window.location.href='slope/'">Slope</button>
             <button onclick="window.location.href='sm63/'">Super Mario 63</button>
             <button onclick="window.location.href='sm64/'">Super Mario 64</button>
             <button onclick="window.location.href='solitude/'">Solitude</button>
@@ -85,9 +84,9 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='SpaceCompany/'">Space Company</button>
             <button onclick="window.location.href='streetfighter/'">Street Fighter Alpha</button>
             <button onclick="window.location.href='super-smash-flash/'">Super Smash Flash</button>
-            <button onclick="window.location.href='tetris/'">Tetris</button>
+            <button class="colusr" onclick="window.location.href='tetris/'">Tetris</button>
             <button class="exp" onclick="window.location.href='thereisnogame/'">There is No Game</button>
-            <button onclick="window.location.href='universal-paperclips/'">Universal Paperclips</button>
+            <button class="col" onclick="window.location.href='universal-paperclips/'">Universal Paperclips</button>
             <button onclick="window.location.href='winmister/'">Windows Mister</button>
             <button onclick="window.location.href='WorldHardestGame/'">The World&#39;s Hardest Game</button>
             <button onclick="window.location.href='xtractpaperclip/'">X-Tract Paperclip</button>
@@ -96,10 +95,11 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='badtimesim/'">bad time simulator</button>
             <button onclick="window.location.href='tinytactics/'">tiny tactics</button>
             <button onclick="window.location.href='3dmari0/'">3d mari0</button>
-            <button onclick="window.location.href='interactivebuddy/'">interactive buddy</button>
-            <button onclick="window.location.href='cursor10/'">cursor*10</button>
-            <button onclick="window.location.href='timefcuk/'">time f</button>
-            <button onclick="window.location.href='dadnme/'">Dad n' me</button>
+            <button class="col" onclick="window.location.href='interactivebuddy/'">interactive buddy</button>
+            <button class="colmos" onclick="window.location.href='cursor10/'">cursor*10</button>
+            <button class="exp" onclick="window.location.href='timefcuk/'">time fcuk</button>
+                <!--please dont change this again, this is the name of the game-->
+            <button class="usr" onclick="window.location.href='dadnme/'">Dad n' me</button>
             <button class="exp" onclick="window.location.href='sugarsugar/'">Sugarsugar</button>
             <button class="exp" onclick="window.location.href='snailbob/'">Snail Bob</button>
             <button onclick="window.location.href='tinytactics/'">Tiny Tactics</button>
@@ -114,18 +114,18 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='microsoft-flight-simulator/'">Microsoft Flight Simulator</button>
             <button onclick="window.location.href='idlebreakout/'">Idle Breakout</button>
             <button onclick="window.location.href='jellymario/'">Jelly Mario</button>
-            <button onclick="window.location.href='Jump-King/'">Jump King (full game! sorta)</button>
+            <button class="col" onclick="window.location.href='Jump-King/'">Jump King (full game! sorta)</button>
             <button onclick="window.location.href='gravitytetris/'">Gravity Tetris</button>
             <button onclick="window.location.href='pandemic/'">Pandemic</button>
             <button onclick="window.location.href='pokeclicker/'">Pokeclicker</button>
             <button onclick="window.location.href='effingworms/'">Effing Worms</button>
             <button onclick="window.location.href='homestarrunner/'">homestarruner.com</button>
             <button onclick="window.location.href='onac/'">One Night at Cheems</button>
-            <button onclick="window.location.href='blueball/'">Blueball's Cool Adventure</button>
+            <!--blueballs cool adventure was made in scratch. it deserved to go tbh-->
             <button onclick="window.location.href='pico8/'">Pico-8 Games</button>
-            <button onclick="window.location.href='celeste/'">Celeste Games</button>
+            <button class="col" onclick="window.location.href='celeste/'">Celeste Games</button>
             <button onclick="window.location.href='crimson/'">The Crimson Room</button>
-            <button onclick="window.location.href='spelunky/'">Spelunky Classic</button>
+            <button class="colusr" onclick="window.location.href='spelunky/'">Spelunky Classic</button>
             <button class="excmos" onclick="window.location.href='egg_ascent/'">Egg Ascent</button>
             <button onclick="window.location.href='/emulators/dosboxgames/'">DOSbox Games</button>
 

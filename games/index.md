@@ -13,8 +13,7 @@ if a game has an orange color, then we got explicit permission from it's develop
 if a game has a green color, its reccomended to play with a mouse. <br>
 if a game has a red color, we think its cool. <br>
 if a game has a grey color, it was suggested by a user.</p>
-
-<button onclick="window.location.href='indexold.html'">old design of the games tab (DONT REMOVE THIS DIRT)</button>
+<ul id="games">
 <button onclick="window.location.href='3d.city/'">3D City</button>
             <button onclick="window.location.href='3Dchess/'">3DChess</button>
             <button onclick="window.location.href='2048/'">2048</button>
@@ -129,11 +128,12 @@ if a game has a grey color, it was suggested by a user.</p>
             <button class="colusr" onclick="window.location.href='spelunky/'">Spelunky Classic</button>
             <button class="excmos" onclick="window.location.href='egg_ascent/'">Egg Ascent</button>
             <button onclick="window.location.href='/emulators/dosboxgames/'">DOSbox Games</button>
-
+                </ul>
 
 </div>
             <br>
             <button onclick="window.location.href='https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</button>
+            <button onclick="window.location.href='indexold.html'">old game list design/button>
         </ul>
     </div>
     <div class="col"></div>

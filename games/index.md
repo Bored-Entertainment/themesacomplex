@@ -8,9 +8,12 @@ title: Games
     <div class="col text-start">
         <ul>
             <div id="rows">
+                <h4>what do the colors mean?</h4>
 <p>if a game has a blue color, it may not work, have glitches, or is unstable. <br>
 if a game has an orange color, then we got explicit permission from it's developers to host it.<br>
-if a game has a green color, its reccomended to play with a mouse.</p>
+if a game has a green color, its reccomended to play with a mouse. <br>
+if a game has a red color, we think its cool. <br>
+if a game has a grey color, it was suggested by a user.</p>
 <button onclick="window.location.href='3d.city/'">3D City</button>
             <button onclick="window.location.href='3Dchess/'">3DChess</button>
             <button onclick="window.location.href='2048/'">2048</button>

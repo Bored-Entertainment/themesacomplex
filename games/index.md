@@ -14,6 +14,7 @@ if a game has a green color, its reccomended to play with a mouse. <br>
 if a game has a red color, we think its cool. <br>
 if a game has a grey color, it was suggested by a user.</p>
 
+<button onclick="window.location.href='indexold.html'">old design of the games tab (DONT REMOVE THIS DIRT)</button>
 <button onclick="window.location.href='3d.city/'">3D City</button>
             <button onclick="window.location.href='3Dchess/'">3DChess</button>
             <button onclick="window.location.href='2048/'">2048</button>

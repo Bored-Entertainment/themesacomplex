@@ -10,4 +10,4 @@ themesacomplex
 funny jekyll site,
 boredhtml/schoolgrounds/dirtcool/etc. 2.0 or something
 
-color palette: <a href="https://colorpeek.com/#10100f,ffffff,42f59b,967be3,f06520">#10100f, #ffffff, #42f59b, #967be3, #f06520</a>
+color palette: <a href="https://colorpeek.com/#10100f,ffffff,42f59b,967be3,f06520,ff0048,afa1b3">#10100f, #ffffff, #42f59b, #967be3, #f06520, ff0048, afa1b3</a>

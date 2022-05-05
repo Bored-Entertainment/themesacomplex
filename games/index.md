@@ -134,7 +134,7 @@ if a game has a grey color, it was suggested by a user.</p>
 </div>
             <br>
             <button onclick="window.location.href='https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</button>
-                      <button onclick="window.location.href='indexold.html'">old design of the games tab</button>
+                      <button onclick="window.location.href='indexold.html'">old game list design</button>
         </ul>
     </div>
     <div class="col"></div>

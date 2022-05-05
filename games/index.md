@@ -61,12 +61,9 @@ if a game has a green color, its reccomended to play with a mouse.</p>
             <button onclick="window.location.href='minecraftjs/'">Minecraft: JS Edition</button>
             <!--minesweeper is already on google, literally no reason to play it here-->
             <button onclick="window.location.href='mtd2/'">Minecraft Tower Defense 2</button>
-<<<<<<< HEAD
             <button class="exc" onclick="window.location.href='necromicide/'">NECROMICIDE</button>
             <button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble (exp.)</button>
-=======
             <button class="exp" onclick="window.location.href='ngr/'">Newgrounds Rumble</button>
->>>>>>> 3ab01dafb874792016ac6bd01867d986d921fb8b
             <button onclick="window.location.href='pacman/'">Pac-Man: Flash</button>
             <button onclick="window.location.href='pokemon/'">Pokemon:Flash</button>
             <!--even if people play pong its very few and is honestly just low hanging fruit. also ai garb-->
@@ -114,7 +111,7 @@ if a game has a green color, its reccomended to play with a mouse.</p>
             <button onclick="window.location.href='microsoft-flight-simulator/'">Microsoft Flight Simulator</button>
             <button onclick="window.location.href='idlebreakout/'">Idle Breakout</button>
             <button onclick="window.location.href='jellymario/'">Jelly Mario</button>
-            <button onclick="window.location.href='jump_king2/'">Jump King (full game! sorta)</button>
+            <button onclick="window.location.href='Jump-King/'">Jump King (full game! sorta)</button>
             <button onclick="window.location.href='gravitytetris/'">Gravity Tetris</button>
             <button onclick="window.location.href='pandemic/'">Pandemic</button>
             <button onclick="window.location.href='pokeclicker/'">Pokeclicker</button>
@@ -131,7 +128,6 @@ if a game has a green color, its reccomended to play with a mouse.</p>
 
 
 </div>
->>>>>>> Stashed changes
             <br>
             <button onclick="window.location.href='https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</button>
         </ul>

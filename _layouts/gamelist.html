@@ -133,9 +133,27 @@ margin-right: 15vw;
 .exc {color: #F06520;} /*exclusive*/
 .mos {color: #42F59B;} /*mouse required*/
     
-.expexc {-webkit-linear-gradient(#967be3, #F06520);-webkit-background-clip: text;-webkit-text-fill-color: transparent;} /*experimental, exclusive*/
-.expmos {-webkit-linear-gradient(#967be3, #42F59B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;} /*experimental, mouse required*/
-.excmos {-webkit-linear-gradient(#F06520, #42F59B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;} /*exclusive, mouse required*/
+.expexc {
+
+  background: -webkit-linear-gradient(right, #967BE3, #F06520);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} /*experimental, exclusive*/
+.expmos {
+
+background: -webkit-linear-gradient(right, #967be3, #42F59B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} /*experimental, mouse required*/
+.excmos {
+
+background: -webkit-linear-gradient(right, #F06520, #42F59B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} /*exclusive, mouse required*/
     
 @keyframes yes {
   0% {

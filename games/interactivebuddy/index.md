@@ -9,4 +9,6 @@ title: "Interactive Buddy"
 
 <br>
 
+<a href="cheats.md"> want scripts for the script engine? click here!</a>
+
 <a href="InteractiveBuddy.swf" download class="btn btn-secondary">Download</a>

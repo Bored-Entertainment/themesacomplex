@@ -64,7 +64,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='minecraftjs/'">Minecraft: JS Edition</button>
             <!--minesweeper is already on google, literally no reason to play it here-->
             <button onclick="window.location.href='mtd2/'">Minecraft Tower Defense 2</button>
-            <button class="exc" onclick="window.location.href='ngon/'">N-GON</button>
+            <button class="colusr" onclick="window.location.href='ngon/'">N-GON</button>
             <button class="exc" onclick="window.location.href='necromicide/'">NECROMICIDE</button>
             <button class="col" onclick="window.location.href='ngr/'">Newgrounds Rumble</button>
             <button onclick="window.location.href='pacman/'">Pac-Man: Flash</button>

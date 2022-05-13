@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Stealing the Diamond"
 ---
 

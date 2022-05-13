@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Learn to Fly 2"
 ---
 

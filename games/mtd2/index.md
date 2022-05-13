@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Minecraft Tower Defense"
 ---
 <div class="row justify-content-md-center">

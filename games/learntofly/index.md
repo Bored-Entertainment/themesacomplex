@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "learn to fly: full dvd boxset"
 ---
 

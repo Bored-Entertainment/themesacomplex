@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "hobo 4: total war"
 ---
 

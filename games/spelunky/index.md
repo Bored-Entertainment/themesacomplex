@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Spelunky Classic"
 ---
-<embed src="src/src/" width="900" height="700" allowfullscreen>
+<embed src="src/src/" width="auto" height="auto" allowfullscreen>

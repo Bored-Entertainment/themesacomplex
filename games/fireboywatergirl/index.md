@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Fireboy and Watergirl"
 ---
-<embed src="src/" width="900" height="700" allowfullscreen>
+<embed src="src/" width="auto" height="auto" allowfullscreen>

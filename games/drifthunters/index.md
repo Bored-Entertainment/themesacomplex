@@ -1,7 +1,7 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Drift Hunters"
 ---
-<iframe src="src/" width="900" height="700" allowfullscreen>
+<iframe src="src/" width="auto" height="auto" allowfullscreen>
 
  

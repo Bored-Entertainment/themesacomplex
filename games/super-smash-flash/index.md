@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Super Smash Flash"
 ---
 <object width="100" height="100">

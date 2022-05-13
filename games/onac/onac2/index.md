@@ -1,6 +1,6 @@
 ---
-layout: game
+layout: fullscreengame
 title: "ONAC 2"
 ---
-<iframe src="game.html" width="900" height="700" allowfullscreen>
+<iframe src="game.html" width="auto" height="auto" allowfullscreen>
 <a href="https://discord.gg/vUFQxXYhjz">Support the devs!</a>

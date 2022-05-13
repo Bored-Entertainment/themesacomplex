@@ -1,6 +1,6 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Sans Fight"
 ---
-<iframe src="src/" width="900" height="700" allowfullscreen>
+<iframe src="src/" width="auto" height="auto" allowfullscreen>
  

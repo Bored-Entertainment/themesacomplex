@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Pong"
 ---
 <p>(Works best in Fullscreen)</p>

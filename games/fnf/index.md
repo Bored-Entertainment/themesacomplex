@@ -1,6 +1,6 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Friday Night Funkin'"
 ---
 
-<embed src="src/" width="900" height="700" allowfullscreen>
+<embed src="src/" width="auto" height="auto" allowfullscreen>

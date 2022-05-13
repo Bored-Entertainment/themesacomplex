@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Minesweeper"
 ---
-<iframe src="game.html" width="900" height="700" allowfullscreen>
+<iframe src="game.html" width="auto" height="auto" allowfullscreen>

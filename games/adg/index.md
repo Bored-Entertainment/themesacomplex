@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: Action Driving Game
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Space Cadet Pinball 3D"
 ---
 
-<embed src="src/" width="900" height="700" allowfullscreen>
+<embed src="src/" width="auto" height="auto" allowfullscreen>
 <a href="src/index.html">Fullscreen</a>

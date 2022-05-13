@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: scripts for interactivebuddy
 ---
 Interactive Buddy Scripts

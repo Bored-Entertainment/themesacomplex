@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Half-Life"
 ---
 <embed src="src/xash.html" width="100%" height="1000" allowfullscreen>

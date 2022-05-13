@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Minecraft Flash"
 ---
 <div class="row justify-content-md-center">

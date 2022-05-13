@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: fullscreengame
 title: "Riddle Transfer"
 ---
 <div class="row justify-content-md-center">

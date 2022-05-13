@@ -1,6 +1,6 @@
 
 ---
-layout: game
+layout: fullscreengame
 title: "sugarsugar"
 ---
 

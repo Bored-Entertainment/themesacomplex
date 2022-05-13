@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Portal: Flash Version"
 ---
 <div class="row justify-content-md-center">

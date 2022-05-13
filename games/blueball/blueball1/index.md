@@ -1,6 +1,6 @@
 ---
-layout: fullscreengame
+layout: game
 title: "BlueBalls Cool Adventure"
 ---
-<iframe src="src/" width="auto" height="auto" allowfullscreen>
+<iframe src="src/" width="900" height="700" allowfullscreen>
  

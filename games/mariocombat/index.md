@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Mario Combat"
 ---
 <object width="100" height="100">

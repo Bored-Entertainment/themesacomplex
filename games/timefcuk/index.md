@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "time fcuk"
 ---
 <object width="100" height="100">

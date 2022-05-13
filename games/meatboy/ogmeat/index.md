@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Super Meat Boy"
 ---
 <object width="100" height="100">

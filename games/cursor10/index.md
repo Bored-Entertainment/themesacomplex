@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "cursor*10"
 ---
 <object width="100" height="100">

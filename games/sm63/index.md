@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Super Mario 63"
 ---
 <div class="row justify-content-md-center">

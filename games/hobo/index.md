@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "vulgar hobo game cinematic universe (vomit and poop!!)"
 ---
 

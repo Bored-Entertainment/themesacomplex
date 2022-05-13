@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "X-Tract Paperclip"
 ---
 <div class="row justify-content-md-center">

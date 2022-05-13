@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Windows Mister"
 ---
 <div class="row justify-content-md-center">

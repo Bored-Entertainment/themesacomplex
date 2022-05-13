@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Riddle School 4"
 ---
 <div class="row justify-content-md-center">

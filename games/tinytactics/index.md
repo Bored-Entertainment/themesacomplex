@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "tiny tactics"
 ---
 

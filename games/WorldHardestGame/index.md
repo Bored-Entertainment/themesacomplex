@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "The World's Hardest Game'"
 ---
         <object width="100" height="100">

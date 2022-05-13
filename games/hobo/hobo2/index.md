@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "hobo 2: prison brawl"
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Street Fighter Alpha"
 ---
-<embed src="src/" width="auto" height="auto" allowfullscreen>
+<embed src="src/" width="900" height="700" allowfullscreen>

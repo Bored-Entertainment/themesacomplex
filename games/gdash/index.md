@@ -1,5 +1,5 @@
 ---
-layout: fullscreengame
+layout: game
 title: "Geometry Dash"
 ---
-<embed src="src/" width="auto" height="auto" allowfullscreen>
+<embed src="src/" width="900" height="700" allowfullscreen>

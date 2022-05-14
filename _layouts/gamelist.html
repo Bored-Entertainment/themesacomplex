@@ -329,6 +329,15 @@ p {
     <br>
     <br>
     <p>btw if you see any sketchy notifications or ads DONT click on them. its just our only way of advertising right now, we will switch it out for banner ads asap 👍</p>
-</body>
+
+ <script>
+ let div = document.getElementById('games');
+let buttons = Array.from(div.children);
+buttons.sort((a, b) => a.localeCompare(b))
+div.innerHTML = '';
+buttons.forEach(b => div.appendChild(b));
+ </script>
+  
+ </body>
 
 </html>

@@ -102,7 +102,6 @@ if a game has a grey color, it was suggested by a user.</p>
                 <!--please dont change this again, this is the name of the game-->
             <button class="usr" onclick="window.location.href='dadnme/'">Dad n' me</button>
             <button class="exp" onclick="window.location.href='sugarsugar/'">Sugarsugar</button>
-            <button class="exp" onclick="window.location.href='snailbob/'">Snail Bob</button>
             <button onclick="window.location.href='tinytactics/'">Tiny Tactics</button>
             <button onclick="window.location.href='3dmari0/'">3D Mari0</button>
             <button onclick="window.location.href='interactivebuddy/'">Interactive Buddy</button>

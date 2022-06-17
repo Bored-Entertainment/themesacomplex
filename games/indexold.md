@@ -86,7 +86,6 @@ title: Games
             <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
             <li><a href="badtimesim/">bad time simulator</a></li>
             <li><a href="sugarsugar/">sugarsugar</a></li>
-            <li><a href="snailbob/">snail bob</a></li>
             <li><a href="tinytactics/">tiny tactics</a></li>
             <li><a href="3dmari0/">3d mari0</a></li>
             <li><a href="interactivebuddy/">interactive buddy</a></li>

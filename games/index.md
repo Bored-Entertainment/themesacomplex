@@ -91,7 +91,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='winmister/'">Windows Mister</button>
             <button onclick="window.location.href='WorldHardestGame/'">The World&#39;s Hardest Game</button>
             <button onclick="window.location.href='xtractpaperclip/'">X-Tract Paperclip</button>
-            <button onclick="window.location.href='xx142-b2.exe/'">XX142-bB.EXE</button>
+            <button onclick="window.location.href='xx142-b2exe/'">XX142-bB.EXE</button>
             <button onclick="window.location.href='zelda3d/'">The Legend of Zelda: But 3D</button>
             <button onclick="window.location.href='badtimesim/'">bad time simulator</button>
             <button onclick="window.location.href='tinytactics/'">tiny tactics</button>

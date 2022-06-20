@@ -116,6 +116,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='jellymario/'">Jelly Mario</button>
             <button class="col" onclick="window.location.href='Jump-King/'">Jump King (full game! sorta)</button>
             <button onclick="window.location.href='gravitytetris/'">Gravity Tetris</button>
+            <button onclick="window.location.href='journey-to-silius-dx/'">Journey to Silius DX</button>
             <button onclick="window.location.href='pandemic/'">Pandemic</button>
             <button onclick="window.location.href='pokeclicker/'">Pokeclicker</button>
             <button onclick="window.location.href='effingworms/'">Effing Worms</button>

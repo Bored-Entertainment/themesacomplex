@@ -121,6 +121,7 @@ title: Games
             <li><a href="/emulators/dosboxgames/">DOSbox Games</a></li>
             <li><a href="pinball">Space Cadet Pinball 3D</a></li>
             <li><a href="necromicide">NECROMICIDE</a></li>
+            <li><a href="journey-to-silius-dx/">siliusdx</a></li>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</a></li>
         </ul>

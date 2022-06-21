@@ -1,4 +1,0 @@
-enum QuestEntityDamageReasonWhoType{
-    NATURE,
-    ENTITY
-}

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        
+        <!--google font import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        <script src='../roots/js/sort.js'></script>
+        <link rel="stylesheet" href="../roots/css/main.css">   
+        
+        {{ title}}
+
+    </head>
+    <body>
+
+        <div id="topnav-div">
+            <ul id="topnav-list">
+                <img id="icon" onclick="location.href = 'index.md' ;" src="../roots/images/mesa-icon.png"></li>
+                <button id="topnav-button" onclick="location.href = '../index.md' ;">landing</a></li>
+                <button id="topnav-button" onclick="location.href = '../miscellaneous/meet-the-team/index.md' ;">meet the team</a></li>
+                <button id="topnav-button" onclick="location.href = 'https://forum.mesacomplex.tk' ;">forum</a></li>
+                    
+            </ul> 
+        </div>
+
+        <div id="gameslist">
+            <ul id="sortlist">
+                {% include gamelist.html %}
+            </ul>
+        </div>
+
+        <div id="page">
+        {{ content }}
+        </div>
+
+    </body>
+</html>

@@ -1,5 +1,0 @@
----
-layout: game
-title: "PokeClicker"
----
-<embed src="src" width="900" height="700" allowfullscreen>

@@ -1,7 +1,0 @@
-@author Tobias Nordqvist
- _
-| \
-\-|\
- \-|\
-  \-|
-    \

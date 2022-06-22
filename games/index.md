@@ -128,7 +128,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button class="colusr" onclick="window.location.href='spelunky/'">Spelunky Classic</button>
             <button class="excmos" onclick="window.location.href='egg_ascent/'">Egg Ascent</button>
             <button onclick="window.location.href='/emulators/dosboxgames/'">DOSbox Games</button>
-            <button class="exp" onclick="window.location.href='journey-to-silius-dx/'">Journey to Silius DX</button>
+            <button class="expexc" onclick="window.location.href='journey-to-silius-dx/'">Journey to Silius DX</button>
                 </ul>
 
 </div>

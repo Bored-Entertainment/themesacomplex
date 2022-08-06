@@ -36,9 +36,9 @@ if a game has a grey color, it was suggested by a user.</p>
             <button class="exp" onclick="window.location.href='drifthunters/'">Drift Hunters</button>
             <button onclick="window.location.href='dino/'">Chrome Dino Run</button>
             <button onclick="window.location.href='duckhunt/'">Duck Hunt</button>
-            <button onclick="window.location.href='DuckLife/'">Duck Life</button>
             <button onclick="window.location.href='electricman2/'">Electricman 2</button>
             <button class="exp" onclick="window.location.href='DuckLife/'">Duck Life</button>
+            <button onclick="window.location.href='duckhunt/'">Duck Life 2<button>
             <button onclick="window.location.href='fbf/'">Factory Balls Forever</button>
             <button onclick="window.location.href='fnaf/'">Five Nights at Freddys</button>
             <button class="exp" onclick="window.location.href='fnf/'">Friday Night Funkin&#39;</button>
@@ -91,7 +91,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='winmister/'">Windows Mister</button>
             <button onclick="window.location.href='WorldHardestGame/'">The World&#39;s Hardest Game</button>
             <button onclick="window.location.href='xtractpaperclip/'">X-Tract Paperclip</button>
-            <button onclick="window.location.href='xx142-b2.exe/'">XX142-bB.EXE</button>
+            <button onclick="window.location.href='xx142-b2exe/'">XX142-bB.EXE</button>
             <button onclick="window.location.href='zelda3d/'">The Legend of Zelda: But 3D</button>
             <button onclick="window.location.href='badtimesim/'">bad time simulator</button>
             <button onclick="window.location.href='tinytactics/'">tiny tactics</button>
@@ -102,7 +102,6 @@ if a game has a grey color, it was suggested by a user.</p>
                 <!--please dont change this again, this is the name of the game-->
             <button class="usr" onclick="window.location.href='dadnme/'">Dad n' me</button>
             <button class="exp" onclick="window.location.href='sugarsugar/'">Sugarsugar</button>
-            <button class="exp" onclick="window.location.href='snailbob/'">Snail Bob</button>
             <button onclick="window.location.href='tinytactics/'">Tiny Tactics</button>
             <button onclick="window.location.href='3dmari0/'">3D Mari0</button>
             <button onclick="window.location.href='interactivebuddy/'">Interactive Buddy</button>
@@ -129,7 +128,7 @@ if a game has a grey color, it was suggested by a user.</p>
             <button class="colusr" onclick="window.location.href='spelunky/'">Spelunky Classic</button>
             <button class="excmos" onclick="window.location.href='egg_ascent/'">Egg Ascent</button>
             <button onclick="window.location.href='/emulators/dosboxgames/'">DOSbox Games</button>
-
+            <button class="expexc" onclick="window.location.href='journey-to-silius-dx/'">Journey to Silius DX</button>
                 </ul>
 
 </div>

@@ -86,7 +86,6 @@ title: Games
             <li><a href="zelda3d/">The Legend of Zelda: But 3D</a></li>
             <li><a href="badtimesim/">bad time simulator</a></li>
             <li><a href="sugarsugar/">sugarsugar</a></li>
-            <li><a href="snailbob/">snail bob</a></li>
             <li><a href="tinytactics/">tiny tactics</a></li>
             <li><a href="3dmari0/">3d mari0</a></li>
             <li><a href="interactivebuddy/">interactive buddy</a></li>
@@ -96,7 +95,6 @@ title: Games
             <li><a href="timefcuk/">time f</a></li>
             <li><a href="dadnme/">Dad n' me</a></li>
             <li><a href="sugarsugar/">Sugarsugar (experimental)</a></li>
-            <li><a href="snailbob/">Snail Bob (experimental)</a></li>
             <li><a href="tinytactics/">Tiny Tactics</a></li>
             <li><a href="3dmari0/">3D Mari0</a></li>
             <li><a href="interactivebuddy/">Interactive Buddy</a></li>
@@ -115,7 +113,6 @@ title: Games
             <li><a href="effingworms/">Effing Worms</a></li>
             <li><a href="homestarrunner/">homestarruner.com</a></li>
             <li><a href="onac/">One Night at Cheems</a></li>
-            <li><a href="blueball/">Blueball's Cool Adventure</a></li>
             <li><a href="pico8/">Pico-8 Games</a></li>
             <li><a href="celeste/">Celeste Games</a></li>
             <li><a href="crimson/">The Crimson Room</a></li>
@@ -124,6 +121,7 @@ title: Games
             <li><a href="/emulators/dosboxgames/">DOSbox Games</a></li>
             <li><a href="pinball">Space Cadet Pinball 3D</a></li>
             <li><a href="necromicide">NECROMICIDE</a></li>
+            <li><a href="journey-to-silius-dx/">siliusdx</a></li>
             <br>
             <li><a href="https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</a></li>
         </ul>

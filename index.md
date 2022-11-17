@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      crossorigin="anonymous"></script>
 <img alt="bannerlogo" src="images/mesapride!final!refined!.png" alt="bannerlogo" class="bannerlogo">
 <br>
-<a href="https://mesa.rip" style="font-size:32px;font-weight:bold;background: -webkit-linear-gradient(90deg,#fc0345, #fc6f03);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">tired of this scuffed garbage site? check out the new and improved mesa.rip!</p>
+<a href="https://mesa.rip" style="font-size:32px;font-weight:bold;background: -webkit-linear-gradient(90deg,#fc0345, #fc6f03);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">tired of this scuffed garbage site? check out the new and improved mesa.rip!</a>
 <p id="splash"></p>
 <br>
 <h1 class="text-center">Categories:</h1>

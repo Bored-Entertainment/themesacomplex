@@ -19,6 +19,7 @@ title: "About"
 <a class="list" href="greymesa">greymesa</a><br>
 <a class="list" href="duck">The Duck🦆</a><br>
 <a class="list" href="cupofdirtfordinner">cupofdirtfordinner🥤</a><br>
+<a class="list" href="amhooman/index.html">amhooman(or swordslasher)</a><br>
 <br>
 <a class="list" href="/info/contact">Contact Us</a>
 

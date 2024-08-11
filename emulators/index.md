@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: game
 title: Emulators
 ---
 <nav aria-label="breadcrumb">

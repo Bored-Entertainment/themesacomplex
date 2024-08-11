@@ -28,7 +28,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      crossorigin="anonymous"></script>
 <img alt="bannerlogo" src="images/mesapride!final!refined!.png" alt="bannerlogo" class="bannerlogo">
 <br>
-<p>fuck you dirt</p><p id="splash"></p>
 <br>
 <h1 class="text-center">Categories:</h1>
 <a class="list" href="games">Games</a>

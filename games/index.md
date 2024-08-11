@@ -129,14 +129,5 @@ if a game has a grey color, it was suggested by a user.</p>
             <button class="excmos" onclick="window.location.href='egg_ascent/'">Egg Ascent</button>
             <button onclick="window.location.href='/emulators/dosboxgames/'">DOSbox Games</button>
             <button class="expexc" onclick="window.location.href='journey-to-silius-dx/'">Journey to Silius DX</button>
-                </ul>
-
-</div>
             <br>
             <button onclick="window.location.href='https://forum.mesacomplex.tk/game-suggestions-o35trixv">Suggest Games!</button>
-                      <button onclick="window.location.href='indexold.html'">old game list design</button>
-        </ul>
-    </div>
-    <div class="col"></div>
-</div>
-</p>

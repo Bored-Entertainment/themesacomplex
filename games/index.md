@@ -8,11 +8,11 @@ title: Games
     <div class="col text-start">
         <ul>
             <div id="rows">
-<p>if a game has a blue color, it may not work, have glitches, or is unstable. <br>
+<center><p>if a game has a blue color, it may not work, have glitches, or is unstable. <br>
 if a game has an orange color, then we got explicit permission from it's developers to host it.<br>
 if a game has a green color, its reccomended to play with a mouse. <br>
 if a game has a red color, we think its cool. <br>
-if a game has a grey color, it was suggested by a user.</p>
+if a game has a grey color, it was suggested by a user.</p></center>
 <ul id="games">
 <button onclick="window.location.href='3d.city/'">3D City</button>
             <button onclick="window.location.href='3Dchess/'">3DChess</button>
@@ -37,8 +37,8 @@ if a game has a grey color, it was suggested by a user.</p>
             <button onclick="window.location.href='dino/'">Chrome Dino Run</button>
             <button onclick="window.location.href='duckhunt/'">Duck Hunt</button>
             <button onclick="window.location.href='electricman2/'">Electricman 2</button>
-            <button class="exp" onclick="window.location.href='DuckLife/'">Duck Life</button>
-            <button onclick="window.location.href='duckhunt/'">Duck Life 2<button>
+            <button class="exp" onclick="window.location.href='Ducklife/'">Duck Life</button>
+            <button onclick="window.location.href='ducklife2/'">Duck Life 2</button>
             <button onclick="window.location.href='fbf/'">Factory Balls Forever</button>
             <button onclick="window.location.href='fnaf/'">Five Nights at Freddys</button>
             <button class="exp" onclick="window.location.href='fnf/'">Friday Night Funkin&#39;</button>

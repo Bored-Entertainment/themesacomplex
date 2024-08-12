@@ -4,10 +4,10 @@ layout: default
 title: "Home"
 ---
 
-<script type="text/javascript" src="js/splashtext.js"></script>
-<script type="text/javascript" src="js/consolelog.js"></script>
-<script type="text/javascript" src="js/particle.js"></script>
-<link rel="stylesheet" href="particle.css">
+<script type="text/javascript" src="https://bored-entertainment.github.io/js/splashtext.js"></script>
+<script type="text/javascript" src="https://bored-entertainment.github.io/js/consolelog.js"></script>
+<script type="text/javascript" src="https://bored-entertainment.github.io/js/particle.js"></script>
+<link rel="stylesheet" href="https://bored-entertainment.github.io/particle.css">
 <head>
 <script type="text/javascript">
     window._mNHandle = window._mNHandle || {};
@@ -32,9 +32,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p id="splash"></p>
 <br>
 <h1 class="text-center">Categories:</h1>
-<a class="list" href="games">Games</a>
-<a class="list" href="emulators">Emulators</a>
-<a class="list" href="info/about">Info</a>
+<a class="list" href="https://bored-entertainment.github.io/games">Games</a>
+<a class="list" href="https://bored-entertainment.github.io/emulators">Emulators</a>
+<a class="list" href="https://bored-entertainment.github.io/info/about">Info</a>
 <br>
 <a class="recommend" href="recommend">Mesacomplex Recommendations</a>
 <br>

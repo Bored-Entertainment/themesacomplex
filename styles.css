@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local('Work Sans'), url('/fonts/WorkSans-Regular.woff2') format('woff2'),
+    src: local('Work Sans'), url('https://bored-entertainment.github.io/themesacomplex/fonts/WorkSans-Regular.woff2') format('woff2'),
          url('/fonts/WorkSans-Regular.woff') format('woff');
   }
   

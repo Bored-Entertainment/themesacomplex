@@ -3,10 +3,10 @@ layout: default
 title: "Home"
 ---
 
-<script type="text/javascript" src="https://bored-entertainment.github.io/js/splashtext.js"></script>
-<script type="text/javascript" src="https://bored-entertainment.github.io/js/consolelog.js"></script>
-<script type="text/javascript" src="https://bored-entertainment.github.io/js/particle.js"></script>
-<link rel="stylesheet" href="https://bored-entertainment.github.io/particle.css">
+<script type="text/javascript" src="https://bored-entertainment.github.io/themesacomplex/js/splashtext.js"></script>
+<script type="text/javascript" src="https://bored-entertainment.github.io/themesacomplex/js/consolelog.js"></script>
+<script type="text/javascript" src="https://bored-entertainment.github.io/themesacomplex/js/particle.js"></script>
+<link rel="stylesheet" href="https://bored-entertainment.github.io/themesacomplex/particle.css">
 <head>
 <script type="text/javascript">
     window._mNHandle = window._mNHandle || {};

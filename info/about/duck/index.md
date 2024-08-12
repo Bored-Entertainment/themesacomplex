@@ -2,7 +2,7 @@
 layout: default
 title: "Duck"
 ---
-<img src="https://bored-entertainment.github.io/themesacomplex/images/duck.png" height="500" width="500">
+<img src="https://bored-entertainment.github.io/themesacomplex/images/duck.webp" height="500" width="500">
 <p>Quack Quack</p>
 <br>
 <p>My Steam Friend Code: 1098625911</p>

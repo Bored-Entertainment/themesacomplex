@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: "Home"
@@ -26,12 +27,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1455382176703207"
      crossorigin="anonymous"></script>
-<img alt="bannerlogo" src="images/mesapride!final!refined!.png" alt="bannerlogo" class="bannerlogo">
+<img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <br>
+<p id="splash"></p>
 <br>
 <h1 class="text-center">Categories:</h1>
 <a class="list" href="games">Games</a>
 <a class="list" href="emulators">Emulators</a>
+<a class="list" href="info/about">Info</a>
 <br>
 <a class="recommend" href="recommend">Mesacomplex Recommendations</a>
 <br>
@@ -46,6 +49,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 </div>
 <footer>
+<a>brought to you in part by:</a>
+<br>
+<p id="sponsor"></p>
 </footer>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"

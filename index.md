@@ -31,11 +31,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p id="splash"></p>
 <br>
 <h1 class="text-center">Categories:</h1>
-<a class="list" href="https://bored-entertainment.github.io/games">Games</a>
-<a class="list" href="https://bored-entertainment.github.io/emulators">Emulators</a>
-<a class="list" href="https://bored-entertainment.github.io/info/about">Info</a>
+<a class="list" href="https://bored-entertainment.github.io/themesacomplex/games">Games</a>
+<a class="list" href="https://bored-entertainment.github.io/themesacomplex/emulators">Emulators</a>
+<a class="list" href="https://bored-entertainment.github.io/themesacomplex/info/about">Info</a>
 <br>
-<a class="recommend" href="recommend">Mesacomplex Recommendations</a>
+<a class="recommend" href="https://bored-entertainment.github.io/themesacomplex/recommend">Mesacomplex Recommendations</a>
 <br>
 <div id="514763859">
     <script type="text/javascript">
@@ -52,7 +52,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br>
 <p id="sponsor"></p>
 </footer>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ946DH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+

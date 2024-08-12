@@ -3,7 +3,7 @@ layout: default
 title: "About"
 ---
 
-<img src="/images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
+<img src="https://bored-entertainment.github.io/themesacomplex" alt="bannerlogo" class="bannerlogo">
 
 <h1 class="text-center">Badges:</h1>
 <img src="https://img.shields.io/github/repo-size/Bored-Entertainment/themesacomplex?style=for-the-badge">

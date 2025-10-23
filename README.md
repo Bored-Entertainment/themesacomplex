@@ -6,6 +6,9 @@
 <br>
 https://bored-entertainment.github.io/themesacomplex/
 <br>
+
+# NOW DEPRICATED, PLEASE USE [MESλREDUX](https://github.com/Bored-Entertainment/mesaredux) INSTEAD!
+
 themesacomplex
 
 funny jekyll site,

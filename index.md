@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <img alt="bannerlogo" src="images/bannerlogo.png" alt="bannerlogo" class="bannerlogo">
 <br>
 <p id="splash"></p>
-<br>
+<h1>THIS WEBSITE IS DEPRICATED AND HAS NOT BEEN UPDATED IN OVER 2 YEARS! PLEASE USE <a href="https://mesaredux.mesagrey.ca">https://mesaredux.mesagrey.ca</a> AS IT'S OUR LATEST UNBLOCKED GAMES WEBSITE</h1>
 <h1 class="text-center">Categories:</h1>
 <a class="list" href="https://bored-entertainment.github.io/themesacomplex/games">Games</a>
 <a class="list" href="https://bored-entertainment.github.io/themesacomplex/emulators">Emulators</a>
